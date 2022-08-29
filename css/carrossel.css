@@ -11,7 +11,7 @@
     border-radius: 20px;
     overflow: hidden; /* faz com que as imagens que nao estajam no tamanho da div nao hora sejam escondidas*/
     position: absolute;/*posição absoluta na pagina*/
-    top: 30rem; /*distancia do top*/
+    top: 25rem; /*distancia do top*/
     left: 50%; /*distancia da esquerda*/
     transform: translate(-50%, -60%); /*ajustes de distancia*/
 }
