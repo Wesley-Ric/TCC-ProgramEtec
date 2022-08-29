@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
+
+/*
+╭――――――――――――――――――╮
+│                  │
+│       tags       │
+│                  │
+╰――――――――――――――――――╯
+*/
+body{ /*seta o estilo do body  reseta algumas propriedades*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(1deg, #000000
+    1%, #07340C 100%);
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+html{/*reseta html*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;/*alinha em colunas*/
+}
+
+section{
+    flex: 1 0 auto;
+}
+h1{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*
+╭╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╮
+┋                   ┋
+┋ elementos do site ┋
+┋                   ┋
+╰╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╯
+*/
+
+.main-div{
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    top: 65%;
+    width: 90%;
+    left: 5%;
+}
+
+/*
+╭――――――――――――――――――╮
+│                  │
+│       html       │
+│                  │
+╰――――――――――――――――――╯
+*/
+.html{
+    width: 100%;
+    background-color: #005000;
+    height: 15rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+.html img{/*o heitgh e o width em 0 faz a imagem ficar escondida até que a propriedade hover seja ativafa*/
+    width: 0;
+    position: absolute;
+    top: 12.5rem;
+    height: 0;
+    transition: 1s;
+}
+.html-img{
+    display: flex;
+    justify-content: center;
+}
+.html:hover{/*efeito que faz a five aumentar de tamanho quando passo o mouse*/
+    height: 21rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+    
+}
+.html:hover img{/* faz a imagem aparecer*/
+    width: 7rem;
+    height: 7rem;
+}
+.H-cima{
+    position: relative;
+    top: 4rem;
+    text-align: center;
+}
+.H-baixo{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top: 3.5rem;
+    color: #80ac29;
+}
+
+
+/*tudo descrito no css segue para as outras classes*/
+/*
+╭――――――――――――――――――╮
+│                  │
+│       css        │
+│                  │
+╰――――――――――――――――――╯
+*/
+
+.css{
+    width: 100%;
+    background-color: #004000;
+    height: 15rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+.css:hover{
+    height: 21rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+
+.css img{
+    width: 0;
+    position: relative;
+    top: 4.8rem;
+    height: 0;
+    transition: 1s;
+}
+.css-img{
+    display: flex;
+    justify-content: center;
+}
+
+.css:hover img{
+    width: 7rem;
+    height: 7rem;
+}
+
+
+.C-cima{
+    position: relative;
+    top: 4rem;
+}
+.C-baixo{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top: 3.5rem;
+    color: #80ac29;
+}
+
+
+/*
+╭――――――――――――――――――╮
+│                  │
+│        js        │
+│                  │
+╰――――――――――――――――――╯
+*/
+
+.js{
+    width: 100%;
+    background-color: #003300;
+    height: 15rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+.js:hover{
+    height: 21rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+
+.js img{
+    width: 0;
+    position: relative;
+    top: 4.8rem;
+    height: 0;
+    transition: 1s;
+}
+.js-img{
+    display: flex;
+    justify-content: center;
+}
+
+.js:hover img{
+    width: 7rem;
+    height: 7rem;
+}
+
+.J-cima{
+    position: relative;
+    top: 4rem;
+}
+.J-baixo{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top: 3.5rem;
+    color: #80ac29;
+}
+
+/*
+╭――――――――――――――――――╮
+│                  │
+│       java       │
+│                  │
+╰――――――――――――――――――╯
+*/
+.java{
+    width: 100%;
+    background-color: #002900;
+    height: 15rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+.java:hover{
+    height: 21rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+
+.java img{
+    width: 0;
+    position: relative;
+    top: 4.8rem;
+    height: 0;
+    transition: 1s;
+}
+.java-img{
+    display: flex;
+    justify-content: center;
+}
+
+.java:hover img{
+    width: 7rem;
+    height: 7rem;
+}
+
+.Ja-cima{
+    position: relative;
+    top: 4rem;
+}
+.Ja-baixo{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top: 3.5rem;
+    color: #80ac29;
+}
+/*
+╭――――――――――――――――――╮
+│                  │
+│      python      │
+│                  │
+╰――――――――――――――――――╯
+*/
+.python{
+    width: 100%;
+    background-color: #002100;
+    height: 15rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+.python:hover{
+    height: 21rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+.python img{
+    width: 0;
+    position: relative;
+    top: 6rem;
+    height: 0;
+    transition: 1s;
+}
+.python-img{
+    display: flex;
+    justify-content: center;
+}
+
+.python:hover img{
+    width: 7rem;
+    height: 7rem;
+}
+.P-cima{
+    position: relative;
+    top: 4rem;
+}
+.P-baixo{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top: 4.5rem;
+    color: #80ac29;
+}
+
+/*
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+╭――――――――――――――――――╮
+│                  │
+│       footer     │
+│                  │
+╰――――――――――――――――――╯
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+*/
+
+.princ-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-prin{
+    padding: 1rem;
+    font-size: 24px;
+}
+.copy{/*direitos autorais*/
+    font-size: 20px;
+}
+footer{
+    flex-shrink: 0;/*emm tese faz ele ficar em baixo*/
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 145rem;
+    height: 17rem;
+}
+
+.rede-social{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.face img{
+    margin: 1rem;
+    width: 50px;
+}
+
+.link img{
+    width: 50px;
+    margin: 1rem;
+}
+.git img{
+    width: 50px;
+    margin: 1rem;
+}
+
+#logo{
+    width: 5.2rem;
+    padding-top: 0rem;
+}
+
+/*
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+╭――――――――――――――――――╮
+│                  │
+│ correção bug mob │
+│                  │
+╰――――――――――――――――――╯
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+*/
+
+@media (max-width: 755px) {
+    .footer{
+        height: 300px;
+    }
+}
+@media (max-height: 1000px) {
+    .main-div{
+        top: 45rem;
+    }
+    #logo{
+        padding-top: 0rem;
+    }
+
+}
+@media (max-width: 755px) {
+    .footer{
+        width: 100%;
+        height: 320px;
+        position: relative;
+        top: 0%;
+    }
+    .main-div{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    }
+}
