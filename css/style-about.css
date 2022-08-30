@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
 /*
 ╭――――――――――――――――――╮
 │                  │
@@ -56,7 +58,7 @@ footer{
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 500rem;
+    top: 182.7rem;
     height: 17rem;
 }
 
@@ -206,7 +208,7 @@ footer{
     color: white;
     font-size: 40px;
     text-align: justify;
-    width: 78%;
+    width: 90%;
 }
 .we{
     width: 100%;
@@ -219,6 +221,126 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 850px;
+    height: 860px;
     border-radius: 10px;
+}
+
+
+
+.team{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.team a{
+    background-color: none;
+    width: 48px;
+    height: 48px;
+}
+.team a:hover{
+    background-color: white;
+    width: 48px;
+    height: 48px;
+
+}
+.time img{
+    width: 15rem;
+}
+.team-texto{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    transform: rotate(-90deg);    
+    
+}
+.nome{
+    text-align: center;
+    font-size: 24px;
+}
+.rd-soc{
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.rd-soc img{
+    width: 3rem;
+}
+.alinhamento{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+
+
+
+
+.animacao{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+.conteiner{
+    display: inline-flex;
+}
+.conteiner .estatico {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    top: .5rem;
+}
+.conteiner .dinamico{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dinamico li{
+    color: black;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid black;
+    animation: typing 1.5s steps(10) infinite;
+    background-color: green;
+}
+.dinamico li span{
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }
