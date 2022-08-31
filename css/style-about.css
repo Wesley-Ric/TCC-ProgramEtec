@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
 /*
 ╭――――――――――――――――――╮
 │                  │
@@ -58,7 +59,7 @@ footer{
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 182.7rem;
+    top: 178.52rem;
     height: 17rem;
 }
 
@@ -144,7 +145,7 @@ footer{
     object-fit: cover;
 }
 .texto-about-inicial{
-    background-color: #9acd32;
+    background-color: #204a12;
     height: 600px;
     width: 50%;
     align-items: center;
@@ -172,7 +173,7 @@ footer{
     object-fit: cover;
 }
 .texto-about-2{
-    background-color: #9acd32;
+    background-color: #204a12;
     height: 600px;
     width: 50%;
     align-items: center;
@@ -197,6 +198,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
 .titulo-empacotado{
     color: white;
     font-size: 150px;
@@ -204,11 +206,15 @@ footer{
 }
 
 
+
+
 .nos{
     color: white;
-    font-size: 40px;
+    font-size: 42px;
     text-align: justify;
     width: 90%;
+    font-family: 'Barlow Condensed', sans-serif;
+
 }
 .we{
     width: 100%;
@@ -221,7 +227,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 860px;
+    height: 700px;
     border-radius: 10px;
 }
 
@@ -230,8 +236,9 @@ footer{
 .team{
     width: 100%;
     height: 400px;
-    background-color: white;
-    margin-top: 5rem;
+    background-color: #f5f5dc;
+    margin-top: 180px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -286,7 +293,7 @@ footer{
 
 
 .animacao{
-    background-color: green;
+    background-color: #204a12;
     width: 100%;
     display: flex;
     align-items: center;
@@ -318,7 +325,7 @@ footer{
     left: 0;
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    animation: slide 4.8s steps(4) infinite;
 }
 @keyframes slide{
     100%{
@@ -332,8 +339,8 @@ footer{
     height: 100%;
     left: 0;
     border-left: 2px solid black;
-    animation: typing 1.5s steps(10) infinite;
-    background-color: green;
+    animation: typing 1.2s steps(10) infinite;
+    background-color: #204a12;
 }
 .dinamico li span{
     position: relative;
@@ -342,5 +349,39 @@ footer{
     100%{
         left: 100%;
         margin: 0 -35px 0 35px;
+    }
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width:1476px) {
+    .nos{
+        font-size: 32px;
+    }
+}
+
+@media (max-width:936px) {
+    .texto-about-inicial{
+        font-size: 26px;
+    }
+    .texto-about-2{
+        font-size: 26px;
+    }
+    .nos{
+        font-size: 24px;
     }
 }
