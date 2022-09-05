@@ -267,6 +267,9 @@ footer{
     transform: rotate(-90deg);    
     
 }
+.time-mob{
+    display: none;
+}
 .nome{
     text-align: center;
     font-size: 24px;
@@ -373,6 +376,121 @@ footer{
         font-size: 32px;
     }
 }
+@media (max-width:634px) {
+    .estatico{
+        font-size: 40px;
+    }
+    .dinamico li{
+        font-size: 40px;
+    }
+    .conteiner .estatico {
+        font-size: 40px;
+        position: relative;
+        top: 1.25rem; 
+    }
+    .dinamico li span::after{
+        top: -.1rem;
+    }
+}
+@media (max-width: 650px) {
+    .rd-soc{
+        width: 70px;
+        padding: .3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .rd-soc img{
+        display: none;
+    }
+    .alinhamento{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .team a:hover{
+        background-color: white;
+        width: 48px;
+        height: 48px;
+    
+    }
+    
+}
+
+@media (max-width: 1455px) {
+    .team{
+        width: 100%;
+        height: 800px;
+        background-color: white;
+        margin-top: 0px;
+        display: flex;
+    }
+    .t2 {
+        position: relative;
+        top: 12rem;
+        right: 100%;
+
+    }
+    .t1 {
+        position: relative;
+        top: -12rem;
+        left: 150%;
+    }
+    .t3 {
+        position: relative;
+        top: -12rem;
+        left: 150%;
+    }
+    .team-texto{
+        display: none;        
+    }
+    .time-mob{
+        display: block;
+        color: white;
+    }
+
+    .footer{
+        position: relative;
+    }
+    .time{
+        width: 20%;
+    }
+    .time img{
+        width: 100%;
+    }
+    .nome{
+        height: 40px;
+    }
+    #i1{
+        padding-right: 1rem;
+    }
+    #i2{
+        padding-right: 1rem;
+    }
+    #i3{
+        padding-right: 1rem;
+    }
+    #i4{
+        padding-right: 1rem;
+    }
+    #i5{
+        padding-right: 1rem;
+    }
+    .time-mob{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+
+}
+
+
 
 @media (max-width:936px) {
     .texto-about-inicial{
