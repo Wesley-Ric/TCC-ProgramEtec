@@ -57,8 +57,8 @@ body, html{
     position: absolute;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     top: 82%;
-    height: 5rem;
-    width: 5rem;
+    height: 5em;
+    width: 5em;
     border-radius: 8rem;
     display: flex;
     align-items: center;
@@ -73,6 +73,42 @@ body, html{
 }
 .redondinha p{
     overflow: hidden;
+}
+
+@media (max-width: 654px) {
+   
+    .titulo{
+        font-size: 20px;
+        padding-bottom: 1rem;
+    }
+    
+    .subtitulo{
+        font-size:  10px;
+        padding-top: 1rem;
+    }
+    .redondinha{
+        right: 40%;
+    }
+    .color-div{
+        background-color: rgb(29, 28, 28);;
+        width: 90%;
+        height: 60%;
+    }
+}
+@media (max-width: 942px) {
+    .redondinha{
+        right: 40%;
+    }
+}
+@media (max-width: 542px) {
+    .redondinha{
+        right: 38%;
+    }
+}
+@media (max-width: 300px) {
+    .redondinha{
+        right: 35%;
+    }
 }
 /*
 .redondinha.animada:hover{
