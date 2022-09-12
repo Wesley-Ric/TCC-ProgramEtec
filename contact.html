@@ -43,20 +43,29 @@
         <div class="contact">
             <div class="contact-contact">
                 <div class="contact-alinhar">
-                    <form action="">
-                        <input type="text">
-                    </form>
-                    <form action="">
-                        <input type="text">
-                    </form>
-                    <form action="">
-                        <input type="text">
-                    </form>
-                    <form action="">
-                        <input type="text">
-                    </form>
-                    <form action="">
-                        <input type="text">
+                    <form action="https://formsubmit.co/wesleyricardoneves@gmail.com" method="POST">
+                        <div class="nomes">
+                            <div class="campo">
+                                <label for="primeiro-nome">Nome: </label>
+                                <input type="text" name="primeiro-nome" id="p-nome" required>
+                            </div>
+                            <div class="campo">
+                                <label for="segundo-nome" id="sobre">Sobrenome: </label>
+                                <input type="text" name="segundo-nome" id="s-nome" required>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" rows="10" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5555/thanks.html">
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>    
                     </form>
                 </div>
             </div>
