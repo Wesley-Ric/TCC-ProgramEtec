@@ -95,7 +95,7 @@ a:hover{
         display: block;
         position: absolute;
         width: 100%;
-        top: 100px;
+        top: 45.4px;
         right: 0;
         background-color: rgb(37, 37, 37);
         transition: 1s;
@@ -106,7 +106,7 @@ a:hover{
     }
 
     #nav.active #menu{/*menu aparece quando nav esta ativo pelo click(js)*/
-        height: calc(100vh - 50px);
+        height: calc(100vh - 45px);
         visibility: visible;
         overflow-y: auto;
         transition: 1s;
