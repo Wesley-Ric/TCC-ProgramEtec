@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
+/*
+╭――――――――――――――――――╮
+│                  │
+│       tags       │
+│                  │
+╰――――――――――――――――――╯
+*/
+body{ /*seta o estilo do body  reseta algumas propriedades*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(1deg, #000000
+    1%, #07340C 100%);
+    background-repeat: no-repeat;
+    background-color: #000000;
+   
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+html{/*reseta html*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;/*alinha em colunas*/
+}
+
+section{
+    flex: 1 0 auto;
+}
+
+
+
+.princ-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-prin{
+    padding: 1rem;
+    font-size: 24px;
+}
+
+.copy{/*direitos autorais*/
+    font-size: 20px;
+}
+
+footer{
+    flex-shrink: 0; /*emm tese faz ele ficar em baixo*/
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 14.99rem;
+}
+
+.rede-social{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.face img{
+    margin: 1rem;
+    width: 50px;
+}
+
+.link img{
+    width: 50px;
+    margin: 1rem;
+}
+.git img{
+    width: 50px;
+    margin: 1rem;
+}
+
+
+
+
+/*
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+╭――――――――――――――――――╮
+│                  │
+│ correção bug mob │
+│                  │
+╰――――――――――――――――――╯
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+*/
+
+@media (max-width: 755px) {
+    .footer{
+        height: 300px;
+    }
+}
+@media (max-height: 1000px) {
+    .main-div{
+        top: 45rem;
+    }
+    #logo{
+        padding-top: 0rem;
+    }
+
+}
+@media (max-width: 755px) {
+    .footer{
+        width: 100%;
+        height: 320px;
+        position: relative;
+        top: 0%;
+    }
+    .main-div{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    }
+}
+
+
+
+
+main{
+    height: 70%;
+    width: 100%;
+}
+section{
+    height: 70%;
+    width: 100%;
+}
+.contact{
+    width: 100%;
+    background-color: red;
+    height: 150%;
+    display: flex;
+}
+.contact-contact{
+    width: 50%;
+    height:86%;
+    background-color: #777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-img{
+    width: 50%;
+    height:100%;
+    background-color: lightblue;
+}
+.contact-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.titulo{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+}
+.campo label{
+    color: white;
+    margin-bottom: 0.2em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo textarea {
+    padding: 0.2em;
+    background-color: lightgray;
+    display: block;
+    border-radius: 8px;
+    border: 0px;
+    width: 28em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.campo {
+    margin-bottom: .5em;
+}
+.campo input[type="text"], .campo input[type="email"]{
+    height: 1.5rem;
+}
+.campo textarea{
+    border-radius: 5px;
+}
+.campo input:focus, .campo textarea:focus {
+    background: #c1c8cf;
+}
+.button button{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 20rem;
+    border: 0px;
+    border-radius: 2rem;
+    font-size: 24px;
+    background-color: #e9e9e9;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button:hover{
+    background-color: #9a9a9a;
+}
+.botao, select{
+    cursor: pointer;
+    
+}
+
+@media (max-width: 882px) {
+    .campo input[type="text"], .campo input[type="email"], .campo textarea {
+        padding: 0.2em;
+        background-color: lightgray;
+        display: block;
+        border-radius: 8px;
+        border: 0px;
+        width: 18em;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    }
+    .campo textarea{
+        height: 3rem;
+    }
+    .button button{
+        width: 10rem;
+    }
+}
+@media (max-width: 698px) {
+    .campo input[type="text"], .campo input[type="email"], .campo textarea {
+        padding: 0.2em;
+        background-color: lightgray;
+        display: block;
+        border-radius: 8px;
+        border: 0px;
+        width: 16em;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    }
+    .campo textarea{
+        height: 3rem;
+    }
+    .button button{
+        width: 10rem;
+        margin-top: -.2rem;
+        height: 2rem;
+    }
+    .footer{
+        height: 297px;
+    }
+}
+@media (max-height: 694px) {
+    .campo input[type="text"], .campo input[type="email"], .campo textarea {
+        padding: 0.2em;
+        background-color: lightgray;
+        display: block;
+        border-radius: 8px;
+        border: 0px;
+        width: 16em;
+        height: 1rem;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    }
+    .campo textarea{
+        height: 3rem;
+    }
+    .button button{
+        width: 10rem;
+        margin-top: -.2rem;
+        height: 2rem;
+    }
+    .footer{
+        height: 297px;
+    }
+}
+@media (max-height: 694px) {
+    .campo input[type="text"], .campo input[type="email"], .campo textarea {
+        padding: 0.2em;
+        background-color: lightgray;
+        display: block;
+        border-radius: 8px;
+        border: 0px;
+        width: 16em;
+        height: 1rem;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    }
+    .campo textarea{
+        height: 3rem;
+    }
+    .button button{
+        width: 10rem;
+        margin-top: -.2rem;
+        height: 2rem;
+    }
+    .footer{
+        height: 297px;
+    }
+}
+@media (max-height: 726px) {
+    .footer{
+        top: 1rem;
+        height: 297px;
+    }
+}
