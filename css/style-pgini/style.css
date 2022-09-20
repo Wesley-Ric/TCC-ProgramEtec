@@ -105,7 +105,11 @@ h1{
     color: #80ac29;
 }
 
-
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*tudo descrito no css segue para as outras classes*/
 /*
 ╭――――――――――――――――――╮

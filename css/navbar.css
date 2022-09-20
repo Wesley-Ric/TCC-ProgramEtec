@@ -5,13 +5,13 @@ ul{
     padding: 0;
 }
 /*padronizando o A*/
-a{
+nav a{
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 /*=-=-=-=-=-=-=-nav bar=-=-=-=-=-=-=-*/
-a:hover{
+nav a:hover{
     background-color: rgb(83, 124, 21);
     transition: .5s;
 }
