@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
 /*
 ╭――――――――――――――――――╮
 │                  │
@@ -130,7 +134,7 @@ section{
 #menu-lat{
     background-color: aliceblue;
     height: 100vh;
-    width: 220px;
+    width: 240px;
 }
 #menu-esquerdo ul li a{
     color: #000000;
@@ -138,6 +142,7 @@ section{
     padding: 1rem;
     width: 100%;
     border-bottom: 1px solid lightgray;
+    font-size: 14px;
     
 }
 #menu-esquerdo ul li{
@@ -177,21 +182,26 @@ section{
     margin-bottom: 2rem;
 }
 .pergunta{
-    font-size: 45px;
+    font-size: 20px;
     color: white;
-    background-color: gray;
-    width: 40rem;
+    width: 60rem;
     height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
     border-radius: 7px 7px 0px 0px;
-    
-
+    position: relative;
+}
+.pergunta:hover{
+    height: 10rem;
+}
+.text-p{
+    text-align: center;
+    padding: 1rem;
 }
 .comeco{
     border-radius: 7px 7px 0px 0px;
+    height: 10rem;
 }
 
 .resposta{
@@ -221,16 +231,25 @@ section{
     margin-top: 0;
 }
 
-
-.cc{
+    
+.a{
     width: 43rem;
     background-color: rgb(41, 41, 41);
+    
 }
-.cc1{
+.b{
     width: 42rem;
     background-color: rgb(73, 73, 73);
 }
-.cc2{
+.c{
     width: 41rem;
     background-color: rgb(102, 102, 102);
+}
+.d{
+    width: 41rem;
+    background-color: rgb(129, 129, 129);
+}
+.e{
+    width: 41rem;
+    background-color: rgb(153, 153, 153);
 }
