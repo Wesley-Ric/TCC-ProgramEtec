@@ -133,7 +133,7 @@ section{
 
 #menu-lat{
     background-color: aliceblue;
-    height: 100vh;
+    height: 95vh;
     width: 240px;
 }
 #menu-esquerdo ul li a{
@@ -143,7 +143,7 @@ section{
     width: 100%;
     border-bottom: 1px solid lightgray;
     font-size: 14px;
-    
+    transition: .3s;
 }
 #menu-esquerdo ul li{
     display: flex;
@@ -152,6 +152,7 @@ section{
 #menu-esquerdo ul li a:hover{
     color: #000000;
     background-color: gray;
+    transition: .3s;
 }
 #alinha-t{
     width: 100%;
@@ -168,7 +169,7 @@ section{
     height: 4rem;
     text-align: center;
     border-radius: 50px;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 #block{
     display: block;
@@ -177,26 +178,22 @@ section{
 #alinhamento-principal{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: -1rem;
 }
 .pergunta{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     width: 60rem;
     height: 6rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     border-radius: 7px 7px 0px 0px;
-    position: relative;
 }
-.pergunta:hover{
-    height: 10rem;
-}
+
 .text-p{
-    text-align: center;
     padding: 1rem;
 }
 .comeco{
@@ -227,29 +224,63 @@ section{
     padding-top: 2rem;
     padding-left: 4rem;
 }
-.come{
-    margin-top: 0;
-}
-
     
 .a{
     width: 43rem;
     background-color: rgb(41, 41, 41);
-    
+    height: 6rem;
+    transition: .5s;
 }
 .b{
     width: 42rem;
     background-color: rgb(73, 73, 73);
+    height: 6rem;
+    transition: .5s;
 }
 .c{
     width: 41rem;
     background-color: rgb(102, 102, 102);
+    height: 6rem;
+    transition: .5s;
 }
 .d{
     width: 41rem;
     background-color: rgb(129, 129, 129);
+    height: 6rem;
+    transition: .5s;
 }
 .e{
     width: 41rem;
     background-color: rgb(153, 153, 153);
+    height: 6rem;
+    transition: .5s;
+}
+
+.a:hover{
+    padding-top: 1rem;
+    transition: .5s;
+}
+.b:hover{
+    padding-top: 1rem;
+    transition: .5s;
+}
+.c:hover{
+    padding-top: 1rem;
+    transition: .5s;
+}
+.d:hover{
+    padding-top: 1rem;
+    transition: .5s;
+}
+.e:hover{
+    padding-top: 1rem;
+    transition: .5s;
+}
+
+
+.alinha-texto-perg{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
