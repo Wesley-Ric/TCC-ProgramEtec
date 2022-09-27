@@ -163,12 +163,14 @@ section{
 #titulo{
     padding: 1rem;
     font-size: 50px;
-    color: white;
-    background-color: darkgray;
-    width: 80%;
+    color: black;
+    width: 45%;
     height: 4rem;
-    text-align: center;
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px;
+    border: 2px solid gray;
     margin-top: .5rem;
 }
 #block{
@@ -188,7 +190,7 @@ section{
     width: 60rem;
     height: 6rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-end;
     border-radius: 7px 7px 0px 0px;
 }
@@ -199,6 +201,11 @@ section{
 .comeco{
     border-radius: 7px 7px 0px 0px;
     height: 10rem;
+}
+.comeco a{
+    display: flex;
+    text-decoration: none;
+    width: 12rem;
 }
 
 .resposta{
