@@ -14,7 +14,6 @@
 body{ /*seta o estilo do body  reseta algumas propriedades*/
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100vh;
 
     background-image: linear-gradient(1deg, gray
@@ -53,7 +52,7 @@ footer{
     background-color: rgb(29, 28, 28);
     color: white;
     text-align: center;
-    width: 100%;
+   
     position: absolute;
 
     height: 17rem;
@@ -122,27 +121,22 @@ footer{
     }
 }
 
-#section-content{
-    width: 100%;
-    display: block;
-    justify-content: center;
-}
-section{
+
+main section{
     display: flex;
-    width: 98%;
     height: 100%;
 }
 
 #menu-lat{
     background-color: aliceblue;
     height: 113vh;
-    width: 240px;
+
 }
 #menu-esquerdo ul li a{
     color: #000000;
     text-decoration: none;
     padding: 1rem;
-    width: 100%;
+    width: 185px;
     border-bottom: 1px solid lightgray;
     font-size: 14px;
     transition: .3s;
@@ -157,7 +151,7 @@ section{
     transition: .3s;
 }
 #alinha-t{
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +160,6 @@ section{
     padding: 1rem;
     font-size: 50px;
     color: black;
-    width: 45%;
     height: 4rem;
     display: flex;
     justify-content: center;
@@ -175,21 +168,19 @@ section{
     border: 2px solid gray;
     margin-top: .5rem;
 }
-#block{
-    display: block;
-}
+
 
 #alinhamento-principal{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-top: -2.8rem;
+    
 }
 .pergunta{
     font-size: 15px;
     color: white;
-    width: 60rem;
     height: 6rem;
     display: flex;
     justify-content: start;
@@ -203,29 +194,31 @@ section{
 .comeco{
     border-radius: 7px 7px 0px 0px;
     height: 10rem;
+    width: 95%;
 }
 .comeco a{
     display: flex;
     text-decoration: none;
-    width: 12rem;
+    
 }
 
+#teste{
+    display: block;
+    width: 95%;
+    margin-left: 2rem;
+}
 .resposta{
     font-size: 25px;
     color: black;
     background-color: lightgray;
-    width: 80rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 97%;
     border-radius: 0px 7px 7px 7px;
-
 }
 .final{
     border-radius: 0px 0px 7px 7px;
 }
 .texto-r{
-    width: 70rem;
+
     text-align: justify;
     padding: 2rem;
 }
@@ -235,31 +228,31 @@ section{
 }
     
 .a{
-    width: 43rem;
+    
     background-color: rgb(41, 41, 41);
     height: 6rem;
     transition: .5s;
 }
 .b{
-    width: 42rem;
+    
     background-color: rgb(73, 73, 73);
     height: 6rem;
     transition: .5s;
 }
 .c{
-    width: 41rem;
+    
     background-color: rgb(102, 102, 102);
     height: 6rem;
     transition: .5s;
 }
 .d{
-    width: 41rem;
+    
     background-color: rgb(129, 129, 129);
     height: 6rem;
     transition: .5s;
 }
 .e{
-    width: 41rem;
+    
     background-color: rgb(153, 153, 153);
     height: 6rem;
     transition: .5s;
@@ -292,4 +285,77 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 803px){
+    #titulo{
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 640px){
+    #titulo{
+        font-size: 30px;
+    }
+}
+
+
+
+
+#botaozinho{
+    display: none;
+}
+
+@media (max-width:730px) {
+    
+    #teste{
+        display: block;
+        width: 95%;
+        margin-left: 0rem;
+    }
+
+    /*quando a tela for menor que 730px ele fará as chaves*/
+    #menu-lat{ /*menu escondido*/
+        display: block;
+        position: absolute;
+        width: 0px;
+        transition: 1s;
+        z-index: 1000;
+        height: 0vh;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+
+    #navgation.active #menu-lat{/*menu aparece quando nav esta ativo pelo click(js)*/
+        width: 100vw;
+        height: 100vh;
+        visibility: visible;
+        overflow-x: auto;
+        transition: 1s;
+    }
+
+
+
+        /*=-=-=-=-=-=-=-btn hamburguer=-=-=-=-=-=-=-*/
+        #botaozinho{/*btn menu hamburguer*/
+            display: flex;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: 0.5rem;
+        }
+        #burg{ /*estilo hamburguer de fato*/
+            width: 50px;
+            transition: .5s;
+            background-color: black;
+            color: white;
+        }
+ 
+        #navgation.active #burg{
+            transform: rotate(45deg);/*ROTACIONA*/
+
+    
+        }
 }
