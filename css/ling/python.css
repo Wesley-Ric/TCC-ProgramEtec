@@ -301,61 +301,128 @@ main section{
 
 
 
-
+#btn1{
+    display: none;
+}
+#btn2{
+    display: none;
+}
 #botaozinho{
     display: none;
 }
 
 @media (max-width:730px) {
-    
+    #navgation{
+        height: 100vh;
+    }
     #teste{
         display: block;
         width: 95%;
         margin-left: 0rem;
     }
 
-    /*quando a tela for menor que 730px ele fará as chaves*/
     #menu-lat{ /*menu escondido*/
         display: block;
         position: absolute;
         width: 0px;
         transition: 1s;
-        z-index: 1000;
-        height: 0vh;
+        z-index: 100;
+        height: 110vh;
         visibility: hidden;
         overflow-x: hidden;
+        position: absolute;
+        top: 2.8rem
     }
+    
 
     #navgation.active #menu-lat{/*menu aparece quando nav esta ativo pelo click(js)*/
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
         visibility: visible;
         overflow-x: auto;
         transition: 1s;
+        position: absolute;
+        top: 2.8rem
     }
 
+    #menu-esquerdo ul li a{
+        color: #000000;
+        text-decoration: none;
+        padding: 1rem;
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+        font-size: 14px;
+        transition: .3s;
+    }
+    #menu-esquerdo ul li{
+        width: 100%;
+    }
+    
+    #menu-esquerdo ul{
+        width: 100%;
+    }
+    #menu-esquerdo{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    #alinhamentobtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #btn1{
+        display: flex;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+    #menu-esquerdo{
+        position: absolute;
+        top: -.1rem
+    }
 
 
         /*=-=-=-=-=-=-=-btn hamburguer=-=-=-=-=-=-=-*/
         #botaozinho{/*btn menu hamburguer*/
             display: flex;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
             border: none;
-            background: none;
             cursor: pointer;
-            gap: 0.5rem;
+            z-index: 1000;
+        }
+        #btn2{
+            display: flex;
+            border: none;
+            cursor: pointer;
+            background-color: aliceblue;
         }
         #burg{ /*estilo hamburguer de fato*/
-            width: 50px;
+            width: 40px;
+            height: 20px;
             transition: .5s;
             background-color: black;
             color: white;
+            border-radius: 50px;
         }
- 
-        #navgation.active #burg{
-            transform: rotate(45deg);/*ROTACIONA*/
+        #burg1{ /*estilo hamburguer de fato*/
+            width: 40px;
+            height: 40px;
+            transition: .5s;
+            background-color: lightgray;
+            color: white;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            margin-right: .5rem;
+        }
+        #burg1:hover{
+            transition: 1s;
+            background-color: gray;
+        }
 
-    
-        }
 }
