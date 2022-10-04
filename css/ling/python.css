@@ -6,7 +6,7 @@
 }
 /*
 ╭――――――――――――――――――╮
-│           a       │
+│                  │
 │       tags       │
 │                  │
 ╰――――――――――――――――――╯
@@ -310,6 +310,9 @@ main section{
 #botaozinho{
     display: none;
 }
+#alinhamento-btnzinho{
+    display: none;
+}
 
 @media (max-width:730px) {
     #navgation{
@@ -363,22 +366,10 @@ main section{
     #menu-esquerdo{
         width: 100%;
     }
-
-
-
-
-
-
-
     #alinhamentobtn{
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
-    #btn1{
-        display: flex;
-        visibility: hidden;
-        overflow-x: hidden;
     }
     #menu-esquerdo{
         position: absolute;
@@ -387,11 +378,26 @@ main section{
 
 
         /*=-=-=-=-=-=-=-btn hamburguer=-=-=-=-=-=-=-*/
+
+        #btn1{
+            display: flex;
+            visibility: hidden;
+            overflow-x: hidden;
+        }
         #botaozinho{/*btn menu hamburguer*/
             display: flex;
+            height: 1px;
             border: none;
             cursor: pointer;
-            z-index: 1000;
+            z-index: 10;
+            background-color: transparent;
+            
+        }
+        #alinhamento-btnzinho{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            z-index: 10;
         }
         #btn2{
             display: flex;
@@ -400,12 +406,20 @@ main section{
             background-color: aliceblue;
         }
         #burg{ /*estilo hamburguer de fato*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 40px;
-            height: 20px;
+            height: 40px;
             transition: .5s;
-            background-color: black;
+            background-color: white;
             color: white;
             border-radius: 50px;
+            position: relative;
+            left: -1.5rem;
+        }
+        #burg img{
+            margin-left: .5rem;
         }
         #burg1{ /*estilo hamburguer de fato*/
             width: 40px;
@@ -417,8 +431,9 @@ main section{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 1rem;
-            margin-right: .5rem;
+            margin-top: .3rem;
+            margin-right: 0rem;
+            z-index: 10000;
         }
         #burg1:hover{
             transition: 1s;
