@@ -54,8 +54,9 @@ footer{
     text-align: center;
    
     position: absolute;
-
+    padding-top: 1rem;
     height: 17rem;
+    width: 100%;
 }
 
 .rede-social{
@@ -97,6 +98,28 @@ footer{
         height: 300px;
     }
 }
+@media (max-width: 925px) {
+    .footer{
+        height: 320px;
+    }
+}
+@media (max-width: 643px) {
+    .footer{
+        height: 350px;
+    }
+}
+@media (max-width: 493px) {
+    .footer{
+        height: 410px;
+    }
+    
+}
+@media (max-width: 422px) {
+    .footer{
+        height: 450px;
+    }
+    
+}
 @media (max-height: 1000px) {
     .main-div{
         top: 45rem;
@@ -107,12 +130,6 @@ footer{
 
 }
 @media (max-width: 755px) {
-    .footer{
-        width: 100%;
-        height: 320px;
-        position: relative;
-        top: 0%;
-    }
     .main-div{
     position: relative;
     top: 0%;
@@ -122,6 +139,7 @@ footer{
 }
 
 
+
 main section{
     display: flex;
     height: 100%;
@@ -129,8 +147,45 @@ main section{
 
 #menu-lat{
     background-color: aliceblue;
-    height: 113vh;
+    height: 60rem;
 
+}
+
+@media (max-width: 1634px) {
+    #menu-lat{
+        height: 60rem;;
+    }
+}
+@media (max-width: 1188px) {
+    #menu-lat{
+        height: 63rem;
+        
+    }
+}
+
+@media (max-width: 1009px) {
+    #menu-lat{
+        height: 68rem;
+        
+    }
+}
+@media (max-width: 942px) {
+    #menu-lat{
+        height: 75rem;
+        
+    }
+}
+@media (max-width: 808px) {
+    #menu-lat{
+        height: 85rem;
+        
+    }
+}
+
+@media (max-width: 457px){
+    .text-p{
+        width: 3rem;
+    }
 }
 #menu-esquerdo ul li a{
     color: #000000;
@@ -191,6 +246,9 @@ main section{
 .text-p{
     padding: 1rem;
 }
+
+
+
 .comeco{
     border-radius: 7px 7px 0px 0px;
     height: 10rem;
@@ -221,10 +279,15 @@ main section{
 
     text-align: justify;
     padding: 2rem;
+    
+
 }
 .texto-r ul{
     padding-top: 2rem;
     padding-left: 4rem;
+}
+#espacamento{
+    padding-bottom: 2rem;
 }
     
 .a{
@@ -300,7 +363,6 @@ main section{
 }
 
 
-
 #btn1{
     display: none;
 }
@@ -315,6 +377,23 @@ main section{
 }
 
 @media (max-width:730px) {
+    #titulo{
+        margin-left: -3.5rem;
+    }
+    .pergunta{
+        width: 4.5rem;
+    }
+    .pergunta{
+        font-size: 10px;
+    }
+    .comeco{
+        margin-left: -1rem;
+        
+    }
+    .resposta{
+        margin-left: -1rem;
+        font-size: 15px;
+    }
     #navgation{
         height: 100vh;
     }
