@@ -38,34 +38,50 @@
     </header>
 <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
 <main>
-    <section>
-        <div id="navgation">
-            <div id="alinhamento-btnzinho">
-            <button id="botaozinho" aria-expanded="false">
-                <span id="burg"><img src="../imgs/arrow.png" alt="arrow"></span>
-            </button>
+    <section> <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
+
+        <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
+
+
+        <div id="navgation"> <!--div que recebe a class active para o menu lateral ativar no mobile-->
+            <div id="alinhamento-btnzinho"> <!--centraliza o btn-->
+                <button id="botaozinho" aria-expanded="false">
+                    <span id="burg"><img src="../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
+                </button>
             </div>
 
 
+            <!---==-=-=-=-=-=--  fim do botão =-=-=-==-=-=--=--=-->
 
-            <div id="menu-lat">
-                <div id="alinhamentobtn">
+
+<!--
+                ╭――――――――――――――――――╮
+                │                  │
+                │   menu lateral   │        começo do menu latetal
+                │                  │ 
+                ╰――――――――――――――――――╯
+-->
+            <div id="menu-lat"> <!--tag que da o estilo ao menu (tirando o "A")-->
+                <div id="alinhamentobtn"> <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
+                no canto superior direito da tela-->
+
+
+            <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
+            usar o space beteween que joga cada um de casa lato e deixo esse botão invisivel-->
                     <button id="btn1" aria-expanded="false">
-                        
                         <span id="burg2"></span>
                     </button>
+            <!-- fim btn fantasma-->
 
 
-                <button id="btn2" aria-expanded="false">
-                    
-                    <span id="burg1"><img src="../imgs/cancel.png" alt="cencel"></span>
-                </button>
-
-
-
+            <!--btn que serve para fechar o menu lateral no mobile-->
+                    <button id="btn2" aria-expanded="false">
+                        <span id="burg1"><img src="../imgs/cancel.png" alt="cencel"></span>
+                    </button>
                 </div>
-                <div id="menu-esquerdo">
+                <div id="menu-esquerdo"> <!--serve basicamente para organizar os itens em um unico bloco-->
                     <ul>
+                        <!--itens do menu de fato-->
                         <li><a href="#">Introdução a Python</a></li>
                         <li><a href="#">Instalação</a></li>
                         <li><a href="#">Operadores aritiméticos</a></li>
@@ -75,104 +91,121 @@
                         <li><a href="#">Listas</a></li>
                         <li><a href="#">Dicionários</a></li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </div><!--fim menu esquedo-->
+            </div><!--fim menu-lat-->
+        </div><!--fim navgation-->
+
+
+        <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
 
 
 
-
-
-
+<!--
+                ╭――――――――――――――――――╮
+                │                  │
+                │ conteudo da page │
+                │                  │ 
+                ╰――――――――――――――――――╯
+-->
         <div id="section-content">
-                    <div id="alinha-t">
-                        <div id="titulo">
-                            Introdução a Python
-                        </div>
-                    </div>
 
-                
-                    <div id="alinhamento-principal">
 
-                        <div id="teste">
-                                <div class="pergunta comeco">
-                                    <a href="#">
-                                        <div class="pergunta a">
-                                            <div class="alinha-texto-perg">
-                                                <span class="text-p">
-                                                    Oque é o python?
-                                                </span>
-                                                
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="pergunta b">
-                                            <div class="alinha-texto-perg">
-                                                <span class="text-p">
-                                                    O que o python faz
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="pergunta c">
-                                            <div class="alinha-texto-perg">
-                                                <span class="text-p">
-                                                    Oque é o python?
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="pergunta d">
-                                            <div class="alinha-texto-perg">
-                                                <span class="text-p">
-                                                    Oque é o python?
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                 
-                                </div>    
-                                
-                            <div id="espacamento">
-                                <div class="resposta">
-                                    <div class="texto-r">
-                                        Python e uma popular linguagem de
-                                        programação de alto nível (High Level Language)
-                                        com código aberto,  dinâmica, interpretada, modular,
-                                        multiplataforma e orientada a objetos, Python surgiu
-                                        na década de 1990 e foi criado pelo programador holandês
-                                        Guido van Rossum, o Python foi criado com o objetivo de
-                                        otimizar a leitura de códigos e estimular a produtividade
-                                        de quem os cria.
+            <div id="alinha-t"> <!--alinha o titulo-->
+                <div id="titulo"><!--estilo do titulo-->
+                    Introdução a Python
+                </div><!--fim titulo-->
+            </div><!--fim alinha-t -->
 
-                                        <p>costumamos usar Python para:</p>
-                                        
-                                            <ul>
-                                                <li>Desenvolvimento web (back-end)</li>
-                                                <li>Desenvolvimento de softwars</li>
-                                                <li>Machine learning</li>
-                                                <li>Deep learning</li>
-                                                <li>Problemas matematicos de grande desnidade</li>
-                                                <li>Análise de dados</li>
-                                                <li>Ciência de dados</li>
-                                            </ul>
-                                    </div>
+
+            <div id="alinhamento-principal"> <!--organiza todo o conteudo do site-->
+                <div id="delimitador"><!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do ste
+                e atribui a ele uma margim pra centralizar melhor-->
+
+
+
+                    <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
+                        ficarem agrupados e um ao lado do outro-->
+                        <a href="#">
+                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                            <div class="pergunta a">
+                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
+                                    <span class="text-p"><!--estilo do texto das perguntas-->
+                                        Oque é o python?
+                                    </span> <!--dim span-->
+                                </div><!--fim alinha-texto-perg-->
+                            </div><!--fim pergunta a-->
+                        </a> <!--fim tag a-->
+
+
+
+                        <!--segue o mesmo para todos os outros blocos-->
+                        <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
+                        <a href="#">
+                            <div class="pergunta b">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        O que o python faz
+                                    </span>
                                 </div>
                             </div>
-                       
-                        </div>
-
-
-
+                        </a>
+                        <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
                         
-                    </div>
-                
-        </div>
-    </section>
-</main>
+                        <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
+                        <a href="#">
+                            <div class="pergunta c">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        Oque é o python?
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
+
+                        <!--=-=-=-=-=-=-=-=-=começo bloco d-=-=-=-=-=-=-=-=-=-=-=--->
+                        <a href="#">
+                            <div class="pergunta d">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        Oque é o python?
+                                    </span>
+                                </div>
+                            </div>
+                        </a>   
+                        <!--=-=-=-=-=fim d-=-=-=-=-=-=-->
+                    </div><!--fim div "pergunta comeco"--> 
+                    <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
+                        <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
+                            <div class="texto-r"><!--estilização de testo-->
+                                Python e uma popular linguagem de
+                                programação de alto nível (High Level Language)
+                                com código aberto,  dinâmica, interpretada, modular,
+                                multiplataforma e orientada a objetos, Python surgiu
+                                na década de 1990 e foi criado pelo programador holandês
+                                Guido van Rossum, o Python foi criado com o objetivo de
+                                otimizar a leitura de códigos e estimular a produtividade
+                                de quem os cria.
+                                <p>costumamos usar Python para:</p> <!--usei p como um estilizador para dar um espaço ente os textos-->
+                                    <ul> <!--lista para dar o estilo de bolinhas ao testo-->
+                                        <li>Desenvolvimento web (back-end)</li>
+                                        <li>Desenvolvimento de softwars</li>
+                                        <li>Machine learning</li>
+                                        <li>Deep learning</li>
+                                        <li>Problemas matematicos de grande desnidade</li>
+                                        <li>Análise de dados</li>
+                                        <li>Ciência de dados</li>
+                                    </ul><!--fim lista-->
+                            </div><!--fim "testo-r"-->
+                        </div><!--fim resposta-->
+                    </div><!--fim espaçamento-->
+                </div><!--fim delimitador-->
+            </div><!--fim alinhamento principal-->
+        </div><!--fim section-content-->
+    </section><!--fim section-->
+</main><!--fim main-->
 
 
 <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->

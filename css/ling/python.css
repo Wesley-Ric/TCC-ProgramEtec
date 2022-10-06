@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
-
 *{
     font-family: 'Poppins', sans-serif;
 }
@@ -137,93 +135,95 @@ footer{
     left: 0%;
     }
 }
+/*
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+╭――――――――――――――――――╮
+│                  │
+│começo o linguagem│
+│                  │
+╰――――――――――――――――――╯
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+*/
 
 
 
-main section{
+
+/*
+╭――――――――――――――――――╮
+│                  │
+│   menu lateral   │
+│                  │
+╰――――――――――――――――――╯
+*/
+main section{ /*estilos do section*/
     display: flex;
     height: 100%;
 }
 
-#menu-lat{
-    background-color: aliceblue;
-    height: 60rem;
+#menu-lat{/*estilos menu lateral*/
+    background-color: aliceblue;/* aqui vc pode alterar a cor de fundo do menu lateral*/
+    height: 60rem; /*altura fixa pode ser mudada se necessario*/
 
 }
 
-@media (max-width: 1634px) {
-    #menu-lat{
-        height: 60rem;;
-    }
-}
-@media (max-width: 1188px) {
-    #menu-lat{
-        height: 63rem;
-        
-    }
-}
-
-@media (max-width: 1009px) {
-    #menu-lat{
-        height: 68rem;
-        
-    }
-}
-@media (max-width: 942px) {
-    #menu-lat{
-        height: 75rem;
-        
-    }
-}
-@media (max-width: 808px) {
-    #menu-lat{
-        height: 85rem;
-        
-    }
-}
-
-@media (max-width: 457px){
-    .text-p{
-        width: 3rem;
-    }
-}
-#menu-esquerdo ul li a{
-    color: #000000;
-    text-decoration: none;
-    padding: 1rem;
+#menu-esquerdo ul li a{ /*estilos do "a" basicamente define tudo fora o background do menu lateral*/
+    color: #000000;/*cor do texto*/
+    text-decoration: none; /*tira a decoração do link*/
+    padding: 1rem;  /*espaçamento (não alterar se não for necessário)*/
     width: 185px;
-    border-bottom: 1px solid lightgray;
-    font-size: 14px;
-    transition: .3s;
+    border-bottom: 1px solid lightgray; /*se for mexer nisso aconselho a alterar somente a cor, que no caso é o ulitmo elemento*/
+    font-size: 14px;/*tamanho da fonte*/
+    transition: .3s;/*não alterar se não for necessario*/
 }
 #menu-esquerdo ul li{
-    display: flex;
+    display: flex; /*faz o texto ficar corrido*/
 }
 
-#menu-esquerdo ul li a:hover{
-    color: #000000;
-    background-color: gray;
-    transition: .3s;
+#menu-esquerdo ul li a:hover{ /*estilização ao passar o mouse*/
+    color: #ffffff; /*cor do texto muda para branco*/
+    background-color: gray;/*altera a cor de fundo ao passar o mouse*/
+    transition: .3s;/*a transição, sugiro não mudar*/
 }
-#alinha-t{
+/*
+╭――――――――――――――――――╮
+│ fim menu lateral │
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│      titulo      │
+│                  │
+╰――――――――――――――――――╯
+*/
 
+#alinha-t{/*alinha o texto ao centro da pagina*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #titulo{
-    padding: 1rem;
-    font-size: 50px;
-    color: black;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 250px;
-    border: 2px solid gray;
-    margin-top: .5rem;
+    padding: 1rem;/*padding da borda que coloquei no titulo*/
+    font-size: 50px;/*tamanho da fonte*/
+    color: black;/*cor da fonte*/
+    height: 4rem; /*altura da borda*/
+    display: flex;/*para poder centralizar o texto dentro da borda*/ 
+    justify-content: center;/*centraliza texto*/
+    align-items: center;/*centraliza texto*/
+    border-radius: 250px;/*deixa os cantos redontos (sugiro não alterar)*/
+    border: 2px solid gray;/*borda que fica na parte de baixo dos itens, recomento alterar somente a cor*/
+    margin-top: .5rem;/*não mexer, altera configurações de posições*/
 }
-
+/*
+╭――――――――――――――――――╮
+│ fim menu titulo  │
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│    conteudo      │
+│                  │
+╰――――――――――――――――――╯
+*/
 
 #alinhamento-principal{
     width: 100%;
@@ -260,7 +260,7 @@ main section{
     
 }
 
-#teste{
+#delimitador{
     display: block;
     width: 95%;
     margin-left: 2rem;
@@ -350,6 +350,21 @@ main section{
     align-items: center;
 }
 
+#btn1{
+    display: none;
+}
+#btn2{
+    display: none;
+}
+#botaozinho{
+    display: none;
+}
+#alinhamento-btnzinho{
+    display: none;
+}
+
+
+
 @media (max-width: 803px){
     #titulo{
         font-size: 36px;
@@ -363,18 +378,72 @@ main section{
 }
 
 
-#btn1{
-    display: none;
+
+
+/*correções para o ajuste de tamanho de tela (não mexer se possivel)*/
+
+/*--------------------------*/
+/*correções altura menu lat*/
+/*-------------------------*/
+@media (max-width: 1634px) {
+    #menu-lat{
+        height: 60rem;;
+    }
 }
-#btn2{
-    display: none;
+@media (max-width: 1188px) {
+    #menu-lat{
+        height: 63rem;
+    }
 }
-#botaozinho{
-    display: none;
+@media (max-width: 1009px) {
+    #menu-lat{
+        height: 68rem;
+    }
 }
-#alinhamento-btnzinho{
-    display: none;
+@media (max-width: 942px) {
+    #menu-lat{
+        height: 75rem;
+    }
 }
+@media (max-width: 808px) {
+    #menu-lat{
+        height: 85rem;
+    }
+}
+/*fim das correções*/
+/*----------------*/
+
+
+/*----------------
+correções footer e text-p
+----------------*/
+@media (max-width: 457px){
+    .text-p{
+        width: 3rem;
+    }
+    .footer{
+        height: 1000px;
+    }
+}
+@media (max-width: 659px){
+    .footer{
+        height: 345px;
+    }
+}
+@media (max-width: 510px){
+    .footer{
+        height: 345px;
+    }
+}
+@media (max-width: 507px){
+    .footer{
+        height: 380px;;
+    }
+}
+
+/*
+fim das correções
+----------------*/
 
 @media (max-width:730px) {
     #titulo{
@@ -397,7 +466,7 @@ main section{
     #navgation{
         height: 100vh;
     }
-    #teste{
+    #delimitador{
         display: block;
         width: 95%;
         margin-left: 0rem;
