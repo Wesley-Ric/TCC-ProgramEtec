@@ -226,130 +226,115 @@ main section{ /*estilos do section*/
 */
 
 #alinhamento-principal{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -2.8rem;
+    width: 100%;  /*define o tamnho do bloco onde está o texto (se possícel não alterar)*/
+    margin-top: -2.8rem;    /*alinha mais para cima (não alterar)*/
     
 }
-.pergunta{
-    font-size: 15px;
-    color: white;
-    height: 6rem;
-    display: flex;
-    justify-content: start;
-    align-items: flex-end;
-    border-radius: 7px 7px 0px 0px;
+#delimitador{   /*delimita o tamanho do bloco principal*/
+    display: block;
+    width: 95%; /*tamanho do bloco (não alterar se não for necessario)*/
+    margin-left: 2rem;  /*para centralizar melhor (não alterar se não necessario)*/
+}
+/*
+╭――――――――――――――――――╮
+│      pergunta    │
+╰――――――――――――――――――╯
+*/
+
+.pergunta{          /*blocos de perguntas*/
+    font-size: 15px; /*tamanho da fonte dentro dos bloquinhos de navegação (ex: "o que é python?")*/
+    color: white; /*cor do tecxto*/
+    display: flex; /*faz os blocos de pergunta ficarem deitados (não alterar)*/
+    justify-content: start; /*fixa os blocos no começo*/
+    align-items: flex-end;  /*faz os blocos ficarem no final da div alinhamento (não alterar)*/
+    border-radius: 7px 7px 0px 0px; /*faz a borda ficar redondinha apenas na parte de cima*/ 
 }
 
 .text-p{
-    padding: 1rem;
+    padding: 1rem; /*da um padding na texto em relação a div (não alterar)*/
 }
 
-
-
-.comeco{
+.comeco{        /*div invisivel que controla o tamanho do espaço das divs perguntas*/
     border-radius: 7px 7px 0px 0px;
-    height: 10rem;
-    width: 95%;
+    height: 10rem;/*altura do bloco em si*/
+    width: 95%; /*largura da div, pode ser diminuida se vc diminuir o tamanho ou quantidade dos itens nas divs pergunta*/
 }
 .comeco a{
-    display: flex;
-    text-decoration: none;
+    display: flex;/*não alterar*/
+    text-decoration: none;/*tira a decoração do "a" não alterar*/
     
 }
-
-#delimitador{
-    display: block;
-    width: 95%;
-    margin-left: 2rem;
-}
-.resposta{
-    font-size: 25px;
-    color: black;
-    background-color: lightgray;
-    width: 97%;
-    border-radius: 0px 7px 7px 7px;
-}
-.final{
-    border-radius: 0px 0px 7px 7px;
-}
-.texto-r{
-
-    text-align: justify;
-    padding: 2rem;
-    
-
-}
-.texto-r ul{
-    padding-top: 2rem;
-    padding-left: 4rem;
-}
-#espacamento{
-    padding-bottom: 2rem;
-}
-    
+/*estilos dos blocos de pergunta em si*/
 .a{
-    
-    background-color: rgb(41, 41, 41);
-    height: 6rem;
-    transition: .5s;
+    background-color: rgb(41, 41, 41); /*cor de fundo*/
+    height: 6rem;/*altura(não altere)*/
+    transition: .5s;/*animação ao passar o mouse (não altere)*/
 }
+/*segue o mesto do a para todo o testo*/
 .b{
-    
     background-color: rgb(73, 73, 73);
     height: 6rem;
     transition: .5s;
 }
 .c{
-    
-    background-color: rgb(102, 102, 102);
-    height: 6rem;
+    background-color: rgb(102, 102, 102);              /*as divs estão divididas em "a, b, c e d" pois as cores mudam para fazer um degrade*/
+    height: 6rem;                                        /*caso queira pode alterar o bgcolor de casa um para mudar as cores do degrade*/
     transition: .5s;
 }
 .d{
-    
     background-color: rgb(129, 129, 129);
     height: 6rem;
     transition: .5s;
 }
 .e{
-    
     background-color: rgb(153, 153, 153);
     height: 6rem;
     transition: .5s;
 }
-
-.a:hover{
-    padding-top: 1rem;
-    transition: .5s;
+/*hover ao passar o mouse*/
+.h:hover{
+    padding-top: 1rem;/*faz o bloco ficar mais alto ao passar o mouse*/
+    transition: .5s;/*animação ao tirar o mouse*/
 }
-.b:hover{
-    padding-top: 1rem;
-    transition: .5s;
-}
-.c:hover{
-    padding-top: 1rem;
-    transition: .5s;
-}
-.d:hover{
-    padding-top: 1rem;
-    transition: .5s;
-}
-.e:hover{
-    padding-top: 1rem;
-    transition: .5s;
-}
-
-
+/*alinhamento do texto dos blocos de pergunta*/
 .alinha-texto-perg{
-    height: 100%;
+    height: 100%; /*altura para centralizar (não alterar)*/
+    /*o resto é a centralização do texto (não alterar)*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*
+╭――――――――――╮
+│ fim perg │
+╰――――――――――╯
+=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│      respostas   │
+╰――――――――――――――――――╯
+*/
+.resposta{  /*div onde fica o conteudo em si*/
+    font-size: 25px;    /*tamanho da fonte*/
+    color: black;   /*cor da fonte*/
+    background-color: lightgray;    /*cor de fundo*/
+    width: 97%;  /*tamanho geral da largura do quadrado (não alterar)*/
+    border-radius: 0px 7px 7px 7px; /*borda do quadrado, se possivel nao alterar*/
+}
+.texto-r{       /*texto dentro da resposta*/
+    text-align: justify;/*faz o texto ficar justificado (não altere)*/
+    padding: 2rem;/*padding em relação ao bloco (não altere)*/
+    
+}
+.texto-r ul{/*apenas alinhamentos da lista deserdenada (não alterar)*/
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+#espacamento{/*apenas um espaçamento das bosrdas (não alterar)*/
+    padding-bottom: 2rem;
+}
 
+
+/*dando display none para os botões so ativarem no mobile*/
 #btn1{
     display: none;
 }
@@ -364,7 +349,7 @@ main section{ /*estilos do section*/
 }
 
 
-
+/*correções de tamanho para ficar portavel no mobile*/
 @media (max-width: 803px){
     #titulo{
         font-size: 36px;
@@ -376,9 +361,6 @@ main section{ /*estilos do section*/
         font-size: 30px;
     }
 }
-
-
-
 
 /*correções para o ajuste de tamanho de tela (não mexer se possivel)*/
 
