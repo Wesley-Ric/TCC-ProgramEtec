@@ -334,7 +334,7 @@ main section{ /*estilos do section*/
 }
 
 
-/*dando display none para os botões so ativarem no mobile*/
+/*dando display none para os botões so ativarem quando a largura for pequena o suficiente para ativar o modo mobile*/
 #btn1{
     display: none;
 }
@@ -352,7 +352,7 @@ main section{ /*estilos do section*/
 /*correções de tamanho para ficar portavel no mobile*/
 @media (max-width: 803px){
     #titulo{
-        font-size: 36px;
+        font-size: 36px; /*titulo muda o tamanho quando a tela fica pequena */
     }
 }
 
@@ -424,10 +424,20 @@ correções footer e text-p
 }
 
 /*
-fim das correções
-----------------*/
+╭――――――――――――――――――╮
+│ fim das correções│
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│      mobile      │
+│    correções     │
+╰――――――――――――――――――╯
+*/
+
 
 @media (max-width:730px) {
+    /*correções e ajustes de largura (não mexer se não for necessário)*/
     #titulo{
         margin-left: -3.5rem;
     }
@@ -438,11 +448,11 @@ fim das correções
         font-size: 10px;
     }
     .comeco{
-        margin-left: -1rem;
+        margin-left: -1rem; /*para ficar alinhado a div resposta*/
         
     }
     .resposta{
-        margin-left: -1rem;
+        margin-left: -1rem; /*para ficar alinhado a div pergunta*/
         font-size: 15px;
     }
     #navgation{
@@ -453,121 +463,157 @@ fim das correções
         width: 95%;
         margin-left: 0rem;
     }
-
+/*
+╭――――――――――――――――――╮
+│ fim das correções│
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│programação mobile│
+│      em si       │
+╰――――――――――――――――――╯
+*/
     #menu-lat{ /*menu escondido*/
         display: block;
-        position: absolute;
-        width: 0px;
-        transition: 1s;
-        z-index: 100;
-        height: 110vh;
-        visibility: hidden;
-        overflow-x: hidden;
-        position: absolute;
-        top: 2.8rem
+        position: absolute;/*para poder colocar em qualquer lugar da lera*/
+        width: 0px;/*para dar a animação de entrada começando do 0*/
+        transition: 1s;/*para dar um delay na animação*/
+        z-index: 100;/*para ficar por cima da pagina*/
+        height: 110vh;/*para ocupar toda a tela*/
+        visibility: hidden;/*invisivel sem ser ativado*/
+        overflow-x: hidden;/*invisivel sem ser ativado*/
+        top: 2.8rem/*ajuste de posição em relação ao topo da pagina*/
     }
     
 
     #navgation.active #menu-lat{/*menu aparece quando nav esta ativo pelo click(js)*/
-        width: 100%;
-        visibility: visible;
+        width: 100%;/*sai de 0 pra 100 mostrando todo o menu*/
+        visibility: visible;/*fica visivel*/
         overflow-x: auto;
-        transition: 1s;
+        transition: 1s;/*animação tempo*/
         position: absolute;
         top: 2.8rem
     }
-
+/*========== faz a borda de baixo ficar do tamanho da tela toda ==========*/
     #menu-esquerdo ul li a{
-        color: #000000;
-        text-decoration: none;
-        padding: 1rem;
         width: 100%;
-        border-bottom: 1px solid lightgray;
-        font-size: 14px;
-        transition: .3s;
+        border-bottom: 1px solid lightgray;             
     }
+/*=========================================================================*/
+/*======== os reagrupa para ocuparem a tela toda quando o navgation estiver ==========*/
     #menu-esquerdo ul li{
         width: 100%;
     }
-    
     #menu-esquerdo ul{
         width: 100%;
     }
     #menu-esquerdo{
         width: 100%;
     }
-    #alinhamentobtn{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    #menu-esquerdo{
+/*============================================================*/
+    #menu-esquerdo{ /*alinha o menu para ficar na parte de cima e não no meio da pagina não mexer*/
         position: absolute;
         top: -.1rem
     }
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│       botões     │
+│                  │
+╰――――――――――――――――――╯
+*/
 
+/*
+╭――――――――――――――――――╮
+│   botaozinho >   │ 
+╰――――――――――――――――――╯
+*/
+    #alinhamento-btnzinho{/*alinha o botazinho com a seta no centro da pagin*/
+        height: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 10;/*para sobrepor o resto*/
+    }
+    #botaozinho{/*btn seta*/
+        display: flex;
+        height: 1px;/*muda um pouco a altura do btn (não mudar*) */
+        border: none;/*tira a borda*/
+        cursor: pointer;/*FAZ O MOUSE VIRAR A MAOZINHA*/
+        z-index: 10;/*para sobrepor*/
+        background-color: transparent;/*tira o bg para nao ficar aparente com a img*/
+        
+    }
+    #burg{ /*estilização do botão que aparece*/
+        /*posição do btn (não modificar)*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+        width: 40px;
+        height: 40px;
+        transition: .5s;
+        background-color: white;/*cor de fundo do botão*/
+        border-radius: 50px;/*para ele ficar redondinho*/
+        position: relative;
+        left: -1.5rem;/*faz ele ficar dentro da "parede"do site
+        ou seja para fora do site*/
+    }
+    #burg img{
+        margin-left: .5rem;/*posição da img (seta que esta no btn)*/
+    }
+/*------------------ fim botaozinho > ----------------------*/
+    /*alinha o btn fantasma e o btn1*/
+    #alinhamentobtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;/*usa para espaçar um de cada lado*/ 
+    }
 
-        /*=-=-=-=-=-=-=-btn hamburguer=-=-=-=-=-=-=-*/
+/*
+╭――――――――――――――――――╮
+│   btn fantasma   │ 
+╰――――――――――――――――――╯
+*/
+    #btn1{
+        display: flex;
+        visibility: hidden;/*deixa ele invisivel*/
+        overflow-x: hidden;/*deixa ele invisivel*/
+    }
 
-        #btn1{
-            display: flex;
-            visibility: hidden;
-            overflow-x: hidden;
-        }
-        #botaozinho{/*btn menu hamburguer*/
-            display: flex;
-            height: 1px;
-            border: none;
-            cursor: pointer;
-            z-index: 10;
-            background-color: transparent;
-            
-        }
-        #alinhamento-btnzinho{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            z-index: 10;
-        }
-        #btn2{
-            display: flex;
-            border: none;
-            cursor: pointer;
-            background-color: aliceblue;
-        }
-        #burg{ /*estilo hamburguer de fato*/
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            transition: .5s;
-            background-color: white;
-            color: white;
-            border-radius: 50px;
-            position: relative;
-            left: -1.5rem;
-        }
-        #burg img{
-            margin-left: .5rem;
-        }
-        #burg1{ /*estilo hamburguer de fato*/
-            width: 40px;
-            height: 40px;
-            transition: .5s;
-            background-color: lightgray;
-            color: white;
-            border-radius: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: .3rem;
-            margin-right: 0rem;
-            z-index: 10000;
-        }
-        #burg1:hover{
-            transition: 1s;
-            background-color: gray;
-        }
+/*------------------ fim btn fantasma ----------------------*/
+/*
+╭――――――――――――――――――╮
+│    btn2 burg1    │ 
+╰――――――――――――――――――╯
+*/
+    #btn2{
+        display: flex;
+        border: none;
+        cursor: pointer;
+        background-color: aliceblue;/*cor de fundo*/
+    }
+    #burg1{ /*estilo hamburguer de fato*/
+        width: 40px;/*tamanho do btn*/
+        height: 40px;/*tamanho (os dois sao iguais para ele ficar redondo com o border radius)*/
+        transition: .5s;/*transição par ao hover*/
+        background-color: lightgray;/*vor de fundo*/
+        border-radius: 50px;/*usa para arredondar a borda e deixar ele em formato de circulo*/
+        /*alinhamento*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*posicionamento*/
+        margin-top: .3rem;
+        margin-right: 0rem;
+        /*para ficar em cima de tudo*/
+        z-index: 10000;
+    }
+    /*aimação ao passar o mouse*/
+    #burg1:hover{
+        transition: 1s;/*tempo*/
+        background-color: gray;/*muda de cor*/
+    }
 
 }
