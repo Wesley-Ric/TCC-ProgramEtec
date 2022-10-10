@@ -248,10 +248,12 @@ main section{ /*estilos do section*/
     justify-content: start; /*fixa os blocos no começo*/
     align-items: flex-end;  /*faz os blocos ficarem no final da div alinhamento (não alterar)*/
     border-radius: 7px 7px 0px 0px; /*faz a borda ficar redondinha apenas na parte de cima*/ 
+    width: 11vw;
 }
 
 .text-p{
     padding: 1rem; /*da um padding na texto em relação a div (não alterar)*/
+    
 }
 
 .comeco{        /*div invisivel que controla o tamanho do espaço das divs perguntas*/
@@ -266,27 +268,37 @@ main section{ /*estilos do section*/
 }
 /*estilos dos blocos de pergunta em si*/
 .a{
+    display: flex;
+    justify-content: center;
     background-color: rgb(41, 41, 41); /*cor de fundo*/
     height: 6rem;/*altura(não altere)*/
     transition: .5s;/*animação ao passar o mouse (não altere)*/
 }
 /*segue o mesto do a para todo o testo*/
 .b{
+    display: flex;
+    justify-content: center;
     background-color: rgb(73, 73, 73);
     height: 6rem;
     transition: .5s;
 }
 .c{
+    display: flex;
+    justify-content: center;
     background-color: rgb(102, 102, 102);              /*as divs estão divididas em "a, b, c e d" pois as cores mudam para fazer um degrade*/
     height: 6rem;                                        /*caso queira pode alterar o bgcolor de casa um para mudar as cores do degrade*/
     transition: .5s;
 }
 .d{
+    display: flex;
+    justify-content: center;
     background-color: rgb(129, 129, 129);
     height: 6rem;
     transition: .5s;
 }
 .e{
+    display: flex;
+    justify-content: center;
     background-color: rgb(153, 153, 153);
     height: 6rem;
     transition: .5s;
@@ -301,7 +313,6 @@ main section{ /*estilos do section*/
     height: 100%; /*altura para centralizar (não alterar)*/
     /*o resto é a centralização do texto (não alterar)*/
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 /*
