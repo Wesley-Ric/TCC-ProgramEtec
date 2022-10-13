@@ -228,12 +228,13 @@ main section{ /*estilos do section*/
 #alinhamento-principal{
     width: 100%;  /*define o tamnho do bloco onde está o texto (se possícel não alterar)*/
     margin-top: -2.8rem;    /*alinha mais para cima (não alterar)*/
+    display: flex;
+    justify-content: center;
     
 }
 #delimitador{   /*delimita o tamanho do bloco principal*/
     display: block;
     width: 95%; /*tamanho do bloco (não alterar se não for necessario)*/
-    margin-left: 2rem;  /*para centralizar melhor (não alterar se não necessario)*/
 }
 /*
 ╭――――――――――――――――――╮
@@ -331,7 +332,8 @@ main section{ /*estilos do section*/
     width: 97%;  /*tamanho geral da largura do quadrado (não alterar)*/
     border-radius: 0px 7px 7px 7px; /*borda do quadrado, se possivel nao alterar*/
 }
-.texto-r{       /*texto dentro da resposta*/
+.texto-r{  /*texto dentro da resposta*/
+    display: block;
     text-align: justify;/*faz o texto ficar justificado (não altere)*/
     padding: 2rem;/*padding em relação ao bloco (não altere)*/
     
@@ -342,6 +344,7 @@ main section{ /*estilos do section*/
 }
 #espacamento{/*apenas um espaçamento das bosrdas (não alterar)*/
     padding-bottom: 2rem;
+    width: 95%;
 }
 
 
@@ -383,9 +386,19 @@ main section{ /*estilos do section*/
         height: 60rem;;
     }
 }
+@media (max-width: 1243px) {
+    #menu-lat{
+        height: 63rem;
+    }
+}
 @media (max-width: 1188px) {
     #menu-lat{
         height: 63rem;
+    }
+}
+@media (max-width: 1044px) {
+    #menu-lat{
+        height: 68rem;
     }
 }
 @media (max-width: 1009px) {
@@ -393,14 +406,29 @@ main section{ /*estilos do section*/
         height: 68rem;
     }
 }
+@media (max-width: 976px) {
+    #menu-lat{
+        height: 70rem;
+    }
+}
 @media (max-width: 942px) {
     #menu-lat{
         height: 75rem;
     }
 }
+@media (max-width: 839px) {
+    #menu-lat{
+        height: 80rem;
+    }
+}
 @media (max-width: 808px) {
     #menu-lat{
         height: 85rem;
+    }
+}
+@media (max-width: 745px) {
+    #menu-lat{
+        height: 90rem;
     }
 }
 /*fim das correções*/
@@ -469,11 +497,7 @@ correções footer e text-p
     #navgation{
         height: 100vh;
     }
-    #delimitador{
-        display: block;
-        width: 95%;
-        margin-left: 0rem;
-    }
+
 /*
 ╭――――――――――――――――――╮
 │ fim das correções│
