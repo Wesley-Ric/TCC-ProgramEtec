@@ -162,7 +162,7 @@ main section{ /*estilos do section*/
 
 #menu-lat{/*estilos menu lateral*/
     background-color: aliceblue;/* aqui vc pode alterar a cor de fundo do menu lateral*/
-    height: 60rem; /*altura fixa pode ser mudada se necessario*/
+    height: 100%; /*altura fixa pode ser mudada se necessario*/
 
 }
 
@@ -381,6 +381,7 @@ main section{ /*estilos do section*/
 /*--------------------------*/
 /*correções altura menu lat*/
 /*-------------------------*/
+/*
 @media (max-width: 1634px) {
     #menu-lat{
         height: 60rem;;
@@ -431,6 +432,7 @@ main section{ /*estilos do section*/
         height: 90rem;
     }
 }
+*/
 /*fim das correções*/
 /*----------------*/
 
