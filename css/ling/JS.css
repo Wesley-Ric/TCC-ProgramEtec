@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/*
+╭――――――――――――――――――╮
+│                  │
+│       tags       │
+│                  │
+╰――――――――――――――――――╯
+*/
+body{ /*seta o estilo do body  reseta algumas propriedades*/
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background-image: linear-gradient(1deg, gray
+    1%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+html{/*reseta html*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    flex-direction: column;/*alinha em colunas*/
+}
+
+
+.princ-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-prin{
+    padding: 1rem;
+    font-size: 24px;
+}
+
+.copy{/*direitos autorais*/
+    font-size: 20px;
+}
+
+footer{
+    flex-shrink: 0; /*emm tese faz ele ficar em baixo*/
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+   
+    position: absolute;
+    padding-top: 1rem;
+    height: 17rem;
+    width: 100%;
+}
+
+.rede-social{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.face img{
+    margin: 1rem;
+    width: 50px;
+}
+
+.link img{
+    width: 50px;
+    margin: 1rem;
+}
+.git img{
+    width: 50px;
+    margin: 1rem;
+}
+
+#logo{
+    width: 3.5rem;
+    padding-top: 0rem;
+}
+
+/*
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+╭――――――――――――――――――╮
+│                  │
+│ correção bug mob │
+│                  │
+╰――――――――――――――――――╯
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+*/
+
+@media (max-width: 755px) {
+    .footer{
+        height: 300px;
+    }
+}
+@media (max-width: 925px) {
+    .footer{
+        height: 320px;
+    }
+}
+@media (max-width: 643px) {
+    .footer{
+        height: 350px;
+    }
+}
+@media (max-width: 493px) {
+    .footer{
+        height: 410px;
+    }
+    
+}
+@media (max-width: 422px) {
+    .footer{
+        height: 450px;
+    }
+    
+}
+@media (max-height: 1000px) {
+    .main-div{
+        top: 45rem;
+    }
+    #logo{
+        padding-top: 0rem;
+    }
+
+}
+@media (max-width: 755px) {
+    .main-div{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    }
+}
+/*
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+╭――――――――――――――――――╮
+│                  │
+│começo o linguagem│
+│                  │
+╰――――――――――――――――――╯
+╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
+*/
+
+
+
+
+/*
+╭――――――――――――――――――╮
+│                  │
+│   menu lateral   │
+│                  │
+╰――――――――――――――――――╯
+*/
+main section{ /*estilos do section*/
+    display: flex;
+    height: 100%;
+}
+
+#menu-lat{/*estilos menu lateral*/
+    background-color: aliceblue;/* aqui vc pode alterar a cor de fundo do menu lateral*/
+    height: 100%; /*altura fixa pode ser mudada se necessario*/
+
+}
+
+#menu-esquerdo ul li a{ /*estilos do "a" basicamente define tudo fora o background do menu lateral*/
+    color: #000000;/*cor do texto*/
+    text-decoration: none; /*tira a decoração do link*/
+    padding: 1rem;  /*espaçamento (não alterar se não for necessário)*/
+    width: 185px;
+    border-bottom: 1px solid lightgray; /*se for mexer nisso aconselho a alterar somente a cor, que no caso é o ulitmo elemento*/
+    font-size: 14px;/*tamanho da fonte*/
+    transition: .3s;/*não alterar se não for necessario*/
+}
+#menu-esquerdo ul li{
+    display: flex; /*faz o texto ficar corrido*/
+}
+
+#menu-esquerdo ul li a:hover{ /*estilização ao passar o mouse*/
+    color: #ffffff; /*cor do texto muda para branco*/
+    background-color: gray;/*altera a cor de fundo ao passar o mouse*/
+    transition: .3s;/*a transição, sugiro não mudar*/
+}
+/*
+╭――――――――――――――――――╮
+│ fim menu lateral │
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│      titulo      │
+│                  │
+╰――――――――――――――――――╯
+*/
+
+#alinha-t{/*alinha o texto ao centro da pagina*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo{
+    padding: 1rem;/*padding da borda que coloquei no titulo*/
+    font-size: 50px;/*tamanho da fonte*/
+    color: black;/*cor da fonte*/
+    height: 4rem; /*altura da borda*/
+    display: flex;/*para poder centralizar o texto dentro da borda*/ 
+    justify-content: center;/*centraliza texto*/
+    align-items: center;/*centraliza texto*/
+    border-radius: 250px;/*deixa os cantos redontos (sugiro não alterar)*/
+    border: 2px solid gray;/*borda que fica na parte de baixo dos itens, recomento alterar somente a cor*/
+    margin-top: .5rem;/*não mexer, altera configurações de posições*/
+}
+/*
+╭――――――――――――――――――╮
+│ fim menu titulo  │
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│    conteudo      │
+│                  │
+╰――――――――――――――――――╯
+*/
+
+#alinhamento-principal{
+    width: 100%;  /*define o tamnho do bloco onde está o texto (se possícel não alterar)*/
+    margin-top: -2.8rem;    /*alinha mais para cima (não alterar)*/
+    display: flex;
+    justify-content: center;
+    
+}
+#delimitador{   /*delimita o tamanho do bloco principal*/
+    display: block;
+    width: 95%; /*tamanho do bloco (não alterar se não for necessario)*/
+}
+/*
+╭――――――――――――――――――╮
+│      pergunta    │
+╰――――――――――――――――――╯
+*/
+
+.pergunta{          /*blocos de perguntas*/
+    font-size: 15px; /*tamanho da fonte dentro dos bloquinhos de navegação (ex: "o que é python?")*/
+    color: white; /*cor do tecxto*/
+    display: flex; /*faz os blocos de pergunta ficarem deitados (não alterar)*/
+    justify-content: start; /*fixa os blocos no começo*/
+    align-items: flex-end;  /*faz os blocos ficarem no final da div alinhamento (não alterar)*/
+    border-radius: 7px 7px 0px 0px; /*faz a borda ficar redondinha apenas na parte de cima*/ 
+    width: 11vw;
+}
+
+.text-p{
+    padding: 1rem; /*da um padding na texto em relação a div (não alterar)*/
+    
+}
+
+
+
+/*meu*/
+
+.link-vs{
+    color: black;
+}
+.link-vs:hover{
+    text-decoration: underline;
+    background-color: none;
+    background-color: #00000000;
+}
+.code
+{
+    overflow-x: auto;
+    padding: 1rem;
+    color: #abb2bf;
+    background: #282c34;
+    background-color: #282c34;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    user-select: text;
+    word-break: break-word;
+    border-radius: 7px;
+}
+.function-js{
+    color: #c678dd
+}
+.function-name{
+    color: #fbec5d
+}
+.document-js{
+   color: #e6c07b; 
+}
+.var-js{
+    color: aqua;
+}
+.var-name{
+    color: rgb(66, 119, 252);
+}
+.img-window1{
+    width: 45%;
+
+}
+.img-window2{
+    width: 40%;
+
+}
+table{
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+    width: 30%; 
+    transition: 1s;
+}
+table:hover{
+   width: 40%;
+   transition: 1s;
+}
+table .table-head {
+    font-size: 1.5rem;
+}
+td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.table-div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+.comeco{        /*div invisivel que controla o tamanho do espaço das divs perguntas*/
+    border-radius: 7px 7px 0px 0px;
+    height: 10rem;/*altura do bloco em si*/
+    width: 95%; /*largura da div, pode ser diminuida se vc diminuir o tamanho ou quantidade dos itens nas divs pergunta*/
+}
+.comeco a{
+    display: flex;/*não alterar*/
+    text-decoration: none;/*tira a decoração do "a" não alterar*/
+    
+}
+/*estilos dos blocos de pergunta em si*/
+.a{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 41, 41); /*cor de fundo*/
+    height: 6rem;/*altura(não altere)*/
+    transition: .5s;/*animação ao passar o mouse (não altere)*/
+}
+/*segue o mesto do a para todo o testo*/
+.b{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    height: 6rem;
+    transition: .5s;
+}
+.c{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(102, 102, 102);              /*as divs estão divididas em "a, b, c e d" pois as cores mudam para fazer um degrade*/
+    height: 6rem;                                        /*caso queira pode alterar o bgcolor de casa um para mudar as cores do degrade*/
+    transition: .5s;
+}
+.d{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(129, 129, 129);
+    height: 6rem;
+    transition: .5s;
+}
+.e{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(153, 153, 153);
+    height: 6rem;
+    transition: .5s;
+}
+/*hover ao passar o mouse*/
+.h:hover{
+    padding-top: 1rem;/*faz o bloco ficar mais alto ao passar o mouse*/
+    transition: .5s;/*animação ao tirar o mouse*/
+}
+/*alinhamento do texto dos blocos de pergunta*/
+.alinha-texto-perg{
+    height: 100%; /*altura para centralizar (não alterar)*/
+    /*o resto é a centralização do texto (não alterar)*/
+    display: flex;
+    align-items: center;
+}
+/*
+╭――――――――――╮
+│ fim perg │
+╰――――――――――╯
+=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│      respostas   │
+╰――――――――――――――――――╯
+*/
+.resposta{  /*div onde fica o conteudo em si*/
+    font-size: 25px;    /*tamanho da fonte*/
+    color: black;   /*cor da fonte*/
+    background-color: lightgray;    /*cor de fundo*/
+    width: 97%;  /*tamanho geral da largura do quadrado (não alterar)*/
+    border-radius: 0px 7px 7px 7px; /*borda do quadrado, se possivel nao alterar*/
+}
+.texto-r{  /*texto dentro da resposta*/
+    display: block;
+    text-align: justify;/*faz o texto ficar justificado (não altere)*/
+    padding: 2rem;/*padding em relação ao bloco (não altere)*/
+    
+}
+.texto-r ul{/*apenas alinhamentos da lista deserdenada (não alterar)*/
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+#espacamento{/*apenas um espaçamento das bosrdas (não alterar)*/
+    padding-bottom: 2rem;
+    width: 95%;
+}
+
+
+/*dando display none para os botões so ativarem quando a largura for pequena o suficiente para ativar o modo mobile*/
+#btn1{
+    display: none;
+}
+#btn2{
+    display: none;
+}
+#botaozinho{
+    display: none;
+}
+#alinhamento-btnzinho{
+    display: none;
+}
+
+
+/*correções de tamanho para ficar portavel no mobile*/
+@media (max-width: 803px){
+    #titulo{
+        font-size: 36px; /*titulo muda o tamanho quando a tela fica pequena */
+    }
+}
+
+@media (max-width: 640px){
+    #titulo{
+        font-size: 30px;
+    }
+}
+
+/*correções para o ajuste de tamanho de tela (não mexer se possivel)*/
+
+/*--------------------------*/
+/*correções altura menu lat*/
+/*-------------------------*/
+/*
+@media (max-width: 1634px) {
+    #menu-lat{
+        height: 60rem;;
+    }
+}
+@media (max-width: 1243px) {
+    #menu-lat{
+        height: 63rem;
+    }
+}
+@media (max-width: 1188px) {
+    #menu-lat{
+        height: 63rem;
+    }
+}
+@media (max-width: 1044px) {
+    #menu-lat{
+        height: 68rem;
+    }
+}
+@media (max-width: 1009px) {
+    #menu-lat{
+        height: 68rem;
+    }
+}
+@media (max-width: 976px) {
+    #menu-lat{
+        height: 70rem;
+    }
+}
+@media (max-width: 942px) {
+    #menu-lat{
+        height: 75rem;
+    }
+}
+@media (max-width: 839px) {
+    #menu-lat{
+        height: 80rem;
+    }
+}
+@media (max-width: 808px) {
+    #menu-lat{
+        height: 85rem;
+    }
+}
+@media (max-width: 745px) {
+    #menu-lat{
+        height: 90rem;
+    }
+}
+*/
+/*fim das correções*/
+/*----------------*/
+
+
+/*----------------
+correções footer e text-p
+----------------*/
+@media (max-width: 457px){
+    .text-p{
+        width: 3rem;
+    }
+    .footer{
+        height: 1000px;
+    }
+}
+@media (max-width: 659px){
+    .footer{
+        height: 345px;
+    }
+}
+@media (max-width: 510px){
+    .footer{
+        height: 345px;
+    }
+}
+@media (max-width: 507px){
+    .footer{
+        height: 380px;;
+    }
+}
+
+/*
+╭――――――――――――――――――╮
+│ fim das correções│
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│      mobile      │
+│    correções     │
+╰――――――――――――――――――╯
+*/
+
+
+@media (max-width:730px) {
+    /*correções e ajustes de largura (não mexer se não for necessário)*/
+    #titulo{
+        margin-left: -3.5rem;
+    }
+    .pergunta{
+        width: 4.5rem;
+    }
+    .pergunta{
+        font-size: 10px;
+    }
+    .comeco{
+        margin-left: -1rem; /*para ficar alinhado a div resposta*/
+        
+    }
+    .resposta{
+        margin-left: -1rem; /*para ficar alinhado a div pergunta*/
+        font-size: 15px;
+    }
+    #navgation{
+        height: 100vh;
+    }
+
+/*
+╭――――――――――――――――――╮
+│ fim das correções│
+╰――――――――――――――――――╯
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│programação mobile│
+│      em si       │
+╰――――――――――――――――――╯
+*/
+    #menu-lat{ /*menu escondido*/
+        display: block;
+        position: absolute;/*para poder colocar em qualquer lugar da lera*/
+        width: 0px;/*para dar a animação de entrada começando do 0*/
+        transition: 1s;/*para dar um delay na animação*/
+        z-index: 100;/*para ficar por cima da pagina*/
+        height: 110vh;/*para ocupar toda a tela*/
+        visibility: hidden;/*invisivel sem ser ativado*/
+        overflow-x: hidden;/*invisivel sem ser ativado*/
+        top: 2.8rem/*ajuste de posição em relação ao topo da pagina*/
+    }
+    
+
+    #navgation.active #menu-lat{/*menu aparece quando nav esta ativo pelo click(js)*/
+        width: 100%;/*sai de 0 pra 100 mostrando todo o menu*/
+        visibility: visible;/*fica visivel*/
+        overflow-x: auto;
+        transition: 1s;/*animação tempo*/
+        position: absolute;
+        top: 2.8rem
+    }
+/*========== faz a borda de baixo ficar do tamanho da tela toda ==========*/
+    #menu-esquerdo ul li a{
+        width: 100%;
+        border-bottom: 1px solid lightgray;             
+    }
+/*=========================================================================*/
+/*======== os reagrupa para ocuparem a tela toda quando o navgation estiver ==========*/
+    #menu-esquerdo ul li{
+        width: 100%;
+    }
+    #menu-esquerdo ul{
+        width: 100%;
+    }
+    #menu-esquerdo{
+        width: 100%;
+    }
+/*============================================================*/
+    #menu-esquerdo{ /*alinha o menu para ficar na parte de cima e não no meio da pagina não mexer*/
+        position: absolute;
+        top: -.1rem
+    }
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+╭――――――――――――――――――╮
+│                  │
+│       botões     │
+│                  │
+╰――――――――――――――――――╯
+*/
+
+/*
+╭――――――――――――――――――╮
+│   botaozinho >   │ 
+╰――――――――――――――――――╯
+*/
+    #alinhamento-btnzinho{/*alinha o botazinho com a seta no centro da pagin*/
+        height: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 10;/*para sobrepor o resto*/
+    }
+    #botaozinho{/*btn seta*/
+        display: flex;
+        height: 1px;/*muda um pouco a altura do btn (não mudar*) */
+        border: none;/*tira a borda*/
+        cursor: pointer;/*FAZ O MOUSE VIRAR A MAOZINHA*/
+        z-index: 10;/*para sobrepor*/
+        background-color: transparent;/*tira o bg para nao ficar aparente com a img*/
+        
+    }
+    #burg{ /*estilização do botão que aparece*/
+        /*posição do btn (não modificar)*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+        width: 40px;
+        height: 40px;
+        transition: .5s;
+        background-color: white;/*cor de fundo do botão*/
+        border-radius: 50px;/*para ele ficar redondinho*/
+        position: relative;
+        left: -1.5rem;/*faz ele ficar dentro da "parede"do site
+        ou seja para fora do site*/
+    }
+    #burg img{
+        margin-left: .5rem;/*posição da img (seta que esta no btn)*/
+    }
+/*------------------ fim botaozinho > ----------------------*/
+    /*alinha o btn fantasma e o btn1*/
+    #alinhamentobtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;/*usa para espaçar um de cada lado*/ 
+    }
+
+/*
+╭――――――――――――――――――╮
+│   btn fantasma   │ 
+╰――――――――――――――――――╯
+*/
+    #btn1{
+        display: flex;
+        visibility: hidden;/*deixa ele invisivel*/
+        overflow-x: hidden;/*deixa ele invisivel*/
+    }
+
+/*------------------ fim btn fantasma ----------------------*/
+/*
+╭――――――――――――――――――╮
+│    btn2 burg1    │ 
+╰――――――――――――――――――╯
+*/
+    #btn2{
+        display: flex;
+        border: none;
+        cursor: pointer;
+        background-color: aliceblue;/*cor de fundo*/
+    }
+    #burg1{ /*estilo hamburguer de fato*/
+        width: 40px;/*tamanho do btn*/
+        height: 40px;/*tamanho (os dois sao iguais para ele ficar redondo com o border radius)*/
+        transition: .5s;/*transição par ao hover*/
+        background-color: lightgray;/*vor de fundo*/
+        border-radius: 50px;/*usa para arredondar a borda e deixar ele em formato de circulo*/
+        /*alinhamento*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*posicionamento*/
+        margin-top: .3rem;
+        margin-right: 0rem;
+        /*para ficar em cima de tudo*/
+        z-index: 10000;
+    }
+    /*aimação ao passar o mouse*/
+    #burg1:hover{
+        transition: 1s;/*tempo*/
+        background-color: gray;/*muda de cor*/
+    }
+
+}
