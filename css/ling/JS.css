@@ -257,85 +257,6 @@ main section{ /*estilos do section*/
     
 }
 
-
-
-/*meu*/
-
-.link-vs{
-    color: black;
-}
-.link-vs:hover{
-    text-decoration: underline;
-    background-color: none;
-    background-color: #00000000;
-}
-.code
-{
-    overflow-x: auto;
-    padding: 1rem;
-    color: #abb2bf;
-    background: #282c34;
-    background-color: #282c34;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    user-select: text;
-    word-break: break-word;
-    border-radius: 7px;
-}
-.function-js{
-    color: #c678dd
-}
-.function-name{
-    color: #fbec5d
-}
-.document-js{
-   color: #e6c07b; 
-}
-.var-js{
-    color: aqua;
-}
-.var-name{
-    color: rgb(66, 119, 252);
-}
-.img-window1{
-    width: 45%;
-
-}
-.img-window2{
-    width: 40%;
-
-}
-table{
-    background-color: rgb(153, 153, 153);
-    text-align: center;
-    width: 30%; 
-    transition: 1s;
-}
-table:hover{
-   width: 40%;
-   transition: 1s;
-}
-table .table-head {
-    font-size: 1.5rem;
-}
-td{
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-}
-.table-div{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 1rem;
-}
-
-
-
-
-
-
-
 .comeco{        /*div invisivel que controla o tamanho do espaço das divs perguntas*/
     border-radius: 7px 7px 0px 0px;
     height: 10rem;/*altura do bloco em si*/
@@ -732,4 +653,72 @@ correções footer e text-p
         background-color: gray;/*muda de cor*/
     }
 
+}
+.link-vs{
+    color: black;
+}
+.link-vs:hover{
+    text-decoration: underline;
+    background-color: none;
+    background-color: #00000000;
+}
+.code
+{
+    overflow-x: auto;
+    padding: 1rem;
+    color: #abb2bf;
+    background: #282c34;
+    background-color: #282c34;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    user-select: text;
+    word-break: break-word;
+    border-radius: 7px;
+}
+.function-js{
+    color: #c678dd
+}
+.function-name{
+    color: #fbec5d
+}
+.document-js{
+   color: #e6c07b; 
+}
+.var-js{
+    color: aqua;
+}
+.var-name{
+    color: rgb(66, 119, 252);
+}
+.img-window1{
+    width: 45%;
+
+}
+.img-window2{
+    width: 40%;
+
+}
+table{
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+    width: 30%; 
+    transition: 1s;
+}
+table:hover{
+   width: 40%;
+   transition: 1s;
+}
+table .table-head {
+    font-size: 1.5rem;
+}
+td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.table-div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
 }
