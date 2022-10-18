@@ -334,14 +334,18 @@ main section{ /*estilos do section*/
 }
 .texto-r{  /*texto dentro da resposta*/
     display: block;
-    text-align: justify;/*faz o texto ficar justificado (não altere)*/
+    text-align: start;/*faz o texto ficar justificado (não altere)*/
     padding: 2rem;/*padding em relação ao bloco (não altere)*/
-    
+ 
 }
 .texto-r ul{/*apenas alinhamentos da lista deserdenada (não alterar)*/
     padding-top: 2rem;
     padding-left: 4rem;
 }
+.texto-resp{
+    padding-right: 8rem;
+}
+
 #espacamento{/*apenas um espaçamento das bosrdas (não alterar)*/
     padding-bottom: 2rem;
     width: 95%;
