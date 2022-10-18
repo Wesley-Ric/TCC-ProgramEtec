@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../../css/ling/python.css"><!-- estilo geral do site-->
+    <link rel="stylesheet" href="../../../css/ling/JS.css"><!-- estilo geral do site-->
     <link rel="stylesheet" href="../../../css/style-pgini/carrossel.css">
     <link rel="stylesheet" href="../../../css/navbar.css">
     <meta charset="UTF-8">
@@ -25,10 +25,10 @@
                 <li><a href="../../../about.html">Sobre</a></li>
                 <li id="ling"><a href="#">Linguagens</a>
                     <ul id="submenu">
-                        <a href="../../HTML.html"><li>HTML</li></a>
-                        <a href="../../CSS.html"><li>CSS</li></a>
-                        <a href="../../JS/JS.html"><li>JS</li></a>
-                        <a href="../../Java.html"><li>Java</li></a>
+                        <a href="../../../HTML.html"><li>HTML</li></a>
+                        <a href="../../../CSS.html"><li>CSS</li></a>
+                        <a href="../../../JS.html"><li>JS</li></a>
+                        <a href="../../../Java.html"><li>Java</li></a>
                         <a href="../../Python.html"><li>Python</li></a>
                     </ul>
                 </li>
@@ -46,7 +46,7 @@
         <div id="navgation"> <!--div que recebe a class active para o menu lateral ativar no mobile-->
             <div id="alinhamento-btnzinho"> <!--centraliza o btn-->
                 <button id="botaozinho" aria-expanded="false">
-                    <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
+                    <span id="burg"><img src="../../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
                 </button>
             </div>
 
@@ -80,14 +80,14 @@
                 <div id="menu-esquerdo"> <!--serve basicamente para organizar os itens em um unico bloco-->
                     <ul>
                         <!--itens do menu de fato-->
-                        <li><a href="Python.html">Introdução a Python</a></li>
-                        <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
-                        <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores aritiméticos</a></li>
-                        <li><a href="../4-op-logicos/op-log-init.html">Operadores Lógicos</a></li>
-                        <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
-                        <li><a href="../6-tuplas/tuplas-init.html">Tuplas</a></li>
-                        <li><a href="../7-listas/listas-init.html">Listas</a></li>
-                        <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
+                        <li><a href="../JS.html">Introdução ao JavaScript</a></li>
+                        <li><a href="../instalacao/ins.html">Instalação</a></li>
+                        <li><a href="../window/window-a.html">Funções com window</a></li>
+                        <li><a href="../captar/captar-a.html">Métodos para captar elemento</a></li>
+                        <li><a href="../functions/func-a.html">Functions</a></li>
+                        <li><a href="../calculos/calc-a.html">Calculos</a></li>
+                        <li><a href="../strings/string-a.html">Strings</a></li>
+                        <li><a href="../vetores/vet-a.html">Vetores</a></li>
                     </ul>
                 </div><!--fim menu esquedo-->
             </div><!--fim menu-lat-->
@@ -110,7 +110,7 @@
 
             <div id="alinha-t"> <!--alinha o titulo-->
                 <div id="titulo"><!--estilo do titulo-->
-                    Introdução a Python
+                    Functions
                 </div><!--fim titulo-->
             </div><!--fim alinha-t -->
 
@@ -123,15 +123,54 @@
 
                     <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="../../Python.html">
+                        <a href="func-a.html">
+                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                            <div class="pergunta c h">
+                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
+                                    <span class="text-p"><!--estilo do texto das perguntas-->
+                                       O que é uma function?
+                                    </span> <!--fim span-->
+                                </div><!--fim alinha-texto-perg-->
+                            </div><!--fim pergunta a-->
+                        </a> <!--fim tag a-->
+
+                        <a href="func-b.html">
+                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                            <div class="pergunta b h">
+                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
+                                    <span class="text-p"><!--estilo do texto das perguntas-->
+                                       EventListener
+                                    </span> <!--fim span-->
+                                </div><!--fim alinha-texto-perg-->
+                            </div><!--fim pergunta a-->
+                        </a> <!--fim tag a-->
+
+                        <a href="func-c.html">
                             <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                             <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
                             <div class="pergunta a h">
                                 <div class="alinha-texto-perg"> <!--para centralizar o texto-->
                                     <span class="text-p"><!--estilo do texto das perguntas-->
-                                        Oque é o python?
-                                    </span> <!--dim span-->
+                                     Mudar elemento com clique
+                                    </span> <!--fim span-->
+                                </div><!--fim alinha-texto-perg-->
+                            </div><!--fim pergunta a-->
+                        </a> <!--fim tag a-->
+
+                        <a href="func-d.html">
+                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                            <div class="pergunta b h">
+                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
+                                    <span class="text-p"><!--estilo do texto das perguntas-->
+                                     Mudar foto com clique
+                                    </span> <!--fim span-->
                                 </div><!--fim alinha-texto-perg-->
                             </div><!--fim pergunta a-->
                         </a> <!--fim tag a-->
@@ -139,74 +178,37 @@
 
 
                         <!--segue o mesmo para todos os outros blocos-->
-                        <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="faz-python.html">
-                            <div class="pergunta b h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        O que o python faz
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
-                        
-                        <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="pq-python.html">
-                            <div class="pergunta c h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        Por que Python?
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
+                       
 
-                        <!--=-=-=-=-=-=-=-=-=começo bloco d-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="adcionais.html">
-                            <div class="pergunta d h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        Adicionais
-                                    </span>
-                                </div>
-                            </div>
-                        </a>   
-                        <!--=-=-=-=-=fim d-=-=-=-=-=-=-->
+                       
                     </div><!--fim div "pergunta comeco"--> 
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
-                                <div class="texto-resp">
-                                    Python como dito anteriormente é uma linguagem poderosa
-                                    com ela podemos ultilizar e criar bibliotecas e modulos
-                                    e os disponibilizar para outros usuários, assim expandindo
-                                    o que a linguagem pode ou não fazer, um dos principais diferencais
-                                    em python é a vasta quantidade de bibliotecas, quem vem crescendo
-                                    cada dia mais e diversificando o que podemos fazer com essa linguagem.
+                                Para mudar algum elemento do HTML usando um clique, usaremos o seguinte código:
+                                    <div class="code">
+                                        <code>
+                                             <span class="var-name">  &lt;div id = "div1"&gt; </span> Mudar   <span class="var-name">&lt;/div&gt;</span> -> Criação da div com um id <br> <br>
+                                             <span class="var-name">  &lt;button id = "but1" &gt; </span>Botão <span class="var-name">&lt;/button&gt;</span> -> Criação do botão no arquivo HTML <br> 
+                                        </code>
+                                    </div> 
+                                      <br>
+                                    No arquivo JavaScript, faremos a seguinte programação:
+                                    <div class="code">
+                                        <span class="var-js"> var</span> <span class="var-name">mud</span> = <span class="document-js">document.getElementById('div1');</span> -> Nessa linha estamos
+                                        declarando a variável "mud" como o elemento do id "div1" <br>
+                                        <span class="var-js"> var</span> <span class="var-name">botao</span> = <span class="document-js">document.getElementById('but1').addEventListener("click", mudar); </span>
+                                        ->Nessa linha estamos adicionando o evento ao botão
+                                        <br> <br>
+                                        <code> <span class="function-js">function</span> <span class="function-name">mudar()</span>{<br>
+                                       
+                                         <span class="document-js">mud.innerHTML = "mudei"</span> -> E finalmente, dentro da função, mudamos o elemento presente no id "div1",
+                                         nesse caso nós apenas trocamos por outra palavra, mas também seria possível muda-lo para uma imagem.
+.                                         <br>
+                                          } 
+                                        </code>
+                                      </div>
 
-                                        <p>Dentre tantas funcionalidades e bibliotecas podemos destacar:</p>
-                                    <ul>
-                                        <li>
-                                        construção de sistemas Web ultilizando Django, Flask, Pyramid 
-                                        (essas são apenas algumas bibliotecas que usamos no python).
-                                        </li>
-                                        <li>
-                                            Análise de dados usando Pandas, NumPy, SciPy, Pyodbc, que basicamente
-                                            fazem analises estatisticas com os dados e conversam com o banco de dados.
-                                        </li>
-                                        <li>
-                                            Construção de aplicativos com Kivy e Pybee.
-                                        </li>
-                                        <li>
-                                            Construção de sistemas desktop com Tkinter (para o front-end), Wxpython, etc.
-                                        </li>
-                                    </ul>
-                                    <p>Asdim podemos ver Python e uma linguagem poderosa, o que ela pode fazer beira a criatividade
-                                    de seu programador, seu interpretador puro por sí só já é uma otima ferramenta, porém com suas 
-                                    bibliotecas se torna uma das melhores linguagens atuais para se trabalhar.</p>
-                                </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->
