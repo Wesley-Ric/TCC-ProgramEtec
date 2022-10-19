@@ -16,6 +16,18 @@
         .texto-r a:hover{
             color: orange;
         }
+        .texto-r img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .texto-r .img-sec{
+            width: 50%
+        }
+        @media (width:1807px) {
+            .texto-r .img-sec{
+            width: 70%
+            }
+        }
     </style>
 </head>
 <body>
@@ -118,7 +130,7 @@
 
             <div id="alinha-t"> <!--alinha o titulo-->
                 <div id="titulo"><!--estilo do titulo-->
-                    Introdução a Python
+                    Instalação
                 </div><!--fim titulo-->
             </div><!--fim alinha-t -->
 
@@ -131,7 +143,7 @@
 
                     <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="../../Python.html">
+                        <a href="instalacao-python.html">
                             <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                             <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -148,7 +160,7 @@
 
                         <!--segue o mesmo para todos os outros blocos-->
                         <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="faz-python.html">
+                        <a href="instalacao-ide.html">
                             <div class="pergunta b h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
@@ -160,7 +172,7 @@
                         <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
                         
                         <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="pq-python.html">
+                        <a href="instalacao-pip.html">
                             <div class="pergunta c h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
@@ -172,7 +184,7 @@
                         <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
 
                         <!--=-=-=-=-=-=-=-=-=começo bloco d-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="adcionais.html">
+                        <a href="instalacao-bibliotecas.html">
                             <div class="pergunta d h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
@@ -185,19 +197,110 @@
                     </div><!--fim div "pergunta comeco"--> 
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
-                            <div class="texto-r"><!--estilização de texto-->
+                                <div class="texto-r"><!--estilização de texto-->
+                                    <div class="texto-resp">
+                                    <h1>PyCharm</h1>
+                                    <p>Já instalou o Python em seu computador? certo, agora so falta instalarmos uma IDE para começarmos a
+                                        programar nosso primeiro código
+                                    </p>
+                                    <h3>Começando pelo começo</h3>
+                                    O primeiro passo assim como na instalação do Python é entrar no site do Pycharm, para isso você pode 
+                                    <a href="https://www.jetbrains.com/pt-br/pycharm/">clicar aqui</a>
 
-                                <h1>PyCharm</h1>
-                                <p>Já instalou o Python em seu computador? certo, agora so falta instalarmos uma IDE para começarmos a
-                                    programar nosso primeiro código
-                                </p>
-                                <h3>Começando pelo começo</h3>
-                                O primeiro passo assim como na instalação do Python é entrar no site do Pycharm, para isso você pode 
-                                <a href="https://www.jetbrains.com/pt-br/pycharm/">clicar aqui</a>
-
-                                <h2>Baixando o Pycharm</h2>
-                                Assim que entramos no site podemos ver um botão preto escrito baixar, e logo após podemos clicar nele como mostra a imagem:
-
+                                    <h2>Baixando o Pycharm</h2>
+                                    Assim que entramos no site podemos ver um botão preto escrito baixar, e logo após podemos clicar nele como mostra a imagem:
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/instalacao-ide1.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Então entraremos em outra pagina para baixar o arquivo, as versões de Windowns, macOS e Linux,
+                                    e em cada versão temos a opção de baixar o PyCharm professional ou o PyCharm Community, a versão 
+                                    professional é uma versão paga, para empresas de desenvolvimento com mais de cinco pessoas na equipe,
+                                    enquanto a versão community é gratuita para desenvolvimento autêntico, para equipes pequenas e profissionais
+                                    autônomos, vomos baixar a versão community como ilustra a imagem:
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/instalacao-ide2.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Logo depois você será redirecionado para uma pagina de agrecimento do download do PyCharm
+                                    e o download se iniciará:
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/instalacao-ide3.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Podemos então abrir o arquivo executável para iniciar a instalação do PyCharm, ao abrir
+                                    o instalador podemos clicar em next na primeira janela:
+                                </div>
+                                <br>
+                                <img class="img-sec" src="../../../imgs/python/instalação/instalacao-ide4.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Depois podemos escolher onde queremos instalar o PyCharm, recomendo deixar a pasta padrão
+                                    e então podemos clicar em next:
+                                </div>
+                                <br>
+                                <img class="img-sec" src="../../../imgs/python/instalação/instalacao-ide5.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Na proxima janela teremos algumas opções como criar um atalho do Pycharm na área de trabalho
+                                    ou criar associação a arquivos .py, eu recomendo que vocês marquem todas como segue na imagem:
+                                </div>
+                                <br>
+                                <img class="img-sec" src="../../../imgs/python/instalação/instalacao-ide6.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Então podemos no proximo passo clicar em install:
+                                </div>
+                                <br>
+                                <img class="img-sec" src="../../../imgs/python/instalação/instalacao-ide7.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Na sequência irá para uma janela de instalação com uma barra de progresso até que entrará 
+                                    na tela final e irá pedir para você reiniciar, iremos optar por reiniciar agora, como segue nas proximas imagens
+                                </div>
+                                <br>
+                                <img class="img-sec" src="../../../imgs/python/instalação/instalacao-ide8.png" alt="">
+                                <br>
+                                <br>
+                                <br>
+                                <img class="img-sec" src="../../../imgs/python/instalação/instalacao-ide9.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Então seu computador será reiniciado, a seguir podemos abrir o arquivo do PyCharm no desktop,
+                                    assim podemos então criar um projeto clicando em "New Project":
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/dentro-pycharm1.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Seguidamente o PyCharm irá criar um arquivo .py, anteriormente a isso pedirá para você escolher
+                                    o local onde irá criar esse arquivo, podendo mudar clicando no ícone da pastinha no canto superior direito
+                                    e então podemos clicar em create para criarmos nosso primeiro projeto.
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/dentro-pycharm2.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    E assim temos a IDE pronta para ser usada, podendo assim codificar e produzir seus primeiros
+                                    cogigos em Python então aproveite e codifique sem moderação
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/dentro-pycharm3.png" alt="">
+                                <br>
+                                <br>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->

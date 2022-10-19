@@ -16,6 +16,18 @@
         .texto-r a:hover{
             color: orange;
         }
+        .texto-r img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .texto-r .img-sec{
+            width: 40%
+        }
+        @media (width:1807px) {
+            .texto-r .img-sec{
+            width: 50%
+            }
+        }
     </style>
 </head>
 <body>
@@ -118,7 +130,7 @@
 
             <div id="alinha-t"> <!--alinha o titulo-->
                 <div id="titulo"><!--estilo do titulo-->
-                    Introdução a Python
+                    Instalação
                 </div><!--fim titulo-->
             </div><!--fim alinha-t -->
 
@@ -131,14 +143,14 @@
 
                     <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="../../Python.html">
+                        <a href="instalacao-python.html">
                             <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                             <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
                             <div class="pergunta a h">
                                 <div class="alinha-texto-perg"> <!--para centralizar o texto-->
                                     <span class="text-p"><!--estilo do texto das perguntas-->
-                                        Oque é o python?
+                                        Como instalar o Python
                                     </span> <!--dim span-->
                                 </div><!--fim alinha-texto-perg-->
                             </div><!--fim pergunta a-->
@@ -148,11 +160,11 @@
 
                         <!--segue o mesmo para todos os outros blocos-->
                         <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="faz-python.html">
+                        <a href="instalacao-ide.html">
                             <div class="pergunta b h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        O que o python faz
+                                        Como instalar a IDE
                                     </span>
                                 </div>
                             </div>
@@ -160,11 +172,11 @@
                         <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
                         
                         <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="pq-python.html">
+                        <a href="instalacao-pip.html">
                             <div class="pergunta c h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        Por que Python?
+                                        pip install
                                     </span>
                                 </div>
                             </div>
@@ -172,11 +184,11 @@
                         <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
 
                         <!--=-=-=-=-=-=-=-=-=começo bloco d-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="adcionais.html">
+                        <a href="instalacao-bibliotecas.html">
                             <div class="pergunta d h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        Adicionais
+                                        Bibliotecas
                                     </span>
                                 </div>
                             </div>
@@ -186,7 +198,57 @@
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
-                                c
+                                <div class="texto-resp">
+                                    <h1>Pip install</h1>
+                                    Você instalou o PyCharm e agora veio aqui e se perguntou: 
+                                    <p>- O que será esse pip install?</p>
+                                    Eu te respondo, pip install é um comando que você usa no terminal do PyCharm para instalar 
+                                    as bibliotecas que não vem de fábrica com o Python e com o PyCharm.
+                                    O pip por padrão ja vem instalado no seu Python, basicamente ele é um gerenciador de pacotes do Python
+                                    que gerencia as suas bibliotecas as instalando, desinstalando e atualizando.
+                                    O pip install vai instalar uma biblioteca específica que você queira, lembrando que as bibliotecas só precisam ser instaladas uma única vez,
+                                    após isto só  será necessário importar no seu código se for utilizá-la. Na própia IDE.
+
+                                    <h3>Onde usar o pip</h3>
+
+                                    Como dito anteriormente o pip não é ultilizado onde nós escrevemos o código Python, para isso usamos o terminar,
+                                    que pode ser o próprio CMD, porém neste caso irei ensinar a usar o terminal do pycharm, que pode ser acessado como mostra na imagem a baixo:
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/pip-install1.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Então abrirá o terminal:
+                                </div>
+                                <img src="../../../imgs/python/instalação/pip-install2.png" alt="">
+                                <div class="texto-resp">
+                                    Com o pip podemos usar diversos comandos não no o "pip install", embora seja o comando que mais 
+                                    iremos ultilizar, pois ele instala as bibliotecas que ultilizamos, porém temos comandos como:
+                                    <ul>
+                                        <li><b><i>pip unistall (nome da biblioteca sem parênteses)</i></b> - desinstala a biblioteca especificada</li>
+                                        <li><b><i>pip install -upgrade (nome da biblioteca sem parênteses)</i></b> - atualiza a biblioteca especificada</li>
+                                        <li><b><i>pip list</i></b> - lista todas as bibliotecas instaladas no Python do seu computador:</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <img src="../../../imgs/python/instalação/pip-install3.png" alt="">
+                                <br>
+                                <br>
+                                <div class="texto-resp">
+                                    Temos também o <b><i>pip freeze</i></b> que semelhante ao pip list mostra as bibliotecas instaladas, 
+                                    porém apenas as que foram instaladas manualmente com o pip install: 
+                                </div>
+                                <br>
+                                <br>
+                                <img src="../../../imgs/python/instalação/pip-install4.png" alt="">
+                                <br>
+                                <br>
+
+                                <div class="texto-resp">
+                                    Agora você já sabe como instalar as bibliotecas no Python, como as desinstalar, como as atualizar e ver quais estão instaladas,
+                                    podemos então ir para a próxima fase de seu aprendizado: bibliotecas em Python, vejo você no próximo bloco.
+                                </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->
