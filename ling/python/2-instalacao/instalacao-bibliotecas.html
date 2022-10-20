@@ -16,6 +16,46 @@
         .texto-r a:hover{
             color: orange;
         }
+        .codigo{
+            overflow-x: auto;
+            padding: 1rem;
+            color: #abb2bf;
+            background: #282c34;
+            background-color: #282c34;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            user-select: text;
+            word-break: break-word;
+            border-radius: 7px;
+        }
+        .funcao{
+            color: #c79202;
+        }
+        .nome-fun{
+            color: #f5b814;
+        }
+        .retorna{
+            color: #c79202;
+        }
+        .numero{
+            color: #0687c7;
+        }
+        .dentro{
+            padding-left: 1rem;
+        }
+        .circulo{
+            background-color: rgb(241, 241, 241);
+            color: rgb(215, 5, 5);
+            padding: 0.2rem;
+            border-radius: 5px;
+        }
+        .img-sec{
+            object-fit: cover;
+            width: 100%;
+            height: 20rem;
+
+        }
     </style>
 </head>
 <body>
@@ -186,7 +226,82 @@
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
-                               a
+                                <div class="texto-resp">
+                                        <h1>Bibliotecas</h1>
+                                        Certo, você já instalou o Python, instalou e configurou sua IDE e aprendeu a usar o comando pip,
+                                        agora precisamos saber o que são bibliotecas, suas funções e as principais bibliotecas no python
+
+                                        <h3>O que é uma biblioteca em Python?</h3>
+                                        As bibliotecas são basicamente um conjunto de módulos e funções em Python, essa resposta pode não fazer sentido agora,
+                                        e entçao nos leva a outra pergunta: o que são módulos e funções? Um módulo é um arquivo .py com instruções (que é a mesma coisa que funções)
+                                        em python.
+                                        <p>Eu sei, ainda parece muito confuso, então para elucidar mais sua mente nada melhor que darmos um exemplo:</p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            PI = <span>3,14</span><br><br>
+                                        <span class="funcao">def</span> <span class="nome-fun">area</span>(raio): <br>
+                                            <span class="retorna dentro">retrurn</span>PI * (raio** <span class="numero">2</span>)<br><br>
+                                            <span class="funcao">def</span> comprimento_circulo(raio)<br>
+                                            <span class="retorna dentro">retrurn</span> <span class="numero">2</span>*PI*raio<br>
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        Nesse exemplo criamos um código que representa um círculo e nosso arquivo se chama circulo.py.
+                                        <P>Para usarmos o modulo acima, podemos fazer cmo mostra abaixo</P>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                        <span class="funcao">import</span> circulo #o nome circulo e por conta do nome do arquivo ser circulo.py<br><br>
+                                            
+                                            <span class="retorna">print</span>(circulo.PI)<br>
+                                            <span class="retorna">print</span>(circulo.area(<span class="numero">5</span>))<br>
+                                            <span class="retorna">print</span>(circulo.comprimento_circulo(<span class="numero">5</span>))<br>
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <br>
+                                        Perceba que usamos o comando <span class="circulo">import circulo</span> para que pudéssemos acessar as definições 
+                                        ou seja as funções <span class="circulo">(def)</span> do nosso programa. De modo geral, essa é a forma pela qual usamos módulos em Python.
+                                        Caso quiséssemos utilizar apenas a função area() poderíamos importar apenas ela por meio do comando <span class="circulo">from circulo import area</span>.
+                                        Isso é útil em caso de módulos muito grandes e quando queremos usar apenas uma ou outra função deles.
+                                        <br><br>
+                                        Por fim temos que as bibliotecas são programas feitos por outro desenvolvedores python e disponibilizados para que possamos resolver problemas em nosso programa
+                                        de forma mais eficiete e rapida, por meio das bibliotecas em python podemos expandir seu leque de soluções podendo fazer a criação de sites e APIs, ciência de dados
+                                        e inteligênci artificial, vizualização de dados, automações, interfaces gráficas, etc.
+
+                                        <h3>Principais bibliotecas no Python</h3>
+
+                                        Python tem uma das maiores gamas de bibliotecas no desevolvimento e vem crescendo cada dia mais, dentre essas podemos destacar algumas:
+                                        <p><b>1 - Pandas</b></p>
+                                    </div>
+                                    <img class="img-sec" src="../../../imgs/python/instalação/biblioteca1.jpg" alt=""> <br>
+                                    <div class="texto-resp">
+                                        Pandas é um biblioteca gratuita, ultizada para o tratamento de dados, lançado em 2008. O Pandas oferece diversas estrutura de dados
+                                        e operações  de usar e de alto desempenho para manipular dados na forma de tabelas numéricas e séries temporais.            
+                                        <br><br>
+                                        <p><b>1 - NumPy</b></p>
+                                    </div>
+                                    <img class="img-sec" src="../../../imgs/python/instalação/biblioteca5.jpg" alt=""> <br>
+                                    <div class="texto-resp">
+                                    NumPy é uma biblioteca usada para a computação númerica em dados que podem estar na forma de grandes arrays e matrizes multidimensionais.
+                                    Essas matrizes multidimensionais são os objetos principais em NumPy, onde suas dimensões são chamadas de eixos e o número de eixos é
+                                    chamado de classificação.
+                                    <br><br>
+                                    <p><b>1 - SciPy</b></p>
+                                    </div>
+                                    <img class="img-sec" src="../../../imgs/python/instalação/biblioteca2.jpg" alt=""> <br>
+                                    <div class="texto-resp">
+                                    SciPy é uma biblioteca livre para a  computação científica e computação técnica sobre os dados. 
+                                    Ele foi criado como um projeto biblioteca comunitária e inicialmente lançado por volta de 2001. 
+                                    biblioteca SciPy é construído sobre o objeto de matriz NumPy e é parte da pilha NumPy que também inclui outras bibliotecas de
+                                    computação científica e ferramentas como Matplotlib, SymPy, pandas etc.
+                                    
+                                    <h4>Conclusão</h4>
+                                    Para terminar podemos ver a importância e a quantidade de novasfunções que as bibliotecas podem nos oferecer,
+                                    e podemos ver que nós mesmos somos capazes de criar nossos próprios módulos e bibliotecas para usar durante o dia a dia
+                                    assim aumentando e fazendo crescer a imensa comunidade de Python.
+                                </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->
