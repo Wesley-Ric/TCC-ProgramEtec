@@ -23,10 +23,13 @@
             padding: .5rem;
         }
         .esquerda{
-            text-align: center;
+            text-align: justify;
             
         }
         .centro{
+            text-align: center;
+        }
+        .direito{
             text-align: center;
         }
         table{
@@ -168,7 +171,7 @@
 
                         <!--segue o mesmo para todos os outros blocos-->
                         <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="op-comparacao.html">
+                        <a href="instalacao-ide.html">
                             <div class="pergunta b h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
@@ -207,88 +210,86 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>O que são operadores aritiméticos</h1>
-                                        <p>Continuando sua jornada em Python o primeiro passo antes de por a mão a obre é entender
-                                        o que são operadores aritiméticos?</p> 
-                                        Basicamnte operadores aritiméticos são símbolos em forma de caractéres que o motor do Python entende como sináis
-                                        de operação matemática como adição, subtração, divisão, multiplicação, etc. Assim podendo efetuar os calculos matemáticos
+                                        <h1>Operadores comparativos</h1>
+                                        <p>Mais uma vez seja bem vindo jovem etecano, para mais um pequeno estudo em sua linguagem para ser
+                                            um desenvolvedor python, aqui vamos aprender mais sobre os operadores, e nesse artigo específicamente
+                                            vamos aprender sobre os operadores de comparação.
+                                        </p> 
+                                        Os operadores de comparação como o próprio nome já diz comparam dois operandos, retornando um valor boleano verdadeiro (True)
+                                        ou falso (false) dependendo da confição. A seguir podemos na tabela podemos ver exemplos para entendermos melhor.
                                         <table>
                                             <tr>
-                                                <th class="esquerda">Simbolo do operador</th>
-                                                <th class="centro">Nome</th>
-                                                <th class="direito">Função</th>
+                                                <th class="esquerda">Operador</th>
+                                                <th class="centro">Conceito</th>
+                                                <th class="direito">Exemplo</th>
+                                                <th class="direito">valor</th>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">+</td>
-                                                <td class="centro">Adição</td>
-                                                <td class="direito">Faz a soma dos operandos.</td>
+                                                <td class="esquerda">> (Maior que)</td>
+                                                <td class="centro">Verifica se um valor é maior que o outro</td>
+                                                <td class="direito">6>5</td>
+                                                <td class="direito">Verdadeiro (True)</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">-</td>
-                                                <td class="centro">Subtração</td>
-                                                <td class="direito">Faz a subtração entre os operandos.</td>
+                                                <td class="esquerda"> < (Menor que)</td>
+                                                <td class="centro">Verifica se um valor é menor que o outro</td>
+                                                <td class="direito">6<5</td>
+                                                <td class="direito">falso (False)</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">*</td>
-                                                <td class="centro">Multiplicação</td>
-                                                <td class="direito">Faz a multiplicação dos operandos.</td>
+                                                <td class="esquerda">== (Igual a)</td>
+                                                <td class="centro">Compara se um valor é igual ao outro</td>
+                                                <td class="direito">6==6</td>
+                                                <td class="direito">falso (False)</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">/</td>
-                                                <td class="centro">divisão</td>
-                                                <td class="direito">Faz a divisão dos operandos.</td>
+                                                <td class="esquerda">!= (Diferente de)</td>
+                                                <td class="centro">Compara se um valor é diferente do outro</td>
+                                                <td class="direito">6!=5</td>
+                                                <td class="direito">Verdadeiro (True)</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">//</td>
-                                                <td class="centro">Divisão inteira</td>
-                                                <td class="direito">Faz a Divisão entre os operandos e mostra o resultado inteiro
-                                                    antes da virgula (despreza a casa decimal).
-                                                </td>
+                                                <td class="esquerda">> (Maior ou igual a)</td>
+                                                <td class="centro">Verifica se um valor é maior ou igual a o outro valor</td>
+                                                <td class="direito">6>=5</td>
+                                                <td class="direito">Verdadeiro (True)</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">%</td>
-                                                <td class="centro">Módulo</td>
-                                                <td class="direito">Retorna o resto da divisão dos operandos.</td>
+                                                <td class="esquerda"><= (Menor ou igual a)</td>
+                                                <td class="centro">Verifica se um valor é menor ou igual a outro valor</td>
+                                                <td class="direito">6<=5</td>
+                                                <td class="direito">falso (False)</td>
                                             </tr>
-                                            <tr>
-                                                <td class="esquerda">**</td>
-                                                <td class="centro">Exponenciação</td>
-                                                <td class="direito">Retorna o resultado da elevação da potência pelo outro.</td>
-                                            </tr>
+      
                                         </table>
-                                        podemos os usar para fazer operações matemáticas, equações, etec.
-                                        <p>veja algumas ultilizações de cada operador:</p>
-                                        </div>
+                                        <br>
+                                        Podemos usar esses operadores para tomar decisões, por exemplo podemos usar o if (que você vai aprender mais para frente)
+                                        então temos se o número X for maior que o número 5 e se não (else )o código irá printar é maior
+                                        que o 5, podemos entender melhor no exemplo abaixo:
+                                        
+                                    </div>
                                         <div class="codigo">
                                             <code>
-                                                soma = <span class="numero">4</span> + <span class="numero">2</span><br>
-                                                <span class="print">print</span>(<span class="string-print">f"A soma é </span><span class="chaves-print">{</span>soma<span class="chaves-print">}</span><span class="string-print">"</span> ) <br>
-
-                                                <span class="comentario">#podemos atribeuir o valor dos número a variáveis</span><br><br>
-                                                quatro = <span class="numero">4</span><br>
-                                                dois = <span class="numero">2</span><br>
-                                                soma2 = quatro + dois <br>
-                                                <span class="print">print</span>( <span class="string-print">f"A soma com variáveis é </span><span class="chaves-print">{</span>soma2<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                subtracao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A subtração é </span><span class="chaves-print">{</span>subtracao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                multiplicacao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A multiplicação é </span><span class="chaves-print">{</span>multiplicacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                divisao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A divisãoo é </span><span class="chaves-print">{</span>divisao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                divisao_inteira = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A divisão inteira é </span><span class="chaves-print">{</span>divisao_inteira<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                modulo = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"O módulo é </span><span class="chaves-print">{</span>modulo<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                exponenciacao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A exponenciação é </span><span class="chaves-print">{</span>exponenciacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                variavel = <span class="int">int</span>(<span class="int">input</span>(<span class="string-print">"Digite um número: "</span>))<br><br>
+                                                <span class="comando">if</span> variavel > <span class="numero">5</span>:<br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O número</span><span class="chaves-print"> {</span>variavel<span class="chaves-print">}</span><span class="string-print"> é maior que 5"</span> )<br>
+                                                <span class="comando">else</span>: <br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O número não é maior que 5"</span> )<br>
                                                 
                                             </code>
                                         </div>
                                         <div class="texto-resp">
+                                            <br>
+                                            No código acima temos o int e o input como novos comandos, o int diz que a variável é um número do tipo inteiro, ou seja não tem vírgulas, o comando input
+                                            que traduzindo significa algo como entrada, é usado para que o usuário interaja no terminal, no caso digitando o número desejado, depois disso o programa calcula com o if 
+                                            e os operadores de comparação se o número é maior que 5 ou não, se for maior o código retornará um valor verdadeiro e entrará no if, se não ignorará o if e irá para o else.
                                             <h1>Resultado</h1>
                                         </div>
-                                        <img src="../../../imgs/python/operadores/operadores-ari.png" alt="">
+                                        <img src="../../../imgs/python/operadores/operadores-comparativos.png" alt="">
                                 <div class="texto-resp">
+
+                                <h3>outros exemplos:</h3>
+                                
                                  <h3>Conclusão</h3>
                                  Para terminarmos podemos fazer mais exercícios sobre operadores aritimétimos, ou então voce
                                  pode tirar um print da tabelinha e guardar em algum lugar para usar de cola para seus estudos e códigos
@@ -343,4 +344,4 @@
 
     <script src="../../../js/menu-ling.js"></script>
 </body>
-</html>
+</html> 

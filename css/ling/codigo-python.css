@@ -49,6 +49,17 @@
 .chaves-print{
     color: rgb(226, 109, 0);
 }
+.int{
+   color: #7f83db;;
+}
+.comando{
+   color: rgb(226, 109, 0);
+}
+.espaço{
+    padding-left: 2rem;
+}
+
+
 .texto-r img{
     width: 100%;
     border-radius: 10px;
