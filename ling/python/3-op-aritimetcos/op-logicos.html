@@ -23,13 +23,10 @@
             padding: .5rem;
         }
         .esquerda{
-            text-align: justify;
+            text-align: center;
             
         }
         .centro{
-            text-align: center;
-        }
-        .direito{
             text-align: center;
         }
         table{
@@ -38,6 +35,15 @@
         th{
             background-color: gray;
             color: white;
+        }
+        .true{
+            color: green;
+        }
+        .false{
+            color: red;
+        }
+        .resul{
+            background-color: rgb(226, 241, 253);
         }
        
     </style>
@@ -171,7 +177,7 @@
 
                         <!--segue o mesmo para todos os outros blocos-->
                         <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="instalacao-ide.html">
+                        <a href="op-comparacao.html">
                             <div class="pergunta b h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
@@ -187,7 +193,7 @@
                             <div class="pergunta c h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        op de atribuição
+                                        Op de atribuição
                                     </span>
                                 </div>
                             </div>
@@ -210,115 +216,155 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>Operadores comparativos</h1>
-                                        <p>Mais uma vez seja bem vindo jovem etecano, para mais um pequeno estudo em sua linguagem para ser
-                                            um desenvolvedor python, aqui vamos aprender mais sobre os operadores, e nesse artigo específicamente
-                                            vamos aprender sobre os operadores de comparação.
-                                        </p> 
-                                        Os operadores de comparação como o próprio nome já diz comparam dois operandos, retornando um valor boleano verdadeiro (True)
-                                        ou falso (false) dependendo da confição. A seguir podemos na tabela podemos ver exemplos para entendermos melhor.
-                                        </div>
+                                        <h1>O que são operadores lógicos?</h1>
+                                        <p>Os operadores lógicos são símbolos que nos permite contruir algo extremamente útil em python
+                                            ou em quealquer outra linguagem: os testes lógicos.</p>
+
+                                            Em python temos três operadores lógicos: o and, or e o not.
+                            
                                         <table>
                                             <tr>
                                                 <th class="esquerda">Operador</th>
-                                                <th class="centro">Conceito</th>
-                                                <th class="direito">Exemplo</th>
-                                                <th class="direito">valor</th>
+                                                <th class="centro">Definição</th>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">> (Maior que)</td>
-                                                <td class="centro">Verifica se um valor é maior que o outro</td>
-                                                <td class="direito">6>5</td>
-                                                <td class="direito">Verdadeiro (True)</td>
+                                                <td class="esquerda"> and </td>
+                                                <td class="centro">Retorna True se ambas as afirmações forem verdadeiras</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda"> < (Menor que)</td>
-                                                <td class="centro">Verifica se um valor é menor que o outro</td>
-                                                <td class="direito">6<5</td>
-                                                <td class="direito">falso (False)</td>
+                                                <td class="esquerda"> or </td>
+                                                <td class="centro">Retorna True se uma sas afirmações forem verdadeiras</td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">== (Igual a)</td>
-                                                <td class="centro">Compara se um valor é igual ao outro</td>
-                                                <td class="direito">6==6</td>
-                                                <td class="direito">falso (False)</td>
+                                                <td class="esquerda"> not </td>
+                                                <td class="centro">Retorna Falso se o resultado for verdadeiras</td>
+                                            </tr>
+                                        </table>
+                                        Para ficar mais claro podemos mostrar a tabela a seguir:
+
+                                        <table>
+                                            <h5>Tabela AND</h5>
+                                            <tr>
+                                                <th class="esquerda">Condição 1</th>
+                                                <th class="centro">Condição 2</th>
+                                                <th class="centro">Resultado AND</th>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">!= (Diferente de)</td>
-                                                <td class="centro">Compara se um valor é diferente do outro</td>
-                                                <td class="direito">6!=5</td>
-                                                <td class="direito">Verdadeiro (True)</td>
+                                                <td class="esquerda true"> True </td>
+                                                <td class="centro true"> True </td>
+                                                <td class="centro true resul"> True </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">> (Maior ou igual a)</td>
-                                                <td class="centro">Verifica se um valor é maior ou igual a o outro valor</td>
-                                                <td class="direito">6>=5</td>
-                                                <td class="direito">Verdadeiro (True)</td>
+                                                <td class="esquerda true"> True </td>
+                                                <td class="centro false"> False </td>
+                                                <td class="centro false resul"> False </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda"><= (Menor ou igual a)</td>
-                                                <td class="centro">Verifica se um valor é menor ou igual a outro valor</td>
-                                                <td class="direito">6<=5</td>
-                                                <td class="direito">falso (False)</td>
+                                                <td class="esquerda false"> False </td>
+                                                <td class="centro true"> True </td>
+                                                <td class="centro false resul"> False </td>
                                             </tr>
-      
+                                            <tr>
+                                                <td class="esquerda false"> False </td>
+                                                <td class="centro false"> False </td>
+                                                <td class="centro false resul"> False </td>
+                                            </tr>
+                                           
+                                        </table>
+                                <div class="texto-resp">
+                                    Como podemos ver mais claramente, com o operador lógico AND apenas será verdadeiro 
+                                    se as duas condições forem verdadeiras dentro da estrutura de decisão.
+                                </div>
+                                        <table>
+                                            <h5>Tabela OR</h5>
+                                            <tr>
+                                                <th class="esquerda">Condição 1</th>
+                                                <th class="centro">Condição 2</th>
+                                                <th class="centro">Resultado AND</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="esquerda true"> True </td>
+                                                <td class="centro true"> True </td>
+                                                <td class="centro true resul"> True </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="esquerda true"> True </td>
+                                                <td class="centro false"> False </td>
+                                                <td class="centro true resul"> True </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="esquerda false"> False </td>
+                                                <td class="centro true"> True </td>
+                                                <td class="centro true resul"> True </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="esquerda false"> False </td>
+                                                <td class="centro false"> False </td>
+                                                <td class="centro false resul"> False </td>
+                                            </tr>
+                                           
                                         </table>
                                         <div class="texto-resp">
-                                        <br>
-                                        Podemos usar esses operadores para tomar decisões, por exemplo podemos usar o if (que você vai aprender mais para frente)
-                                        então temos se o número X for maior que o número 5 e se não (else )o código irá printar é maior
-                                        que o 5, podemos entender melhor no exemplo abaixo:
-                                        
-                                    </div>
+                                            Já no caso do operador lógico OR ou OU se apenas uma das condições for verdadeira na estrutura if
+                                            o resultado será verdadeiro, dando false apenas no caso das duas (ou mais) cindições serem falsas.
+                                        </div>
+                                        <table>
+                                            <h5>Tabela NOT</h5>
+                                            <tr>
+                                                <th class="esquerda">Condição 1</th>
+                                            
+                                                <th class="centro">Resultado AND</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="esquerda true"> True </td>
+                                                <td class="centro false resul"> False </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="esquerda false"> False </td>
+                                                <td class="centro true resul"> True </td>
+                                            </tr>
+                                           
+                                        </table>
+                                        <div class="texto-resp">
+                                            O operador NOT é o mais fácil de entender pois ele apenas pegara o resultado da operação e irá invertelo, ou seja
+                                            se der True será False e se for False se tornará True.
+                                        </div>
+                                        <p>veja algumas ultilizações de cada operador:</p>
+                                        </div>
                                         <div class="codigo">
                                             <code>
-                                                variavel = <span class="int">int</span>(<span class="int">input</span>(<span class="string-print">"Digite um número: "</span>))<br><br>
-                                                <span class="comando">if</span> variavel > <span class="numero">5</span>:<br>
-                                                <span class="print espaço">print</span>( <span class="string-print">f"O número</span><span class="chaves-print"> {</span>variavel<span class="chaves-print">}</span><span class="string-print"> é maior que 5"</span> )<br>
-                                                <span class="comando">else</span>: <br>
-                                                <span class="print espaço">print</span>( <span class="string-print">f"O número não é maior que 5"</span> )<br>
+                                                soma = <span class="numero">4</span> + <span class="numero">2</span><br>
+                                                <span class="print">print</span>(<span class="string-print">f"A soma é </span><span class="chaves-print">{</span>soma<span class="chaves-print">}</span><span class="string-print">"</span> ) <br>
+
+                                                <span class="comentario">#podemos atribeuir o valor dos número a variáveis</span><br><br>
+                                                quatro = <span class="numero">4</span><br>
+                                                dois = <span class="numero">2</span><br>
+                                                soma2 = quatro + dois <br>
+                                                <span class="print">print</span>( <span class="string-print">f"A soma com variáveis é </span><span class="chaves-print">{</span>soma2<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                subtracao = quatro + dois <br>
+                                                <span class="print">print</span>(<span class="string-print">f"A subtração é </span><span class="chaves-print">{</span>subtracao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                multiplicacao = quatro + dois <br>
+                                                <span class="print">print</span>(<span class="string-print">f"A multiplicação é </span><span class="chaves-print">{</span>multiplicacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                divisao = quatro + dois <br>
+                                                <span class="print">print</span>(<span class="string-print">f"A divisãoo é </span><span class="chaves-print">{</span>divisao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                divisao_inteira = quatro + dois <br>
+                                                <span class="print">print</span>(<span class="string-print">f"A divisão inteira é </span><span class="chaves-print">{</span>divisao_inteira<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                modulo = quatro + dois <br>
+                                                <span class="print">print</span>(<span class="string-print">f"O módulo é </span><span class="chaves-print">{</span>modulo<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
+                                                exponenciacao = quatro + dois <br>
+                                                <span class="print">print</span>(<span class="string-print">f"A exponenciação é </span><span class="chaves-print">{</span>exponenciacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
                                                 
                                             </code>
                                         </div>
                                         <div class="texto-resp">
-                                            <br>
-                                            No código acima temos o int e o input como novos comandos, o int diz que a variável é um número do tipo inteiro, ou seja não tem vírgulas, o comando input
-                                            que traduzindo significa algo como entrada, é usado para que o usuário interaja no terminal, no caso digitando o número desejado, depois disso o programa calcula com o if 
-                                            e os operadores de comparação se o número é maior que 5 ou não, se for maior o código retornará um valor verdadeiro e entrará no if, se não ignorará o if e irá para o else.
                                             <h1>Resultado</h1>
                                         </div>
-                                        <img src="../../../imgs/python/operadores/operadores-comparativos.png" alt="">
-                                <div class="texto-resp">
-
-                                <h3>outros exemplos:</h3>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        var = <span class="numero">5</span><br><br>
-                                        <span class="comando">if</span> var == <span class="numero">5</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é igual a 5"</span> )<br>
-                                        <span class="comando">if</span> var != <span class="numero">7</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é diferent de 7"</span> )<br>
-                                        <span class="comando">if</span> var > <span class="numero">2</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é maior que 2"</span> )<br>
-                                        <span class="comando">if</span> var >= <span class="numero">5</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é maior ou igual a 5"</span> )<br>
-                                        <span class="comando">if</span> var < <span class="numero">7</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é menor que 7"</span> )<br>
-                                        <span class="comando">if</span> var <= <span class="numero">5</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é menor ou igual a 5"</span> )<br>
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                <h3>Resultado:</h3>
-                                </div>
-
-                                <img src="../../../imgs/python/operadores/operadores-comparativos2.png" alt="">
+                                        <img src="../../../imgs/python/operadores/operadores-ari.png" alt="">
                                 <div class="texto-resp">
                                  <h3>Conclusão</h3>
-                                Chegamos ao fim, agora vocÊ pode entender melhor como funcionam os operadores de comparação, 
-                                se posso te dar um conselho é que busque exercícios sobre esses operadores e crie programas que os usem
-                                isso faz você conseguir memorizalos melhor, isso é tudo e programe sem moderação.       
+                                 Para terminarmos podemos fazer mais exercícios sobre operadores aritimétimos, ou então voce
+                                 pode tirar um print da tabelinha e guardar em algum lugar para usar de cola para seus estudos e códigos
+                                 fique bem etecano e codifique sem moderação.       
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
@@ -369,4 +415,4 @@
 
     <script src="../../../js/menu-ling.js"></script>
 </body>
-</html> 
+</html>

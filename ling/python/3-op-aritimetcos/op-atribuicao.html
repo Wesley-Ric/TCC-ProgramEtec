@@ -23,7 +23,7 @@
             padding: .5rem;
         }
         .esquerda{
-            text-align: justify;
+            text-align: center;
             
         }
         .centro{
@@ -39,7 +39,16 @@
             background-color: gray;
             color: white;
         }
-       
+       .equa{
+        background-color: white;
+        color: rgb(231, 15, 15);
+        padding: 0rem .5rem 0rem .5rem;
+        border-radius: .5rem;
+        
+       }
+       .color{
+        color: rgb(231, 15, 15);
+       }
     </style>
 </head>
 <body>
@@ -187,7 +196,7 @@
                             <div class="pergunta c h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        op de atribuição
+                                        Op de atribuição
                                     </span>
                                 </div>
                             </div>
@@ -210,115 +219,130 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>Operadores comparativos</h1>
-                                        <p>Mais uma vez seja bem vindo jovem etecano, para mais um pequeno estudo em sua linguagem para ser
-                                            um desenvolvedor python, aqui vamos aprender mais sobre os operadores, e nesse artigo específicamente
-                                            vamos aprender sobre os operadores de comparação.
+                                        <h1>Operadores atribuitivos</h1>
+                                        <p>Bem vindo jovem programador etecano, nesse artigo iremos explicar o que são e como funcionam 
+                                            os operadores de atribuição.
                                         </p> 
-                                        Os operadores de comparação como o próprio nome já diz comparam dois operandos, retornando um valor boleano verdadeiro (True)
-                                        ou falso (false) dependendo da confição. A seguir podemos na tabela podemos ver exemplos para entendermos melhor.
+                                        <h4>O que são?</h4>
+                                        Os operadores de atribução basicamente são operações metemáticas com somas, porém com eles você pode
+                                        economizar caracteres, deixando o código mais otimizado, além de alguns tipos de código com o lastro de repetição "for",
+                                        para enternder melhor imagine a seguinte operação <span class="equa">x = x + 1</span>, com os operadores atribuitivos podemos a escrever:
+                                        <span class="equa">x += 1</span><br><br>
+                                        <h5>Operadores de atruibuição</h5>
                                         </div>
+                                        
                                         <table>
                                             <tr>
                                                 <th class="esquerda">Operador</th>
-                                                <th class="centro">Conceito</th>
-                                                <th class="direito">Exemplo</th>
-                                                <th class="direito">valor</th>
+                                                <th class="centro">Equivalente a</th>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">> (Maior que)</td>
-                                                <td class="centro">Verifica se um valor é maior que o outro</td>
-                                                <td class="direito">6>5</td>
-                                                <td class="direito">Verdadeiro (True)</td>
+                                                <td class="esquerda"> = </td>
+                                                <td class="centro"> x = 1 </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda"> < (Menor que)</td>
-                                                <td class="centro">Verifica se um valor é menor que o outro</td>
-                                                <td class="direito">6<5</td>
-                                                <td class="direito">falso (False)</td>
+                                                <td class="esquerda"> += </td>
+                                                <td class="centro"> x = x + 1 </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">== (Igual a)</td>
-                                                <td class="centro">Compara se um valor é igual ao outro</td>
-                                                <td class="direito">6==6</td>
-                                                <td class="direito">falso (False)</td>
+                                                <td class="esquerda"> -= </td>
+                                                <td class="centro"> x = x - 1 </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">!= (Diferente de)</td>
-                                                <td class="centro">Compara se um valor é diferente do outro</td>
-                                                <td class="direito">6!=5</td>
-                                                <td class="direito">Verdadeiro (True)</td>
+                                                <td class="esquerda"> *= </td>
+                                                <td class="centro"> x = x * 1 </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda">> (Maior ou igual a)</td>
-                                                <td class="centro">Verifica se um valor é maior ou igual a o outro valor</td>
-                                                <td class="direito">6>=5</td>
-                                                <td class="direito">Verdadeiro (True)</td>
+                                                <td class="esquerda"> /= </td>
+                                                <td class="centro"> x = x / 1 </td>
                                             </tr>
                                             <tr>
-                                                <td class="esquerda"><= (Menor ou igual a)</td>
-                                                <td class="centro">Verifica se um valor é menor ou igual a outro valor</td>
-                                                <td class="direito">6<=5</td>
-                                                <td class="direito">falso (False)</td>
+                                                <td class="esquerda"> %= </td>
+                                                <td class="centro"> x = x % 1 </td>
                                             </tr>
       
                                         </table>
                                         <div class="texto-resp">
                                         <br>
-                                        Podemos usar esses operadores para tomar decisões, por exemplo podemos usar o if (que você vai aprender mais para frente)
-                                        então temos se o número X for maior que o número 5 e se não (else )o código irá printar é maior
-                                        que o 5, podemos entender melhor no exemplo abaixo:
+                                        Para entendermos melhor vamos códificar e ver alguns exemplos simples:
                                         
                                     </div>
+                                        <h3> Operador <span class="color">+=</span></h3>
                                         <div class="codigo">
                                             <code>
-                                                variavel = <span class="int">int</span>(<span class="int">input</span>(<span class="string-print">"Digite um número: "</span>))<br><br>
-                                                <span class="comando">if</span> variavel > <span class="numero">5</span>:<br>
-                                                <span class="print espaço">print</span>( <span class="string-print">f"O número</span><span class="chaves-print"> {</span>variavel<span class="chaves-print">}</span><span class="string-print"> é maior que 5"</span> )<br>
-                                                <span class="comando">else</span>: <br>
-                                                <span class="print espaço">print</span>( <span class="string-print">f"O número não é maior que 5"</span> )<br>
-                                                
+                                                Num_var = <span class="numero">5</span><br><br>
+                                                Num_var += <span class="numero">7</span><br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O resultado é: </span><span class="chaves-print"> {</span>numero<span class="chaves-print">}</span><br><br>
                                             </code>
                                         </div>
                                         <div class="texto-resp">
-                                            <br>
-                                            No código acima temos o int e o input como novos comandos, o int diz que a variável é um número do tipo inteiro, ou seja não tem vírgulas, o comando input
-                                            que traduzindo significa algo como entrada, é usado para que o usuário interaja no terminal, no caso digitando o número desejado, depois disso o programa calcula com o if 
-                                            e os operadores de comparação se o número é maior que 5 ou não, se for maior o código retornará um valor verdadeiro e entrará no if, se não ignorará o if e irá para o else.
-                                            <h1>Resultado</h1>
+                                            <h3>Resultado</h3>
                                         </div>
-                                        <img src="../../../imgs/python/operadores/operadores-comparativos.png" alt="">
-                                <div class="texto-resp">
+                                        <img src="../../../imgs/python/operadores/operadores-atribuitivos.png" alt="">
 
-                                <h3>outros exemplos:</h3>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        var = <span class="numero">5</span><br><br>
-                                        <span class="comando">if</span> var == <span class="numero">5</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é igual a 5"</span> )<br>
-                                        <span class="comando">if</span> var != <span class="numero">7</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é diferent de 7"</span> )<br>
-                                        <span class="comando">if</span> var > <span class="numero">2</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é maior que 2"</span> )<br>
-                                        <span class="comando">if</span> var >= <span class="numero">5</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é maior ou igual a 5"</span> )<br>
-                                        <span class="comando">if</span> var < <span class="numero">7</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é menor que 7"</span> )<br>
-                                        <span class="comando">if</span> var <= <span class="numero">5</span>:<br>
-                                        <span class="print espaço">print</span>( <span class="string-print">f"O valor</span><span class="chaves-print"> {</span>var<span class="chaves-print">}</span><span class="string-print"> é menor ou igual a 5"</span> )<br>
-                                    </code>
-                                </div>
+                                        <h3> Operador <span class="color">-=</span></h3>
+                                        <div class="codigo">
+                                            <code>
+                                                Num_var = <span class="numero">5</span><br><br>
+                                                Num_var -= <span class="numero">7</span><br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O resultado é: </span><span class="chaves-print"> {</span>numero<span class="chaves-print">}</span><br><br>
+                                            </code>
+                                        </div>
+                                        <div class="texto-resp">
+                                            <h3>Resultado</h3>
+                                        </div>
+                                        <img src="../../../imgs/python/operadores/operadores-atribuitivos2.png" alt="">
+                                        
+                                        
+                                        <h3> Operador <span class="color">*=</span></h3>
+                                        <div class="codigo">
+                                            <code>
+                                                Num_var = <span class="numero">5</span><br><br>
+                                                Num_var *= <span class="numero">7</span><br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O resultado é: </span><span class="chaves-print"> {</span>numero<span class="chaves-print">}</span><br><br>
+                                            </code>
+                                        </div>
+                                        <div class="texto-resp">
+                                            <h3>Resultado</h3>
+                                        </div>
+                                        <img src="../../../imgs/python/operadores/operadores-atribuitivos3.png" alt="">
+                                        
+                                        
+                                        
+                                        <h3> Operador <span class="color">/=</span></h3>
+                                        <div class="codigo">
+                                            <code>
+                                                Num_var = <span class="numero">5</span><br><br>
+                                                Num_var /= <span class="numero">7</span><br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O resultado é: </span><span class="chaves-print"> {</span>numero<span class="chaves-print">}</span><br><br>
+                                            </code>
+                                        </div>
+                                        <div class="texto-resp">
+                                            <h3>Resultado</h3>
+                                        </div>
+                                        <img src="../../../imgs/python/operadores/operadores-atribuitivos4.png" alt="">
+                                        
+                                        <h3> Operador <span class="color">%=</span></h3>
+                                        <div class="codigo">
+                                            <code>
+                                                Num_var = <span class="numero">5</span><br><br>
+                                                Num_var %= <span class="numero">7</span><br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"O resultado é: </span><span class="chaves-print"> {</span>numero<span class="chaves-print">}</span><br><br>
+                                            </code>
+                                        </div>
+                                        <div class="texto-resp">
+                                            <h3>Resultado</h3>
+                                        </div>
+                                        <img src="../../../imgs/python/operadores/operadores-atribuitivos5.png" alt="">
+                                        
                                 <div class="texto-resp">
-                                <h3>Resultado:</h3>
-                                </div>
-
-                                <img src="../../../imgs/python/operadores/operadores-comparativos2.png" alt="">
-                                <div class="texto-resp">
+                                    Note que o operador % é o chamado módulo, e é o resto da divisão ou seja o que sobra, antes de colocarmos a vírgula,
+                                    no caso acima como 5 é menor que 7 ele mesmo é o resto.
+                            
                                  <h3>Conclusão</h3>
-                                Chegamos ao fim, agora vocÊ pode entender melhor como funcionam os operadores de comparação, 
-                                se posso te dar um conselho é que busque exercícios sobre esses operadores e crie programas que os usem
-                                isso faz você conseguir memorizalos melhor, isso é tudo e programe sem moderação.       
+                                Terminando então podemos ver como os operadores de atribuição facilitam a vida do dev
+                                deixando o código muito mais fluito e rápido de se rodar, como ja é de praste peço a você etecano
+                                que faça exercícios e projetos sobre os atribuidores, fique bem e codifique sem moderação.
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
