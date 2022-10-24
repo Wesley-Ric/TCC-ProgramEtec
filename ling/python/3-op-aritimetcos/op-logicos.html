@@ -211,6 +211,24 @@
                             </div>
                         </a>   
                         <!--=-=-=-=-=fim d-=-=-=-=-=-=-->
+                        <a href="op-indentidade.html">
+                            <div class="pergunta e h">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        Op de indentidade
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="op-associacao.html">
+                            <div class="pergunta f h">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        Op Associacao
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
                     </div><!--fim div "pergunta comeco"--> 
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
@@ -326,45 +344,56 @@
                                            
                                         </table>
                                         <div class="texto-resp">
+                                            <br>
                                             O operador NOT é o mais fácil de entender pois ele apenas pegara o resultado da operação e irá invertelo, ou seja
                                             se der True será False e se for False se tornará True.
                                         </div>
                                         <p>veja algumas ultilizações de cada operador:</p>
                                         </div>
+                                        <h3>And (e)</h3>
                                         <div class="codigo">
                                             <code>
-                                                soma = <span class="numero">4</span> + <span class="numero">2</span><br>
-                                                <span class="print">print</span>(<span class="string-print">f"A soma é </span><span class="chaves-print">{</span>soma<span class="chaves-print">}</span><span class="string-print">"</span> ) <br>
-
-                                                <span class="comentario">#podemos atribeuir o valor dos número a variáveis</span><br><br>
-                                                quatro = <span class="numero">4</span><br>
-                                                dois = <span class="numero">2</span><br>
-                                                soma2 = quatro + dois <br>
-                                                <span class="print">print</span>( <span class="string-print">f"A soma com variáveis é </span><span class="chaves-print">{</span>soma2<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                subtracao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A subtração é </span><span class="chaves-print">{</span>subtracao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                multiplicacao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A multiplicação é </span><span class="chaves-print">{</span>multiplicacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                divisao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A divisãoo é </span><span class="chaves-print">{</span>divisao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                divisao_inteira = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A divisão inteira é </span><span class="chaves-print">{</span>divisao_inteira<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                modulo = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"O módulo é </span><span class="chaves-print">{</span>modulo<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                exponenciacao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A exponenciação é </span><span class="chaves-print">{</span>exponenciacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                
+                                                num1 = <span class="numero">7</span><br>
+                                                num2 = <span class="numero">4</span><br><br>
+                                                <span class="comando">if </span> num1 > <span class="numero">3</span><span class="comando"> and </span> num2 < <span class="numero">8</span>: <br>
+                                                <span class="print espaço">print</span>(<span class="string-print">"As duas condições são verdadeiras"</span>) <br>
                                             </code>
                                         </div>
                                         <div class="texto-resp">
                                             <h1>Resultado</h1>
                                         </div>
-                                        <img src="../../../imgs/python/operadores/operadores-ari.png" alt="">
+                                        <img src="../../../imgs/python/operadores/operadores-logicos.png" alt="">
+
+                                        <h3>Or (ou)</h3>
+                                        <div class="codigo">
+                                            <code>
+                                                num1 = <span class="numero">6</span><br>
+                                                num2 = <span class="numero">10</span><br><br>
+                                                <span class="comando">if </span> num1 > <span class="numero">4</span><span class="comando"> and </span> num2 < <span class="numero">8</span>: <span class="comentario">#note que apenas "num1 > 4" é verdadeiro</span> <br>
+                                                <span class="print espaço">print</span>(<span class="string-print">"Apenas UMA das condições é verdadeiras"</span>) <br>
+                                            </code>
+                                        </div>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/operadores/operadores-logicos1.png" alt="">
+                                        <h3>Not (não)</h3>
+                                        <div class="codigo">
+                                            <code>
+                                                num1 = <span class="numero">6</span><br>
+                                                num2 = <span class="numero">10</span><br><br>
+                                                <span class="comando">if </span><span class="comando"> not </span> (num1 > <span class="numero">1</span><span class="comando"> and </span> num2 < <span class="numero">1</span>: <span class="comentario">#note que ambas condições são falsas, mas se tornam verdadeiras por conta do NOT entrando no if e printando na tela</span> <br>
+                                                <span class="print espaço">print</span>(<span class="string-print">"Inverte o resultado da condição entre os parânteses"</span>) <br>
+                                            </code>
+                                        </div>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/operadores/operadores-logicos2.png" alt="">
                                 <div class="texto-resp">
                                  <h3>Conclusão</h3>
-                                 Para terminarmos podemos fazer mais exercícios sobre operadores aritimétimos, ou então voce
-                                 pode tirar um print da tabelinha e guardar em algum lugar para usar de cola para seus estudos e códigos
-                                 fique bem etecano e codifique sem moderação.       
+                                 Bom etecanos mais uma vez terminamos mais uma lição, busque exercícios sobre o assunto e desenvolva projetos com os operadores
+                                 fique bem e codifique sem moderação.       
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->

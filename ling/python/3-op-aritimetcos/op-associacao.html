@@ -23,10 +23,13 @@
             padding: .5rem;
         }
         .esquerda{
-            text-align: center;
+            text-align: justify;
             
         }
         .centro{
+            text-align: center;
+        }
+        .direito{
             text-align: center;
         }
         table{
@@ -184,7 +187,7 @@
                             <div class="pergunta c h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        Op de atribuição
+                                        op de atribuição
                                     </span>
                                 </div>
                             </div>
@@ -225,93 +228,105 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>O que são operadores aritiméticos</h1>
-                                        <p>Continuando sua jornada em Python o primeiro passo antes de por a mão a obre é entender
-                                        o que são operadores aritiméticos?</p> 
-                                        Basicamnte operadores aritiméticos são símbolos em forma de caractéres que o motor do Python entende como sináis
-                                        de operação matemática como adição, subtração, divisão, multiplicação, etc. Assim podendo efetuar os calculos matemáticos
-                                        <table>
-                                            <tr>
-                                                <th class="esquerda">Simbolo do operador</th>
-                                                <th class="centro">Nome</th>
-                                                <th class="direito">Função</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">+</td>
-                                                <td class="centro">Adição</td>
-                                                <td class="direito">Faz a soma dos operandos.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">-</td>
-                                                <td class="centro">Subtração</td>
-                                                <td class="direito">Faz a subtração entre os operandos.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">*</td>
-                                                <td class="centro">Multiplicação</td>
-                                                <td class="direito">Faz a multiplicação dos operandos.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">/</td>
-                                                <td class="centro">divisão</td>
-                                                <td class="direito">Faz a divisão dos operandos.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">//</td>
-                                                <td class="centro">Divisão inteira</td>
-                                                <td class="direito">Faz a Divisão entre os operandos e mostra o resultado inteiro
-                                                    antes da virgula (despreza a casa decimal).
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">%</td>
-                                                <td class="centro">Módulo</td>
-                                                <td class="direito">Retorna o resto da divisão dos operandos.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="esquerda">**</td>
-                                                <td class="centro">Exponenciação</td>
-                                                <td class="direito">Retorna o resultado da elevação da potência pelo outro.</td>
-                                            </tr>
-                                        </table>
-                                        podemos os usar para fazer operações matemáticas, equações, etec.
-                                        <p>veja algumas ultilizações de cada operador:</p>
-                                        </div>
-                                        <div class="codigo">
-                                            <code>
-                                                soma = <span class="numero">4</span> + <span class="numero">2</span><br>
-                                                <span class="print">print</span>(<span class="string-print">f"A soma é </span><span class="chaves-print">{</span>soma<span class="chaves-print">}</span><span class="string-print">"</span> ) <br>
+                                    <h1>Operadores de associação</h1>
+                                    <p>Os operadores de associação são ultilizados para verificar se em uma determinada sequência 
+                                        contém um objeto específico, isto é se existe um valor x que você que encontrar em uma sequência
+                                        yyx.
 
-                                                <span class="comentario">#podemos atribeuir o valor dos número a variáveis</span><br><br>
-                                                quatro = <span class="numero">4</span><br>
-                                                dois = <span class="numero">2</span><br>
-                                                soma2 = quatro + dois <br>
-                                                <span class="print">print</span>( <span class="string-print">f"A soma com variáveis é </span><span class="chaves-print">{</span>soma2<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                subtracao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A subtração é </span><span class="chaves-print">{</span>subtracao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                multiplicacao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A multiplicação é </span><span class="chaves-print">{</span>multiplicacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                divisao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A divisãoo é </span><span class="chaves-print">{</span>divisao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                divisao_inteira = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A divisão inteira é </span><span class="chaves-print">{</span>divisao_inteira<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                modulo = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"O módulo é </span><span class="chaves-print">{</span>modulo<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                exponenciacao = quatro + dois <br>
-                                                <span class="print">print</span>(<span class="string-print">f"A exponenciação é </span><span class="chaves-print">{</span>exponenciacao<span class="chaves-print">}</span><span class="string-print">"</span> ) <br><br>
-                                                
-                                            </code>
-                                        </div>
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/operadores/operadores-ari.png" alt="">
-                                <div class="texto-resp">
-                                 <h3>Conclusão</h3>
-                                 Para terminarmos podemos fazer mais exercícios sobre operadores aritimétimos, ou então voce
-                                 pode tirar um print da tabelinha e guardar em algum lugar para usar de cola para seus estudos e códigos
-                                 fique bem etecano e codifique sem moderação.       
+                                    </p> 
+                                        <h5>tabela dos operadores:</h5>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <th class="esquerda">Operador</th>
+                                            <th class="centro">Conceito</th>
+                                            <th class="direito">Exemplo</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda"> in </td>
+                                            <td class="centro">Retorna True caso o valor seja encontrado na sequência</td>
+                                            <td class="direito">2 in x</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda"> not in </td>
+                                            <td class="centro">Retorna True caso o valor não seja encontrado na sequência	</td>
+                                            <td class="direito">2 not in x</td>
+                                        </tr>
+                                        
+  
+                                    </table>
+                                    <div class="texto-resp">
+                                    <br>
+                                    alguns exemplos para podermos entender melhor:
                                 </div>
+                                <h3>IS (é)</h3>
+                                    <div class="codigo">
+                                        <code>
+                                            sacola = [<span class="string-print">"banana"<span class="comando">,</span>"laranja"<span class="comando">,</span>"uva"<span class="comando">,</span>"ameixa"</span>]<br>
+                                            fruta = <span class="string-print">"ameixa"</span><br><br>
+                                            
+                                            <span class="comando">if</span> time_wesley <span class="comando">is</span> time_matheus:<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = mesmo objeto"</span>)<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para o mesmo time!<span class="comando">\n</span>"</span>)<br><br>
+                                            <span class="comando">else</span>: <br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = objetos diferentes"</span> )<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para times doferemtes!<span class="comando">\n</span>"</span> )<br><br>
+                                            
+
+                                            <span class="comando">if</span> time_matheus <span class="comando">is</span> time_italo:<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = mesmo objeto"</span>)<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Matheus e Italo torcem para o mesmo time!<span class="comando">\n</span>"</span>)<br><br>
+                                            <span class="comando">else</span>: <br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = objetos diferentes"</span> )<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para times diferentes!<span class="comando">\n</span>"</span> )<br><br>
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Resultado:</h3>
+                                        </div>
+        
+                                        <img src="../../../imgs/python/operadores/operadores-indentidade.png" alt="">
+                                    <h3>IS NOT (não é)</h3>
+                                    <div class="codigo">
+                                        <code>
+                                            time_wesley = <span class="string-print">"Palmeiras"</span><br>
+                                            time_matheus = <span class="string-print">"Corinthians"</span><br>
+                                            time_italo = <span class="string-print">"Corinthians"</span><br><br>
+                                            <span class="comando">if</span> time_wesley <span class="comando">is not</span> time_matheus:<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = objetos diferentes"</span>)<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para times rivais! <span class="comando">\n</span> "</span>)<br><br>
+                                            <span class="comando">else</span>: <br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = mesmo objeto"</span> )<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para o mesmo time!<span class="comando">\n</span>"</span> )<br><br>
+                                            
+
+                                            <span class="comando">if</span> time_matheus <span class="comando">is not</span> time_italo:<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = objetos diferentes"</span>)<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Matheus e Italo torcem para times rivais!<span class="comando">\n</span>"</span>)<br><br>
+                                            <span class="comando">else</span>: <br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = mesmo objeto"</span> )<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para o mesmo time!<span class="comando">\n</span>"</span> )<br><br>
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Resultado:</h3>
+                                        </div>
+        
+                                        <img src="../../../imgs/python/operadores/operadores-indentidade1.png" alt="">
+                            <div class="texto-resp">
+                            <p>Nesses codigos usamos o is para verificar se o valor contido dentro das strings tem o mesmo valor na memoria
+                                assim entrando no if e a mesma coisa acontece no is not, poré é comparado se são diferentes para poder entrar no if. 
+                            </p>
+                            
+                            
+                            
+                            
+                             <h3>Conclusão</h3>
+                            Mais uma vez acabamos por aqui etecano espero que você tenha entendido melhor sobre os operadores de indentidade,
+                            faça exercícios e projetos que ultilizem os operadores de indentidade para fixar ainda mais em sua mente, caso ainda
+                            tenha alguma dúvida poderá entrar em contato conosco na pagina de contato e vamos te auxiliar, boa sorte e codifique sem moderação.
+                            </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->
@@ -361,4 +376,4 @@
 
     <script src="../../../js/menu-ling.js"></script>
 </body>
-</html>
+</html> 

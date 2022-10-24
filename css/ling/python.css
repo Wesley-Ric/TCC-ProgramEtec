@@ -304,6 +304,13 @@ main section{ /*estilos do section*/
     height: 6rem;
     transition: .5s;
 }
+.f{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(172, 172, 172);
+    height: 6rem;
+    transition: .5s;
+}
 /*hover ao passar o mouse*/
 .h:hover{
     padding-top: 1rem;/*faz o bloco ficar mais alto ao passar o mouse*/
