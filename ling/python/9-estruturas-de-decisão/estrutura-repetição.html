@@ -39,7 +39,13 @@
             background-color: gray;
             color: white;
         }
-       
+       .for{
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+       }
     </style>
 </head>
 <body>
@@ -187,20 +193,31 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>Estruturas de decisão</h1>
-                                        <p>As estrururas de decisão como o próprio nome diz servem para que o programa tome uma decisão
-                                            de executar ou não um bloco de código de acordo com um determinado parâmetro.</p>
-                                        <p>Na estrutura de decisão em python temos três comandos o IF, ELIF e ELSE que traduzindo ficaria
-                                            SE, <i>NÃSE</i> (basicamente seria se, senão) e o senão que serão os responsáveis em tomar a decisão
-                                            de entrar no bloco de comando caso atenda a condição, vamos ver alguns exemplos para entender melhor:
-                                        </p>
-                                        
-                                        
-
+                                        <h1>Estruturas de repetição</h1>
+                                        <p>As estruturas de repetição são recursos das linguagens de programação responsáveis por executar um bloco de código 
+                                            repetidamente através de determinadas condições especificas.</p>
+                                        <p> O Python contém dois tipos de estruturas de repetição: for e while.</p>
+                                        <p>Ambas podem ser vistar a baixo:</p>
                                         </div>
-                                        <h4>If (se)</h4>
+                                        <h4>For (para)</h4>
+                                        <p>O for é ultilizado para <b>percorrer</b> ou <b>repetir</b> uma sequÊncia de dados ou sej auma sequência de códigos
+                                        seja esse uma lista, tupla, string, executando assim um conjunto de instruções a cada item.</p>
+                                        <p>Como você já sabe, o Python utiliza identação para separar blocos de código: nos loops utilizando for não é diferente.</p>
+                                        <p> A sintaxe so for é basicamente: <span class="for">for < nome da variável > in < iterável ></span></p>
+                                        <p>vamos entender melhor:</p>
+                                        <li class="dentro"><p><span class="for">< nome da variável ></span> é o nome da variável que vai receber os elementos de <span class="for">< iterável ></span></p></li>
+                                        <li class="dentro"><p><span class="for">< iterável ></span> é o conteiner de dados sobre o qual vamos iterar, podendo ser: uma lista, tupla, string, dicionário, etc.</p></li>
 
-                                        <img src="../../../imgs/python/estruturas-decisao/Estrutura-if.png" alt="">
+                                        <img src="../../../imgs/python/estruturas-decisao/for.png" alt="">
+
+                                        <p>Para entender melhor o for imagine que você tem o calor de 100 reais e quer gastar de 1 em 1 até ficar com 0 reais
+                                        temos então que no for seria</p>
+                                        valor = 100
+                                        <p>para cada unidade no valor:</p>
+                                        <p>valor - 1</p>
+                                        <p>se (valor > 0)</p>
+                                        <p>fim</p>
+                                        
                                        
                                         <div class="texto-resp">
                                         <br>
@@ -301,16 +318,9 @@
                                     </div>
                                     <div class="texto-resp">
                                         <h3>Resultado:</h3>
-                                    </div>
+                                        </div>
         
                                         <img src="../../../imgs/python/estruturas-decisao/Estrutura-elif1.png" alt="">
-                                        <div class="texto-resp">
-                                            <h3>Indentação</h3>
-                                            Como você já deve ter percebido o Python diferente de outras linguagens de programação como java não faz o uso 
-                                            das chaves ou conchetes "{}" para indicar o que está dentro ou fora da estrutura if, elif e else, o Python se ultiliza
-                                            da indentação que nada mais é do que o recuo ou o espaço do código para dentro do if que damos quando apertamos a tecla tab
-                                            no teclado, se não dermos esse espaço o Python não irá entender nosso código e apontará erro de sintaxe.
-                                        </div>
                                  <h3>Conclusão</h3>
                                 Por fim nessa aula entendemos melhor como funcionam as estruturas de decisão em Python, para que elas servem e suas ultilidades na prática,
                                 faça mais exercícios amigos etecano, faça projetos e desenvolva o codificador dentro de você programe sem moderação e até a próxima.
