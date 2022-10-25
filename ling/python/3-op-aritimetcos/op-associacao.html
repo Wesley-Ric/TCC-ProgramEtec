@@ -114,6 +114,7 @@
                         <!--itens do menu de fato-->
                         <li><a href="../../Python.html">Introdução a Python</a></li>
                         <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
+                        <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas de decisão</a></li>
                         <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
                         <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
                         <li><a href="../6-tuplas/tuplas-init.html">Tuplas</a></li>
@@ -260,72 +261,63 @@
                                     <br>
                                     alguns exemplos para podermos entender melhor:
                                 </div>
-                                <h3>IS (é)</h3>
+                                <h3>IN (no)</h3>
                                     <div class="codigo">
                                         <code>
                                             sacola = [<span class="string-print">"banana"<span class="comando">,</span>"laranja"<span class="comando">,</span>"uva"<span class="comando">,</span>"ameixa"</span>]<br>
                                             fruta = <span class="string-print">"ameixa"</span><br><br>
                                             
-                                            <span class="comando">if</span> time_wesley <span class="comando">is</span> time_matheus:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = mesmo objeto"</span>)<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para o mesmo time!<span class="comando">\n</span>"</span>)<br><br>
+                                            <span class="comando">if</span> fruta <span class="comando">in</span> sacola:<br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"Temos</span> <span class="comando">{</span>fruta<span class="comando">}</span><span class="string-print"> na sacola"</span>)<br><br>
+                                            <span class="comando">if </span><span class="string-print">"abacate"</span><span class="comando"> in </span>sacola: <br>
+                                                <span class="print espaço">print</span>( <span class="string-print">"Temos abacate na sacola"</span>)<br><br>
                                             <span class="comando">else</span>: <br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = objetos diferentes"</span> )<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para times doferemtes!<span class="comando">\n</span>"</span> )<br><br>
+                                                <span class="print espaço">print</span>(<span class="string-print">f"Não temos abacate na sacola"</span>
                                             
-
-                                            <span class="comando">if</span> time_matheus <span class="comando">is</span> time_italo:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = mesmo objeto"</span>)<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Matheus e Italo torcem para o mesmo time!<span class="comando">\n</span>"</span>)<br><br>
-                                            <span class="comando">else</span>: <br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = objetos diferentes"</span> )<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para times diferentes!<span class="comando">\n</span>"</span> )<br><br>
                                         </code>
                                     </div>
                                     <div class="texto-resp">
-                                        <h3>Resultado:</h3>
+                                        <h3>Saída:</h3>
                                         </div>
         
-                                        <img src="../../../imgs/python/operadores/operadores-indentidade.png" alt="">
-                                    <h3>IS NOT (não é)</h3>
+                                        <img src="../../../imgs/python/operadores/operadores-associativos.png" alt="">
+                                        <h3>NOT IN (não em)</h3>
                                     <div class="codigo">
                                         <code>
-                                            time_wesley = <span class="string-print">"Palmeiras"</span><br>
-                                            time_matheus = <span class="string-print">"Corinthians"</span><br>
-                                            time_italo = <span class="string-print">"Corinthians"</span><br><br>
-                                            <span class="comando">if</span> time_wesley <span class="comando">is not</span> time_matheus:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = objetos diferentes"</span>)<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para times rivais! <span class="comando">\n</span> "</span>)<br><br>
-                                            <span class="comando">else</span>: <br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_wesley e time_matheus = mesmo objeto"</span> )<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para o mesmo time!<span class="comando">\n</span>"</span> )<br><br>
+                                            sacola = [<span class="string-print">"banana"<span class="comando">,</span>"laranja"<span class="comando">,</span>"uva"<span class="comando">,</span>"ameixa"<span class="comando">,</span>"jabuticaba"</span>]<br>
+                                            fruta = <span class="string-print">"maçã"</span><br><br>
                                             
-
-                                            <span class="comando">if</span> time_matheus <span class="comando">is not</span> time_italo:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = objetos diferentes"</span>)<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Matheus e Italo torcem para times rivais!<span class="comando">\n</span>"</span>)<br><br>
+                                            <span class="comando">if</span> fruta <span class="comando">not in</span> sacola:<br>
+                                                <span class="print espaço">print</span>( <span class="string-print">f"Não temos</span> <span class="comando">{</span>fruta<span class="comando">}</span><span class="string-print"> na sacola"</span>)<br>
                                             <span class="comando">else</span>: <br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"time_matheus e time_italo = mesmo objeto"</span> )<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Wesley e Matheus torcem para o mesmo time!<span class="comando">\n</span>"</span> )<br><br>
+                                                <span class="print espaço">print</span>(<span class="string-print">f"Temos <span class="comando">{</span>fruta<span class="comando">}</span> na sacola"</span>)<br>
+                                            <span class="comando">if </span><span class="string-print">"jabuticaba" </span><span class="comando">not in </span>sacola: <br>
+                                                <span class="print espaço">print</span>( <span class="string-print">"Não temos jabuticaba na sacola"</span>)<br>
+                                            <span class="comando">else</span>: <br>
+                                                <span class="print espaço">print</span>(<span class="string-print">f"Temos jabuticaba na sacola"</span>)
+                                            
                                         </code>
                                     </div>
                                     <div class="texto-resp">
-                                        <h3>Resultado:</h3>
+                                        <h3>Saída:</h3>
                                         </div>
         
-                                        <img src="../../../imgs/python/operadores/operadores-indentidade1.png" alt="">
+                                        <img src="../../../imgs/python/operadores/operadores-associativos1.png" alt="">
+                                    
                             <div class="texto-resp">
-                            <p>Nesses codigos usamos o is para verificar se o valor contido dentro das strings tem o mesmo valor na memoria
-                                assim entrando no if e a mesma coisa acontece no is not, poré é comparado se são diferentes para poder entrar no if. 
+                            <p>No exemplo 1 podemos vem que o codigo verifica se a fruta esta na sacola que nesse caso é uma lista, depois de verificar entra dentro do if se o item estiver na lista
+                                e se não estiver ele vai direto para o else e executa os comandos dentro dele.
+                            </p>
+                            <p>
+                                Já no segundo exemplo acontece o mesmo que o "in" porém nesse caso acontece o reverso, quando o item citado não está na lista ele entra no if agora se não ele irá para 
+                                o else.
                             </p>
                             
                             
                             
-                            
                              <h3>Conclusão</h3>
-                            Mais uma vez acabamos por aqui etecano espero que você tenha entendido melhor sobre os operadores de indentidade,
-                            faça exercícios e projetos que ultilizem os operadores de indentidade para fixar ainda mais em sua mente, caso ainda
-                            tenha alguma dúvida poderá entrar em contato conosco na pagina de contato e vamos te auxiliar, boa sorte e codifique sem moderação.
+                            Podemos assim terminar a ultima parte de sobre os operadores, busque estudar mais sobre eles e eu recomendaria que você pegasse um projeto para construir que use bastante deles
+                            para poder memorizar e saber quando ultiliza-los, bons estudos e codifique sem moderação etecano.
                             </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
