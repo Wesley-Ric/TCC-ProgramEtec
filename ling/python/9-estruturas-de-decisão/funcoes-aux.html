@@ -219,44 +219,74 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>Auxiliadores</h1>
-                                    <p>Nas estruturas de decisão temos alguns comandos auxiliadores, existem 3 auxiliadores,
-                                       eles são ultilizados quando queremos alterar o fluxo de uma estrutura de repetição.
-                                    </p>
+                                    <h1>Funções</h1>
+                                    A função range é de grande ajuda quando o tema é repetição, laços, for etc. 
+                                    Ela básicamente funciona como uma "distÂncia" até onde o código vai de acordo com o número que insere.
 
-                                    <p>Os auxiliadores são: <span class="for">break, continue e pass</span>.</p>
-                                    <p>Esses auxiliares não funcionam diretamente com o while, e por isso encaixar eles no bloco
-                                    principal do while pode ser tanto quanto inútil, já que a condição especificada encerra o loop.</p>
+                                    <p>Ela gera uma sequência de números pela qual podemos iterar!</p>
 
-                                    <h3>Break</h3>
-                                    
-                                   <p>É usado para finalizar um loop, isto é, é usado para parar sua execução.</p>
+                                   <li class="espaço">Podemos indicar nela:</li>
 
-                                   <p>Geralmente vem acompanhado de alguma condição para isso, com um if.</p>
-
-                                   <p> Veja um exemplo:</p>
+                                   <li class="espaço">O inicio de uma sequência.</li>
+                                   <li class="espaço">O passo ou de quantos em quantos ela vai ir.</li>
+                                   <li class="espaço">O valor final da sequência.</li>
+                                   Com isso temos uma sequência de números para ultilizarmos.
+                                   <p>Podemos usar o range com três escopos, ínicio, parada e passo (intervalo)</p>
+                                   
+                                    <p><span class="for">range(parada)</span>
+                                    <p><span class="for">range(inicio, parada)</span></p>
+                                    <p><span class="for">range(inicio, parada, passo(intervalo))</span></p>
+                                   <p>Exemplo de uso:</p>
+                                    </span>
+                                    <h3>Range parada</h3>
                                 </div>
                                 <div class="codigo">
                                     <code>
-                                        <span class="comando">for</span> num <span class="codigo">in </span> <span class="comando-azul">range</span>(<span class="numero">10</span>) <br>
-                                        <span class="comando espaço">if </span>num == <span class="numero">5</span>:
-                                        <span class="comando">break</span>
-                                        <span class="comando">else</span>:<br>
-                                        <span class="print espaço2x">print</span>(num)<br>
-                                        <span class="comando espaço">else</span>: <br>
-                                        <span class="print espaço2x">print</span>(num)
+                                        <span class="comando">for</span> num<span class="comando"> in </span><span class="comando-azul">range</span>(<span class="numero">5</span>) <br>
+                                        <span class="print espaço">print</span>(num)
                                     </code>
                                     <div class="texto-resp">
                                     <h3>Saída:</h3>
                                     </div>
-                                    <img src="../../../imgs/python/estruturas-decisao/auxiliadores.png" alt="">
+                                    <img src="../../../imgs/python/estruturas-decisao/range.png" alt="">
                                 </div>
                                 <br>
                                 <div class="texto-resp">
-                                    O que ocorre nesse ultimo caso e que chamamos o for e dizemos pra ele que para cada número no renge de 10
-                                    ele vai somar 1 a esse numero, porém a repetição não chega a 10, pois ele entra no if que verifique se o num chega a 5
-                                    como chega usamos o break para acabar com a repetição.
-                                    <p>Já com while, também podemos utilizar o break em uma condição utilizando if, assim:</p>
+                                    Como podemos ver ele conta até 5, ou seja o 5 é o stop ou a parada.
+                                    <h3>Range início e parada</h3>
+                                </div>
+                                
+                                <div class="codigo">
+                                    <code>
+                                        <span class="comando">for</span> num<span class="comando"> in </span><span class="comando-azul">range</span>(<span class="numero">3 <span class="comando">, </span><span class="numero">4</span></span>) <br>
+                                        <span class="print espaço">print</span>(num)
+                                    </code>
+                                    <div class="texto-resp">
+                                    <h3>Saída:</h3>
+                                    </div>
+                                    <img src="../../../imgs/python/estruturas-decisao/range2.png" alt="">
+                                </div>
+                                <br>
+                                <div class="texto-resp">
+                                    No segundo caso temos que vamos começar no 3 e terminar no 5 então ele só contará o 3 e o 4
+                                    <h3>Range início, parada e pulo (intervalo)</h3>
+                                </div>
+                                
+                                <div class="codigo">
+                                    <code>
+                                        <span class="comando">for</span> num<span class="comando"> in </span><span class="comando-azul">range</span>(<span class="numero">3 <span class="comando">, </span><span class="numero">5</span><span class="comando">, </span><span class="numero">2</span></span>) <br>
+                                        <span class="print espaço">print</span>(num)
+                                    </code>
+                                    <div class="texto-resp">
+                                    <h3>Saída:</h3>
+                                    </div>
+                                    <img src="../../../imgs/python/estruturas-decisao/range3.png" alt="">
+                                </div>
+                                <br>
+                                <div class="texto-resp">
+                                    Note que nesse último caso o inicio é o número 1, o final é o 5, ou seja ela termina no 4 que é um antes do 5, e o intervalo é 2,
+                                    então ele conta de dois em dois tendo 1 + 2 = 3, printando o 1 e 3. <br>
+                                    <h3>Funcão enumerate()</h3>
                                 </div>
                                 <div class="codigo">
                                     <code>
