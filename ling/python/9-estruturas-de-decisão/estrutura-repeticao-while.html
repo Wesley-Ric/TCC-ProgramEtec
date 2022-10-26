@@ -242,79 +242,41 @@
                                             <img src="../../../imgs/python/estruturas-decisao/while.png" alt="">
                                         
                                 <div class="texto-resp">
-                                    Nesse caso foi ultilizado o range() para usar variável como um escopo para o contador parar, isso normalmente é ultilizado quando usamos números inteiros.
-                                    <p>Para entendermos de forma mais clara vamos fazer mais alguns exemplos:</p>
-                                </div>
-                                    <h3>Listas</h3>
+                                    <p> Ou seja, a variável contador está sendo incrementada a cada vez que o while executa seu código.</p>
+
+                                    <p>Quando ele alcançar o valor 10, a condição contador < 10 não será mais satisfeita, finalizando o bloco while!</p>
                                     
-                                        <div class="codigo">
-                                            <code>
-                                                computador = <span class="string-print">"Processador"<span class="comando">,</span>"SSD"<span class="comando">,</span>"GPU"</span><br>
-                                            
-                                                <span class="comando">for </span>item <span class="comando">in</span> computador<br>
-                                                <span class="print espaço">print</span>(item)<br>
-                                            </code>
-                                        </div>
-                                        <div class="texto-resp">
-                                            <p><i> Se quiser saber mais sobre listas em Python temos mais sobre esse assunto aqui mesmo é so <a href="../7-listas/listas-init.html">clicar aqui</a> para conhecer mais.</i></p>
-                                            <h3>Resultado:</h3>
-                                            </div>
-            
-                                            <img src="../../../imgs/python/estruturas-decisao/resp-for1.png" alt="">
-                        
-                            
-                                        <div class="texto-resp">
-                                            <h3>Dicionários</h3>
-                                       <p>com o for podemos percorrer também os dicionários em python, que são uma estrutura de dados muito importante <i><a href="../8-dicionarios/dicionarios-init.html">clique aqui para saber mais sobre dicionários</a></i></p> 
-                                    </div>
-                                    <div class="codigo">
-                                        <code>
-                                            notas = {<br>
-                                                <span class="string-print dentro2x">'Português'</span>:<span class="numero">7</span><span class="comando">,</span><br>                                
-                                                <span class="string-print dentro2x">'Matemática'</span>:<span class="numero">9</span><span class="comando">,</span><br>     
-                                                <span class="string-print dentro2x">'Lógica'</span>:<span class="numero">7</span><span class="comando">,</span><br>     
-                                                <span class="string-print dentro2x">'Algoritimo'</span>:<span class="numero">7</span><span class="comando">,</span><br>     
-                                            } <br>
-                                            
-                                            <span class="comando">for</span> chave<span class="comando">,</span> valor <span class="comando">in</span> notas.items():<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">f"</span><span class="comando">{</span>chave<span class="comando">}</span>:<span class="comando">{</span>valor<span class="comando">}</span><span class="stirng-print">"</span> )<br>
-                                        
-                                        </code>
-                                    </div>
-                                    <div class="texto-resp">
-                                        <h3>Saída:</h3>
-                                        </div>
-        
-                                        <img src="../../../imgs/python/estruturas-decisao/resp-for2.png" alt="">
-
-                                <div class="texto-resp">
-                                    <h5>Podemos também percorrer strings com o for pois também são um tipo iterável</h5>
-
+                                    <p>Assim como no for, podemos utilizar o else também nos loops while.</p>
+                                    
+                                    <p>Vamos usar o mesmo código do exemplo acima para você entender a diferença:</p>
                                 </div>
                                 <div class="codigo">
                                     <code>
-                                        <span class="comando">for </span>caractere <span class="comando">in</span> <span class="string-print">"Python"</span>:<br>
-                                            <span class="print espaço">print</span>(caractere)<br>
+                                        contador = <span class="numero">0</span><br><br>
+                                    
+                                        <span class="comando">while</span> contador < 10: <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f'Valor do contador é </span><span class="comando">{</span>contador<span class="comando">}</span><span class="string-print">'</span>)<br>
+                                        <span class="espaço"> contador += <span class="numero">1</span><br></span>
+                                        <span class="comando">else</span>: <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f'Fim do while e o valor do contador é </span> <span class="comando">{</span>contador<span class="comando">}</span><span class="string-print">'</span>)
                                     </code>
                                 </div>
                                 <div class="texto-resp">
                                     <h3>Saída:</h3>
                                     </div>
     
-                                    <img src="../../../imgs/python/estruturas-decisao/resp-for3.png" alt="">
-                               <!--     
-                                <div class="text-resp">
-                                    <h3>Auxiliadores</h3>
-                                    <p>Para concluirmos nossa viagem ao mundo do for em Python vamos comentar sobre os auxiliadores, que usamos quando queremos alterar
-                                        o fluxo de uma estrutura de repetição. Existem 3 desses comandos auxiliadores, são eles:
-                                    </p>
-                                    <h4>break, continue, pass</h4>
-                                    <h3>Break</h3>
+                                    <img src="../../../imgs/python/estruturas-decisao/while-resp.png" alt="">
+                                  
                                     
-                                </div>-->
-                                 <h3>Conclusão</h3>
-                                    Chegamos ao fim do for caro etecano, continue os estudos, uma coisa que eu te recomendaria seria iniciar um curso online sobre python, podemos aprender muito com eles,
-                                    eu mesmo comecei Python com o curso em video no youtube, sugiro também que você desenvolva projetos simples com essas estruturas de repetição, até a proxia e codifique sem moderação.
+                                <div class="texto-resp">
+                                    <p>o que ocorre nesse último caso básicamente é que o contador começa em 0, após isso o while diz que enquanto o contador que vale 0 for menor que 10
+                                        ele irá printar na tela o valor do contador e irá somar 1 ao contador, repetindo isso até o while ser igual maior ou igual a 10, então quando a condição
+                                        não é mais satisfeita ela entra no else, printando na tela 
+                                    </p>
+                                    <h3>Conclusão</h3>
+                                <p>Para terminarmos essa aula eu indico que você faça exercícios sobre while e for e de preferência eu indicaria que você fizesse um projeto que usasse tudo o que você apendeu até agora
+                                    ultilizando for e while, pesquise também sobre input para interagir com o usuário, fique bem e programe sem moderação etecano.
+                                </p>
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
