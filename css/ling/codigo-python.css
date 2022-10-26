@@ -37,6 +37,7 @@
     width: 100%;
     height: 20rem;
 }
+
 .string-print{
     color: #267006;
 }
@@ -71,4 +72,10 @@
     .texto-r .img-sec{
     width: 70%
     }
+}
+.comando-azul{
+    color: #6e46e8;
+}
+.dentro2x{
+    padding-left: 6rem;
 }

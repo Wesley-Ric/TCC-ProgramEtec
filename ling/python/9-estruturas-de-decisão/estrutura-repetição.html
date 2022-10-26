@@ -182,7 +182,25 @@
                             <div class="pergunta b h">
                                 <div class="alinha-texto-perg">
                                     <span class="text-p">
-                                        Estruturas de repetição
+                                        Estrutura de repetição for
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="estrutura-repeticao-while.html">
+                            <div class="pergunta c h">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        Estrutura de repetição while
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="auxiliadores.html">
+                            <div class="pergunta d h">
+                                <div class="alinha-texto-perg">
+                                    <span class="text-p">
+                                        Auxiliadores
                                     </span>
                                 </div>
                             </div>
@@ -193,11 +211,11 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                        <h1>Estruturas de repetição</h1>
+                                        <h1>Estrutura de repetição for</h1>
                                         <p>As estruturas de repetição são recursos das linguagens de programação responsáveis por executar um bloco de código 
                                             repetidamente através de determinadas condições especificas.</p>
                                         <p> O Python contém dois tipos de estruturas de repetição: for e while.</p>
-                                        <p>Ambas podem ser vistar a baixo:</p>
+                                        <p>Nesta página vamos ver o for</p>
                                         </div>
                                         <h4>For (para)</h4>
                                         <p>O for é ultilizado para <b>percorrer</b> ou <b>repetir</b> uma sequÊncia de dados ou sej auma sequência de códigos
@@ -205,125 +223,104 @@
                                         <p>Como você já sabe, o Python utiliza identação para separar blocos de código: nos loops utilizando for não é diferente.</p>
                                         <p> A sintaxe so for é basicamente: <span class="for">for < nome da variável > in < iterável ></span></p>
                                         <p>vamos entender melhor:</p>
-                                        <li class="dentro"><p><span class="for">< nome da variável ></span> é o nome da variável que vai receber os elementos de <span class="for">< iterável ></span></p></li>
-                                        <li class="dentro"><p><span class="for">< iterável ></span> é o conteiner de dados sobre o qual vamos iterar, podendo ser: uma lista, tupla, string, dicionário, etc.</p></li>
+                                        <li class="dentro"><span class="for">< nome da variável ></span> é o nome da variável que vai receber os elementos de <span class="for">< iterável ></span></li>
+                                        <li class="dentro"><span class="for">< iterável ></span> é o conteiner de dados sobre o qual vamos iterar, podendo ser: uma lista, tupla, string, dicionário, etc.</li>
 
-                                        <img src="../../../imgs/python/estruturas-decisao/for.png" alt="">
+                                        <img style="width: 20%;" src="../../../imgs/python/estruturas-decisao/for.png" alt="">
 
-                                        <p>Para entender melhor o for imagine que você tem o calor de 100 reais e quer gastar de 1 em 1 até ficar com 0 reais
-                                        temos então que no for seria</p>
-                                        valor = 100
-                                        <p>para cada unidade no valor:</p>
-                                        <p>valor - 1</p>
-                                        <p>se (valor > 0)</p>
-                                        <p>fim</p>
-                                        
-                                       
-                                        <div class="texto-resp">
-                                        <br>
-                                        Como podemos ver nessa estrutura o código se inicia depois disso e mostrado a seguinte
-                                        condição:
-                                        <p>se A > B então:</p>
-                                        se a condição for verdadeira ou seja se A for maior que B o código entrará no IF e irá para o bloco
-                                        onde ele manda imprimir na nela a menssagem "A é maior que B", senão o código sai da estrutura e acaba já que nesse caso não temos o ELSE
-                                        <p>Para entendermos na prática vamos passar o fluxograma para o código em Python em sí</p>
-                                    </div>
-                                    <h3>Caso verdadeiro:</h3>
+                                        <p>Para entender melhor o for vamos criar um contador que conta de 0 a 6, para isso vamos criar uma variável contador com o valor de 100,
+                                        depois disso para cada unidade no contador iremos printar ele na tela, logo depois vamos sair do loop printando na tela que a conta terminou.
+                                        </p>
                                         <div class="codigo">
                                             <code>
-                                                A = <span class="numero">10</span><br>
-                                                B = <span class="numero">5</span><br><br>
+                                                contador = <span class="numero">6</span><br><br>
                                             
-                                                <span class="comando">if</span> A > B<br>
-                                                <span class="print espaço">print</span>( <span class="string-print">"A é maior que B"</span>)<br>
+                                                <span class="comando">for</span> unidade <span class="codigo">in </span> <span class="comando-azul">range</span>(contador) <br>
+                                                <span class="print espaço">print</span>(unidade)<br>
+                                                <span class="comando">else</span>:<br>
+                                                <span class="print espaço">print</span>( <span class="string-print">"Contamos tudo"</span>)<br>
                                             </code>
                                         </div>
                                         <div class="texto-resp">
                                             <h3>Resultado:</h3>
                                             </div>
             
-                                            <img src="../../../imgs/python/estruturas-decisao/Estrutura-if-res.png" alt="">
-                                            <h3>Caso falso:</h3>
-                                            <div class="codigo">
-                                                <code>
-                                                    A = <span class="numero">10</span><br>
-                                                    B = <span class="numero">20</span><br><br>
-                                                
-                                                    <span class="comando">if</span> A > B:<br>
-                                                    <span class="print espaço">print</span>( <span class="string-print">"A é maior que B"</span>)<br>
-                                                </code>
-                                            </div>
-                                            <div class="texto-resp">
-                                                <h3>Resultado:</h3>
-                                                </div>
-                
-                                                <img src="../../../imgs/python/estruturas-decisao/Estrutura-if-res2.png" alt="">
+                                            <img src="../../../imgs/python/estruturas-decisao/resp-for.png" alt="">
+                                        
                                 <div class="texto-resp">
-                                    Nesse último caso podemos ver que o código não printou nada no terminal, pois como o resultado foi falso ele não entrou na estrutura de decisão.
+                                    Nesse caso foi ultilizado o range() para usar variável como um escopo para o contador parar, isso normalmente é ultilizado quando usamos números inteiros.
+                                    <p>Para entendermos de forma mais clara vamos fazer mais alguns exemplos:</p>
                                 </div>
-                                <h4>Else (senão)</h4>
-
-                                        <img src="../../../imgs/python/estruturas-decisao/Estrutura-else.png" alt="">
-                                       
-                                        <div class="texto-resp">
-                                        <br>
-                                        O else é ultilizado sempre com o if pois ele criará outro bloco caso a condição seja falsa.
-                                        para entender melhor o exemplo a cima vamos exemplificar
-                                        <p>se A > B então:</p>
-                                        se a condição for verdadeira ou seja se A for maior que B o código entrará no IF e irá para o bloco
-                                        onde ele manda imprimir na nela a menssagem "A é maior que B", senão o código sai do if e entra no ELSE,
-                                        printando na tela "A não é menor que B"
-                                        <p>Para entendermos na prática vamos passar o fluxograma para o código em Python em sí</p>
-                                    </div>
+                                    <h3>Listas</h3>
                                     
                                         <div class="codigo">
                                             <code>
-                                                A = <span class="numero">10</span><br>
-                                                B = <span class="numero">20</span><br><br>
+                                                computador = <span class="string-print">"Processador"<span class="comando">,</span>"SSD"<span class="comando">,</span>"GPU"</span><br>
                                             
-                                                <span class="comando">if</span> A > B:<br>
-                                                <span class="print espaço">print</span>( <span class="string-print">"A é maior que B"</span>)<br>
-                                                <span class="comando">else</span>:<br>
-                                                <span class="print espaço">print</span>( <span class="string-print">"A não é maior que B"</span>)<br>
+                                                <span class="comando">for </span>item <span class="comando">in</span> computador<br>
+                                                <span class="print espaço">print</span>(item)<br>
                                             </code>
                                         </div>
                                         <div class="texto-resp">
+                                            <p><i> Se quiser saber mais sobre listas em Python temos mais sobre esse assunto aqui mesmo é so <a href="../7-listas/listas-init.html">clicar aqui</a> para conhecer mais.</i></p>
                                             <h3>Resultado:</h3>
                                             </div>
             
-                                            <img src="../../../imgs/python/estruturas-decisao/Estrutura-else-resp.png" alt="">
-                                        <h1>ELIF (se senão)</h1>
-                                        <img src="../../../imgs/python/estruturas-decisao/Estrutura-elif.png" alt="">
+                                            <img src="../../../imgs/python/estruturas-decisao/resp-for1.png" alt="">
+                        
+                            
                                         <div class="texto-resp">
-                                        por último mas não menos importante temos o ELIF (se senão) essa estrutura basicamente serve para testar
-                                        diversas condições para tomar uma decisão em seu código.
-                                        <p>No exemplo temos um aluno que tirou X nota, se a nota for igual ou maior que Y ele é aprovado,
-                                            se senão ele vai para recuperação e soma a sua nota inicial se der maior ou igual a Y ele é aprovado,
-                                            senão ele é reprovado.
-                                        </p>
-                                        exemplo na prática:
-                                        
+                                            <h3>Dicionários</h3>
+                                       <p>com o for podemos percorrer também os dicionários em python, que são uma estrutura de dados muito importante <i><a href="../8-dicionarios/dicionarios-init.html">clique aqui para saber mais sobre dicionários</a></i></p> 
                                     </div>
                                     <div class="codigo">
                                         <code>
-                                            cor_semaforo = <span class="string-print">"vermelho"</span><br><br>
+                                            notas = {<br>
+                                                <span class="string-print dentro2x">'Português'</span>:<span class="numero">7</span><span class="comando">,</span><br>                                
+                                                <span class="string-print dentro2x">'Matemática'</span>:<span class="numero">9</span><span class="comando">,</span><br>     
+                                                <span class="string-print dentro2x">'Lógica'</span>:<span class="numero">7</span><span class="comando">,</span><br>     
+                                                <span class="string-print dentro2x">'Algoritimo'</span>:<span class="numero">7</span><span class="comando">,</span><br>     
+                                            } <br>
+                                            
+                                            <span class="comando">for</span> chave<span class="comando">,</span> valor <span class="comando">in</span> notas.items():<br>
+                                            <span class="print espaço">print</span>( <span class="string-print">f"</span><span class="comando">{</span>chave<span class="comando">}</span>:<span class="comando">{</span>valor<span class="comando">}</span><span class="stirng-print">"</span> )<br>
                                         
-                                            <span class="comando">if</span> cor_semaforo == <span class="string-print">"verde"</span>:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"Pode avançar, sinal verde!"</span>)<br>
-                                            <span class="comando">elif</span> cor_semaforo == <span class="string-print">"amarelo"</span>:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"ATENÇÃO! o semáforo vai fechar."</span>)<br>
-                                            <span class="comando">else</span>:<br>
-                                            <span class="print espaço">print</span>( <span class="string-print">"ATENÇÃO! o semáforo está vermelho, aguarde ele abrir."</span>)<br>
                                         </code>
                                     </div>
                                     <div class="texto-resp">
-                                        <h3>Resultado:</h3>
+                                        <h3>Saída:</h3>
                                         </div>
         
-                                        <img src="../../../imgs/python/estruturas-decisao/Estrutura-elif1.png" alt="">
+                                        <img src="../../../imgs/python/estruturas-decisao/resp-for2.png" alt="">
+
+                                <div class="texto-resp">
+                                    <h5>Podemos também percorrer strings com o for pois também são um tipo iterável</h5>
+
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        <span class="comando">for </span>caractere <span class="comando">in</span> <span class="string-print">"Python"</span>:<br>
+                                            <span class="print espaço">print</span>(caractere)<br>
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Saída:</h3>
+                                    </div>
+    
+                                    <img src="../../../imgs/python/estruturas-decisao/resp-for3.png" alt="">
+                               <!--     
+                                <div class="text-resp">
+                                    <h3>Auxiliadores</h3>
+                                    <p>Para concluirmos nossa viagem ao mundo do for em Python vamos comentar sobre os auxiliadores, que usamos quando queremos alterar
+                                        o fluxo de uma estrutura de repetição. Existem 3 desses comandos auxiliadores, são eles:
+                                    </p>
+                                    <h4>break, continue, pass</h4>
+                                    <h3>Break</h3>
+                                    
+                                </div>-->
                                  <h3>Conclusão</h3>
-                                Por fim nessa aula entendemos melhor como funcionam as estruturas de decisão em Python, para que elas servem e suas ultilidades na prática,
-                                faça mais exercícios amigos etecano, faça projetos e desenvolva o codificador dentro de você programe sem moderação e até a próxima.
+                                    Chegamos ao fim do for caro etecano, continue os estudos, uma coisa que eu te recomendaria seria iniciar um curso online sobre python, podemos aprender muito com eles,
+                                    eu mesmo comecei Python com o curso em video no youtube, sugiro também que você desenvolva projetos simples com essas estruturas de repetição, até a proxia e codifique sem moderação.
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
