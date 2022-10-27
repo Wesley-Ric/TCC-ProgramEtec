@@ -82,3 +82,21 @@
 .espaço2x{
     padding-left: 4rem;
 }
+.for-azul{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #0162e0;
+    background-color: #a4d2f5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.for-azul:hover{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #b60f03;
+    background-color: #f5a4a4;
+    border-radius: 4px;
+    transition: .3s;
+    cursor: pointer;
+}

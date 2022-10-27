@@ -287,121 +287,65 @@
                                     Note que nesse último caso o inicio é o número 1, o final é o 5, ou seja ela termina no 4 que é um antes do 5, e o intervalo é 2,
                                     então ele conta de dois em dois tendo 1 + 2 = 3, printando o 1 e 3. <br>
                                     <h3>Funcão enumerate()</h3>
+                                    <p>Uma boa dica para seus códigos em Python para se usar com o <span class="for">for</span>, é a função <span class="for">enumerate()</span>.</p>
+                                    <p>Ela funciona como se fosse um contador que você cria com uma variável porém é imbutido no próprio <span class="for">for</span>!</p>
+                                    Podemos então ao invés disso:
                                 </div>
                                 <div class="codigo">
                                     <code>
-                                        num = <span class="numero">0</span> <br>
-                                        <span class="comando">while</span> num < <span class="numero">5</code> <br>
-                                        <span class="espaço"> num += <span class="numero">1</span></span> <br>
-                                        <span class="comando espaço">if </span>num == <span class="numero">3</span>:<br>
-                                        <span class="comando espaço2x">break</span><br><br>
-                                        <span class="print espaço">print</span>(num)
+                                        contador = <span class="numero">0</span> <br>
+                                        computador = [<span class="string-print">'Processador'</span><span class="comando">, </span><span class="string-print">'Teclado'</span><span class="comando">, </span><span class="string-print">'Mouse'</span> ] <br>
+                                        <span class="comando">for</span> elemento <span class="comando">in</span> computador: <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f"Índice =</span> <span class="comando">{</span>contador<span class="comando">}</span> | Valor=<span class="comando">{</span>elemento<span class="comando">}</span><span class="string-print">"</span>) <br>
+                                        <span class="espaço">contador +=</span><span class="numero"> 1</span>
                                     </code>
                                     <div class="texto-resp">
                                     <h3>Saída:</h3>
                                     </div>
-                                    <img src="../../../imgs/python/estruturas-decisao/auxiliadores2.png" alt="">
+                                    <img src="../../../imgs/python/estruturas-decisao/funcao.png" alt="">
                                 </div>
-                                <div class="texto-resp">
-                                    Quando a variável atribuir o valor 3 o laço é finalizado pelo break, encerrando o loop.
-                                    <h3>Continue</h3>
-                                    Funciona de maneira similar ao break, contudo ao invés de encerrar o loop ele pula todo código que estiver abaixo dele (dentro do loop) 
-                                    partindo para a próxima iteração.
-                                    <p>Vamos ao exemplo:</p>
-                                </div>
+                                <p>Jogamos o contador fora e fazemos isso:</p>
                                 <div class="codigo">
                                     <code>
-                                        <span class="comando">for</span> num <span class="comando">in</code><span class="comando-azul"> range</span>(<span class="numero">5</span>) <br>
+                                        computador = [<span class="string-print">'Processador'</span><span class="comando">, </span><span class="string-print">'Teclado'</span><span class="comando">, </span><span class="string-print">'Mouse'</span> ] <br>
+                                        <span class="comando">for</span> indice<span class="comando">,</span> valor<span class="comando"> in</span> <span class="comando-azul">enumerate</span>(computador): <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f"Índice =</span> <span class="comando">{</span>indice<span class="comando">}</span> | Valor=<span class="comando">{</span>valor<span class="comando">}</span><span class="string-print">"</span>) <br>
                                         
-                                        <span class="comando espaço">if </span>num == <span class="numero">3</span>:<br>
-                                        <span class="print espaço2x">print</span>(<span class="string-print">"Encontrei o 3"</span>)<br>
-                                        <span class="comando espaço2x">continue</span><br>
-                                        <span class="comando espaço">else</span>: <br>
-                                        <span class="print espaço2x">print</span>(num)<br><br>
-                                        <span class="print espaço">print</span>(<span class="string-print">"Estou abaixo do IF"</span>)<br>
                                     </code>
                                     <div class="texto-resp">
                                     <h3>Saída:</h3>
                                     </div>
-                                    <img src="../../../imgs/python/estruturas-decisao/auxiliadores3.png" alt="">
+                                    <img src="../../../imgs/python/estruturas-decisao/funcao1.png" alt="">
                                 </div>
                                 <br>
                                 <div class="texto-resp">
-                                    Note que quando o a condição entra no IF ele não printa nem o num nem o "estou abaixo do IF" ignorando o restande do bloco
-                                    de código.
+                                   Esse código é o que podemos chamar de Pythonico, pois ele segue as melhores praticas da programação em Python, é menor e usa menos memória.
                                     <p>Em loops com while a lógica é a mesma. O continue irá finalizar o loop atual, iniciando novamente no início do while.</p>
 
-                                        Veja o exemplo: <br><br>
+                                  <p>Outra maneira de iterar sobre os índices, é combinar as funções <span class="for">range()</span> e <span class="for">len()</span>.</p>
+
+                                  <p>A função <span class="for">len()</span> retorna o tamanho de um iterável (lista, tupla, set).</p>
+
+                                  <p>Podemos combiná-los da seguinte forma:</p>
                                 </div>
                                 <div class="codigo">
                                     <code>
-                                        num  = <span class="numero">0</span> <br>
-                                        <span class="comando">while</span> num < <span class="numero">5</span>: <br>
-                                        <span class="espaço">num += <span class="numero">1</span></span><br><br>
-                                        <span class="comando espaço">if </span>num == <span class="numero">3</span>:<br>
-                                        <span class="comando espaço2x">continue</span><br><br>
-                                        <span class="print espaço">print</span>(num)<br>
+                                        computador = [<span class="string-print">'Processador'</span><span class="comando">, </span><span class="string-print">'Teclado'</span><span class="comando">, </span><span class="string-print">'Mouse'</span> ] <br>
+                                        <span class="comando">for</span> indice<span class="comando">,</span> indice<span class="comando"> in</span> <span class="comando-azul">range</span>(<span class="comando-azul">len</span>(computador)): <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f"Índice =</span> <span class="comando">{</span>indice<span class="comando">}</span> | Valor=<span class="comando">{</span>valor<span class="comando">}</span><span class="string-print">"</span>) <br>
+                                        
                                     </code>
                                     <div class="texto-resp">
                                     <h3>Saída:</h3>
                                     </div>
-                                    <img src="../../../imgs/python/estruturas-decisao/auxiliadores4.png" alt="">
+                                    <img src="../../../imgs/python/estruturas-decisao/funcao1.png" alt="">
                                 </div>
                                 <div class="texto-resp">
-                                    <br>
-                                    O resultado desse código é que o 3 não apareça, pois o print() que imprime os números está abaixo do continue.
-                                    <h3>Pass</h3>
-                                   <p> O pass nada mais é que uma forma de fazer um código que não realiza operação nenhuma.</p>
-
-                                   <p>Mas calma, ele tem uma razão de existir no Python!</p>
-
-                                   <p>Como os escopos de Classes, Funções, If/Else e loops for/while são definidos pela indentação do código
-                                    (e não por chaves {} como geralmente se vê em outras linguagens de programação), usamos o pass para dizer
-                                    ao Python que o bloco de código está vazio.</p>
-
-                                    <p>Veja alguns exemplos:</p>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        <span class="comando">for</span> item <span class="comando">in</span><span class="comando-azul"> range</span>(<span class="numero">5</span>): <br>
-                                        <span class="comando espaço">pass</span><br><br>
-                                        <span class="comando">while</span><span class="comando"> False</span>: <br>
-                                        <span class="comando espaço">pass</span><br><br>
-                                        <span class="comando">class</span>classe:<br>
-                                        <span class="comando espaço">pass</span><br><br>
-                                        <span class="comando">if </span><span class="comando"> True</span>:<br>
-                                        <span class="comando espaço">pass</span><br>
-                                        <span class="comando">else</span>: <br>
-                                        <span class="comando espaço">pass</span><br><br>
-                                        <span class="comando">def</span><span class="funcao"> funcao</span>():<br>
-                                        <span class="comando espaço">pass</span><br><br>
-                                    </code>
-                                    <div class="texto-resp">
-                                    <h3>Saída:</h3>
-                                    </div>
-                                    <img src="../../../imgs/python/estruturas-decisao/auxiliadores5.png" alt="">
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Caso não utilizemos o pass, veja o que acontece:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                    
-                                        <span class="comando">class</span>classe:<br>
-                                        <span class="comando">def</span><span class="funcao"> funcao</span>():<br>
-                                        <span class="comando espaço">pass</span><br><br>
-                                    </code>
-                                    <div class="texto-resp">
-                                    <h3>Saída:</h3>
-                                    </div>
-                                    <img src="../../../imgs/python/estruturas-decisao/auxiliadores6.png" alt="">
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Isso acontece pois o Python entende que as próximas linhas de código fazem parte do mesmo escopo,
-                                     mas como não estão indentadas um erro IndentationError é lançado.
+                                    <h3>Conclusão</h3>
+                                    <p>Nesse post aprendemos os pilares da programação em Python, while e for são muito importantes e para desenvolver em Python,
+                                        o que eu recomendo para você é desenvolver um programa quer útilize os dois e faça mais esxercícios sobre, existem disversos na internet
+                                        fique bem e programe sem moderação etecano.
+                                    </p>
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->

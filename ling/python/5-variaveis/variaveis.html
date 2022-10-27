@@ -194,66 +194,38 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
-                                    <h1>O que são variáveis em Python?</h1>
-                                    Variáveis em Python são lugares reservados na memória de um dispositivo para o armazenamento de dados que posteriormente vão ser usados na execução de uma solução digital.
+                                    <h1>Variáveis</h1>
+                                    Aqui poderemos ver de fato as variáveis em python e entender melhor como funcionam, então abra o Pycharm  vamos nessa.
 
-                                    <p>Essas variáveis podem ter formatos e tamanhos diferentes, entre outras particularidades.</p>
+                                   <h3>Inteiro</h3>
 
-                                    <p>Podemos pensar que a memória RAM de um dispositivo é como um grande armário, que comporta diversos itens no seu interior,
-                                     e esse itens são as variáveis.</p>
-
-                                    <p>Quando você abre um armário, lá podem estar roupas, calçados, livros e objetos decorativos em geral.</p>
-
-                                    <p>Apesar de suas diferenças, todos esses itens podem ser armazenados em um único lugar e, na medida em que são retirados do seu espaço, 
-                                    fica uma lacuna que pode ser preenchida por outra variável ou pela mesma.</p>
-
-                                    <h2>Tipos de variáveis Python</h2>
-                                    Assim como em um armário podem haver diferentes itens (variáveis), a linguagem Python também possui uma variedade importante de tipificação de dados. 
-
-                                    <p>Confira alguns tipos:</p>
-                                    <li>Tipo intreiro (<span class="for-azul">int</span>) : tipagem comporta por algarismos numéricos inteiros.</li>
-                                    <li>Tipo ponto flutuante ou decimal (<span class="for-azul">float</span>): tipagem composta por número decimais (frações).</li>
-                                    <li>Tipo complexo (<span class="for-azul">float</span>): tipagem composta oir funções matemáticas.</li>
-                                    <li>Tipo string (<span class="for-azul">str</span>): tipagem comporta por caracteres que formam palavras, frases e texto. </li>
-                                    <li>Boolean (<span class="for-azul">bool</span>): tipagem composta por lógicas binárias, ou seja, expressões que podem ser classificadas como verdadeiras ou falsas.</li> 
-                                    <li>Listas (<span class="for-azul">list</span>): tipagem que serve para agrupar outros tipos de variáveis, ainda que sejam distintas.</li>
-                                    <li>Tuplas (<span class="for-azul">tuple</span>): é uma espécie de lista, mas que não permite alterar elementos após a sua criação.</li>
-                                    <li>Dicionáros (<span class="for-azul">dict</span>):  tipagem que estabelece uma relação de chave e valor entre dois elementos, onde o primeiro é a chave e o segundo é o valor.</li>
-                                    <h4>Vejamos alguns exemplos para entendermos melhor:</h4>
+                                    <p>O tipo inteiro como você já deve saber são números inteiros que podem ser usados para contas, além de outras coisas, exemplo de numeros inteiros:</p>
                                 </div>
                                     <div class="codigo">
                                         <code>
-                                            inteiro = <span class="numero">12</span><br>
-                                            <span class="print">print</span>(<span class="print">type</span>(inteiro)) <br> <br>
-                                            flutuante = <span class="numero">12.4</span><br>
-                                            <span class="print">print</span>(<span class="print">type</span>(flutuante)) <br> <br>
-                                            complexo = <span class="numero">5</span>+<span class="numero">2J</span><br>
-                                            <span class="print">print</span>(<span class="print">type</span>(complexo)) <br> <br>
-                                            string = <span class="string-print">"Wesley"</span><br>
-                                            <span class="print">print</span>(<span class="print">type</span>(string)) <br> <br>
-                                            booleano = <span class="comando">True</span><br>
-                                            <span class="print">print</span>(<span class="print">type</span>(booleano)) <br> <br>
-                                            lista = [<span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'Italo'</span><span class="comando">, </span><span class="string-print">'Matheus'</span><span class="comando">, </span><span class="string-print">'Michel'</span>]<br>
-                                            lista2 = [<span class="numero">1</span><span class="comando">, </span><span class="numero">2</span><span class="comando">, </span><span class="numero">4</span><span class="comando">, </span><span class="numero">6.7</span>]<br>
-                                            <span class="print">print</span>(<span class="print">type</span>(lista)) <br>
-                                            <span class="print">print</span>(<span class="print">type</span>(lista2)) <br> <br>
-                                            tuplas = (<span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'Italo'</span><span class="comando">, </span><span class="string-print">'Matheus'</span><span class="comando">, </span><span class="string-print">'Michel'</span>)<br>
-                                            tuplas2 = (<span class="numero">1</span><span class="comando">, </span><span class="numero">2</span><span class="comando">, </span><span class="numero">4</span><span class="comando">, </span><span class="numero">6.7</span>)<br>
-                                            <span class="print">print</span>(<span class="print">type</span>(tuplas)) <br>
-                                            <span class="print">print</span>(<span class="print">type</span>(tuplas2)) <br> <br>
-                                            dicionario = {<span class="string-print">'Wesley'</span>:<span class="numero"> 1.85</span><span class="comando">, </span><span class="string-print">'Leticia'</span>:<span class="numero"> 1.60</span><span class="comando">, </span><span class="string-print">'Morgana'</span>:<span class="numero"> 1.75</span>}<br>
-                                            <span class="print">print</span>(<span class="print">type</span>(dicionario)) <br>
+                                            nota = <span class="numero">6</span><br>
+                                            nota2 = <span class="numero">7</span><br>
+                                            nota3 = <span class="numero">10</span><br>
+                                            nota4 = <span class="numero">8</span><br>
+                                            media = (nota+nota2+nota3+nota4)/<span class="numero">4</span>
+                                            <span class="print">print</span>(<span class="string-print">f"A média das notas é </span><span class="comando">{</span>media<span class="comando">}</span><span class="string-print">"</span>) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(media)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nota)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nota2)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nota3)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nota4)) <br>
+                                            
                                             <div class="texto-resp">
                                                 <h1>Resultado</h1>
                                             </div>
-                                            <img src="../../../imgs/python/variaveis/tipo-variaveis.png" alt="">
+                                            <img src="../../../imgs/python/variaveis/int.png" alt="">
 
                                         </code>
                                     </div>
                                     <div class="texto-resp">
                                         <p>
-                                            Como podemos ver acima o Python é uma linguagem pouco tipada, ou seja você não precisa declarar seu tipo para que o python entenda o 
-                                            tipo da variável, quando você declara a variável ele já entende qual é o tipo dela, por isso é uma linguagem de alto nível.
+                                            Vemos no exemplo que as notas são do tipo inteiro já a média do tipo float, pois como as médias são somadas e divididas o resultado sai com vírgula,
+                                            e o Python ja reconhece automaticamente o tipo da variável sem precisarmos dizer para ele.
                                         </p>
                                         <p>
                                             Embora o Python seja uma linguagem pouco tipada ele também possui algumas regras para a declaração de variáveis.
