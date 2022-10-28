@@ -195,6 +195,7 @@
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
                                     <h1>Variáveis</h1>
+                                
                                     Aqui poderemos ver de fato as variáveis em python e entender melhor como funcionam, então abra o Pycharm  vamos nessa.
 
                                    <h3>Inteiro</h3>
@@ -229,7 +230,7 @@
                                         </p>
                                         <h3>Decimal (ponto flutuante (<span class="for">float</span>))</h3>
                                         <p>O float é usado para caracteres decimais, isto é números que possuem virgúla (,) ou em inglês números com ponto (.)</p>
-                                        <p>variáveis float são ultilizadas quando os números que vão ser armazenados são do conjunto dos raxionais ou seja 
+                                        <p>variáveis float são utilizadas quando os números que vão ser armazenados são do conjunto dos raxionais ou seja 
                                             números que podem ser representados com frações, como altura ou peso, por exemplo.
                                         </p>                                  
                                 </div>
@@ -293,7 +294,7 @@
                                     </code>
                                 </div>
                                 <div class="texto-resp">
-                                    <h3>String (<span class="for">str</span>)</h3>
+                                   <h3>String (<span class="for">str</span>)</h3>
                                     <p>As strings são um conjunto de caracteres dispostas em uma determinada ordem, geralmente é usada para representar
                                        palavras, frases ou textos, porém podem representar apenas uma letra, símbolo ou número, porém estes últimos não
                                        podem ser usados em operações matemáticas.
@@ -357,9 +358,109 @@
                                         <div class="texto-resp">
                                             <h1>Resultado</h1>
                                         </div>
-                                        <img src="../../../imgs/python/variaveis/string.gif" alt="">
+                                        <img src="../../../imgs/python/variaveis/bool.png" alt="">
 
                                     </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Listas (<span class="for">list</span>)</h3>
+                                    <p>
+                                        As listar em Python são uma sequência ordenada de valores, sendo cada valor da lista indicado por um índice e os valores que formam a lista são chamados 
+                                        de elementos ou itens.
+                                    </p>
+                                    <p>
+                                        Os elementos da lista podem ser inteiros, flutuantes (decimal), strings, outras listas entre outros tipos.
+                                    </p>
+                                    <p>
+                                        Elas são definidas utilizando-se colchetes para delimitar a lista e vírgulas para separar os elementos, e você
+                                        pode as chamar pelo seu índice que começa em 0 e vai até o infinito.
+                                        <p>Vejamos alguns exemplos: </p>
+                                    </p>
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        alunos = [<span class="string-print">'Amanda'</span><span class="comando">, </span><span class="string-print">'Ana'</span><span class="comando">, </span> <span class="string-print">'Bruno'</span><span class="comando">, </span> <span class="string-print">'João'</span> ] <br>
+                                        notas = [<span class="numero">10</span><span class="comando">, </span> <span class="numero">8.5</span><span class="comando">, </span> <span class="numero">7.8</span><span class="comando">, </span> <span class="numero">8.0</span> ] <br><br>
+                                        
+                                        <span class="print">print</span>(alunos[<span class="numero">0</span>]) <span class="comentario">#O número entre conchetes é o índice</span> <br>
+                                        <span class="print">print</span>(feriado) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(fim_de_semana)) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(feriado)) <br>
+                                    
+                                        
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/variaveis/list.png" alt="">
+
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Tuplas (<span class="for">tuple</span>)</h3>
+                                    <p>
+                                        Conforme as listas as tuplas é um tipo de variável que agrupa elementos, assim como nas listas as tuplas também podem ter caracteres inteiros,
+                                        floats, strings e por assim vai, porém diferente das listas as tuplas ultilizam parênteses para serem
+                                        definidas e são saparadas por vírgulas.
+                                    </p>
+                                    <p>
+                                        A diferença entre as tuplas e as listas é que as Tuplas são imutáveis, isso é não mudam após sua definição, não podem ser modificadas.
+                                    </p>
+                                    <p>
+                                        As tuplas em Python são uma excelente opção para estruturar dados em uma aplicação. 
+                                        Sua utilização oferece mais segurança para armazenar elementos que não devem ser modificados.
+                                        <p>Vejamos alguns exemplos: </p>
+                                    </p>
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        inteiros = (<span class="numero">90</span><span class="comando">, </span><span class="numero">79</span><span class="comando">, </span><span class="numero">54</span><span class="comando">, </span><span class="numero">32</span><span class="comando">, </span><span class="numero">21</span>) <br>
+                                        flutuantes = (<span class="numero">100</span><span class="comando">, </span><span class="numero">94.05</span><span class="comando">, </span><span class="numero">86.8</span><span class="comando">, </span><span class="numero">62</span>) <br>
+                                        strings = (<span class="string-print">'Leticia'</span><span class="comando">, </span><span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'Morgana'</span>) <br><br>
+                                        
+                                        <span class="print">print</span>(strings[<span class="numero">0</span>]) <span class="comentario">#O número entre conchetes é o índice</span> <br>
+                                        <span class="print">print</span>(strings) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(strings)) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(inteiros)) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(flutuantes)) <br>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/variaveis/tuplas.png" alt="">
+
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Dicionários (<span class="for">dict</span>)</h3>
+                                    <p>
+                                        os dicionários são uma coleção de elementos chave-valor que permite representar melhor o mundo real, sendo um tipo de dado muito flexível.
+                                    </p>
+                                    <p>
+                                        Como dito anteriormente esse tipo dedado utiliza a estrutura chave-valor para agrupar elementos, onde a chave é o primeiro elemento seguido de doi pontos (:)
+                                        e o valor, os dicionários são definidos com conchetes {}.
+                                    </p>
+                                    Vejamos alguns exemplos:
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        altura = {<span class="string-print">'Leticia'</span>:<span class="numero">1.69</span><span class="comando">, </span><span class="string-print">'Wesley'</span>:<span class="numero">1.85</span><span class="comando">, </span><span class="string-print">'Morgana'</span>:<span class="numero">1.50</span>} <br>
+                                        peso = {<span class="string-print">'Leticia'</span>:<span class="numero">90</span><span class="comando">, </span><span class="string-print">'Wesley'</span>:<span class="numero">100</span><span class="comando">, </span><span class="string-print">'Morgana'</span>:<span class="numero">40</span>} <br><br>
+                                      
+                                        <span class="print">print</span>(altura) <br>
+                                        <span class="print">print</span>(peso) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(altura)) <br>
+                                        <span class="print">print</span>(<span class="print">type</span>(peso)) <br>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/variaveis/dict.png" alt="">
+
+                                    </code>
+                                   
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Conclusão</h3>
+                                    Finalmente chegamos ao fim das variáveis etecano, espero que você possa ter emtedido melhor a lógica por trás delas, estude e tente proramar mais com 
+                                    cada tipo de variável fazendo exercícios e projetos, fique bem e códifique com moderação.
                                 </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
