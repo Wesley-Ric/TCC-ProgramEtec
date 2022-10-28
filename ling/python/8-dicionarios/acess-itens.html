@@ -174,7 +174,7 @@
                             </div><!--fim pergunta a-->
                         </a> <!--fim tag a-->
                         <a href="acess-itens.html">
-                            <div class="pergunta a h">
+                            <div class="pergunta b h">
                                 <div class="alinha-texto-perg"> 
                                     <span class="text-p">
                                         Acessando itens
@@ -191,107 +191,33 @@
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
-                                <div class="texto-resp">
-                                    <h1>Dicionários Introdução</h1>
-                                    <p>Os dicionários são coleções de itens e seus elementos são armazenados de forma não ordenada.</p>
-                                    <p>Seus elementos contém uma chave e valor, isto é:</p>
-
-
-                                    <li class="dentro">Uma chave que vai servir para indexar (posicionar) determinado elemento no dicionário.</li>
-                                    <li class="dentro">Um valor que contém… Bem, um valor :laughing: Este valor aceita diversos tipos: listas, outros dicionários, inteiros, strings e etc.</li>
-                                
-                                <p>Sua sintaxe básica é: <span class="for-azul">{'chave': 'valor'}.</span> Utiliza-se {} para delimitar o dicionário e a chave é separada do valor por dois pontos :.</p>
-                                
-                                    exemplos:
-                                </div>
-                                <div class="codigo">
+                               <div class="textp-resp">
+                                    <h3>Acessando itens nos dicionários</h3>
+                                    <p>para acerssarmos um item em específico em um dicionário podemos acessar por sua chave</p>
+                               </div>
+                               <div class="codigo">
                                     <code>
-                                        dicionario = {<span class="string-print">'chave'</span>:<span class="string-print">'valor'</span>}<br><br>
-                                        <span class="print">(<span class="print">type</span>(dicionario))</span>
+                                        pessoa = <span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.65</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">21</span><br><br>
+                                        <span class="print">print</span>(pessoa[<span class="string-print">'nome'</span>]<span class="comando">, </span>pessoa[<span class="string-print">'altura'</span>])
                                         <div class="texto-resp">
                                             <h1>Resultado</h1>
                                         </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios.png" alt="">
-
+                                        <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
                                     </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Criando dicionários</h3>
-                                    <p>
-                                        Vejamos então as 6 maneiras possiveis de se criar um dicionário
-                                    </p>
-                                    <p>
-                                        Para começarmos vamos com o modo mais simples de se criar um dicionário:
-                                    </p>
-                                    
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        dicionario = {<span class="string-print">'primeiro'</span>:<span class="numero">1</span><span class="comando">, </span><span class="string-print">'segundo'</span>:<span class="numero">2</span><span class="comando">, </span><span class="string-print">'terceiro'</span>:<span class="numero">3</span>}
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Podemos tambem usar o dict no python, passando as chaves e os valores como parâmetros :
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        dicionario2 = (<span class="comando-avermelhado">primeiro</span>=<span class="numero">1</span><span class="comando">,<span class="comando-avermelhado">segundo</span>=<span class="numero">2</span><span class="comando">,<span class="comando-avermelhado">terceiro</span>=<span class="numero">3</span> )
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Utilizando zip para concatenarmos a <span class="for-azul">chave:valor</span> em um objeto <span class="for-azul">dict</span>:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        dicionario3 = <span class="print">dict</span>(<span class="print">zip</span>([<span class="string-print">'primeiro'</span><span class="comando">, </span><span class="string-print">'segundo'</span><span class="comando">, </span><span class="string-print">'terceiro'</span>]<span class="comando">, </span>[<span class="numero">1</span><span class="comando">, </span><span class="numero">2</span><span class="comando">, </span><span class="numero">3</span>]))
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Com uma lista de tuplas:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        dicionario4 = <span class="print">dict</span>([(<span class="string-print">'primeiro'</span><span class="comando">, </span><span class="numero">1</span>)<span class="comando">, </span>(<span class="string-print">'segundo'</span><span class="comando">, </span><span class="numero">2</span>)<span class="comando">, </span>(<span class="string-print">'terceiro'</span><span class="comando">, </span><span class="numero">3</span>)])
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Com Dict Comprehensions:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        dicionario5 = {name: idx + <span class="numero">1</span><span class="comando">for</span> idx<span class="comando">,</span> name <span class="comando">in</span><span class="print">enumerate</span>((<span class="string-print">'primeiro'</span><span class="comando">, </span><span class="string-print">'segundo'</span><span class="comando">, </span><span class="string-print">'terceiro'</span>))}
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Por mais que pareça estranho, da pra transformar uma variável dicionário em um tipo dicionário:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        dicionario6 = <span class="print">dict</span>({<span class="string-print">'primeiro'</span>: <span class="numero">1</span><span class="comando">, </span><span class="string-print">'segundo'</span>: <span class="numero">2</span><span class="comando">, </span><span class="string-print">'terceiro'</span>: <span class="numero">3</span> })
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Esses exemplos possuem o mesmo resultado:
-                                </div>
-                                <br>
-                                <img src="../../../imgs/python/dicionarios/dicionarios2.png" alt="">
-                                
-                                <h3>Conclusão</h3>
-                                <p>Vimos aqui a introdução aos dicionários e os modos que podemos declararos, mais pra frente aprenderemos mais sobre eles 
-                                    e como funcionam, fique bem e códifique sem moderação.
-                                </p>
-                                
+                               </div>
+                               <div class="texto-resp">
+                                    temos também o método <span class="for-azul">get()</span> para conseguir o mesmo resultado
+                               </div>
+                               <div class="codigo">
+                                <code>
+                                    pessoa = <span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.65</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">21</span><br><br>
+                                    <span class="print">print</span>(pessoa.get(<span class="string-print">'nome'</span>))
+                                    <div class="texto-resp">
+                                        <h1>Resultado</h1>
+                                    </div>
+                                    <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
+                                </code>
+                           </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->

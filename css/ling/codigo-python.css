@@ -100,3 +100,6 @@
     transition: .3s;
     cursor: pointer;
 }
+.comando-avermelhado{
+    color: rgb(163, 52, 0);
+}
