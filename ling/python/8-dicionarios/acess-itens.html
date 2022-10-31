@@ -125,7 +125,6 @@
                         <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
                         <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
                         <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
-                        <li><a href="../tkinter/tk.html">Tkinter</a></li>
                     </ul>
                 </div><!--fim menu esquedo-->
             </div><!--fim menu-lat-->
@@ -205,19 +204,188 @@
                                         <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
                                     </code>
                                </div>
+                               <br>
                                <div class="texto-resp">
                                     temos também o método <span class="for-azul">get()</span> para conseguir o mesmo resultado
                                </div>
+                               <br>
                                <div class="codigo">
-                                <code>
-                                    pessoa = <span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.65</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">21</span><br><br>
-                                    <span class="print">print</span>(pessoa.get(<span class="string-print">'nome'</span>))
-                                    <div class="texto-resp">
-                                        <h1>Resultado</h1>
+                                    <code>
+                                        pessoa = <span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.65</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">21</span><br><br>
+                                        <span class="print">print</span>(pessoa.get(<span class="string-print">'nome'</span>))
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
+                                    </code>
+                                </div>
+                                <br>
+                                <div class="texto-resp">
+                                    <h3>Tendo chaves e valores</h3>
+                                    <p>Para obtermos todas as chaves de um dicionário podemos usar o método 
+                                        <span class="for-azul">keys()</span></p>
+                                </div>
+                                <br> 
+                                <div class="codigo">
+                                    <code>
+                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
+                                        <span class="print">print</span>(PC.keys())
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios4.png" alt="">
+                                    </code>
+                                </div>
+                                <br>
+                                <div class="texto-resp">
+                                    Como você pode ver o <span class="for-azul">keys()</span> retorna um objeto do tipo
+                                    <span class="for-azul">dict_keys</span> que é igual a uma lista com todas as chaves.
+                                    <p>Mas ainda existem os valores das chaves, para conseguir somente eles
+                                        ultilizamos o <span class="for-azul">values()</span>:
+                                    </p>
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
+                                        <span class="print">print</span>(PC.values())
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios5.png" alt="">
+                                    </code>
+                                </div>
+                                <br>
+                                <div class="texo-resp">
+                                    <h3>Percorrendo os elementos dentro de um dicionário</h3>
+                                    <p>
+                                        Podemos percorrer os elementos de um Dicionário em usando suas chaves <span class="for-azul">dict.keys()</span>
+                                        ou usando seus valores <span class="for-azul">dict.values</span>
+
+                                        <h3><span class="for">dict.keys()</span></h3>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="codigo">
+                                    <code>
+                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
+                                        
+                                        <span class="comando">for</span> chave <span class="comando">in</span> pc.keys(): <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f'chave = </span><span class="comando">{</span>chave<span class="comando">}</span><span class="string-print"> e valor = </span<span class="comando">{</span>pc[chave]<span class="comando">}</span><span class="string-print">'</span>)
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios6.png" alt="">
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    Podemos usar o <span class="for-azul">dict.values()</span> para pegar os valores também.
+                                    <h3><span class="for">dict.values()</span></h3>
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
+                                        
+                                        <span class="comando">for</span> valor <span class="comando">in</span> pc.values(): <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f'Valor = </span><span class="comando">{</span>valor<span class="comando">}</span><span class="string-print">'</span>)
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios7.png" alt="">
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Percorrendo as chaves e valores de um Dicionário</h3>
+                                    Uma maneira de obter chaves e valores é utilizando o método dict.items():
+                                </div>
+                                <br>
+                                <div class="codigo">
+                                    <code>
+                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
+                                        
+                                       
+                                        <span class="print">print</span>(pc.items())
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios8.png" alt="">
+                                    </code>
+                                </div>
+                                <br>
+                                <div class="texto-resp">
+                                    A saída equivale a uma lista com elementos organizados em tuplas, sendo:
+                                    <li class="dentro">O primeiro elemento da tupla a chave do dicionário e</li>
+                                    <li class="dentro">O segundo elemento, o valor presente naquela chave.</li>
+                                    
+                                    <p>Uma maneira segura de acessar um elemento de um dicionário é verificando primeiro se a chave existe.</p>
+                                    <h4>Exemplo</h4>
+                                </div>
+                                <div class="codigo">
+                                    <code>
+                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
+                                        
+                                       <span class="comando">if </span><span class="string-print">'CPU'</span><span class="comando"> in</span> pc: <br>
+                                        <span class="print espaço">print</span>(<span class="string-print">f'Como a chave desejada existe: </span><span class="comando">{</span>pc[<span class="string-print">"CPU"</span>]<span class="comando">}</span>')
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios9.png" alt="">
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Adicionando e atualizando itens</h3>
+                                    A maneira mais simples de adicionar um item a um dicionario é criar uma nova chave e atribuir um valor. Assim:
+
+                                </div>
+                                <br>
+                                <div class="codigo">
+                                    <code>
+                                        nomes = {<span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span>}<br><br>
+                                        nomes[<span class="string-print">'idade'</span>] = <span class="numero">20</span><br><br>
+                                        <span class="print">print</span>(nomes)<br><br>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios10.png" alt="">
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Excluindo elementos no dicionário</h3>
+                                    Você pode excluir um elemento do dicionário com a keyword del do Python, especificando sua chave:
+                                </div>
+                                <br>
+                                <div class="codigo">
+                                    <code>
+                                        pessoa = {<span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">22</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.85</span>}<br><br>
+                                        <span class="comando">del</span> pessoa[<span class="string-print">'altura'</span>]<br><br>
+                                        <span class="print">print</span>(pessoa)<br>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios11.png" alt="">
+                                    </code>
+                                </div>
+                                <div class="texto-resp">
+                                    <h3>Excluindo e retornando o elemento excluído</h3>
+                                    O método pop() remove o item cujo a chave foi especificada:
+                                </div>
+                                <br>
+                                <div class="codigo">
+                                    <code>
+                                        compras = {<span class="string-print">'maça'</span>: <span class="string-print">'2kg'</span><span class="comando">, </span><span class="string-print">'ovos'</span>: <span class="string-print">'1 caixa'</span><span class="comando">, </span><span class="string-print">'farinha'</span>: <span class="string-print">'2kg'</span>}<br><br>
+                                        ovos = compras.pop(<span class="string-print">'ovos'</span>)<br><br>
+                                        <span class="print">print</span>(ovos)<br>
+                                        <span class="print">print</span>(compras)<br>
+                                        <div class="texto-resp">
+                                            <h1>Resultado</h1>
+                                        </div>
+                                        <img src="../../../imgs/python/dicionarios/dicionarios11.png" alt="">
+                                    </code>
+                                    <div texto-resp>
+                                        <h3>conclusão</h3>
+                                        Nesse post vismos o básico sobre os dicionários, sugiro que você faça exercícios e busque mais sobre os 
+                                        dicionários, que são extremamente importantes em python, tente fazer um projeto que os use, fique bem e códifique sem moderação.
                                     </div>
-                                    <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
-                                </code>
-                           </div>
+                                </div>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->
