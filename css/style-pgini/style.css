@@ -49,10 +49,10 @@ h1{
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    position: relative;
-    top: 65%;
-    width: 90%;
-    left: 5%;
+
+
+
+
 }
 
 /*
@@ -73,9 +73,18 @@ h1{
 .html img{/*o heitgh e o width em 0 faz a imagem ficar escondida até que a propriedade hover seja ativafa*/
     width: 0;
     position: absolute;
-    top: 12.5rem;
+    top: 15.5rem;
     height: 0;
     transition: 1s;
+}
+@media (max-width: 755px) {
+    .html img{
+        width: 0;
+        position: absolute;
+        top: 12.5rem;
+        height: 0;
+        transition: 1s;
+    }
 }
 .html-img{
     display: flex;
@@ -345,8 +354,7 @@ footer{
     color: white;
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 145rem;
+   
     height: 17rem;
 }
 
