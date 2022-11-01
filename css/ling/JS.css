@@ -693,12 +693,9 @@ correções footer e text-p
 }
 .img-window1{
     width: 45%;
-
+    border-radius: 7px;
 }
-.img-window2{
-    width: 40%;
 
-}
 table{
     background-color: rgb(153, 153, 153);
     text-align: center;
@@ -721,4 +718,22 @@ td{
     justify-content: flex-start;
     width: 100%;
     margin-top: 1rem;
+}
+.for-azul{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #0162e0;
+    background-color: #a4d2f5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.for-azul:hover{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #b60f03;
+    background-color: #f5a4a4;
+    border-radius: 4px;
+    transition: .3s;
+    cursor: pointer;
 }

@@ -172,15 +172,37 @@
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
+                                <div class="texto-resp">
+                                      <p>
+                                         Agora nós iremos aprender a captar elementos através do JavaScript, essa captação serve para
+                                         podemos manipular e trabalhar com dados inseridos pelo usuário através de algum formulário criado
+                                         através do HTML.
+                                     </p>
+                                     <p>
+                                        A captação de dados é utilizada para pegarmos elementos sejam números (<span class="for-azul"> int/double</span>) ou caracteres <br>
+                                         (<span class="for-azul"> Strings</span>)
+                                     </p>
+                            </div>
                                 <div class="code">
                                     <code>
-                                        <span class="document-js"> document.getElementById('id') </span> // -> Esse método é usado para coletar o elemento através do ID
+                                       <span class="var-js">var <span class="var-name">idade</span> <span class="document-js"> document.getElementById('id-idade')</span> // -> Esse método é usado para coletar o elemento através do ID
                                     </code>
                                   </div>
                                   <br>
-                                  IMPORTANTE: Esses métodos devem ser usados reverenciando uma variável <br><br>
-                                  ex: var a = document.getElementByid('n1')
+                                  <p>IMPORTANTE: Esses métodos devem ser usados sempre reverenciando uma variável </p>
 
+                                  <p>No código acima, nos usamos o método para captar através do <span class="for-azul">ID</span> do elemento, note que estamos
+                                    guardando o dado na variável "idade".
+                                  </p>
+                                  <p>
+                                    <ul>
+                                      <li><span class="for-azul">var </span> - criação da variável</li><br>
+                                      <li><span class="for-azul">idade </span> - nome da variável</li><br>
+                                      <li><span class="for-azul">document </span> - indicando que é um elemento dentro do documento</li><br>
+                                      <li><span class="for-azul">.getElementById</span> - método para captar elemento através do id</li><br>
+                                      
+                                    </ul>
+                                  </p>
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->

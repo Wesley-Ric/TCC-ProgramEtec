@@ -172,17 +172,21 @@
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
+                                <p>
+                                    Um meio mais moderno, entretanto um pouco mais complicado, de se captar algum elemento, é através do <span class="for-azul">QuerySelector()</span>,
+                                    através dele nós podemos captar elementos seja ele de class ou ID, ou até mesmo pegar algum elemento específico de um formulário.
+                                </p>
                                 <div class="code">
                                     <code>
-                                        <span class="document-js"> document.querySelector(".classe") </span> // -> Esse método pode ser usado para coletar qualquer tipo de elemento,
-                                         nesse caso estamos usando-o para coletar uma classe. <br>
+                                         <span class="var-js">var <span class="var-name">idade</span> <span class="document-js"> document.querySelector(".classe")</span> // -> Nesse exemplo estamos captando a idade através de uma class (indicada pelo ".", assim como no css)<br><Br>
+
+                                         <span class="var-js">var <span class="var-name">idade</span> <span class="document-js"> document.querySelector(".classe")</span> // -> Nesse exemplo estamos captando a idade através de uma class (indicada pelo ".", assim como no css)<br><br>
+                                       
+                                       
                                          <span class="document-js"> document.querySelector("div.user-panel-main input[name='senha']") </span> // -> Nesse caso, estamos usando para coletar
                                          uma informação vinda diretamente de um input vindo de uma div de classe 'user-panel-main'.
                                     </code>
                                   </div>
-                                  <br>
-                                  IMPORTANTE: Esses métodos devem ser usados reverenciando uma variável <br><br>
-                                  ex: var a = document.getElementByid('n1')
                             </div><!--fim "testo-r"-->
                         </div><!--fim resposta-->
                     </div><!--fim espaçamento-->
