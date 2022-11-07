@@ -107,7 +107,7 @@
                             <!--itens do menu de fato-->
                              <li><a href="../../Java.html">Introdução ao Java</a></li>
                             <li><a href="../instalacao/ins.html">Instalação</a></li>
-                            <li><a href="">Classe</a></li>
+                            <li><a href="#">Classe</a></li>
                             <li><a href="">Variáveis</a></li>
                             <li><a href="">Operações matemáticas</a></li>
                             <li><a href="">Comparação</a></li>
@@ -122,7 +122,6 @@
             <!--fim navgation-->
 
 
-          
 
 
 
@@ -140,7 +139,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Introdução ao Java
+                      Java Classes
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -158,26 +157,7 @@
                         <div class="pergunta comeco">
                             <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                            <a href="../../Java.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta c h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            O que é Java?
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="int-b.html">
+                            <a href="classe-a.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -186,7 +166,7 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Utilidades
+                                            O que são classes?
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -196,7 +176,7 @@
                             </a>
                             <!--fim tag a-->
 
-                            <a href="int-c.html">
+                            <a href="#">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -205,7 +185,26 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Vantagens de se aprender
+                                            Declaração
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="classe-c.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Regras
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -223,37 +222,49 @@
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
-                                <p>
-                                 Como nós já vimos, o Java, ainda que antiga, é uma linguagem muito utilizada ainda, e é ideal para criação e implementação
-                                 de muitas tecnologias atuais, como inteligência artificial e Iot.
-                                </p>
-                                <p>
-                                   Tendo em vista esses pontos, ainda há sim muitas vantagens de se aprender Java, dentre elas está: 
-                                   </p>
-                                   <div class="ul">
+                                <div class="ul">
                                     <p>
-                                        <ul>
-                                            <li>
-                                               Suporte ativo da comunidade
-                                            </li>
-                                            
-                                            <li>
-                                                Empregabilidade
-                                            </li>
-                                            
-                                            <li>
-                                                Funções e bibliotecas integradas
-                                            </li>
-                                            <li>
-                                                Grande número de frameworks
-                                            </li>
-
-                                            <li>
-                                               Iot
-                                            </li>
-                                        </ul>
+                                        Para declararmos uma classe em Java é algo bem simples, primeiramente precisamos saber se queremos defina-la como privada ou pública, caso seja privada,
+                                        usaremos o termo <span class="for-azul">private</span>, e caso seja pública, usamos <span class="for-azul">public</span>.  Após definirmos isso,
+                                        digitamos o termo <span class="for-azul">class</span> e entraremos com o nome da classe, que pode ser qualquer um, usaremos como exemplo o nome "PrimeiraClasse".
+                                        E por fim abriremos chaves, no fim do processo teríamos algo parecido com isso:
                                     </p>
-                                    </div>
+                                    <p>
+                                        <div class="code">
+                                            <code>
+                                                <span class="var-js">public</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>}
+                                            </code>
+                                        </div>
+                                    </p>
+
+                                    <p>
+                                        Caso queíramos uma classe privada (classe que não pode ser acessada pelas outras), o código ficará da seguinte forma:
+                                    </p>
+                                     <p>
+                                        <div class="code">
+                                            <code>
+                                                <span class="var-js">private</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>}
+                                            </code>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        E como nos nossos estudos usaremos a command-line da IDE para testes, precisamos do seguinte parâmetro dentro da nossa classe:
+                                    </p>
+                                     <p>
+                                        <div class="code">
+                                            <code>
+                                                <span class="var-js">public</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>
+                                                <span class="function-js">public static void </span><span class="function-name">main</span><span class="document-js">(Strings[] args) </span>{<br>}
+                                                
+
+                                                <br><br>}
+                                            </code>
+                                        </div>
+                                    </p>
+
+                                   
+
+
                                 </div>
                                 <!--fim "testo-r"-->
                             </div>
@@ -272,7 +283,7 @@
     <!--fim main-->
 
 
-    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+   
     <footer class="footer">
 
         <div class="rede-social">
@@ -309,7 +320,7 @@
         <!--logo do site-->
     </footer>
 
-    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+ 
     <script src="../../../js/navbar-mobile.js"></script>
 
     <script src="../../../js/menu-ling.js"></script>
