@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&family=Poppins&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
+
 /*
 ╭――――――――――――――――――╮
 │                  │
@@ -16,79 +17,87 @@
 │                  │
 ╰――――――――――――――――――╯
 */
-body{ /*seta o estilo do body  reseta algumas propriedades*/
+body {
+    /*seta o estilo do body  reseta algumas propriedades*/
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(1deg, #000000
-    1%, #07340C 100%);
+    background-image: linear-gradient(1deg, #000000 1%, #07340C 100%);
     background-repeat: no-repeat;
     background-color: #000000;
 }
 
-html{/*reseta html*/
+html {
+    /*reseta html*/
     height: 100%;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     display: flex;
-    flex-direction: column;/*alinha em colunas*/
+    flex-direction: column;
+    /*alinha em colunas*/
 }
 
-section{
+section {
     flex: 1 0 auto;
 }
 
 
 
-.princ-footer{
+.princ-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.text-prin{
+
+.text-prin {
     padding: 1rem;
     font-size: 24px;
 }
 
-.copy{/*direitos autorais*/
+.copy {
+    /*direitos autorais*/
     font-size: 20px;
 }
 
-footer{
-    flex-shrink: 0; /*emm tese faz ele ficar em baixo*/
+footer {
+    flex-shrink: 0;
+    /*emm tese faz ele ficar em baixo*/
     background-color: rgb(29, 28, 28);
     color: white;
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 178.52rem;
+
+
     height: 17rem;
 }
 
-.rede-social{
+.rede-social {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.face img{
+
+.face img {
     margin: 1rem;
     width: 50px;
 }
 
-.link img{
-    width: 50px;
-    margin: 1rem;
-}
-.git img{
+.link img {
     width: 50px;
     margin: 1rem;
 }
 
-#logo{
+.git img {
+    width: 50px;
+    margin: 1rem;
+}
+
+#logo {
     width: 5.2rem;
     padding-top: 0rem;
 }
@@ -104,31 +113,35 @@ footer{
 */
 
 @media (max-width: 755px) {
-    .footer{
+    .footer {
         height: 300px;
     }
 }
+
 @media (max-height: 1000px) {
-    .main-div{
+    .main-div {
         top: 45rem;
     }
-    #logo{
+
+    #logo {
         padding-top: 0rem;
     }
 
 }
+
 @media (max-width: 755px) {
-    .footer{
+    .footer {
         width: 100%;
         height: 320px;
         position: relative;
         top: 0%;
     }
-    .main-div{
-    position: relative;
-    top: 0%;
-    width: 100%;
-    left: 0%;
+
+    .main-div {
+        position: relative;
+        top: 0%;
+        width: 100%;
+        left: 0%;
     }
 }
 
@@ -141,16 +154,22 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
-*/ 
-.img-about-inicial{ /*img do lado do texto nas duas primeiras divs*/
-    width: 50%;/*largura da imagem dentro de uma div de 50%*/
+*/
+.img-about-inicial {
+    /*img do lado do texto nas duas primeiras divs*/
+    width: 50%;
+    /*largura da imagem dentro de uma div de 50%*/
 }
-#div-p img{
+
+#div-p img {
     width: 100%;
     height: 600px;
-    object-fit: cover;/*cortar a imagem do tamanho que escoli para não distorcer*/
+    object-fit: cover;
+    /*cortar a imagem do tamanho que escoli para não distorcer*/
 }
-.texto-about-inicial{ /*texto na div inicail ao lado da imagem*/
+
+.texto-about-inicial {
+    /*texto na div inicail ao lado da imagem*/
     background-color: #204a12;
     height: 600px;
     width: 50%;
@@ -160,10 +179,13 @@ footer{
     color: white;
     font-size: 40px;
 }
-.texto-about-inicial p{
-    margin: 2rem; /*ter uma margin para div*/
+
+.texto-about-inicial p {
+    margin: 2rem;
+    /*ter uma margin para div*/
 }
-#div-p{
+
+#div-p {
     display: flex;
 }
 
@@ -176,15 +198,17 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 */
-.img-about-2{
+.img-about-2 {
     width: 50%;
 }
-#div-p img{
+
+#div-p img {
     width: 100%;
     height: 600px;
     object-fit: cover;
 }
-.texto-about-2{
+
+.texto-about-2 {
     background-color: #204a12;
     height: 600px;
     width: 50%;
@@ -194,10 +218,12 @@ footer{
     color: white;
     font-size: 40px;
 }
-.texto-about-2 p{
+
+.texto-about-2 p {
     margin: 2rem;
 }
-#div-p{
+
+#div-p {
     display: flex;
     padding: 0;
     margin: 0;
@@ -214,36 +240,47 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
-*/ 
-.titulo{/*dic para centraliar*/
+*/
+.titulo {
+    /*dic para centraliar*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.titulo-empacotado{
+.titulo-empacotado {
     color: white;
     font-size: 150px;
-    font-family: 'Alumni Sans Pinstripe', sans-serif;/*fonte google fonts*/
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    /*fonte google fonts*/
 }
 
 
 
 
-.nos{/*div onde fica o texto*/
+.nos {
+    /*div onde fica o texto*/
     color: white;
     font-size: 42px;
-    text-align: justify;/*texto justificado*/
-    width: 90%;/*90% de 70%*/
-    font-family: 'Barlow Condensed', sans-serif;/*fonte do google fonts*/
+    text-align: justify;
+    /*texto justificado*/
+    width: 90%;
+    /*90% de 70%*/
+    font-family: 'Barlow Condensed', sans-serif;
+    /*fonte do google fonts*/
 
 }
-.we{/*div que centraliza e é invisivel*/
-    width: 100%; /*da tela*/
+
+.we {
+    /*div que centraliza e é invisivel*/
+    width: 100%;
+    /*da tela*/
     display: flex;
     justify-content: center;
 }
-.us{/*div que serve de fundo*/
+
+.us {
+    /*div que serve de fundo*/
     width: 70%;
     background-color: green;
     display: flex;
@@ -262,8 +299,9 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
-*/ 
-.team{/*div que empacota todas outras*/
+*/
+.team {
+    /*div que empacota todas outras*/
     width: 100%;
     height: 400px;
     background-color: #f5f5dc;
@@ -274,47 +312,62 @@ footer{
     align-items: center;
 
 }
-.team a{/*fiz para que o link das redes ficasse invisivel*/
+
+.team a {
+    /*fiz para que o link das redes ficasse invisivel*/
     background-color: none;
     width: 48px;
     height: 48px;
 }
-.team a:hover{
+
+.team a:hover {
     background-color: white;
     width: 48px;
     height: 48px;
 
 }
-.time img{ /*tamanho da img*/
+
+.time img {
+    /*tamanho da img*/
     width: 15rem;
 }
-.team-texto{
+
+.team-texto {
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 60px;
-    transform: rotate(-90deg);    
-    
+    transform: rotate(-90deg);
+
 }
-.time-mob{/*serve somante a partir de certo tamanho*/
+
+.time-mob {
+    /*serve somante a partir de certo tamanho*/
     display: none;
 }
-.nome{/*centralizar e estilizar o nome*/
+
+.nome {
+    /*centralizar e estilizar o nome*/
     text-align: center;
     font-size: 24px;
 }
-.rd-soc{/*ixones das redes sociais ficam dentro*/
+
+.rd-soc {
+    /*ixones das redes sociais ficam dentro*/
     width: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
-.rd-soc img{/*icones das redes*/
+
+.rd-soc img {
+    /*icones das redes*/
     width: 3rem;
 }
-.alinhamento{
+
+.alinhamento {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -330,10 +383,11 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
-*/ 
+*/
 
 
-.animacao{ /*div que empacota as outras e forma o bg*/
+.animacao {
+    /*div que empacota as outras e forma o bg*/
     background-color: #204a12;
     width: 100%;
     display: flex;
@@ -342,23 +396,31 @@ footer{
     min-height: 20vh;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
-.conteiner{/*contem os itens dentro*/
+
+.conteiner {
+    /*contem os itens dentro*/
     display: inline-flex;
 }
-.conteiner .estatico {/*PrograEtec estilização*/
+
+.conteiner .estatico {
+    /*PrograEtec estilização*/
     color: white;
     font-size: 60px;
     font-weight: 400;
     position: relative;
     top: .5rem;
 }
-.conteiner .dinamico{/*itens dentro da lista que mudam*/
+
+.conteiner .dinamico {
+    /*itens dentro da lista que mudam*/
     margin-left: 15px;
     line-height: 90px;
     height: 90px;
-    overflow: hidden;/*comtrola qual conteudo vai aparecer*/
+    overflow: hidden;
+    /*comtrola qual conteudo vai aparecer*/
 }
-.dinamico li{
+
+.dinamico li {
     color: black;
     list-style: none;
     font-size: 60px;
@@ -366,28 +428,34 @@ footer{
     left: 0;
     position: relative;
     top: 0;
-    animation: slide 4.8s steps(4) infinite; /*faz a animação*/
+    animation: slide 4.8s steps(4) infinite;
+    /*faz a animação*/
 }
-@keyframes slide{
-    100%{
+
+@keyframes slide {
+    100% {
         top: -360px;
     }
 }
-.dinamico li span::after{
+
+.dinamico li span::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    border-left: 2px solid black;/*barrinha que escreve*/
+    border-left: 2px solid black;
+    /*barrinha que escreve*/
     animation: typing 1.2s steps(10) infinite;
     background-color: #204a12;
 }
-.dinamico li span{
+
+.dinamico li span {
     position: relative;
 }
-@keyframes typing{
-    100%{
+
+@keyframes typing {
+    100% {
         left: 100%;
         margin: 0 -35px 0 35px;
     }
@@ -401,23 +469,29 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
-*/ 
+*/
 
-[data-anime]{/*animação que faz textos aparecerem pelo java script*/
+[data-anime] {
+    /*animação que faz textos aparecerem pelo java script*/
     opacity: 0;
     transition: .3s;
 
 }
-[data-anime="left"]{/**/
+
+[data-anime="left"] {
+    /**/
     transform: translate3d(-50px, 0, 0);
 }
-[data-anime="right"]{
+
+[data-anime="right"] {
     transform: translate3d(50px, 0, 0);
 }
-[data-anime].animate{
+
+[data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
 /*
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
 ╭――――――――――――――――――╮
@@ -426,115 +500,137 @@ footer{
 │                  │
 ╰――――――――――――――――――╯
 ╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳
-*/ 
+*/
 @media (max-width:1476px) {
-    .nos{
+    .nos {
         font-size: 32px;
     }
 }
+
 @media (max-width:634px) {
-    .estatico{
+    .estatico {
         font-size: 40px;
     }
-    .dinamico li{
+
+    .dinamico li {
         font-size: 40px;
     }
+
     .conteiner .estatico {
         font-size: 40px;
         position: relative;
-        top: 1.25rem; 
+        top: 1.25rem;
     }
-    .dinamico li span::after{
+
+    .dinamico li span::after {
         top: -.1rem;
     }
 }
+
 @media (max-width: 650px) {
-    .rd-soc{
+    .rd-soc {
         width: 70px;
         padding: .3rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
-    
+
     }
-    .rd-soc img{
+
+    .rd-soc img {
         display: none;
     }
-    .alinhamento{
+
+    .alinhamento {
         width: 100%;
         display: flex;
         justify-content: center;
         padding-top: 1rem;
     }
-    .team a:hover{
+
+    .team a:hover {
         background-color: white;
         width: 48px;
         height: 48px;
-    
+
     }
-    
+
 }
 
 @media (max-width: 1455px) {
-    .team{
+    .team {
         width: 100%;
         height: 800px;
         background-color: white;
         margin-top: 0px;
         display: flex;
     }
+
     .t2 {
         position: relative;
         top: 12rem;
         right: 100%;
 
     }
+
     .t1 {
         position: relative;
         top: -12rem;
         left: 150%;
     }
+
     .t3 {
         position: relative;
         top: -12rem;
         left: 150%;
     }
-    .team-texto{
-        display: none;        
+
+    .team-texto {
+        display: none;
     }
-    .time-mob{
+
+    .time-mob {
         display: block;
         color: white;
     }
 
-    .footer{
+    .footer {
         position: relative;
     }
-    .time{
+
+    .time {
         width: 20%;
     }
-    .time img{
+
+    .time img {
         width: 100%;
     }
-    .nome{
+
+    .nome {
         height: 40px;
     }
-    #i1{
+
+    #i1 {
         padding-right: 1rem;
     }
-    #i2{
+
+    #i2 {
         padding-right: 1rem;
     }
-    #i3{
+
+    #i3 {
         padding-right: 1rem;
     }
-    #i4{
+
+    #i4 {
         padding-right: 1rem;
     }
-    #i5{
+
+    #i5 {
         padding-right: 1rem;
     }
-    .time-mob{
+
+    .time-mob {
         margin-top: 5rem;
         display: flex;
         justify-content: center;
@@ -549,13 +645,15 @@ footer{
 
 
 @media (max-width:936px) {
-    .texto-about-inicial{
+    .texto-about-inicial {
         font-size: 26px;
     }
-    .texto-about-2{
+
+    .texto-about-2 {
         font-size: 26px;
     }
-    .nos{
+
+    .nos {
         font-size: 24px;
     }
 }

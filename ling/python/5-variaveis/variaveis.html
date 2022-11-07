@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="../../../css/ling/python.css"><!-- estilo geral do site-->
     <link rel="stylesheet" href="../../../css/navbar.css">
@@ -10,83 +11,109 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .texto-r a{
-            text-decoration: none; 
+        .texto-r a {
+            text-decoration: none;
             color: rgb(29, 168, 29);
         }
-        .texto-r a:hover{
+
+        .texto-r a:hover {
             color: orange;
         }
-        table, th, td{
+
+        table,
+        th,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: .5rem;
         }
-        .esquerda{
+
+        .esquerda {
             text-align: justify;
-            
+
         }
-        .centro{
+
+        .centro {
             text-align: center;
         }
-        .direito{
+
+        .direito {
             text-align: center;
         }
-        table{
+
+        table {
             background-color: white;
         }
-        th{
+
+        th {
             background-color: gray;
             color: white;
         }
-       .for{
+
+        .for {
             padding: 2px 4px;
             font-size: 90%;
             color: #c7254e;
             background-color: #f9f2f4;
             border-radius: 4px;
-       }
+        }
     </style>
 </head>
+
 <body>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
 
     <!--Navbar-->
     <header id="header">
-        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi' src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
+        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi'
+                src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
         <nav id="nav">
             <button id="btn" aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="../../../index.html">Início</a></li>                
+                <li><a href="../../../index.html">Início</a></li>
                 <li><a href="../../../about.html">Sobre</a></li>
                 <li id="ling"><a href="#">Linguagens</a>
                     <ul id="submenu">
-                        <a href="../../HTML.html"><li>HTML</li></a>
-                        <a href="../..//CSS.html"><li>CSS</li></a>
-                        <a href="../../JS/JS.html"><li>JS</li></a>
-                        <a href="../../Java.html"><li>Java</li></a>
-                        <a href="../../Python.html"><li>Python</li></a>
+                        <a href="../../HTML.html">
+                            <li>HTML</li>
+                        </a>
+                        <a href="../..//CSS.html">
+                            <li>CSS</li>
+                        </a>
+                        <a href="../../JS/JS.html">
+                            <li>JS</li>
+                        </a>
+                        <a href="../../Java.html">
+                            <li>Java</li>
+                        </a>
+                        <a href="../../Python.html">
+                            <li>Python</li>
+                        </a>
                     </ul>
                 </li>
                 <li id='Contato'><a href="../../../contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
-<main>
-    <section> <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <main>
+        <section>
+            <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
 
-        <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
+            <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
 
 
-        <div id="navgation"> <!--div que recebe a class active para o menu lateral ativar no mobile-->
-            <div id="alinhamento-btnzinho"> <!--centraliza o btn-->
-                <button id="botaozinho" aria-expanded="false">
-                    <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
-                </button>
-            </div>
+            <div id="navgation">
+                <!--div que recebe a class active para o menu lateral ativar no mobile-->
+                <div id="alinhamento-btnzinho">
+                    <!--centraliza o btn-->
+                    <button id="botaozinho" aria-expanded="false">
+                        <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow">
+                            <!--imagem de seta no botão--></span>
+                    </button>
+                </div>
 
 
                 <!---==-=-=-=-=-=--  fim do botão =-=-=-==-=-=--=--=-->
@@ -99,108 +126,133 @@
                 ╰――――――――――――――――――╯
                 -->
 
-            <div id="menu-lat"> <!--tag que da o estilo ao menu (tirando o "A")-->
-                <div id="alinhamentobtn"> <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
+                <div id="menu-lat">
+                    <!--tag que da o estilo ao menu (tirando o "A")-->
+                    <div id="alinhamentobtn">
+                        <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
                                             no canto superior direito da tela-->
-                                            
-                    <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
+
+                        <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
                     usar o space beteween que joga cada um de casa lato e deixo esse botão invisivel-->
-                    <button id="btn1" aria-expanded="false">
-                    </button>
-                    <!-- fim btn fantasma-->
+                        <button id="btn1" aria-expanded="false">
+                        </button>
+                        <!-- fim btn fantasma-->
 
 
-                     <!--btn que serve para fechar o menu lateral no mobile-->
-                    <button id="btn2" aria-expanded="false">
-                        <span id="burg1"><img src="../../../imgs/cancel.png" alt="cencel"></span>
-                    </button>
+                        <!--btn que serve para fechar o menu lateral no mobile-->
+                        <button id="btn2" aria-expanded="false">
+                            <span id="burg1"><img src="../../../imgs/cancel.png" alt="cencel"></span>
+                        </button>
+                    </div>
+                    <div id="menu-esquerdo">
+                        <!--serve basicamente para organizar os itens em um unico bloco-->
+                        <ul>
+                            <!--itens do menu de fato-->
+                            <!--itens do menu de fato-->
+                            <li><a href="../../Python.html">Introdução a Python</a></li>
+                            <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
+                            <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
+                            <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
+                            <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
+                            <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
+                        </ul>
+                    </div>
+                    <!--fim menu esquedo-->
                 </div>
-                <div id="menu-esquerdo"> <!--serve basicamente para organizar os itens em um unico bloco-->
-                    <ul>
-                        <!--itens do menu de fato-->
-                        <!--itens do menu de fato-->
-                        <li><a href="../../Python.html">Introdução a Python</a></li>
-                        <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
-                        <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
-                        <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
-                        <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
-                        <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
-                    </ul>
-                </div><!--fim menu esquedo-->
-            </div><!--fim menu-lat-->
-        </div><!--fim navgation-->
+                <!--fim menu-lat-->
+            </div>
+            <!--fim navgation-->
 
 
-        <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
+            <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
 
 
 
-                <!--
+            <!--
                 ╭――――――――――――――――――╮
                 │                  │
                 │ conteudo da page │
                 │                  │ 
                 ╰――――――――――――――――――╯
                 -->
-        <div id="section-content">
+            <div id="section-content">
 
 
-            <div id="alinha-t"> <!--alinha o titulo-->
-                <div id="titulo"><!--estilo do titulo-->
-                    Variáveis
-                </div><!--fim titulo-->
-            </div><!--fim alinha-t -->
+                <div id="alinha-t">
+                    <!--alinha o titulo-->
+                    <div id="titulo">
+                        <!--estilo do titulo-->
+                        Operadores
+                    </div>
+                    <!--fim titulo-->
+                </div>
+                <!--fim alinha-t -->
 
 
-            <div id="alinhamento-principal"> <!--organiza todo o conteudo do site-->
-                <div id="delimitador"><!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
+                <div id="alinhamento-principal">
+                    <!--organiza todo o conteudo do site-->
+                    <div id="delimitador">
+                        <!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
                 e atribui a ele uma margim pra centralizar melhor-->
 
 
 
-                    <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
+                        <div class="pergunta comeco">
+                            <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="vari-init.html">
-                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            <a href="vari-init.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
-                            <div class="pergunta b h">
-                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
-                                    <span class="text-p"><!--estilo do texto das perguntas-->
-                                        Introdução a variáveis
-                                    </span> <!--dim span-->
-                                </div><!--fim alinha-texto-perg-->
-                            </div><!--fim pergunta a-->
-                        </a> <!--fim tag a-->
-
-
-
-                        <!--segue o mesmo para todos os outros blocos-->
-                        <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="variaveis.html">
-                            <div class="pergunta a h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        Variáveis
-                                    </span>
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Introdução a variáveis
+                                        </span>
+                                        <!--dim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
                                 </div>
-                            </div>
-                        </a>
-                        
-                        
-                    </div><!--fim div "pergunta comeco"--> 
-                    <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
-                        <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
-                            <div class="texto-r"><!--estilização de texto-->
-                                <div class="texto-resp">
-                                    <h1>Variáveis</h1>
-                                
-                                    Aqui poderemos ver de fato as variáveis em python e entender melhor como funcionam, então abra o Pycharm  vamos nessa.
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
 
-                                   <h3>Inteiro</h3>
 
-                                    <p>O tipo inteiro como você já deve saber são números inteiros que podem ser usados para contas, além de outras coisas, exemplo de números inteiros:</p>
+
+                            <!--segue o mesmo para todos os outros blocos-->
+                            <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
+                            <a href="variaveis.html">
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Variáveis
+                                        </span>
+                                    </div>
                                 </div>
+                            </a>
+
+
+                        </div>
+                        <!--fim div "pergunta comeco"-->
+                        <div id="espacamento">
+                            <!--semve para dar um espaço das bordar com padding-->
+                            <div class="resposta">
+                                <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
+                                <div class="texto-r">
+                                    <!--estilização de texto-->
+                                    <div class="texto-resp">
+                                        <h1>Variáveis</h1>
+
+                                        Aqui poderemos ver de fato as variáveis em python e entender melhor como
+                                        funcionam, então abra o Pycharm vamos nessa.
+
+                                        <h3>Inteiro</h3>
+
+                                        <p>O tipo inteiro como você já deve saber são números inteiros que podem ser
+                                            usados para contas, além de outras coisas, exemplo de numeros inteiros:</p>
+                                    </div>
                                     <div class="codigo">
                                         <code>
                                             nota = <span class="numero">6</span><br>
@@ -208,13 +260,19 @@
                                             nota3 = <span class="numero">10</span><br>
                                             nota4 = <span class="numero">8</span><br>
                                             media = (nota+nota2+nota3+nota4)/<span class="numero">4</span>
-                                            <span class="print">print</span>(<span class="string-print">f"A média das notas é </span><span class="comando">{</span>media<span class="comando">}</span><span class="string-print">"</span>) <br>
-                                            <span class="print">print</span>(<span class="print">type</span>(media)) <br>
+                                            <span class="print">print</span>(<span class="string-print">f"A média das
+                                                notas é </span><span class="comando">{</span>media<span
+                                                class="comando">}</span><span class="string-print">"</span>) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(media))
+                                            <br>
                                             <span class="print">print</span>(<span class="print">type</span>(nota)) <br>
-                                            <span class="print">print</span>(<span class="print">type</span>(nota2)) <br>
-                                            <span class="print">print</span>(<span class="print">type</span>(nota3)) <br>
-                                            <span class="print">print</span>(<span class="print">type</span>(nota4)) <br>
-                                            
+                                            <span class="print">print</span>(<span class="print">type</span>(nota2))
+                                            <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nota3))
+                                            <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nota4))
+                                            <br>
+
                                             <div class="texto-resp">
                                                 <h1>Resultado</h1>
                                             </div>
@@ -224,258 +282,356 @@
                                     </div>
                                     <div class="texto-resp">
                                         <p>
-                                            Vemos no exemplo que as notas são do tipo inteiro já a média do tipo float, pois como as médias são somadas e divididas o resultado sai com vírgula,
-                                            e o Python ja reconhece automaticamente o tipo da variável sem precisarmos dizer para ele.
+                                            Vemos no exemplo que as notas são do tipo inteiro já a média do tipo float,
+                                            pois como as médias são somadas e divididas o resultado sai com vírgula,
+                                            e o Python ja reconhece automaticamente o tipo da variável sem precisarmos
+                                            dizer para ele.
                                         </p>
                                         <h3>Decimal (ponto flutuante (<span class="for">float</span>))</h3>
-                                        <p>O float é usado para caracteres decimais, isto e números que possuem virgúla (,) ou em inglês números com ponto (.)</p>
-                                        <p>variáveis float são utilizadas quando os números que vão ser armazenados são do conjunto dos racionais ou seja 
-                                            números que podem ser representados com frações, como altura ou peso, por exemplo.
-                                        </p>                                  
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        altura = <span class="print">float</span>(<span class="print">input</span>(<span class="string-print">'Digite sua altura: '</span> )) <br>
-                                        peso = <span class="print">float</span>(<span class="print">input</span>(<span class="string-print">'Digite seu peso: '</span> )) <br>
-                                        imc = peso/altura <br><br>
-                                        <span class="print">print</span>(<span class="string-print">f"Seu imc é: </span><span class="comando">{</span>imc<span class="comando">:</span><span class="string-print">.1f</span><span class="comando">}</span><span class="string-print">"</span>) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(imc)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(altura)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(peso)) <br>
-                                        
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/float.gif" alt="">
+                                        <p>O float é usado para caracteres decimais, isto é números que possuem virgúla
+                                            (,) ou em inglês números com ponto (.)</p>
+                                        <p>variáveis float são utilizadas quando os números que vão ser armazenados são
+                                            do conjunto dos raxionais ou seja
+                                            números que podem ser representados com frações, como altura ou peso, por
+                                            exemplo.
+                                        </p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            altura = <span class="print">float</span>(<span
+                                                class="print">input</span>(<span class="string-print">'Digite sua
+                                                altura: '</span> )) <br>
+                                            peso = <span class="print">float</span>(<span
+                                                class="print">input</span>(<span class="string-print">'Digite seu peso:
+                                                '</span> )) <br>
+                                            imc = peso/altura <br><br>
+                                            <span class="print">print</span>(<span class="string-print">f"Seu imc é:
+                                            </span><span class="comando">{</span>imc<span class="comando">:</span><span
+                                                class="string-print">.1f</span><span class="comando">}</span><span
+                                                class="string-print">"</span>) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(imc)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(altura))
+                                            <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(peso)) <br>
 
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    No bloco de código acima temos algumas coisas novas, o <span class="for-azul">float</span> declarado na variável e o 
-                                    <span class="for-azul">input</span> <br>
-                                    basicamente declaramos a variável como <span class="for-azul">float</span> typando a variável nesse caso, pois o 
-                                    <span class="for-azul">input</span> pega os dados digitados pelo usuário como <span class="for">string</span>, então é
-                                    necessário os converter em <span class="for azul">float</span>. <br>
-                                    E por fim o <span class="for-azul">input</span> como dito antes, serve como entradad de dados pelo usuário.
-                                    <h3>Complexo (<span class="for">complex</span>)</h3>
-                                    Tipo de dado usado para representar números complexos (isso mesmo,
-                                    aquilo que provavelmente estudou no terceiro ano do ensino médio). <br><br>
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/float.gif" alt="">
 
-                                    Esse tipo normalmente é usado em cálculos geométricos e científicos.<br><br>
+                                        </code>
+                                    </div>
+                                    <br>
+                                    <div class="texto-resp">
+                                        No bloco de código acima temos algumas coisas novas, o <span
+                                            class="for-azul">float</span> declarado na variável e o
+                                        <span class="for-azul">input</span> <br>
+                                        basicamente declaramos a variável como <span class="for-azul">float</span>
+                                        typando a variável nesse caso, pois o
+                                        <span class="for-azul">input</span> pega os dados digitados pelo usuário como
+                                        <span class="for">string</span>, então é
+                                        necessário os converter em <span class="for azul">float</span>. <br>
+                                        E por fim o <span class="for-azul">input</span> como dito antes, serve como
+                                        entradad de dados pelo usuário.
+                                        <h3>Complexo (<span class="for">complex</span>)</h3>
+                                        Tipo de dado usado para representar números complexos (isso mesmo,
+                                        aquilo que provavelmente estudou no terceiro ano do ensino médio). <br><br>
 
-                                    Um tipo complexo contem duas partes: a parte real e a parte imaginária, 
-                                    sendo que a parte imaginária contem um j no sufixo.<br><br>
+                                        Esse tipo normalmente é usado em cálculos geométricos e científicos.<br><br>
 
-                                    A função <span class="for">complex(real[, imag])</span> do Python possibilita a criação de números 
-                                    imaginários passando como argumento:<span class="for">real</span>, que é a parte Real do número complexo
-                                     e o argumento opcional <span class="for">imag</span>, representando a parte imaginária do número complexo.<br><br>
-                                    
-                                    <h4>exemplos</h4>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        a = (<span class="numero">10</span>*<span class="numero">3j</span>) <br>
-                                        b = (<span class="numero">5</span>+<span class="numero">9j</span>) <br>
-                                        c =  <span class="print">complex</span>(<span class="print">input</span>(<span class="string-print">'Digite o número complexo: '</span> ))<br><br>
-                                        <span class="print">print</span>(c) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(c)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(a<span class="comando">, </span>b)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(a)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(b)) <br>
-                                        <span class="print">print</span>(<span class="print">complex</span>(<span class="numero">2</span><span class="comando">, </span><span class="numero">5</span>)) <br>
-                                        
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/complexo.gif" alt="">
+                                        Um tipo complexo contem duas partes: a parte real e a parte imaginária,
+                                        sendo que a parte imaginária contem um j no sufixo.<br><br>
 
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                   <h3>String (<span class="for">str</span>)</h3>
-                                    <p>As strings são um conjunto de caracteres dispostas em uma determinada ordem, geralmente é usada para representar
-                                       palavras, frases ou textos, porém podem representar apenas uma letra, símbolo ou número, porém estes últimos não
-                                       podem ser usados em operações matemáticas.
-                                    </p>
-                                    <p>
-                                        As strings são sempre declaradas entre aspas símples ou duplas, e um <span class="for-azul">input</span>
-                                        se não for declarado com outro tipo de variável será uma <span class="for-azul">string</span>.
-                                    </p>
-                                    <p>
-                                        Um número inteiro pode ser convertido em uma <span class="for-azul">string</span> colocando-os dentro 
-                                        do comando <span class="for">str</span>.
-                                    </p>
-                                    Vejamos alguns exemplos:
+                                        A função <span class="for">complex(real[, imag])</span> do Python possibilita a
+                                        criação de números
+                                        imaginários passando como argumento:<span class="for">real</span>, que é a parte
+                                        Real do número complexo
+                                        e o argumento opcional <span class="for">imag</span>, representando a parte
+                                        imaginária do número complexo.<br><br>
 
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        nome = <span class="string-print">'João</span> <br>
-                                        sobrenome = <span class="string-print">'Ricardo</span> <br>
-                                        nome_input = <span class="print">input</span>(<span class="string-print">'Digite seu nome: '</span> )<br>
-                                        idade_input = <span class="print">input</span>(<span class="string-print">'Digite sua idade: '</span> )<br><br>
-                                        numero = <span class="numero">33</span><br>
-                                        <span class="print">str</span>(numero)
-                                        <span class="print">print</span>(numero) <br><br>
-                                        <span class="print">print</span>(<span class="print">type</span>(nome)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(sobrenome)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(nome_input)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(idade_input)) <br>
-                                        <span class="print">print</span>(nome_input) <br>
-                                        <span class="print">print</span>(idade_input) <br>
-                                        
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/string.gif" alt="">
+                                        <h4>exemplos</h4>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            a = (<span class="numero">10</span>*<span class="numero">3j</span>) <br>
+                                            b = (<span class="numero">5</span>+<span class="numero">9j</span>) <br>
+                                            c = <span class="print">complex</span>(<span
+                                                class="print">input</span>(<span class="string-print">'Digite o número
+                                                complexo: '</span> ))<br><br>
+                                            <span class="print">print</span>(c) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(c)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(a<span
+                                                class="comando">, </span>b)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(a)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(b)) <br>
+                                            <span class="print">print</span>(<span class="print">complex</span>(<span
+                                                class="numero">2</span><span class="comando">, </span><span
+                                                class="numero">5</span>)) <br>
 
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Booleano (<span class="for">bool</span>)</h3>
-                                    <p>Booleano é a tipagem de variável mais fácil de se entender, pois é um tipo de dado lógico que assume apenas
-                                        dois valores> falso e verdadeiro (<span class="for-azul">False</span> ou <span class="for-azul">True</span> em Python)
-                                    </p>
-                                    <p>
-                                        Na lógica computacional, podem ser considerados como 0 <span class="for-azul">False</span> e 1 <span class="for-azul">True</span>. <br>
-                                        Não é muito comum usarmos o boolean para declarar variáveis, sendo mais usado na verificação de resultados de expressões relacionais e lógicas.
-                                        <p>Vejamos alguns exemplos: </p>
-                                    </p>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        fim_de_semana = <span class="comando">True</span> <br>
-                                        feriado = <span class="comando">False</span> <br><br>
-                                        
-                                        <span class="print">print</span>(fim_de_semana) <br>
-                                        <span class="print">print</span>(feriado) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(fim_de_semana)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(feriado)) <br>
-                                    
-                                        
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/bool.png" alt="">
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/complexo.gif" alt="">
 
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Listas (<span class="for">list</span>)</h3>
-                                    <p>
-                                        As listar em Python são uma sequência ordenada de valores, sendo cada valor da lista indicado por um índice e os valores que formam a lista são chamados 
-                                        de elementos ou itens.
-                                    </p>
-                                    <p>
-                                        Os elementos da lista podem ser inteiros, flutuantes (decimal), strings, outras listas entre outros tipos.
-                                    </p>
-                                    <p>
-                                        Elas são definidas utilizando-se colchetes para delimitar a lista e vírgulas para separar os elementos, e você
-                                        pode as chamar pelo seu índice que começa em 0 e vai até o infinito.
-                                        <p>Vejamos alguns exemplos: </p>
-                                    </p>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        alunos = [<span class="string-print">'Amanda'</span><span class="comando">, </span><span class="string-print">'Ana'</span><span class="comando">, </span> <span class="string-print">'Bruno'</span><span class="comando">, </span> <span class="string-print">'João'</span> ] <br>
-                                        notas = [<span class="numero">10</span><span class="comando">, </span> <span class="numero">8.5</span><span class="comando">, </span> <span class="numero">7.8</span><span class="comando">, </span> <span class="numero">8.0</span> ] <br><br>
-                                        
-                                        <span class="print">print</span>(alunos[<span class="numero">0</span>]) <span class="comentario">#O número entre conchetes é o índice</span> <br>
-                                        <span class="print">print</span>(feriado) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(fim_de_semana)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(feriado)) <br>
-                                    
-                                        
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/list.png" alt="">
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>String (<span class="for">str</span>)</h3>
+                                        <p>As strings são um conjunto de caracteres dispostas em uma determinada ordem,
+                                            geralmente é usada para representar
+                                            palavras, frases ou textos, porém podem representar apenas uma letra,
+                                            símbolo ou número, porém estes últimos não
+                                            podem ser usados em operações matemáticas.
+                                        </p>
+                                        <p>
+                                            As strings são sempre declaradas entre aspas símples ou duplas, e um <span
+                                                class="for-azul">input</span>
+                                            se não for declarado com outro tipo de variável será uma <span
+                                                class="for-azul">string</span>.
+                                        </p>
+                                        <p>
+                                            Um número inteiro pode ser convertido em uma <span
+                                                class="for-azul">string</span> colocando-os dentro
+                                            do comando <span class="for">str</span>.
+                                        </p>
+                                        Vejamos alguns exemplos:
 
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Tuplas (<span class="for">tuple</span>)</h3>
-                                    <p>
-                                        Conforme as listas as tuplas é um tipo de variável que agrupa elementos, assim como nas listas as tuplas também podem ter caracteres inteiros,
-                                        floats, strings e por assim vai, porém diferente das listas as tuplas ultilizam parênteses para serem
-                                        definidas e são saparadas por vírgulas.
-                                    </p>
-                                    <p>
-                                        A diferença entre as tuplas e as listas é que as Tuplas são imutáveis, isso é não mudam após sua definição, não podem ser modificadas.
-                                    </p>
-                                    <p>
-                                        As tuplas em Python são uma excelente opção para estruturar dados em uma aplicação. 
-                                        Sua utilização oferece mais segurança para armazenar elementos que não devem ser modificados.
-                                        <p>Vejamos alguns exemplos: </p>
-                                    </p>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        inteiros = (<span class="numero">90</span><span class="comando">, </span><span class="numero">79</span><span class="comando">, </span><span class="numero">54</span><span class="comando">, </span><span class="numero">32</span><span class="comando">, </span><span class="numero">21</span>) <br>
-                                        flutuantes = (<span class="numero">100</span><span class="comando">, </span><span class="numero">94.05</span><span class="comando">, </span><span class="numero">86.8</span><span class="comando">, </span><span class="numero">62</span>) <br>
-                                        strings = (<span class="string-print">'Leticia'</span><span class="comando">, </span><span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'Morgana'</span>) <br><br>
-                                        
-                                        <span class="print">print</span>(strings[<span class="numero">0</span>]) <span class="comentario">#O número entre conchetes é o índice</span> <br>
-                                        <span class="print">print</span>(strings) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(strings)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(inteiros)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(flutuantes)) <br>
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/tuplas.png" alt="">
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            nome = <span class="string-print">'João</span> <br>
+                                            sobrenome = <span class="string-print">'Ricardo</span> <br>
+                                            nome_input = <span class="print">input</span>(<span
+                                                class="string-print">'Digite seu nome: '</span> )<br>
+                                            idade_input = <span class="print">input</span>(<span
+                                                class="string-print">'Digite sua idade: '</span> )<br><br>
+                                            numero = <span class="numero">33</span><br>
+                                            <span class="print">str</span>(numero)
+                                            <span class="print">print</span>(numero) <br><br>
+                                            <span class="print">print</span>(<span class="print">type</span>(nome)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(sobrenome))
+                                            <br>
+                                            <span class="print">print</span>(<span
+                                                class="print">type</span>(nome_input)) <br>
+                                            <span class="print">print</span>(<span
+                                                class="print">type</span>(idade_input)) <br>
+                                            <span class="print">print</span>(nome_input) <br>
+                                            <span class="print">print</span>(idade_input) <br>
 
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Dicionários (<span class="for">dict</span>)</h3>
-                                    <p>
-                                        os dicionários são uma coleção de elementos chave-valor que permite representar melhor o mundo real, sendo um tipo de dado muito flexível.
-                                    </p>
-                                    <p>
-                                        Como dito anteriormente esse tipo dedado utiliza a estrutura chave-valor para agrupar elementos, onde a chave é o primeiro elemento seguido de doi pontos (:)
-                                        e o valor, os dicionários são definidos com conchetes {}.
-                                    </p>
-                                    Vejamos alguns exemplos:
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        altura = {<span class="string-print">'Leticia'</span>:<span class="numero">1.69</span><span class="comando">, </span><span class="string-print">'Wesley'</span>:<span class="numero">1.85</span><span class="comando">, </span><span class="string-print">'Morgana'</span>:<span class="numero">1.50</span>} <br>
-                                        peso = {<span class="string-print">'Leticia'</span>:<span class="numero">90</span><span class="comando">, </span><span class="string-print">'Wesley'</span>:<span class="numero">100</span><span class="comando">, </span><span class="string-print">'Morgana'</span>:<span class="numero">40</span>} <br><br>
-                                      
-                                        <span class="print">print</span>(altura) <br>
-                                        <span class="print">print</span>(peso) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(altura)) <br>
-                                        <span class="print">print</span>(<span class="print">type</span>(peso)) <br>
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/variaveis/dict.png" alt="">
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/string.gif" alt="">
 
-                                    </code>
-                                   
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Conclusão</h3>
-                                    Finalmente chegamos ao fim das variáveis etecano, espero que você possa ter emtedido melhor a lógica por trás delas, estude e tente proramar mais com 
-                                    cada tipo de variável fazendo exercícios e projetos, fique bem e códifique com moderação.
-                                </div>
-                            </div><!--fim "testo-r"-->
-                        </div><!--fim resposta-->
-                    </div><!--fim espaçamento-->
-                </div><!--fim delimitador-->
-            </div><!--fim alinhamento principal-->
-        </div><!--fim section-content-->
-    </section><!--fim section-->
-</main><!--fim main-->
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Booleano (<span class="for">bool</span>)</h3>
+                                        <p>Booleano é a tipagem de variável mais fácil de se entender, pois é um tipo de
+                                            dado lógico que assume apenas
+                                            dois valores> falso e verdadeiro (<span class="for-azul">False</span> ou
+                                            <span class="for-azul">True</span> em Python)
+                                        </p>
+                                        <p>
+                                            Na lógica computacional, podem ser considerados como 0 <span
+                                                class="for-azul">False</span> e 1 <span class="for-azul">True</span>.
+                                            <br>
+                                            Não é muito comum usarmos o boolean para declarar variáveis, sendo mais
+                                            usado na verificação de resultados de expressões relacionais e lógicas.
+                                            <p>Vejamos alguns exemplos: </p>
+                                        </p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            fim_de_semana = <span class="comando">True</span> <br>
+                                            feriado = <span class="comando">False</span> <br><br>
+
+                                            <span class="print">print</span>(fim_de_semana) <br>
+                                            <span class="print">print</span>(feriado) <br>
+                                            <span class="print">print</span>(<span
+                                                class="print">type</span>(fim_de_semana)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(feriado))
+                                            <br>
 
 
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/bool.png" alt="">
+
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Listas (<span class="for">list</span>)</h3>
+                                        <p>
+                                            As listar em Python são uma sequência ordenada de valores, sendo cada valor
+                                            da lista indicado por um índice e os valores que formam a lista são chamados
+                                            de elementos ou itens.
+                                        </p>
+                                        <p>
+                                            Os elementos da lista podem ser inteiros, flutuantes (decimal), strings,
+                                            outras listas entre outros tipos.
+                                        </p>
+                                        <p>
+                                            Elas são definidas utilizando-se colchetes para delimitar a lista e vírgulas
+                                            para separar os elementos, e você
+                                            pode as chamar pelo seu índice que começa em 0 e vai até o infinito.
+                                            <p>Vejamos alguns exemplos: </p>
+                                        </p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            alunos = [<span class="string-print">'Amanda'</span><span class="comando">,
+                                            </span><span class="string-print">'Ana'</span><span class="comando">,
+                                            </span> <span class="string-print">'Bruno'</span><span class="comando">,
+                                            </span> <span class="string-print">'João'</span> ] <br>
+                                            notas = [<span class="numero">10</span><span class="comando">, </span> <span
+                                                class="numero">8.5</span><span class="comando">, </span> <span
+                                                class="numero">7.8</span><span class="comando">, </span> <span
+                                                class="numero">8.0</span> ] <br><br>
+
+                                            <span class="print">print</span>(alunos[<span class="numero">0</span>])
+                                            <span class="comentario">#O número entre conchetes é o índice</span> <br>
+                                            <span class="print">print</span>(feriado) <br>
+                                            <span class="print">print</span>(<span
+                                                class="print">type</span>(fim_de_semana)) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(feriado))
+                                            <br>
+
+
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/list.png" alt="">
+
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Tuplas (<span class="for">tuple</span>)</h3>
+                                        <p>
+                                            Conforme as listas as tuplas é um tipo de variável que agrupa elementos,
+                                            assim como nas listas as tuplas também podem ter caracteres inteiros,
+                                            floats, strings e por assim vai, porém diferente das listas as tuplas
+                                            ultilizam parênteses para serem
+                                            definidas e são saparadas por vírgulas.
+                                        </p>
+                                        <p>
+                                            A diferença entre as tuplas e as listas é que as Tuplas são imutáveis, isso
+                                            é não mudam após sua definição, não podem ser modificadas.
+                                        </p>
+                                        <p>
+                                            As tuplas em Python são uma excelente opção para estruturar dados em uma
+                                            aplicação.
+                                            Sua utilização oferece mais segurança para armazenar elementos que não devem
+                                            ser modificados.
+                                            <p>Vejamos alguns exemplos: </p>
+                                        </p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            inteiros = (<span class="numero">90</span><span class="comando">,
+                                            </span><span class="numero">79</span><span class="comando">, </span><span
+                                                class="numero">54</span><span class="comando">, </span><span
+                                                class="numero">32</span><span class="comando">, </span><span
+                                                class="numero">21</span>) <br>
+                                            flutuantes = (<span class="numero">100</span><span class="comando">,
+                                            </span><span class="numero">94.05</span><span class="comando">, </span><span
+                                                class="numero">86.8</span><span class="comando">, </span><span
+                                                class="numero">62</span>) <br>
+                                            strings = (<span class="string-print">'Leticia'</span><span
+                                                class="comando">, </span><span class="string-print">'Wesley'</span><span
+                                                class="comando">, </span><span class="string-print">'Morgana'</span>)
+                                            <br><br>
+
+                                            <span class="print">print</span>(strings[<span class="numero">0</span>])
+                                            <span class="comentario">#O número entre conchetes é o índice</span> <br>
+                                            <span class="print">print</span>(strings) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(strings))
+                                            <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(inteiros))
+                                            <br>
+                                            <span class="print">print</span>(<span
+                                                class="print">type</span>(flutuantes)) <br>
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/tuplas.png" alt="">
+
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Dicionários (<span class="for">dict</span>)</h3>
+                                        <p>
+                                            os dicionários são uma coleção de elementos chave-valor que permite
+                                            representar melhor o mundo real, sendo um tipo de dado muito flexível.
+                                        </p>
+                                        <p>
+                                            Como dito anteriormente esse tipo dedado utiliza a estrutura chave-valor
+                                            para agrupar elementos, onde a chave é o primeiro elemento seguido de doi
+                                            pontos (:)
+                                            e o valor, os dicionários são definidos com conchetes {}.
+                                        </p>
+                                        Vejamos alguns exemplos:
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            altura = {<span class="string-print">'Leticia'</span>:<span
+                                                class="numero">1.69</span><span class="comando">, </span><span
+                                                class="string-print">'Wesley'</span>:<span
+                                                class="numero">1.85</span><span class="comando">, </span><span
+                                                class="string-print">'Morgana'</span>:<span class="numero">1.50</span>}
+                                            <br>
+                                            peso = {<span class="string-print">'Leticia'</span>:<span
+                                                class="numero">90</span><span class="comando">, </span><span
+                                                class="string-print">'Wesley'</span>:<span
+                                                class="numero">100</span><span class="comando">, </span><span
+                                                class="string-print">'Morgana'</span>:<span class="numero">40</span>}
+                                            <br><br>
+
+                                            <span class="print">print</span>(altura) <br>
+                                            <span class="print">print</span>(peso) <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(altura))
+                                            <br>
+                                            <span class="print">print</span>(<span class="print">type</span>(peso)) <br>
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/variaveis/dict.png" alt="">
+
+                                        </code>
+
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Conclusão</h3>
+                                        Finalmente chegamos ao fim das variáveis etecano, espero que você possa ter
+                                        emtedido melhor a lógica por trás delas, estude e tente proramar mais com
+                                        cada tipo de variável fazendo exercícios e projetos, fique bem e códifique com
+                                        moderação.
+                                    </div>
+                                </div>
+                                <!--fim "testo-r"-->
+                            </div>
+                            <!--fim resposta-->
+                        </div>
+                        <!--fim espaçamento-->
+                    </div>
+                    <!--fim delimitador-->
+                </div>
+                <!--fim alinhamento principal-->
+            </div>
+            <!--fim section-content-->
+        </section>
+        <!--fim section-->
+    </main>
+    <!--fim main-->
+
+
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
     <footer class="footer">
-        
-        <div class="rede-social">   <!--todas os icons de rede social ficam aqui-->
-            
+
+        <div class="rede-social">
+            <!--todas os icons de rede social ficam aqui-->
+
             <div class="face">
                 <a href="#">
                     <img src="../../../imgs/footer/facebook.png" alt="simbolo facebook">
@@ -492,22 +648,25 @@
                 </a>
             </div>
         </div>
-        
-        <div class="princ-footer"> <!--textos do footer-->
+
+        <div class="princ-footer">
+            <!--textos do footer-->
             <div class="text-prin">
                 ProgramEtec uma iniciativa estudantil para ensinar programção
-                a qualquer pessoa, seja onde for não importa qual momento ou dispositivo. 
+                a qualquer pessoa, seja onde for não importa qual momento ou dispositivo.
             </div>
             <div class="copy">
                 © ProgramEtec, todos os direitos reservados
             </div>
         </div>
-        <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site"> <!--logo do site-->
+        <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site">
+        <!--logo do site-->
     </footer>
 
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
     <script src="../../../js/navbar-mobile.js"></script>
 
     <script src="../../../js/menu-ling.js"></script>
 </body>
-</html> 
+
+</html>

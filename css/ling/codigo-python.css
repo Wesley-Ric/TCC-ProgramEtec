@@ -1,4 +1,4 @@
-.codigo{
+.codigo {
     overflow-x: auto;
     padding: 1rem;
     color: #abb2bf;
@@ -11,78 +11,98 @@
     word-break: break-word;
     border-radius: 7px;
 }
-.funcao{
+
+.funcao {
     color: #c79202;
 }
-.nome-fun{
+
+.nome-fun {
     color: #f5b814;
 }
-.retorna{
+
+.retorna {
     color: #c79202;
 }
-.numero{
+
+.numero {
     color: #0687c7;
 }
-.dentro{
+
+.dentro {
     padding-left: 1rem;
 }
-.circulo{
+
+.circulo {
     background-color: rgb(241, 241, 241);
     color: rgb(215, 5, 5);
     padding: 0.2rem;
     border-radius: 5px;
 }
-.img-sec{
+
+.img-sec {
     object-fit: cover;
     width: 100%;
     height: 20rem;
 }
 
-.string-print{
+.string-print {
     color: #267006;
 }
-.print{
+
+.print {
     color: #7f83db;
 }
-.comentario{
+
+.comentario {
     color: gray;
 }
-.chaves-print{
+
+.chaves-print {
     color: rgb(226, 109, 0);
 }
-.int{
-   color: #7f83db;;
+
+.int {
+    color: #7f83db;
+    ;
 }
-.comando{
-   color: rgb(226, 109, 0);
+
+.comando {
+    color: rgb(226, 109, 0);
 }
-.espaço{
+
+.espaço {
     padding-left: 2rem;
 }
 
 
-.texto-r img{
+.texto-r img {
     width: 100%;
     border-radius: 10px;
 }
-.texto-r .img-sec{
+
+.texto-r .img-sec {
     width: 50%
 }
+
 @media (width:1807px) {
-    .texto-r .img-sec{
-    width: 70%
+    .texto-r .img-sec {
+        width: 70%
     }
 }
-.comando-azul{
+
+.comando-azul {
     color: #6e46e8;
 }
-.dentro2x{
+
+.dentro2x {
     padding-left: 6rem;
 }
-.espaço2x{
+
+.espaço2x {
     padding-left: 4rem;
 }
-.for-azul{
+
+.for-azul {
     padding: 2px 4px;
     font-size: 90%;
     color: #0162e0;
@@ -91,7 +111,8 @@
     cursor: pointer;
     transition: .3s;
 }
-.for-azul:hover{
+
+.for-azul:hover {
     padding: 2px 4px;
     font-size: 90%;
     color: #b60f03;
@@ -100,6 +121,7 @@
     transition: .3s;
     cursor: pointer;
 }
-.comando-avermelhado{
+
+.comando-avermelhado {
     color: rgb(163, 52, 0);
 }

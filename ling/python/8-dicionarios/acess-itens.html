@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="../../../css/ling/python.css"><!-- estilo geral do site-->
     <link rel="stylesheet" href="../../../css/navbar.css">
@@ -10,83 +11,109 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .texto-r a{
-            text-decoration: none; 
+        .texto-r a {
+            text-decoration: none;
             color: rgb(29, 168, 29);
         }
-        .texto-r a:hover{
+
+        .texto-r a:hover {
             color: orange;
         }
-        table, th, td{
+
+        table,
+        th,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: .5rem;
         }
-        .esquerda{
+
+        .esquerda {
             text-align: justify;
-            
+
         }
-        .centro{
+
+        .centro {
             text-align: center;
         }
-        .direito{
+
+        .direito {
             text-align: center;
         }
-        table{
+
+        table {
             background-color: white;
         }
-        th{
+
+        th {
             background-color: gray;
             color: white;
         }
-       .for{
+
+        .for {
             padding: 2px 4px;
             font-size: 90%;
             color: #c7254e;
             background-color: #f9f2f4;
             border-radius: 4px;
-       }
+        }
     </style>
 </head>
+
 <body>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
 
     <!--Navbar-->
     <header id="header">
-        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi' src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
+        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi'
+                src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
         <nav id="nav">
             <button id="btn" aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="../../../index.html">Início</a></li>                
+                <li><a href="../../../index.html">Início</a></li>
                 <li><a href="../../../about.html">Sobre</a></li>
                 <li id="ling"><a href="#">Linguagens</a>
                     <ul id="submenu">
-                        <a href="../../HTML.html"><li>HTML</li></a>
-                        <a href="../..//CSS.html"><li>CSS</li></a>
-                        <a href="../../JS/JS.html"><li>JS</li></a>
-                        <a href="../../Java.html"><li>Java</li></a>
-                        <a href="../../Python.html"><li>Python</li></a>
+                        <a href="../../HTML.html">
+                            <li>HTML</li>
+                        </a>
+                        <a href="../..//CSS.html">
+                            <li>CSS</li>
+                        </a>
+                        <a href="../../JS/JS.html">
+                            <li>JS</li>
+                        </a>
+                        <a href="../../Java.html">
+                            <li>Java</li>
+                        </a>
+                        <a href="../../Python.html">
+                            <li>Python</li>
+                        </a>
                     </ul>
                 </li>
                 <li id='Contato'><a href="../../../contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
-<main>
-    <section> <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <main>
+        <section>
+            <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
 
-        <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
+            <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
 
 
-        <div id="navgation"> <!--div que recebe a class active para o menu lateral ativar no mobile-->
-            <div id="alinhamento-btnzinho"> <!--centraliza o btn-->
-                <button id="botaozinho" aria-expanded="false">
-                    <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
-                </button>
-            </div>
+            <div id="navgation">
+                <!--div que recebe a class active para o menu lateral ativar no mobile-->
+                <div id="alinhamento-btnzinho">
+                    <!--centraliza o btn-->
+                    <button id="botaozinho" aria-expanded="false">
+                        <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow">
+                            <!--imagem de seta no botão--></span>
+                    </button>
+                </div>
 
 
                 <!---==-=-=-=-=-=--  fim do botão =-=-=-==-=-=--=--=-->
@@ -99,308 +126,421 @@
                 ╰――――――――――――――――――╯
                 -->
 
-            <div id="menu-lat"> <!--tag que da o estilo ao menu (tirando o "A")-->
-                <div id="alinhamentobtn"> <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
+                <div id="menu-lat">
+                    <!--tag que da o estilo ao menu (tirando o "A")-->
+                    <div id="alinhamentobtn">
+                        <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
                                             no canto superior direito da tela-->
-                                            
-                    <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
+
+                        <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
                     usar o space beteween que joga cada um de casa lato e deixo esse botão invisivel-->
-                    <button id="btn1" aria-expanded="false">
-                    </button>
-                    <!-- fim btn fantasma-->
+                        <button id="btn1" aria-expanded="false">
+                        </button>
+                        <!-- fim btn fantasma-->
 
 
-                     <!--btn que serve para fechar o menu lateral no mobile-->
-                    <button id="btn2" aria-expanded="false">
-                        <span id="burg1"><img src="../../../imgs/cancel.png" alt="cencel"></span>
-                    </button>
+                        <!--btn que serve para fechar o menu lateral no mobile-->
+                        <button id="btn2" aria-expanded="false">
+                            <span id="burg1"><img src="../../../imgs/cancel.png" alt="cencel"></span>
+                        </button>
+                    </div>
+                    <div id="menu-esquerdo">
+                        <!--serve basicamente para organizar os itens em um unico bloco-->
+                        <ul>
+                            <!--itens do menu de fato-->
+                            <!--itens do menu de fato-->
+                            <li><a href="../../Python.html">Introdução a Python</a></li>
+                            <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
+                            <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
+                            <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
+                            <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
+                            <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
+                        </ul>
+                    </div>
+                    <!--fim menu esquedo-->
                 </div>
-                <div id="menu-esquerdo"> <!--serve basicamente para organizar os itens em um unico bloco-->
-                    <ul>
-                        <!--itens do menu de fato-->
-                        <!--itens do menu de fato-->
-                        <li><a href="../../Python.html">Introdução a Python</a></li>
-                        <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
-                        <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
-                        <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
-                        <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
-                        <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
-                    </ul>
-                </div><!--fim menu esquedo-->
-            </div><!--fim menu-lat-->
-        </div><!--fim navgation-->
+                <!--fim menu-lat-->
+            </div>
+            <!--fim navgation-->
 
 
-        <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
+            <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
 
 
 
-                <!--
+            <!--
                 ╭――――――――――――――――――╮
                 │                  │
                 │ conteudo da page │
                 │                  │ 
                 ╰――――――――――――――――――╯
                 -->
-        <div id="section-content">
+            <div id="section-content">
 
 
-            <div id="alinha-t"> <!--alinha o titulo-->
-                <div id="titulo"><!--estilo do titulo-->
-                    Dicionários
-                </div><!--fim titulo-->
-            </div><!--fim alinha-t -->
+                <div id="alinha-t">
+                    <!--alinha o titulo-->
+                    <div id="titulo">
+                        <!--estilo do titulo-->
+                        Operadores
+                    </div>
+                    <!--fim titulo-->
+                </div>
+                <!--fim alinha-t -->
 
 
-            <div id="alinhamento-principal"> <!--organiza todo o conteudo do site-->
-                <div id="delimitador"><!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
+                <div id="alinhamento-principal">
+                    <!--organiza todo o conteudo do site-->
+                    <div id="delimitador">
+                        <!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
                 e atribui a ele uma margim pra centralizar melhor-->
 
 
 
-                    <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
+                        <div class="pergunta comeco">
+                            <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="dicionarios-init.html">
-                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            <a href="dicionarios-init.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
-                            <div class="pergunta b h">
-                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
-                                    <span class="text-p"><!--estilo do texto das perguntas-->
-                                        Dicionários
-                                    </span> <!--dim span-->
-                                </div><!--fim alinha-texto-perg-->
-                            </div><!--fim pergunta a-->
-                        </a> <!--fim tag a-->
-                        <a href="acess-itens.html">
-                            <div class="pergunta a h">
-                                <div class="alinha-texto-perg"> 
-                                    <span class="text-p">
-                                        Acessando itens
-                                    </span> <!--dim span-->
-                                </div><!--fim alinha-texto-perg-->
-                            </div><!--fim pergunta a-->
-                        </a> <!--fim tag a-->
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Dicionários
+                                        </span>
+                                        <!--dim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+                            <a href="acess-itens.html">
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Acessando itens
+                                        </span>
+                                        <!--dim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
 
 
-                        <!--segue o mesmo para todos os outros blocos-->
-                        <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                    
-                    </div><!--fim div "pergunta comeco"--> 
-                    <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
-                        <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
-                            <div class="texto-r"><!--estilização de texto-->
-                               <div class="textp-resp">
-                                    <h3>Acessando itens nos dicionários</h3>
-                                    <p>para acerssarmos um item em específico em um dicionário podemos acessar por sua chave</p>
-                               </div>
-                               <div class="codigo">
-                                    <code>
-                                        pessoa = <span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.65</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">21</span><br><br>
-                                        <span class="print">print</span>(pessoa[<span class="string-print">'nome'</span>]<span class="comando">, </span>pessoa[<span class="string-print">'altura'</span>])
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
-                                    </code>
-                               </div>
-                               <br>
-                               <div class="texto-resp">
-                                    temos também o método <span class="for-azul">get()</span> para conseguir o mesmo resultado
-                               </div>
-                               <br>
-                               <div class="codigo">
-                                    <code>
-                                        pessoa = <span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.65</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">21</span><br><br>
-                                        <span class="print">print</span>(pessoa.get(<span class="string-print">'nome'</span>))
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    <h3>Tendo chaves e valores</h3>
-                                    <p>Para obtermos todas as chaves de um dicionário podemos usar o método 
-                                        <span class="for-azul">keys()</span></p>
-                                </div>
-                                <br> 
-                                <div class="codigo">
-                                    <code>
-                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
-                                        <span class="print">print</span>(PC.keys())
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios4.png" alt="">
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    Como você pode ver o <span class="for-azul">keys()</span> retorna um objeto do tipo
-                                    <span class="for-azul">dict_keys</span> que é igual a uma lista com todas as chaves.
-                                    <p>Mas ainda existem os valores das chaves, para conseguir somente eles
-                                        ultilizamos o <span class="for-azul">values()</span>:
-                                    </p>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
-                                        <span class="print">print</span>(PC.values())
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios5.png" alt="">
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texo-resp">
-                                    <h3>Percorrendo os elementos dentro de um dicionário</h3>
-                                    <p>
-                                        Podemos percorrer os elementos de um Dicionário em usando suas chaves <span class="for-azul">dict.keys()</span>
-                                        ou usando seus valores <span class="for-azul">dict.values</span>
+                            <!--segue o mesmo para todos os outros blocos-->
+                            <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
 
-                                        <h3><span class="for">dict.keys()</span></h3>
-                                    </p>
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
-                                        
-                                        <span class="comando">for</span> chave <span class="comando">in</span> pc.keys(): <br>
-                                        <span class="print espaço">print</span>(<span class="string-print">f'chave = </span><span class="comando">{</span>chave<span class="comando">}</span><span class="string-print"> e valor = </span<span class="comando">{</span>pc[chave]<span class="comando">}</span><span class="string-print">'</span>)
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios6.png" alt="">
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    Podemos usar o <span class="for-azul">dict.values()</span> para pegar os valores também.
-                                    <h3><span class="for">dict.values()</span></h3>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
-                                        
-                                        <span class="comando">for</span> valor <span class="comando">in</span> pc.values(): <br>
-                                        <span class="print espaço">print</span>(<span class="string-print">f'Valor = </span><span class="comando">{</span>valor<span class="comando">}</span><span class="string-print">'</span>)
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios7.png" alt="">
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Percorrendo as chaves e valores de um Dicionário</h3>
-                                    Uma maneira de obter chaves e valores é utilizando o método dict.items():
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
-                                        
-                                       
-                                        <span class="print">print</span>(pc.items())
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios8.png" alt="">
-                                    </code>
-                                </div>
-                                <br>
-                                <div class="texto-resp">
-                                    A saída equivale a uma lista com elementos organizados em tuplas, sendo:
-                                    <li class="dentro">O primeiro elemento da tupla a chave do dicionário e</li>
-                                    <li class="dentro">O segundo elemento, o valor presente naquela chave.</li>
-                                    
-                                    <p>Uma maneira segura de acessar um elemento de um dicionário é verificando primeiro se a chave existe.</p>
-                                    <h4>Exemplo</h4>
-                                </div>
-                                <div class="codigo">
-                                    <code>
-                                        pc = {<span class="string-print">'CPU'</span>: <span class="string-print">'Intel'</span><span class="comando">, </span><span class="string-print">'RAM'</span>: <span class="string-print">'16gb'</span><span class="comando">, </span><span class="string-print">'SSD'</span>: <span class="string-print">'512gb'</span>}<br><br>
-                                        
-                                       <span class="comando">if </span><span class="string-print">'CPU'</span><span class="comando"> in</span> pc: <br>
-                                        <span class="print espaço">print</span>(<span class="string-print">f'Como a chave desejada existe: </span><span class="comando">{</span>pc[<span class="string-print">"CPU"</span>]<span class="comando">}</span>')
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios9.png" alt="">
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Adicionando e atualizando itens</h3>
-                                    A maneira mais simples de adicionar um item a um dicionario é criar uma nova chave e atribuir um valor. Assim:
+                        </div>
+                        <!--fim div "pergunta comeco"-->
+                        <div id="espacamento">
+                            <!--semve para dar um espaço das bordar com padding-->
+                            <div class="resposta">
+                                <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
+                                <div class="texto-r">
+                                    <!--estilização de texto-->
+                                    <div class="textp-resp">
+                                        <h3>Acessando itens nos dicionários</h3>
+                                        <p>para acerssarmos um item em específico em um dicionário podemos acessar por
+                                            sua chave</p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            pessoa = <span class="string-print">'nome'</span>: <span
+                                                class="string-print">'Wesley'</span><span class="comando">, </span><span
+                                                class="string-print">'altura'</span>: <span
+                                                class="numero">1.65</span><span class="comando">, </span><span
+                                                class="string-print">'idade'</span>: <span
+                                                class="numero">21</span><br><br>
+                                            <span class="print">print</span>(pessoa[<span
+                                                class="string-print">'nome'</span>]<span class="comando">,
+                                            </span>pessoa[<span class="string-print">'altura'</span>])
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
+                                        </code>
+                                    </div>
+                                    <br>
+                                    <div class="texto-resp">
+                                        temos também o método <span class="for-azul">get()</span> para conseguir o mesmo
+                                        resultado
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            pessoa = <span class="string-print">'nome'</span>: <span
+                                                class="string-print">'Wesley'</span><span class="comando">, </span><span
+                                                class="string-print">'altura'</span>: <span
+                                                class="numero">1.65</span><span class="comando">, </span><span
+                                                class="string-print">'idade'</span>: <span
+                                                class="numero">21</span><br><br>
+                                            <span class="print">print</span>(pessoa.get(<span
+                                                class="string-print">'nome'</span>))
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios3.png" alt="">
+                                        </code>
+                                    </div>
+                                    <br>
+                                    <div class="texto-resp">
+                                        <h3>Tendo chaves e valores</h3>
+                                        <p>Para obtermos todas as chaves de um dicionário podemos usar o método
+                                            <span class="for-azul">keys()</span></p>
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            pc = {<span class="string-print">'CPU'</span>: <span
+                                                class="string-print">'Intel'</span><span class="comando">, </span><span
+                                                class="string-print">'RAM'</span>: <span
+                                                class="string-print">'16gb'</span><span class="comando">, </span><span
+                                                class="string-print">'SSD'</span>: <span
+                                                class="string-print">'512gb'</span>}<br><br>
+                                            <span class="print">print</span>(PC.keys())
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios4.png" alt="">
+                                        </code>
+                                    </div>
+                                    <br>
+                                    <div class="texto-resp">
+                                        Como você pode ver o <span class="for-azul">keys()</span> retorna um objeto do
+                                        tipo
+                                        <span class="for-azul">dict_keys</span> que é igual a uma lista com todas as
+                                        chaves.
+                                        <p>Mas ainda existem os valores das chaves, para conseguir somente eles
+                                            ultilizamos o <span class="for-azul">values()</span>:
+                                        </p>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            pc = {<span class="string-print">'CPU'</span>: <span
+                                                class="string-print">'Intel'</span><span class="comando">, </span><span
+                                                class="string-print">'RAM'</span>: <span
+                                                class="string-print">'16gb'</span><span class="comando">, </span><span
+                                                class="string-print">'SSD'</span>: <span
+                                                class="string-print">'512gb'</span>}<br><br>
+                                            <span class="print">print</span>(PC.values())
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios5.png" alt="">
+                                        </code>
+                                    </div>
+                                    <br>
+                                    <div class="texo-resp">
+                                        <h3>Percorrendo os elementos dentro de um dicionário</h3>
+                                        <p>
+                                            Podemos percorrer os elementos de um Dicionário em usando suas chaves <span
+                                                class="for-azul">dict.keys()</span>
+                                            ou usando seus valores <span class="for-azul">dict.values</span>
 
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        nomes = {<span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span>}<br><br>
-                                        nomes[<span class="string-print">'idade'</span>] = <span class="numero">20</span><br><br>
-                                        <span class="print">print</span>(nomes)<br><br>
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
+                                            <h3><span class="for">dict.keys()</span></h3>
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            pc = {<span class="string-print">'CPU'</span>: <span
+                                                class="string-print">'Intel'</span><span class="comando">, </span><span
+                                                class="string-print">'RAM'</span>: <span
+                                                class="string-print">'16gb'</span><span class="comando">, </span><span
+                                                class="string-print">'SSD'</span>: <span
+                                                class="string-print">'512gb'</span>}<br><br>
+
+                                            <span class="comando">for</span> chave <span class="comando">in</span>
+                                            pc.keys(): <br>
+                                            <span class="print espaço">print</span>(<span class="string-print">f'chave =
+                                            </span><span class="comando">{</span>chave<span
+                                                class="comando">}</span><span class="string-print"> e valor =
+                                                </span<span class="comando">{</span>pc[chave]<span
+                                                class="comando">}</span><span class="string-print">'</span>)
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios6.png" alt="">
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        Podemos usar o <span class="for-azul">dict.values()</span> para pegar os valores
+                                        também.
+                                        <h3><span class="for">dict.values()</span></h3>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            pc = {<span class="string-print">'CPU'</span>: <span
+                                                class="string-print">'Intel'</span><span class="comando">, </span><span
+                                                class="string-print">'RAM'</span>: <span
+                                                class="string-print">'16gb'</span><span class="comando">, </span><span
+                                                class="string-print">'SSD'</span>: <span
+                                                class="string-print">'512gb'</span>}<br><br>
+
+                                            <span class="comando">for</span> valor <span class="comando">in</span>
+                                            pc.values(): <br>
+                                            <span class="print espaço">print</span>(<span class="string-print">f'Valor =
+                                            </span><span class="comando">{</span>valor<span
+                                                class="comando">}</span><span class="string-print">'</span>)
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios7.png" alt="">
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Percorrendo as chaves e valores de um Dicionário</h3>
+                                        Uma maneira de obter chaves e valores é utilizando o método dict.items():
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            pc = {<span class="string-print">'CPU'</span>: <span
+                                                class="string-print">'Intel'</span><span class="comando">, </span><span
+                                                class="string-print">'RAM'</span>: <span
+                                                class="string-print">'16gb'</span><span class="comando">, </span><span
+                                                class="string-print">'SSD'</span>: <span
+                                                class="string-print">'512gb'</span>}<br><br>
+
+
+                                            <span class="print">print</span>(pc.items())
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios8.png" alt="">
+                                        </code>
+                                    </div>
+                                    <br>
+                                    <div class="texto-resp">
+                                        A saída equivale a uma lista com elementos organizados em tuplas, sendo:
+                                        <li class="dentro">O primeiro elemento da tupla a chave do dicionário e</li>
+                                        <li class="dentro">O segundo elemento, o valor presente naquela chave.</li>
+
+                                        <p>Uma maneira segura de acessar um elemento de um dicionário é verificando
+                                            primeiro se a chave existe.</p>
+                                        <h4>Exemplo</h4>
+                                    </div>
+                                    <div class="codigo">
+                                        <code>
+                                            pc = {<span class="string-print">'CPU'</span>: <span
+                                                class="string-print">'Intel'</span><span class="comando">, </span><span
+                                                class="string-print">'RAM'</span>: <span
+                                                class="string-print">'16gb'</span><span class="comando">, </span><span
+                                                class="string-print">'SSD'</span>: <span
+                                                class="string-print">'512gb'</span>}<br><br>
+
+                                            <span class="comando">if </span><span class="string-print">'CPU'</span><span
+                                                class="comando"> in</span> pc: <br>
+                                            <span class="print espaço">print</span>(<span class="string-print">f'Como a
+                                                chave desejada existe: </span><span class="comando">{</span>pc[<span
+                                                class="string-print">"CPU"</span>]<span class="comando">}</span>')
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios9.png" alt="">
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Adicionando e atualizando itens</h3>
+                                        A maneira mais simples de adicionar um item a um dicionario é criar uma nova
+                                        chave e atribuir um valor. Assim:
+
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            nomes = {<span class="string-print">'nome'</span>: <span
+                                                class="string-print">'Wesley'</span>}<br><br>
+                                            nomes[<span class="string-print">'idade'</span>] = <span
+                                                class="numero">20</span><br><br>
+                                            <span class="print">print</span>(nomes)<br><br>
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios10.png" alt="">
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Excluindo elementos no dicionário</h3>
+                                        Você pode excluir um elemento do dicionário com a keyword del do Python,
+                                        especificando sua chave:
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            pessoa = {<span class="string-print">'nome'</span>: <span
+                                                class="string-print">'Wesley'</span><span class="comando">, </span><span
+                                                class="string-print">'idade'</span>: <span class="numero">22</span><span
+                                                class="comando">, </span><span class="string-print">'altura'</span>:
+                                            <span class="numero">1.85</span>}<br><br>
+                                            <span class="comando">del</span> pessoa[<span
+                                                class="string-print">'altura'</span>]<br><br>
+                                            <span class="print">print</span>(pessoa)<br>
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios11.png" alt="">
+                                        </code>
+                                    </div>
+                                    <div class="texto-resp">
+                                        <h3>Excluindo e retornando o elemento excluído</h3>
+                                        O método pop() remove o item cujo a chave foi especificada:
+                                    </div>
+                                    <br>
+                                    <div class="codigo">
+                                        <code>
+                                            compras = {<span class="string-print">'maça'</span>: <span
+                                                class="string-print">'2kg'</span><span class="comando">, </span><span
+                                                class="string-print">'ovos'</span>: <span class="string-print">'1
+                                                caixa'</span><span class="comando">, </span><span
+                                                class="string-print">'farinha'</span>: <span
+                                                class="string-print">'2kg'</span>}<br><br>
+                                            ovos = compras.pop(<span class="string-print">'ovos'</span>)<br><br>
+                                            <span class="print">print</span>(ovos)<br>
+                                            <span class="print">print</span>(compras)<br>
+                                            <div class="texto-resp">
+                                                <h1>Resultado</h1>
+                                            </div>
+                                            <img src="../../../imgs/python/dicionarios/dicionarios11.png" alt="">
+                                        </code>
+                                        <div texto-resp>
+                                            <h3>conclusão</h3>
+                                            Nesse post vismos o básico sobre os dicionários, sugiro que você faça
+                                            exercícios e busque mais sobre os
+                                            dicionários, que são extremamente importantes em python, tente fazer um
+                                            projeto que os use, fique bem e códifique sem moderação.
                                         </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios10.png" alt="">
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Excluindo elementos no dicionário</h3>
-                                    Você pode excluir um elemento do dicionário com a keyword del do Python, especificando sua chave:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        pessoa = {<span class="string-print">'nome'</span>: <span class="string-print">'Wesley'</span><span class="comando">, </span><span class="string-print">'idade'</span>: <span class="numero">22</span><span class="comando">, </span><span class="string-print">'altura'</span>: <span class="numero">1.85</span>}<br><br>
-                                        <span class="comando">del</span> pessoa[<span class="string-print">'altura'</span>]<br><br>
-                                        <span class="print">print</span>(pessoa)<br>
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios11.png" alt="">
-                                    </code>
-                                </div>
-                                <div class="texto-resp">
-                                    <h3>Excluindo e retornando o elemento excluído</h3>
-                                    O método pop() remove o item cujo a chave foi especificada:
-                                </div>
-                                <br>
-                                <div class="codigo">
-                                    <code>
-                                        compras = {<span class="string-print">'maça'</span>: <span class="string-print">'2kg'</span><span class="comando">, </span><span class="string-print">'ovos'</span>: <span class="string-print">'1 caixa'</span><span class="comando">, </span><span class="string-print">'farinha'</span>: <span class="string-print">'2kg'</span>}<br><br>
-                                        ovos = compras.pop(<span class="string-print">'ovos'</span>)<br><br>
-                                        <span class="print">print</span>(ovos)<br>
-                                        <span class="print">print</span>(compras)<br>
-                                        <div class="texto-resp">
-                                            <h1>Resultado</h1>
-                                        </div>
-                                        <img src="../../../imgs/python/dicionarios/dicionarios11.png" alt="">
-                                    </code>
-                                    <div texto-resp>
-                                        <h3>conclusão</h3>
-                                        Nesse post vismos o básico sobre os dicionários, sugiro que você faça exercícios e busque mais sobre os 
-                                        dicionários, que são extremamente importantes em python, tente fazer um projeto que os use, fique bem e códifique sem moderação.
                                     </div>
                                 </div>
-                            </div><!--fim "testo-r"-->
-                        </div><!--fim resposta-->
-                    </div><!--fim espaçamento-->
-                </div><!--fim delimitador-->
-            </div><!--fim alinhamento principal-->
-        </div><!--fim section-content-->
-    </section><!--fim section-->
-</main><!--fim main-->
+                                <!--fim "testo-r"-->
+                            </div>
+                            <!--fim resposta-->
+                        </div>
+                        <!--fim espaçamento-->
+                    </div>
+                    <!--fim delimitador-->
+                </div>
+                <!--fim alinhamento principal-->
+            </div>
+            <!--fim section-content-->
+        </section>
+        <!--fim section-->
+    </main>
+    <!--fim main-->
 
 
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
     <footer class="footer">
-        
-        <div class="rede-social">   <!--todas os icons de rede social ficam aqui-->
-            
+
+        <div class="rede-social">
+            <!--todas os icons de rede social ficam aqui-->
+
             <div class="face">
                 <a href="#">
                     <img src="../../../imgs/footer/facebook.png" alt="simbolo facebook">
@@ -417,22 +557,25 @@
                 </a>
             </div>
         </div>
-        
-        <div class="princ-footer"> <!--textos do footer-->
+
+        <div class="princ-footer">
+            <!--textos do footer-->
             <div class="text-prin">
                 ProgramEtec uma iniciativa estudantil para ensinar programção
-                a qualquer pessoa, seja onde for não importa qual momento ou dispositivo. 
+                a qualquer pessoa, seja onde for não importa qual momento ou dispositivo.
             </div>
             <div class="copy">
                 © ProgramEtec, todos os direitos reservados
             </div>
         </div>
-        <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site"> <!--logo do site-->
+        <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site">
+        <!--logo do site-->
     </footer>
 
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
     <script src="../../../js/navbar-mobile.js"></script>
 
     <script src="../../../js/menu-ling.js"></script>
 </body>
-</html> 
+
+</html>

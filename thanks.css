@@ -30,7 +30,6 @@ body, html{
 .TEXTO{
     padding-top: 10%;
     text-align: center;
- 
 }
 .titulo{
     font-size: 30px;
@@ -76,7 +75,6 @@ body, html{
 }
 
 @media (max-width: 654px) {
-   
     .titulo{
         font-size: 20px;
         padding-bottom: 1rem;
