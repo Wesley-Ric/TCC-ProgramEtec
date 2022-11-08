@@ -875,7 +875,6 @@ table {
     background-color: rgb(153, 153, 153);
     text-align: center;
     width: 30%;
-<<<<<<< HEAD
     transition: 1s;
     border-radius: 7px;
     padding: .5rem;
@@ -887,16 +886,6 @@ table:hover {
     transition: 1s;
 }
 
-=======
-    transition: 1s;
-}
-
-table:hover {
-    width: 40%;
-    transition: 1s;
-}
-
->>>>>>> b10769e3e45dd1a64d3f5348bcf48666ee46cba1
 table .table-head {
     font-size: 1.5rem;
 }

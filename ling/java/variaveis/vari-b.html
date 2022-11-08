@@ -11,17 +11,23 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .ul ul li{
-            margin-bottom: 1rem;
+        .table{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .netbeans-img{
-            width: 27%;
+        .table table{
+            width: 70%;
+        }
+         .title-table{
+            text-decoration: underline;
+            padding: 1rem;
         }
     </style>
 </head>
 
 <body>
-   
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
 
     <!--Navbar-->
     <header id="header">
@@ -57,7 +63,7 @@
             </ul>
         </nav>
     </header>
-    
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
     <main>
         <section>
             <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
@@ -76,7 +82,7 @@
                 </div>
 
 
-              
+                <!---==-=-=-=-=-=-  fim do botão =-=-=-==-=-=-=-=-->
 
                 <!--
                 ╭――――――――――――――――――╮
@@ -109,14 +115,15 @@
                         <ul>
                             <!--itens do menu de fato-->
                              <li><a href="../../Java.html">Introdução ao Java</a></li>
-                            <li><a href="#">Instalação</a></li>
-                            <li><a href="../classe/classe-a.html">Classe</a></li>
+                            <li><a href="../instalacao/ins.html">Instalação</a></li>
+                            <li><a href="#">Classe</a></li>
                             <li><a href="../variaveis/vari-a.html">Variáveis</a></li>
                             <li><a href="../scan/scan-a.html">Scan</a></li>
                             <li><a href="../matematica/mat-a.html">Operações matemáticas</a></li>
                             <li><a href="../comparacao/comp-a.html">Comparação</a></li>
                             <li><a href="../string/string-a.html">Strings</a></li>
-                            <li><a href="../loop/loop-a.html">Loop</a></li>                        </ul>
+                            <li><a href="../loop/loop-a.html">Loop</a></li>
+                        </ul>
                     </div>
                     <!--fim menu esquedo-->
                 </div>
@@ -125,7 +132,6 @@
             <!--fim navgation-->
 
 
-            
 
 
 
@@ -143,7 +149,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Instalação 
+                      Variáveis
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -161,25 +167,7 @@
                         <div class="pergunta comeco">
                             <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                            <a href="#">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta a h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            Instalação da IDE
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-                            <a href="jdk.html">
+                            <a href="vari-a.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -188,7 +176,45 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            JDK 8
+                                            O que são variáveis?
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="vari-b.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Declaração
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="vari-c.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Constantes
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -207,20 +233,80 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="ul">
+                                  <p>
+                                    Agora que já sabemos o que é uma varíavel, vamos aprender a como cria-las, mas antes disso, precisamos aprender quais
+                                    são os tipos e para que serve cada um deles.
+                                  </p>
+                                  <div class="table">
+                                    <table>
+                                      <tr class="table-head">
+                                       <td class="title-table">
+                                           Tipo de variável
+                                       </td>
+                                       <td class="title-table">
+                                           Função
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           int
+                                       </td>
+                                       <td>
+                                           Números inteiros
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           Double ou Float
+                                       </td>
+                                       <td>
+                                           Números decimais
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           String
+                                       </td>
+                                       <td>
+                                          Caracteres não calculáveis
+                                       </td>
+                                      </tr>
+                                    </table>
+                                </div>
                                 <p>
-                                   Antes de começarmos a realmente aprender Java, precisamos de uma boa IDE de desenvolvimento, isto é, 
-                                   um bom ambiente integrado de desenvolvimento, garantir uma boa IDE no começo facilita todo o aprendizado, pois através dela
-                                   nós podemos baixar boas extensões, plugins, etc.
+                                    Nessa tabela deixei apenas os mais usados, mas existem muitos outros tipos de variáveis
+                                    de diferentes tamanhos e fins.
                                 </p>
                                 <p>
-                                    Por esses motivos, eu recomendo o <span class="for-azul">NetBeans</span> como IDE, não é das mais leves IDE'S, mas as suas funcionalidades
-                                    compensam.
+                                    Nesse momento, nós focaremos em ver os tipos de variável <span class="for-azul">int</span> e  <span class="for-azul">double</span>,
+                                    sendo o int, os números sem vírgula (inteiros), e double com números com vírgula(decimais).
                                 </p>
-                                <P>
-                                   <a href="https://netbeans.apache.org/download/index.html" target="_blank"> <img src="../../../imgs/java/netbeans.png" class="netbeans-img"></a> 
-                                </P>
-                                <u>clique na imagem para ir para a página de instalação</u>
-                                    
+                                <p>
+                                    Segue um exemplo:
+                                </p>
+                                <p>
+                                    <div class="code">
+                                        <code>
+                                            <span class="var-js">public</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>
+                                            <span class="function-js">public static void </span><span class="function-name">main</span><span class="document-js">(Strings[] args) </span>
+                                            {<br>
+                                            <span class="var-js">int </span><span class="var-name"> a</span>; //Número Inteiro<br>
+                                            <span class="var-js">double </span><span class="var-name"> b</span>;  //Número decimal<br>
+                                            <span class="var-js">String </span><span class="var-name"> c</span>;  //Caractere
+                                            <br>}
+                                            <br><br>}
+                                        </code>
+                                    </div>
+                                </p>
+                                <p>
+                                    Na programação acima, declaramos 3 varíaveis de 3 diferentes tipos, int, double e string, respectivamente.
+                                </p>
+                                <p>
+                                    Vale dizer que também existe uma regra para a nomeação de variáveis, são basicamente as mesmas das classes, mas agora não é necessário
+                                    ter a primeira letra em maiúsculo, além disso, também é possível separar 2 palavras usando hífen.<br><br> EX: int placa-carros;
+                                </p>
+
+
                                 </div>
                                 <!--fim "testo-r"-->
                             </div>
@@ -239,7 +325,7 @@
     <!--fim main-->
 
 
-
+   
     <footer class="footer">
 
         <div class="rede-social">
@@ -276,7 +362,7 @@
         <!--logo do site-->
     </footer>
 
-    
+ 
     <script src="../../../js/navbar-mobile.js"></script>
 
     <script src="../../../js/menu-ling.js"></script>
