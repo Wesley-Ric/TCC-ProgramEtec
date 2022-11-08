@@ -11,17 +11,8 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .table{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .table table{
-            width: 70%;
-        }
-         .title-table{
-            text-decoration: underline;
-            padding: 1rem;
+        .ul ul li{
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -149,7 +140,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Variáveis
+                      Operações matemáticas
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -167,26 +158,7 @@
                         <div class="pergunta comeco">
                             <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                            <a href="vari-a.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta c h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            O que são variáveis?
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="vari-b.html">
+                            <a href="mat-a.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -195,7 +167,7 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Declaração
+                                            Operadores
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -205,7 +177,7 @@
                             </a>
                             <!--fim tag a-->
 
-                            <a href="vari-c.html">
+                            <a href="mat-b.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -214,7 +186,26 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Constantes
+                                            Captar e mostrar
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="mat-c.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            if e else
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -233,37 +224,44 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="ul">
-                                  <p>
-                                    Agora que já vimos um pouco sobre as variáveis, aprenderemos em sobre as constantes,
-                                    os conceitos e regras são os mesmos, a única diferença é que nós somos quem escolhemos seu valor.
-                                  </p>
-                                
-                                <p>
-                                    Segue um exemplo:
-                                </p>
-                                <p>
+                                    <p>
+                                        Na nossa primeira operação matemática, somaremos 2 constantes e mostraremos o resultado no prompt
+                                        de comando, segue a programação:
+                                    </p>
                                     <div class="code">
                                         <code>
-                                            <span class="var-js">public</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>
-                                            <span class="function-js">public static void </span><span class="function-name">main</span><span class="document-js">(Strings[] args) </span>
-                                            {<br>
-                                            <span class="var-js">int </span><span class="var-name"> a</span><span class="document-js"> = 4</span>;<br>
-                                            <span class="var-js">double </span><span class="var-name"> b</span><span class="document-js"> = 6.7</span>;<br>
-                                            <span class="var-js">String </span><span class="var-name"> c<span class="document-js"> = "texto"</span></span>;
-                                            <br>}
-                                            <br><br>}
+                                            <span class="var-js">int </span><span class="var-name">valor1</span><span class="document-js"> = 8</span>;    // declaração da primeira constante<br><br>
+                                            <span class="var-js">double </span><span class="var-name">valor2</span><span class="document-js"> = 7.5</span>;   // declaração da segunda constante<br><br>
+                                            <span class="var-js">double </span><span class="var-name">resultado</span><span class="document-js"> = valor1+valor2</span>; // criação da variável de soma das duas constantes<br><br>
+                                            <span class="function-name">System.out.println</span><span class="document-js">("O resultado da soma é "+resultado);</span> // concatenamos
+                                            uma mensagem escrita com uma variável com o sinal de "+" 
+
                                         </code>
-                                        <p>
-                                            //IMPORTANTE: valores do tipo double não precisam necessariamente ser um número decimal, ou seja, podemos ter uma constante
-                                            double igual a 5, por exemplo.
-
-                                        </p>
                                     </div>
-                                </p>
-                                <p>
-                                    Nós declaramos as mesmas variáveis da sessão anterior, entranto, agora demos um valor a cada uma delas, tornando-as constantes.
-                                </p>
+                                     <p>
+                                        Se formos fazer com um valor digitado pelo usuário, precisaremos primeiramente importar o pacote de Scanner e criar um objeto, igual
+                                        ao que já foi mostrado, após isso, faremos a seguinte programação:
+                                    </p>
+                                    <div class="code">
+                                        <code>
+                                            <span class="var-js">int </span><span class="var-name">valor1</span>;<br><br>
+                                            <span class="var-js">double </span><span class="var-name">valor2</span>;<br><br>
 
+                                            <span class="function-name">System.out.println</span><span class="document-js">("Insira o primeiro valor");</span><br>
+                                            <span class="var-name"> valor1</span> <span class="document-js">=</span><span class="function-js">scan.nextInt() </span>; // Scanneamos 
+                                            a primeira variável<br><br> 
+
+                                            <span class="function-name">System.out.println</span><span class="document-js">("Insira o segundo valor");</span><br>
+                                            <span class="var-name"> valor2</span> <span class="document-js">=</span><span class="function-js">scan.nextDouble() </span>; // Scanneamos 
+                                            a segunda variável<br><br> 
+
+                                            <span class="var-js">double </span><span class="var-name">resultado</span><span class="document-js"> = valor1+valor2</span>;<br><br>
+                                            <span class="function-name">System.out.println</span><span class="document-js">("O resultado da soma é "+resultado);</span>  
+                                        </code>
+                                    </div>
+                                    <p>
+                                        Nesse exemplos, fizemos cálculos básicos de soma, mas podemos realizar expressões algébricas extremamente complexas seguindo a mesma lógica.
+                                    </p>
 
                                 </div>
                                 <!--fim "testo-r"-->

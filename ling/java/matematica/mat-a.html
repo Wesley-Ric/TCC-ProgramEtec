@@ -11,17 +11,8 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .table{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .table table{
-            width: 70%;
-        }
-         .title-table{
-            text-decoration: underline;
-            padding: 1rem;
+        .ul ul li{
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -149,7 +140,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Variáveis
+                      Operações matemáticas
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -167,45 +158,7 @@
                         <div class="pergunta comeco">
                             <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                            <a href="vari-a.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta c h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            O que são variáveis?
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="vari-b.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta b h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            Declaração
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="vari-c.html">
+                            <a href="mat-a.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -214,7 +167,45 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Constantes
+                                            Operadores
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="mat-b.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Captar e mostrar
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="mat-c.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            if e else
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -233,36 +224,61 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="ul">
-                                  <p>
-                                    Agora que já vimos um pouco sobre as variáveis, aprenderemos em sobre as constantes,
-                                    os conceitos e regras são os mesmos, a única diferença é que nós somos quem escolhemos seu valor.
-                                  </p>
-                                
+                                   <p>
+                                    Já vimos como funciona o método Scanner e para que ele serve, agora veremos
+                                    como aplicar isso em um programa que calcule dois valores inseridos pelo usuário, mas para isso, precisaremos
+                                    saber quais são os operadores matemáticos no mundo da programação. Segue a tabela:
+                                   </p>
+                                    <div class="table-div">
+                                    <table>
+                                      <tr class="table-head">
+                                       <td>
+                                           Operador
+                                       </td>
+                                       <td>
+                                           Função
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           +
+                                       </td>
+                                       <td>
+                                           Adição
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           -
+                                       </td>
+                                       <td>
+                                           Subtração
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           /
+                                       </td>
+                                       <td>
+                                           Divisão
+                                       </td>
+                                      </tr>
+                                      <tr>
+                                       <td>
+                                           *
+                                       </td>
+                                       <td>
+                                           Multiplicação
+                                       </td>
+                                      </tr>
+                                     
+                                    </table>
+                                </div>
                                 <p>
-                                    Segue um exemplo:
+                                    As 4 operações básicas da matemática são as mais utilizadas no mundo da programação, e como podemos observar, 
+                                    o simbolo da multiplicação e divisão são um pouco diferente do habitual, mas não são difíceis de memorizar.
                                 </p>
-                                <p>
-                                    <div class="code">
-                                        <code>
-                                            <span class="var-js">public</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>
-                                            <span class="function-js">public static void </span><span class="function-name">main</span><span class="document-js">(Strings[] args) </span>
-                                            {<br>
-                                            <span class="var-js">int </span><span class="var-name"> a</span><span class="document-js"> = 4</span>;<br>
-                                            <span class="var-js">double </span><span class="var-name"> b</span><span class="document-js"> = 6.7</span>;<br>
-                                            <span class="var-js">String </span><span class="var-name"> c<span class="document-js"> = "texto"</span></span>;
-                                            <br>}
-                                            <br><br>}
-                                        </code>
-                                        <p>
-                                            //IMPORTANTE: valores do tipo double não precisam necessariamente ser um número decimal, ou seja, podemos ter uma constante
-                                            double igual a 5, por exemplo.
 
-                                        </p>
-                                    </div>
-                                </p>
-                                <p>
-                                    Nós declaramos as mesmas variáveis da sessão anterior, entranto, agora demos um valor a cada uma delas, tornando-as constantes.
-                                </p>
 
 
                                 </div>
