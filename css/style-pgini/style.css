@@ -49,10 +49,10 @@ h1{
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    position: relative;
-    top: 65%;
-    width: 90%;
-    left: 5%;
+
+
+
+
 }
 
 /*
@@ -64,7 +64,7 @@ h1{
 */
 .html{
     width: 100%;
-    background-color: #005000;
+    background-color: #3F3B6C;
     height: 15rem;
     display: block;
     text-align: center;
@@ -73,9 +73,18 @@ h1{
 .html img{/*o heitgh e o width em 0 faz a imagem ficar escondida até que a propriedade hover seja ativafa*/
     width: 0;
     position: absolute;
-    top: 12.5rem;
+    top: 15.5rem;
     height: 0;
     transition: 1s;
+}
+@media (max-width: 755px) {
+    .html img{
+        width: 0;
+        position: absolute;
+        top: 12.5rem;
+        height: 0;
+        transition: 1s;
+    }
 }
 .html-img{
     display: flex;
@@ -96,13 +105,14 @@ h1{
     position: relative;
     top: 4rem;
     text-align: center;
+    color: #31E1F7;
 }
 .H-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #1c8f9e;
 }
 
 a{
@@ -121,7 +131,7 @@ a{
 
 .css{
     width: 100%;
-    background-color: #004000;
+    background-color: #48437a;
     height: 15rem;
     display: block;
     text-align: center;
@@ -155,13 +165,14 @@ a{
 .C-cima{
     position: relative;
     top: 4rem;
+    color: #31E1F7;
 }
 .C-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #1c8f9e;
 }
 
 
@@ -175,7 +186,7 @@ a{
 
 .js{
     width: 100%;
-    background-color: #003300;
+    background-color: #4e4886;
     height: 15rem;
     display: block;
     text-align: center;
@@ -208,13 +219,14 @@ a{
 .J-cima{
     position: relative;
     top: 4rem;
+    color: #31E1F7;
 }
 .J-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #1c8f9e;
 }
 
 /*
@@ -226,7 +238,7 @@ a{
 */
 .java{
     width: 100%;
-    background-color: #002900;
+    background-color: #554f94;
     height: 15rem;
     display: block;
     text-align: center;
@@ -259,13 +271,14 @@ a{
 .Ja-cima{
     position: relative;
     top: 4rem;
+    color: #31E1F7;
 }
 .Ja-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #1c8f9e;
 }
 /*
 ╭――――――――――――――――――╮
@@ -276,7 +289,7 @@ a{
 */
 .python{
     width: 100%;
-    background-color: #002100;
+    background-color: #554f94;
     height: 15rem;
     display: block;
     text-align: center;
@@ -307,13 +320,14 @@ a{
 .P-cima{
     position: relative;
     top: 4rem;
+    color: #31E1F7;
 }
 .P-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 4.5rem;
-    color: #80ac29;
+    color: #1c8f9e;
 }
 
 /*
@@ -345,8 +359,6 @@ footer{
     color: white;
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 145rem;
     height: 17rem;
 }
 

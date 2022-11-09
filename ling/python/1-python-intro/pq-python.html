@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="../../../css/ling/python.css"><!-- estilo geral do site-->
     <link rel="stylesheet" href="../../../css/style-pgini/carrossel.css">
@@ -10,58 +11,75 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .content-tema img{
+        .content-tema img {
             width: 100%;
             height: 10rem;
             object-fit: cover;
             border-radius: 8px;
             border: solid 1px darkgray;
         }
-        p{
+
+        p {
             font-weight: bold;
             font-size: 34px
         }
     </style>
 </head>
+
 <body>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
 
     <!--Navbar-->
     <header id="header">
-        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi' src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
+        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi'
+                src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
         <nav id="nav">
             <button id="btn" aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="../../../index.html">Início</a></li>                
+                <li><a href="../../../index.html">Início</a></li>
                 <li><a href="../../../about.html">Sobre</a></li>
                 <li id="ling"><a href="#">Linguagens</a>
                     <ul id="submenu">
-                        <a href="../../HTML.html"><li>HTML</li></a>
-                        <a href="../../CSS.html"><li>CSS</li></a>
-                        <a href="../../JS/JS.html"><li>JS</li></a>
-                        <a href="../../Java.html"><li>Java</li></a>
-                        <a href="../../Python.html"><li>Python</li></a>
+                        <a href="../../HTML.html">
+                            <li>HTML</li>
+                        </a>
+                        <a href="../../CSS.html">
+                            <li>CSS</li>
+                        </a>
+                        <a href="../../JS/JS.html">
+                            <li>JS</li>
+                        </a>
+                        <a href="../../Java.html">
+                            <li>Java</li>
+                        </a>
+                        <a href="../../Python.html">
+                            <li>Python</li>
+                        </a>
                     </ul>
                 </li>
                 <li id='Contato'><a href="../../../contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
-<main>
-    <section> <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <main>
+        <section>
+            <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
 
-        <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
+            <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
 
 
-        <div id="navgation"> <!--div que recebe a class active para o menu lateral ativar no mobile-->
-            <div id="alinhamento-btnzinho"> <!--centraliza o btn-->
-                <button id="botaozinho" aria-expanded="false">
-                    <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
-                </button>
-            </div>
+            <div id="navgation">
+                <!--div que recebe a class active para o menu lateral ativar no mobile-->
+                <div id="alinhamento-btnzinho">
+                    <!--centraliza o btn-->
+                    <button id="botaozinho" aria-expanded="false">
+                        <span id="burg"><img src="../../../imgs/arrow.png" alt="arrow">
+                            <!--imagem de seta no botão--></span>
+                    </button>
+                </div>
 
 
                 <!---==-=-=-=-=-=--  fim do botão =-=-=-==-=-=--=--=-->
@@ -74,202 +92,249 @@
                 ╰――――――――――――――――――╯
                 -->
 
-            <div id="menu-lat"> <!--t/g que da o estilo ao menu (tirando o "A")-->
-                <div id="alinhamentobtn"> <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
+                <div id="menu-lat">
+                    <!--t/g que da o estilo ao menu (tirando o "A")-->
+                    <div id="alinhamentobtn">
+                        <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
                                             no canto superior direito da tela-->
-                                            
-                    <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
+
+                        <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
                     usar o space beteween que joga cada um de casa lato e deixo esse botão invisivel-->
-                    <button id="btn1" aria-expanded="false">
-                    </button>
-                    <!-- fim btn fantasma-->
+                        <button id="btn1" aria-expanded="false">
+                        </button>
+                        <!-- fim btn fantasma-->
 
 
-                     <!--btn que serve para fechar o menu lateral no mobile-->
-                    <button id="btn2" aria-expanded="false">
-                        <span id="burg1"><img src="../../../imgs/cancel.png" alt="cencel"></span>
-                    </button>
+                        <!--btn que serve para fechar o menu lateral no mobile-->
+                        <button id="btn2" aria-expanded="false">
+                            <span id="burg1"><img src="../../../imgs/cancel.png" alt="cencel"></span>
+                        </button>
+                    </div>
+                    <div id="menu-esquerdo">
+                        <!--serve basicamente para organizar os itens em um unico bloco-->
+                        <ul>
+                            <!--itens do menu de fato-->
+                            <!--itens do menu de fato-->
+                            <li><a href="../../Python.html">Introdução a Python</a></li>
+                            <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
+                            <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
+                            <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
+                            <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
+                            <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
+                        </ul>
+                    </div>
+                    <!--fim menu esquedo-->
                 </div>
-                <div id="menu-esquerdo"> <!--serve basicamente para organizar os itens em um unico bloco-->
-                    <ul>
-                        <!--itens do menu de fato-->
-                        <!--itens do menu de fato-->
-                        <li><a href="../../Python.html">Introdução a Python</a></li>
-                        <li><a href="../2-instalacao/instalacao-python.html">Instalação</a></li>
-                        <li><a href="../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
-                        <li><a href="../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
-                        <li><a href="../5-variaveis/vari-init.html">Variáveis</a></li>
-                        <li><a href="../8-dicionarios/dicionarios-init.html">Dicionários</a></li>
-                    </ul>
-                </div><!--fim menu esquedo-->
-            </div><!--fim menu-lat-->
-        </div><!--fim navgation-->
+                <!--fim menu-lat-->
+            </div>
+            <!--fim navgation-->
 
 
-        <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
+            <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
 
 
 
-                <!--
+            <!--
                 ╭――――――――――――――――――╮
                 │                  │
                 │ conteudo da page │
                 │                  │ 
                 ╰――――――――――――――――――╯
                 -->
-        <div id="section-content">
+            <div id="section-content">
 
 
-            <div id="alinha-t"> <!--alinha o titulo-->
-                <div id="titulo"><!--estilo do titulo-->
-                    Introdução a Python
-                </div><!--fim titulo-->
-            </div><!--fim alinha-t -->
+                <div id="alinha-t">
+                    <!--alinha o titulo-->
+                    <div id="titulo">
+                        <!--estilo do titulo-->
+                        Introdução a Python
+                    </div>
+                    <!--fim titulo-->
+                </div>
+                <!--fim alinha-t -->
 
 
-            <div id="alinhamento-principal"> <!--organiza todo o conteudo do site-->
-                <div id="delimitador"><!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
+                <div id="alinhamento-principal">
+                    <!--organiza todo o conteudo do site-->
+                    <div id="delimitador">
+                        <!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
                 e atribui a ele uma margim pra centralizar melhor-->
 
 
 
-                    <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
+                        <div class="pergunta comeco">
+                            <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="../../Python.html">
-                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            <a href="../../Python.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
-                            <div class="pergunta a h">
-                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
-                                    <span class="text-p"><!--estilo do texto das perguntas-->
-                                        Oque é o python?
-                                    </span> <!--dim span-->
-                                </div><!--fim alinha-texto-perg-->
-                            </div><!--fim pergunta a-->
-                        </a> <!--fim tag a-->
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Oque é o python?
+                                        </span>
+                                        <!--dim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
 
 
 
-                        <!--segue o mesmo para todos os outros blocos-->
-                        <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="faz-python.html">
-                            <div class="pergunta b h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        O que o python faz
-                                    </span>
+                            <!--segue o mesmo para todos os outros blocos-->
+                            <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
+                            <a href="faz-python.html">
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            O que o python faz
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
-                        
-                        <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="pq-python.html">
-                            <div class="pergunta c h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        Por que Python?
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
+                            </a>
+                            <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
 
-                        <!--=-=-=-=-=-=-=-=-=começo bloco d-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="adcionais.html">
-                            <div class="pergunta d h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        Adicionais
-                                    </span>
+                            <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
+                            <a href="pq-python.html">
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Por que Python?
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>   
-                        <!--=-=-=-=-=fim d-=-=-=-=-=-=-->
-                    </div><!--fim div "pergunta comeco"--> 
-                    <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
-                        <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
-                            <div class="texto-r"><!--estilização de texto-->
-                                <div class="texto-resp">
-                                    Se você é iniciante em programação poderia estar se perguntando:
-                                    <div>"será que realmente vale a pena aprender Python?" </div>
-                                    acredito que todos nos que começamos aprender a programar nos perguntamos 
-                                    qual seria a melhor linguagem para aprendermos, para que não perdessemos nosso tempo
-                                    afinal esse tempo é precioso, aqui você poderá ver alguns pontos sobre isso e decidir por
-                                    sí mesmo:
-                                    <br>
-                                    <p class="paragrafo-titulo">Empregabilidade</p>
+                            </a>
+                            <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
+
+                            <!--=-=-=-=-=-=-=-=-=começo bloco d-=-=-=-=-=-=-=-=-=-=-=--->
+                            <a href="adcionais.html">
+                                <div class="pergunta d h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Adicionais
+                                        </span>
+                                    </div>
                                 </div>
+                            </a>
+                            <!--=-=-=-=-=fim d-=-=-=-=-=-=-->
+                        </div>
+                        <!--fim div "pergunta comeco"-->
+                        <div id="espacamento">
+                            <!--semve para dar um espaço das bordar com padding-->
+                            <div class="resposta">
+                                <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
+                                <div class="texto-r">
+                                    <!--estilização de texto-->
+                                    <div class="texto-resp">
+                                        Se você é iniciante em programação poderia estar se perguntando:
+                                        <div>"será que realmente vale a pena aprender Python?" </div>
+                                        acredito que todos nos que começamos aprender a programar nos perguntamos
+                                        qual seria a melhor linguagem para aprendermos, para que não perdessemos nosso
+                                        tempo
+                                        afinal esse tempo é precioso, aqui você poderá ver alguns pontos sobre isso e
+                                        decidir por
+                                        sí mesmo:
+                                        <br>
+                                        <p class="paragrafo-titulo">Empregabilidade</p>
+                                    </div>
                                     <div class="content-tema">
                                         <div>
                                             <img src="../../../imgs/python/empregabilidade.jpg" alt="">
                                         </div>
                                     </div>
-                                <div class="texto-resp">
-                                    De acordo com o site simplilearn JavaScript e python são as duas linguagens mais populares
-                                    na industria de startup, com uma grande demanda, não só no Brasil, mas em empregos no exterior
-                                    muitas vezes podendo imigrar ou então trabalhar ganhando em dolar e trabalhando homeoffice.
-                                    <br>
-                                    <p class="paragrafo-titulo">Facilidade</p>
-                                </div>
+                                    <div class="texto-resp">
+                                        De acordo com o site simplilearn JavaScript e python são as duas linguagens mais
+                                        populares
+                                        na industria de startup, com uma grande demanda, não só no Brasil, mas em
+                                        empregos no exterior
+                                        muitas vezes podendo imigrar ou então trabalhar ganhando em dolar e trabalhando
+                                        homeoffice.
+                                        <br>
+                                        <p class="paragrafo-titulo">Facilidade</p>
+                                    </div>
                                     <div class="content-tema">
                                         <div>
-                                            <img src="../../../imgs/python/pablo-arroyo-_SEbdtH4ZLM-unsplash.jpg" alt="">
+                                            <img src="../../../imgs/python/pablo-arroyo-_SEbdtH4ZLM-unsplash.jpg"
+                                                alt="">
                                         </div>
                                     </div>
-                                <div class="texto-resp">
-                                    Python e uma das limguagens mais fáceis de se aprender, com uma linguagem de alto nível,
-                                    muito parecida com a linguagem do ser humano e mais afastado da linguagem da maquina, se torna
-                                    de facil aprendizado, podendo assim investir menos tempo aprendendo.
-                                    <br>
-                                    <p class="paragrafo-titulo">Bibliotecas</p>
-                                </div>
+                                    <div class="texto-resp">
+                                        Python e uma das limguagens mais fáceis de se aprender, com uma linguagem de
+                                        alto nível,
+                                        muito parecida com a linguagem do ser humano e mais afastado da linguagem da
+                                        maquina, se torna
+                                        de facil aprendizado, podendo assim investir menos tempo aprendendo.
+                                        <br>
+                                        <p class="paragrafo-titulo">Bibliotecas</p>
+                                    </div>
                                     <div class="content-tema">
                                         <div>
                                             <img src="../../../imgs/python/biblioteca.jpg" alt="">
                                         </div>
                                     </div>
-                                <div class="texto-resp">
-                                    Python tem uma das mais ativas comunidades e uma vasta biblioteca, dando cada vez mais comandos,
-                                    e funcionalidades para a linguagem, podendo ser ultilixada desde um programa de computador para 
-                                    aprendizado de inteligência artificial até um aplicativo mobile.
-                                    <br>
-                                    <p class="paragrafo-titulo">Salário</p>
-                                </div>
+                                    <div class="texto-resp">
+                                        Python tem uma das mais ativas comunidades e uma vasta biblioteca, dando cada
+                                        vez mais comandos,
+                                        e funcionalidades para a linguagem, podendo ser ultilixada desde um programa de
+                                        computador para
+                                        aprendizado de inteligência artificial até um aplicativo mobile.
+                                        <br>
+                                        <p class="paragrafo-titulo">Salário</p>
+                                    </div>
                                     <div class="content-tema">
                                         <div>
                                             <img src="../../../imgs/python/salario.jpg" alt="">
                                         </div>
                                     </div>
-                                <div class="texto-resp">
-                                    Python está entre as 10 linguagens mais bem pagas em 2022, no exterior o salário de um desenvolvedor
-                                    Python pode variar de 99 mil dolares por ano até 500 mil dolares por ano, cerca de 9 a 41 mil dolar
-                                    por mês, já no Brasil os ganhos ficam por volta de 2 a 12 mil por mês.
+                                    <div class="texto-resp">
+                                        Python está entre as 10 linguagens mais bem pagas em 2022, no exterior o salário
+                                        de um desenvolvedor
+                                        Python pode variar de 99 mil dolares por ano até 500 mil dolares por ano, cerca
+                                        de 9 a 41 mil dolar
+                                        por mês, já no Brasil os ganhos ficam por volta de 2 a 12 mil por mês.
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <hr>
                                     <br>
-                                    <br>
+                                    Bom esses são alguns dos pontos que podemos pensar antes de escolhermos uma
+                                    linguagem de programação,
+                                    eu particularmente sou suspeito em falar sobre python, pois pretendo ser um
+                                    desenvolvedor python um dia,
+                                    porém tenho a certeza de que se você e um iniciante motivado de programação deveria
+                                    dar pelomenor uma chance
+                                    a essa tão proeminente linguagem.
+
                                 </div>
-                                <hr>
-                                <br>
-                                Bom esses são alguns dos pontos que podemos pensar antes de escolhermos uma linguagem de programação,
-                                eu particularmente sou suspeito em falar sobre python, pois pretendo ser um desenvolvedor python um dia,
-                                porém tenho a certeza de que se você e um iniciante motivado de programação deveria dar pelomenor uma chance
-                                a essa tão proeminente linguagem.
-                                
-                            </div><!--fim "testo-r"-->
-                        </div><!--fim resposta-->
-                    </div><!--fim espaçamento-->
-                </div><!--fim delimitador-->
-            </div><!--fim alinhamento principal-->
-        </div><!--fim section-content-->
-    </section><!--fim section-->
-</main><!--fim main-->
+                                <!--fim "testo-r"-->
+                            </div>
+                            <!--fim resposta-->
+                        </div>
+                        <!--fim espaçamento-->
+                    </div>
+                    <!--fim delimitador-->
+                </div>
+                <!--fim alinhamento principal-->
+            </div>
+            <!--fim section-content-->
+        </section>
+        <!--fim section-->
+    </main>
+    <!--fim main-->
 
 
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
     <footer class="footer">
-        
-        <div class="rede-social">   <!--todas os icons de rede social ficam aqui-->
-            
+
+        <div class="rede-social">
+            <!--todas os icons de rede social ficam aqui-->
+
             <div class="face">
                 <a href="#">
                     <img src="../../../imgs/footer/facebook.png" alt="simbolo facebook">
@@ -286,22 +351,25 @@
                 </a>
             </div>
         </div>
-        
-        <div class="princ-footer"> <!--textos do footer-->
+
+        <div class="princ-footer">
+            <!--textos do footer-->
             <div class="text-prin">
                 ProgramEtec uma iniciativa estudantil para ensinar programção
-                a qualquer pessoa, seja onde for não importa qual momento ou dispositivo. 
+                a qualquer pessoa, seja onde for não importa qual momento ou dispositivo.
             </div>
             <div class="copy">
                 © ProgramEtec, todos os direitos reservados
             </div>
         </div>
-        <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site"> <!--logo do site-->
+        <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site">
+        <!--logo do site-->
     </footer>
 
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+    <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
     <script src="../../../js/navbar-mobile.js"></script>
 
     <script src="../../../js/menu-ling.js"></script>
 </body>
+
 </html>
