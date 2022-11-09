@@ -135,7 +135,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Variáveis
+                      Operações matemáticas
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -153,45 +153,7 @@
                         <div class="pergunta comeco">
                             <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                            <a href="vari-a.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta a h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            O que são variáveis?
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="vari-b.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta b h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            Declaração
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="vari-c.html">
+                            <a href="mat-a.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
@@ -200,7 +162,45 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Constantes
+                                            Operadores
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="mat-b.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Captar e mostrar
+                                        </span>
+                                        <!--fim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+
+                            <a href="mat-c.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            if e else
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -219,22 +219,47 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="ul">
-                                   <p>
-                                    Agora que já sabemos o básico de que é e como criar uma classe, vamos aprender o conceito fundamental de
-                                    qualquer linguagem de programação, as variáveis.
-                                  </p>
-                                  <p>
-                                    Uma variável, como o nome já nos induz, é um termo que pode variar, e essa variação depende do usuário, que, geralmente,
-                                    é quem da o valor as mesmas. Com esses valores inseridos pelo usuário, nós podemos realizar cálculos, gráficos, ou qualquer coisa
-                                    que o cliente queira, desde que as informações inseridas sejam precisas.
-                                  </p>
-                                  <p>
-                                    As valores inseridos na variáveis, geralmente, são salvos em memória, ou seja, são informações que, se não forem salvas em um banco de dados,
-                                    serão perdidas rapidamente.
-                                 </p>
+                                <p>
+                                    Nas linguagens de programação, também existem o que chamados de estruturas de decisão, os famosos
+                                    <span class="for-azul"> if</span> e <span class="for-azul"> else</span>, elas servem para tomar decisões dentro da
+                                    nossa programação tendo como base um parametro imposto por nós.
+                                </p>
+                                <ul>
+                                    <li><span class="for-azul">if</span> - se
+                                    </li>
+                                    <br>
+                                    <li><span class="for-azul">else</span> - se não
+                                    </li>
+                                </ul>
+                                <p>
+                                    Esse tipo de estruta é bem simples de se usar, funciona como se fosse um "questionamento"
+                                </p>
+                                <div class="code">
+                                <p>
+                                    Se (tal coisa for verdade) {<br> faça tal coisa; <br>}
+                                </p><br>
                                  <p>
-                                    Também é válido falar sobre as constantes, que, ao contrário das variáveis, são valores escolhidos pelo próprio programador e não podem ser modificados pelo usuário. 
-                                 </p>
+                                    Senão  {<br> faça outra coisa; <br>}
+                                </p>
+                            </div>
+                            <p>
+                                As estruturas de decisão funcionam dessa forma, agora basta apenas vermos a sintaxe.
+                            </p>
+                            <p>
+                                <div class="code">
+                                    <code>
+                                        <span class="var-js">if </span><span class="document-js">(idade>=18)</span>{<br>
+                                        <span class="var-name">System.out.println</span><span class="document-js">(" Maior de idade ")</span>;<br>}<br><Br>
+                                        <span class="var-js">else</span>{<br>
+                                        <span class="var-name">System.out.println</span><span class="document-js">(" Menor de idade ")</span>;<br>}
+                                    </code>
+                                </div>
+                            </p>
+                            <p>
+                                Na estrutura de decisão acima, estamos dizendo que, IF(se) a idade for MAIOR OU IGUAL a 18, aparecerá no prompt uma mensagem dizendo que
+                                o usuário é maior de idade, else (caso contrário), aparecerá que o usuário é de menor.
+                            </p>
+
 
 
 
