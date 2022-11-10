@@ -922,3 +922,6 @@ td {
     transition: .3s;
     cursor: pointer;
 }
+.texto-resp {
+    padding-right: 8rem;
+}   

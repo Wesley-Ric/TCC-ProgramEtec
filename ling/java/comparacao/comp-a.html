@@ -11,8 +11,15 @@
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
     <style>
-        .ul ul li{
-            margin-bottom: 1rem;
+        table{
+            width: 90%;
+        }
+        table:hover {
+            width: 90%;
+        }
+        table td{
+            background-color: lightgray;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -140,7 +147,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Java Classes
+                      Operadores de comparação
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -167,7 +174,7 @@
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            O que são classes?
+                                            Operadores
                                         </span>
                                         <!--fim span-->
                                     </div>
@@ -177,66 +184,71 @@
                             </a>
                             <!--fim tag a-->
 
-                            <a href="classe-b.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta b h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            Declaração
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-                            <a href="classe-c.html">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta c h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            Regras
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-
-
-
-                       
+                           
                     </div><!--fim div "pergunta comeco"--> 
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="ul">
-                                    <div class="texto-resp">
+                                <div class="texto-resp">
                                     <p>
-                                        A classe é o lugar onde todo o seu código vai acontecer, nela é onde nós guardamos todos os atributos,
-                                        sub-classes, objetos, funções, etc.
+                                        Nós acabamos de ver as estruturas de comparação, agora precisamos aprender quais são os operadores de comparação de valores,
+                                        pois apenas com eles será possível criar os parametros para o <span class="for-azul">if </span>.
                                     </p>
                                     <p>
-                                        Para conseguirmos construir uma classe, primeiramente precisamos aprender a sua sinxtaxe, ou seja, as regras
-                                        de digitação e semântica da programação.
+                                        Por isso fiz uma tabela para vocês com os operadores de comparação mais utilizados
                                     </p>
                                     <p>
-                                        Em algumas IDE's, para facilitar o processo, a criação e estruturação das classes já vêm prontas, sem a necessidade 
-                                        do programador cria-las. Entretanto, é de extrema importância que o programador saiba como criar uma classe da maneira correta, e é isso que veremos
-                                        nas próximas etapas.
+                                        <div class="table-div">
+                                        <table>
+                                        <tr>
+                                            <th class="esquerda">Operador</th>
+                                            <th class="centro">Conceito</th>
+                                            <th class="direito">Exemplo</th>
+                                            <th class="direito">valor</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda">> (Maior que)</td>
+                                            <td class="centro">Verifica se um valor é maior que o outro</td>
+                                            <td class="direito">6>5</td>
+                                            <td class="direito">Verdadeiro (True)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda">
+                                                < (Menor que)</td> <td class="centro">Verifica se um valor é menor que o
+                                                    outro
+                                            </td>
+                                            <td class="direito">6<5</td> <td class="direito">falso (False)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda">== (Igual a)</td>
+                                            <td class="centro">Compara se um valor é igual ao outro</td>
+                                            <td class="direito">6==6</td>
+                                            <td class="direito">falso (False)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda">!= (Diferente de)</td>
+                                            <td class="centro">Compara se um valor é diferente do outro</td>
+                                            <td class="direito">6!=5</td>
+                                            <td class="direito">Verdadeiro (True)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda">> (Maior ou igual a)</td>
+                                            <td class="centro">Verifica se um valor é maior ou igual a o outro valor
+                                            </td>
+                                            <td class="direito">6>=5</td>
+                                            <td class="direito">Verdadeiro (True)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="esquerda">
+                                                <= (Menor ou igual a)</td> <td class="centro">Verifica se um valor é
+                                                    menor ou igual a outro valor
+                                            </td>
+                                            <td class="direito">6<=5</td> <td class="direito">falso (False)</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
                                     </p>
                                 </div>
 
