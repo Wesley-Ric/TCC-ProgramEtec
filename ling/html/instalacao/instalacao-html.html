@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="../../css/ling/python.css"><!-- estilo geral do site-->
-    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/ling/python.css"><!-- estilo geral do site-->
+    <link rel="stylesheet" href="../../../css/navbar.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
-    <style>
-        .texto-r a{
-            text-decoration: none; 
-            color: rgb(29, 168, 29);
-        }
-        .texto-r a:hover{
-            color: orange;
-        }
-        .quebra {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .imagem{
-            margin: 2rem;
-        }
-        .imagem img {
-            border-radius: 10px;
-        }
-    </style>
+  <style>
+     .img img {
+        border-radius:10px;
+     } 
+     .img {
+        display: flex;
+        justify-content: center;
+     }
+      
+  </style>
 </head>
-<body>
-<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
 
+<body>
     <!--Navbar-->
     <header id="header">
-        <a style="background: rgba(0,0,0,0.0);" href="../../index.html"><img id='lagi' src="../../imgs/logo-branca.svg" alt="logo do site"></a>
+        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi' src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
         <nav id="nav">
             <button id="btn" aria-expanded="false">
                 <span id="hamburguer"></span>
@@ -122,78 +112,92 @@
                 │                  │ 
                 ╰――――――――――――――――――╯
                 -->
-        <div id="section-content">
+                <div id="section-content">
 
 
-            <div id="alinha-t"> <!--alinha o titulo-->
-                <div id="titulo"><!--estilo do titulo-->
-                    Introdução ao HTML 
-                </div><!--fim titulo-->
-            </div><!--fim alinha-t -->
+                <div id="alinha-t">
+                    <!--alinha o titulo-->
+                    <div id="titulo">
+                        <!--estilo do titulo-->
+                        Instalação
+                    </div>
+                    <!--fim titulo-->
+                </div>
+                <!--fim alinha-t -->
 
 
-            <div id="alinhamento-principal"> <!--organiza todo o conteudo do site-->
-                <div id="delimitador"><!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
+                <div id="alinhamento-principal">
+                    <!--organiza todo o conteudo do site-->
+                    <div id="delimitador">
+                        <!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
                 e atribui a ele uma margim pra centralizar melhor-->
 
 
 
-                    <div class="pergunta comeco"> <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
+                        <div class="pergunta comeco">
+                            <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                        <a href="../HTML.html">
-                            <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                            <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            <a href="html/instalacao/instalacao-html.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
-                            <div class="pergunta b h">
-                                <div class="alinha-texto-perg"> <!--para centralizar o texto-->
-                                    <span class="text-p"><!--estilo do texto das perguntas-->
-                                        Introdução do HTML?
-                                    </span> <!--dim span-->
-                                </div><!--fim alinha-texto-perg-->
-                            </div><!--fim pergunta a-->
-                        </a> <!--fim tag a-->
-
-
-
-                        <!--segue o mesmo para todos os outros blocos-->
-                        <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="#">
-                            <div class="pergunta a h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                       Qual a Função do HTML?
-                                    </span>
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Como instalar o Visual Studio Code
+                                        </span>
+                                        <!--dim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
                                 </div>
-                            </div>
-                        </a>
-                        <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
-                        
-                        <!--=-=-=-=-=-=-=-=-=começo bloco c-=-=-=-=-=-=-=-=-=-=-=--->
-                        <a href="pq-html.html">
-                            <div class="pergunta c h">
-                                <div class="alinha-texto-perg">
-                                    <span class="text-p">
-                                        Por que HTML?
-                                    </span>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+                            <!--segue o mesmo para todos os outros blocos-->
+                            <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
+                            <a href="html/instalacao/instalacao-sublime_html.html">
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Como instalar a Sublime Text
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <!--=-=-=-=-=fim c-=-=-=-=-=-=-->
-
-                    </div><!--fim div "pergunta comeco"--> 
+                            </a>
+                            <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
+                            </div><!--fim div "pergunta comeco"--> 
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="texto-resp">
                                     <div class="quebra">
-                                    <div class="imagem">
-                                    <img src="../../imgs/html/funcao.png" alt="criador html" height= "350px" width="350px" >
+                                    <div class="img">
+                                    <img src="../../../imgs/html/vscode.png" alt="programa" height= "200px" width="300px" >
                                     </div>
                                     <div>
-                                        <p> Se você chegou até aqui, imagino que se interessou pela linguagem do html.</p>
-                                    <p>Para começar uma página em Html, você precisa saber alguns pontos essencias da estrutura do Html. E para isso não tem hora, lugar e nem momento.</p>
-                                    <p>O html, irá criar o corpo da sua página, com o uso de textos, imagens, vídeos, gifs entre outras funções. Cada função tem sua respectiva Tag, dentro dessas tags, você poderá decidir tamanho, distância e o estilo(letras, imagens).</p>
+                                        <p>Antes de começarmos a ver um pouco mais sobre o HTML, iremos ver os aplicativos que se pode usar para fazer o HTML, que são eles o Visual Code e o Sublime text.</p>
+                                        <h1>Vs Code</h1>
+                                        <p> O  editor de código-fonte desenvolvido pela Microsoft para Linux, Windows e macOS, incluindo suporte para depuração, controle de versionamento  tendo o GIT incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de Código.</p>
+                                    <p>Para instalar o Vs Code, basta <a href="https://code.visualstudio.com/" target="_blank">clicar aqui</a> e seguir o passo a passo abaixo:</p>
                                        </div>
+                                       <div class="img">
+                                       <img src="../../../imgs/html/instalar1.png" alt="programa" height= "100%" width="80%" >
+                                   </div>
+                                    <div class="texto-resp">
+                                        <p>Primeiramente iremos acessar a página do Vs Code e Clicar no botão Download; após clicar neste botão ele te abrirá uma nova página, conforme a imagem abaixo:</p>
+                                        </div>
+                                        <div class="img">
+                                       <img src="../../../imgs/html/instalar2.png" alt="programa" height= "100%" width="80%" >
+                                   </div>
+                                   <div class="texto-resp">
+                                        <p>Você escolherá de acordo com seu Software, teremos as opções para Windows, Linux e Mac,  neste caso estamos fazendo a instalação no Windows, mas todos os Softwares serão o mesmo método de isntalção.</p>
+                                        <p>A partir de agora, ele já terá baixado em seu computador, e ficará com a .exe no canto inferior esquerdo igual a imagem abaixo;</p>
+                                        </div>
+                                         <div class="img">
+                                       <img src="../../../imgs/html/instalar3.png" alt="programa" height= "100%" width="80%" >
+                                   </div>
                                 </div>
                                 </div>
                             </div><!--fim "testo-r"-->
@@ -206,41 +210,3 @@
 </main><!--fim main-->
 
 </div><!--fim div "pergunta comeco"--> 
-
-<footer class="footer">
-        
-    <div class="rede-social">   <!--todas os icons de rede social ficam aqui-->
-        
-        <div class="face">
-            <a href="#">
-                <img src="../..//imgs/footer/facebook.png" alt="simbolo facebook">
-            </a>
-        </div>
-        <div class="link">
-            <a href="#">
-                <img src="../../imgs/footer/linkedin.png" alt="simbolo linkedin">
-            </a>
-        </div>
-        <div class="git">
-            <a href="">
-                <img src="../../imgs/footer/github.png" alt="simbolo github">
-            </a>
-        </div>
-    </div>
-    
-    <div class="princ-footer"> <!--textos do footer-->
-        <div class="text-prin">
-            ProgramEtec uma iniciativa estudantil para ensinar programção
-            a qualquer pessoa, seja onde for não importa qual momento ou dispositivo. 
-        </div>
-        <div class="copy">
-            © ProgramEtec, todos os direitos reservados
-        </div>
-    </div>
-    <img id='logo' src="../../imgs/logo-branca.svg" alt="logo do site"> <!--logo do site-->
-</footer>
-</body>
-    <script src="../../js/navbar-mobile.js"></script>
-
-    <script src="../../js/menu-ling.js"></script>
-</html>
