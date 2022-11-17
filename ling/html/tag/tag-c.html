@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
-      <style>
+  <style>
      .img img {
         border-radius:10px;
      } 
@@ -17,10 +17,25 @@
         display: flex;
         justify-content: center;
      }
+     .for-azul {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #0162e0;
+    background-color: #a4d2f5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.table-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
       
   </style>
 </head>
-
 
 <body>
     <!--Navbar-->
@@ -35,14 +50,14 @@
                 <li><a href="../../../about.html">Sobre</a></li>
                 <li id="ling"><a href="#">Linguagens</a>
                     <ul id="submenu">
-                           <a href="../../HTML.html"><li>HTML</li></a>
+                       <a href="../../HTML.html"><li>HTML</li></a>
                         <a href="../../CSS.html"><li>CSS</li></a>
                         <a href="../../JS/JS.html"><li>JS</li></a>
                         <a href="../../Java.html"><li>Java</li></a>
                         <a href="../../Python.html"><li>Python</li></a>
                     </ul>
                 </li>
-                <li id='Contato'><a href="../../contact.html">Contato</a></li>
+                <li id='Contato'><a href="../../../contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -91,8 +106,8 @@
                     <ul>
                         <!--itens do menu de fato-->
                         <li><a href="../../HTML.html">Introdução do HTML</a></li>
-                        <li><a href="#">Instalação</a></li>
-                        <li><a href="../tag/tag-a.html">Tags</a></li>
+                        <li><a href="../instalacao/instalacao-html.html">Instalação</a></li>
+                        <li><a href="#">Tags</a></li>
                         <li><a href="../classid/class-html.html">Class e Id</a></li>
                        <!-- <li><a href="../../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
                         <li><a href="../../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
@@ -121,7 +136,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                        Instalação
+                        Tags
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -139,16 +154,16 @@
                         <div class="pergunta comeco">
                             <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
                         ficarem agrupados e um ao lado do outro-->
-                            <a href="../instalacao/instalacao-html.html">
+                            <a href="../tag/tag-a.html">
                                 <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
                                 <!--"a" serve para diferenciar das outras tags perguntas com estilos
                             e posições diferentes-->
-                                <div class="pergunta b h">
+                                <div class="pergunta c h">
                                     <div class="alinha-texto-perg">
                                         <!--para centralizar o texto-->
                                         <span class="text-p">
                                             <!--estilo do texto das perguntas-->
-                                            Como instalar o Visual Studio Code
+                                            Principais tags
                                         </span>
                                         <!--dim span-->
                                     </div>
@@ -159,16 +174,48 @@
                             <!--fim tag a-->
                             <!--segue o mesmo para todos os outros blocos-->
                             <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
-                            <a href="../instalacao/instalacao-sublime_html.html">
-                                <div class="pergunta a h">
+                            <a href="../tag/tag-b.html">
+                                <div class="pergunta b h">
                                     <div class="alinha-texto-perg">
                                         <span class="text-p">
-                                            Como instalar a Sublime Text
+                                            Tags de Multimídias
                                         </span>
                                     </div>
                                 </div>
                             </a>
-                            <!--=-=-=-=-=fim b-=-=-=-=-=-=-->
+                         
+                            
+                            <a href="../tag/tag-c.html">
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Listas
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        
+
+                            <a href="../tag/tag-d.html">
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Links
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                                                      
+                               <a href="../tag/tag-e.html">
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Textos Títulos
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            
                             </div><!--fim div "pergunta comeco"--> 
                     <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
@@ -176,54 +223,20 @@
                                 <div class="texto-resp">
                                     <div class="quebra">
                                     <div class="img">
-                                    <img src="../../../imgs/html/sub.png" alt="programa" height= "300px" width="300px" >
+                                    <img src="../../../imgs/html/lista.png" alt="programa" height= "300px" width="300px" >
                                     </div>
                                     <div>
-                                        <p>Além do Vs Code, podemos usar também o Sublime Text, que terá as mesmas funções que o Visual Studio Code, os dois programas serão utilizados para fazer diversas linguagens como html, css e java.</p>
-                                        <h1>Sublime Text</h1>
-                                        <p> Sublime Text assim como o Vs code, também é um código fonte multiplataforma e shareware com uma  interface de programação de aplicativos em linguagem de Python, podendo ser usadas nas linguagens de programação e linguagens de marcação, funções podem ser adicionadas por usuários com plug-ins, geralmente criados pela comunidade e mantidos sob licenças de software livre.</p>
-                                    <p>Para instalar o Sublime Text, basta <a href="https://www.sublimetext.com/" target="_blank">clicar aqui</a> e seguir o passo a passo abaixo:</p>
+                                        <p></p>
+                                        <h1>Tags de Listas</h1>
+                                        <p> Dentro de uma página precisamos muitas vezes colocar algmas listas, seja uma página de receita, uma página de escola,ou para fazer um menu, para isso ensinaremos a vocês agora algumas tags para utilizar neste casos.</p>
                                        </div>
-                                       <div class="img">
-                                       <img src="../../../imgs/html/instalarh1.png" alt="programa" height= "100%" width="80%" >
-                                   </div>
+                                       
+                                   
                                     <div class="texto-resp">
-                                        <p>Primeiramente iremos acessar a página do Sublime Text e Clicar no botão Download; após clicar neste botão ele te abrirá uma nova página, conforme a imagem abaixo:</p>
+                                        <p>As listas se iniciam através da tag "ul" que te da a opção de fazer listas de várias ordens, mas todas nas verticais. </p>
                                         </div>
-                                        <div class="img">
-                                       <img src="../../../imgs/html/instalarh2.png" alt="programa" height= "100%" width="80%" >
-                                   </div>
                                    <div class="texto-resp">
-                                        <p>Você escolherá de acordo com seu Software, teremos as opções para Windows, Linux e Mac,  neste caso estamos fazendo a instalação no Windows, mas todos os Softwares serão o mesmo método de isntalção.</p>
-                                        <p>A partir de agora, ele já terá baixado em seu computador, e ficará com a ".exe" no canto inferior esquerdo igual a imagem abaixo;</p>
-                                        </div>
-                                         <div class="img">
-                                       <img src="../../../imgs/html/instalarh3.png" alt="programa" height= "100%" width="80%" >
-                                   </div>
-                                   <div class="texto-resp">
-                                       <p>Após ser feito o download, abra a pasta onde foi baixado o ".exe", para que possa instalar em seu computador; </p>
-                                        <p> </p>
-                                        </div>
-                                         <div class="img">
-                                       <img src="../../../imgs/html/instalarh4.png" alt="programa" height= "100%" width="80%" >
-                                   </div>
-                                   <div class="texto-resp">
-                                       <p>Após abri o ".exe" você mudará a opção de "Eu não aceito o acordo" para "Eu aceito o acordo";</p>
-                                        <p> </p>
-                                        </div>
-                                         <div class="img">
-                                       <img src="../../../imgs/html/instalarh5.png" alt="programa" height= "100%" width="80%" >
-                                   </div> 
-                                   <div class="texto-resp">
-                                       <p>Após este passo a passo clique no Botão "Instalar";</p>
-                                        <p> </p>
-                                        </div>
-                                         <div class="img">
-                                       <img src="../../../imgs/html/instalarh6.png" alt="programa" height= "100%" width="80%" >
-                                   </div>
-                                   <div class="texto-resp">
-                                    <p>Se caso preferir usar seu programa que já tem instalado em sua máquina ou este que iremos ensinar a instalar pode, fica de sua preferência.s</p>
-                                       <p>Após fazer a instalação, chegou a hora tão esperada chegou o momento tão esperado por todos, o momento de conhecermos as Tags para que possamos iniciarmos nossa primeira página.</p>
+                                        <p>Dentro de cada "ul" estão localizadas as tags "li" que são as que colocam em listas suas escritas. Conforme podemos ver no exemplo abaixo:</p>
                                 </div>
                                 </div>
                             </div><!--fim "testo-r"-->
