@@ -10,11 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
     <title>Programetec</title>
-    <style>
-        .ul ul li{
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -107,13 +102,13 @@
                             <!--itens do menu de fato-->
                              <li><a href="../../Java.html">Introdução ao Java</a></li>
                             <li><a href="../instalacao/ins.html">Instalação</a></li>
-                            <li><a href="#">Classe</a></li>
+                            <li><a href="../classe/classe-a.html">Classe</a></li>
                             <li><a href="../variaveis/vari-a.html">Variáveis</a></li>
                             <li><a href="../scan/scan-a.html">Scan</a></li>
                             <li><a href="../matematica/mat-a.html">Operações matemáticas</a></li>
-                            <li><a href="../comparacao/comp-a.html">Comparação</a></li>
+                            <li><a href="../comparacao/comp-a.html">Operadores de comparação</a></li>
                             <li><a href="../string/string-a.html">Strings</a></li>
-                            <li><a href="../loop/loop-a.html">Loop</a></li>
+                          
                         </ul>
                     </div>
                     <!--fim menu esquedo-->
@@ -140,7 +135,7 @@
                     <!--alinha o titulo-->
                     <div id="titulo">
                         <!--estilo do titulo-->
-                      Variáveis
+                      Scanner
                     </div>
                     <!--fim titulo-->
                 </div>
@@ -196,26 +191,6 @@
                             </a>
                             <!--fim tag a-->
 
-                            <a href="#">
-                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
-                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
-                            e posições diferentes-->
-                                <div class="pergunta c h">
-                                    <div class="alinha-texto-perg">
-                                        <!--para centralizar o texto-->
-                                        <span class="text-p">
-                                            <!--estilo do texto das perguntas-->
-                                            ..
-                                        </span>
-                                        <!--fim span-->
-                                    </div>
-                                    <!--fim alinha-texto-perg-->
-                                </div>
-                                <!--fim pergunta a-->
-                            </a>
-                            <!--fim tag a-->
-
-
 
 
                        
@@ -224,6 +199,7 @@
                         <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
                             <div class="texto-r"><!--estilização de texto-->
                                 <div class="ul">
+                                    <div class="texto-resp">
                                   <p>
                                     Agora que nós já importamos o pacote Scanner e criamos um objeto referente a ele, iremos usá-lo para captar o valor entrado pelo usuário e armazenar
                                     dentro de alguma variável, e faremos isso da seguinte forma:
@@ -273,9 +249,31 @@
                                         </code>
                                     </div>
                                 </p>
+                                <p>
+                                    E por fim, com a variável String:
+                                  </p>
+                                  <p>
+                                    <div class="code">
+                                        <code>
+                                            <span class="function-name">import</span><span class="document-js"> java.util.Scanner</span>; //importamos esse pacote antes da criação da classe<br><br>
+                                            <span class="var-js">public</span> <span class="var-name"> class</span> <span class="document-js">PrimeiraClasse</span>{ <br><br>
+                                            <span class="function-js">public static void </span><span class="function-name">main</span><span class="document-js">(Strings[] args) </span>{
+                                            <br><br>
+                                            <span class="document-js">Scanner scan1 = <span class="var-name">new</span> Scanner (System-<span class="function-name">in</span>);</span> 
+                                            <br><span class="var-js">String </span><span class="var-name"> nome</span>; //Criamos a variável "nome" <br><br>
+                                            <span class="function-name">System.out.println</span><span class="document-js">("Insira seu nome");</span> //Com essa linha, nós escrevemos um mensagem no prompt.<br><br>
+                                            <span class="var-name"> nome</span> <span class="document-js">=</span><span class="function-js">scan1.next() </span>; //Nessa linha, nós armazenamos na variável o que foi escrito no prompt.
+                                            
+
+                                            
+                                            <br><br>}
+                                            <br><br>}
+                                        </code>
+                                    </div>
+                                </p>
 
 
-
+                            </div>  
                                 </div>
                                 <!--fim "testo-r"-->
                             </div>
@@ -320,7 +318,7 @@
         <div class="princ-footer">
             <!--textos do footer-->
             <div class="text-prin">
-                ProgramEtec uma iniciativa estudantil para ensinar programção
+                ProgramEtec uma iniciativa estudantil para ensinar programação
                 a qualquer pessoa, seja onde for não importa qual momento ou dispositivo.
             </div>
             <div class="copy">

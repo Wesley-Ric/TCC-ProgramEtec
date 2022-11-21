@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../../css/ling/python.css"><!-- estilo geral do site-->
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cde03bc850.js" crossorigin="anonymous"></script>
+    <title>Programetec</title>
+  <style>
+     .img img {
+        border-radius:10px;
+     } 
+     .img {
+        display: flex;
+        justify-content: center;
+     }
+     .for-azul {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #0162e0;
+    background-color: #a4d2f5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.table-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+      
+  </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <header id="header">
+        <a style="background: rgba(0,0,0,0.0);" href="../../../index.html"><img id='lagi' src="../../../imgs/logo-branca.svg" alt="logo do site"></a>
+        <nav id="nav">
+            <button id="btn" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="../../../index.html">Início</a></li>                
+                <li><a href="../../../about.html">Sobre</a></li>
+                <li id="ling"><a href="#">Linguagens</a>
+                    <ul id="submenu">
+                       <a href="../../HTML.html"><li>HTML</li></a>
+                        <a href="../../CSS.html"><li>CSS</li></a>
+                        <a href="../../JS/JS.html"><li>JS</li></a>
+                        <a href="../../Java.html"><li>Java</li></a>
+                        <a href="../../Python.html"><li>Python</li></a>
+                    </ul>
+                </li>
+                <li id='Contato'><a href="../../../contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+<main>
+    <section> <!--section é a seção que fa com que todo o conteudo fique ao lado do menu lateral-->
+
+        <!--=-=-=-=-=-=-=-=-=-=-=- botão que tiva o menu lateral no mobile =-=-=-=-=-=-=-=-=-=-=-=-->
+
+
+        <div id="navgation"> <!--div que recebe a class active para o menu lateral ativar no mobile-->
+            <div id="alinhamento-btnzinho"> <!--centraliza o btn-->
+                <button id="botaozinho" aria-expanded="false">
+                    <span id="burg"><img src="../../imgs/arrow.png" alt="arrow"><!--imagem de seta no botão--></span>
+                </button>
+            </div>
+
+
+                <!---==-=-=-=-=-=--  fim do botão =-=-=-==-=-=--=--=-->
+
+                <!--
+                ╭――――――――――――――――――╮
+                │                  │
+                │   menu lateral   │        começo do menu latetal
+                │                  │ 
+                ╰――――――――――――――――――╯
+                -->
+
+            <div id="menu-lat"> <!--tag que da o estilo ao menu (tirando o "A")-->
+                <div id="alinhamentobtn"> <!--alinha os dois botões para que recebam o space beteween e o btn 2 fique
+                                            no canto superior direito da tela-->
+                                            
+                    <!--btn fantasma basicamente serve para o alinhamento do botão que fecha o menu no mobile, pois assim consigo
+                    usar o space beteween que joga cada um de casa lato e deixo esse botão invisivel-->
+                    <button id="btn1" aria-expanded="false">
+                    </button>
+                    <!-- fim btn fantasma-->
+
+
+                     <!--btn que serve para fechar o menu lateral no mobile-->
+                    <button id="btn2" aria-expanded="false">
+                        <span id="burg1"><img src="../imgs/cancel.png" alt="cencel"></span>
+                    </button>
+                </div>
+                <div id="menu-esquerdo"> <!--serve basicamente para organizar os itens em um unico bloco-->
+                    <ul>
+                        <!--itens do menu de fato-->
+                        <li><a href="../../HTML.html">Introdução do HTML</a></li>
+                        <li><a href="../instalacao/instalacao-html.html">Instalação</a></li>
+                        <li><a href="#">Tags</a></li>
+                        <li><a href="../classid/class-html.html">Class e Id</a></li>
+                       <!-- <li><a href="../../9-estruturas-de-decisão/estrutura-decisão-init.html">Estruturas</a></li>
+                        <li><a href="../../3-op-aritimetcos/op-ari-init.html">Operadores</a></li>
+                        <li><a href="../../8-dicionarios/dicionarios-init.html">Dicionários</a></li>-->
+                    </ul>
+                </div><!--fim menu esquedo-->
+            </div><!--fim menu-lat-->
+        </div><!--fim navgation-->
+
+
+        <!--=--=--=--=--=--=--=- fim do menu lateral -=--=--=--=--=--=--=-->
+
+
+
+                <!--
+                ╭――――――――――――――――――╮
+                │                  │
+                │ conteudo da page │
+                │                  │ 
+                ╰――――――――――――――――――╯
+                -->
+                <div id="section-content">
+
+
+                <div id="alinha-t">
+                    <!--alinha o titulo-->
+                    <div id="titulo">
+                        <!--estilo do titulo-->
+                        Tags
+                    </div>
+                    <!--fim titulo-->
+                </div>
+                <!--fim alinha-t -->
+
+
+                <div id="alinhamento-principal">
+                    <!--organiza todo o conteudo do site-->
+                    <div id="delimitador">
+                        <!--delimita o tamanho do bloco(quadrado) principal onde esta o texto do site
+                e atribui a ele uma margim pra centralizar melhor-->
+
+
+
+                        <div class="pergunta comeco">
+                            <!--bloco que faz os botoés de navegações superiores (ex:"o que é python")
+                        ficarem agrupados e um ao lado do outro-->
+                            <a href="../tag/tag-a.html">
+                                <!--pergunta recebe todos os atributos de todas as tegs pergunta-->
+                                <!--"a" serve para diferenciar das outras tags perguntas com estilos
+                            e posições diferentes-->
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <!--para centralizar o texto-->
+                                        <span class="text-p">
+                                            <!--estilo do texto das perguntas-->
+                                            Principais tags
+                                        </span>
+                                        <!--dim span-->
+                                    </div>
+                                    <!--fim alinha-texto-perg-->
+                                </div>
+                                <!--fim pergunta a-->
+                            </a>
+                            <!--fim tag a-->
+                            <!--segue o mesmo para todos os outros blocos-->
+                            <!--=-=-=-=-=-=-=-=-=começo bloco b-=-=-=-=-=-=-=-=-=-=-=--->
+                            <a href="../tag/tag-b.html">
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Multimídias
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                            
+                            <a href="../tag/tag-c.html">
+                                <div class="pergunta a h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Listas
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        
+
+                            <a href="../tag/tag-d.html">
+                                <div class="pergunta b h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Links
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                                                      
+                               <a href="../tag/tag-e.html">
+                                <div class="pergunta c h">
+                                    <div class="alinha-texto-perg">
+                                        <span class="text-p">
+                                            Tags de Textos Títulos
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            </div><!--fim div "pergunta comeco"--> 
+                    <div id="espacamento"> <!--semve para dar um espaço das bordar com padding-->
+                        <div class="resposta"> <!--tag resposta, usada para colocar o conteudo que se quer mostrar-->
+                            <div class="texto-r"><!--estilização de texto-->
+                                <div class="texto-resp">
+                                    <div class="quebra">
+                                    <div class="img">
+                                    <img src="../../../imgs/html/lista.png" alt="programa" height= "300px" width="300px" >
+                                    </div>
+                                    <div>
+                                        <p></p>
+                                        <h1>Tags de Listas</h1>
+                                        <p> Dentro de uma página precisamos muitas vezes colocar algmas listas, seja uma página de receita, uma página de escola,ou para fazer um menu, para isso ensinaremos a vocês agora algumas tags para utilizar neste casos.</p>
+                                       </div>
+                                       
+                                   
+                                    <div class="texto-resp">
+                                        <p>As listas se iniciam através da tag "ul" que te da a opção de fazer listas de várias ordens, mas todas nas verticais. </p>
+                                        </div>
+                                   <div class="texto-resp">
+                                        <p>Dentro de cada "ul" estão localizadas as tags "li" que são as que colocam em listas suas escritas. Conforme podemos ver no exemplo abaixo:</p>
+                                </div>
+                                </div>
+                            </div><!--fim "testo-r"-->
+                        </div><!--fim resposta-->
+                    </div><!--fim espaçamento-->
+                </div><!--fim delimitador-->
+            </div><!--fim alinhamento principal-->
+        </div><!--fim section-content-->
+    </section><!--fim section-->
+</main><!--fim main-->
+
+</div><!--fim div "pergunta comeco"--> 
+<footer class="footer">
+        
+    <div class="rede-social">   <!--todas os icons de rede social ficam aqui-->
+        
+        <div class="face">
+            <a href="#">
+                <img src="../../../imgs/footer/facebook.png" alt="simbolo facebook">
+            </a>
+        </div>
+        <div class="link">
+            <a href="#">
+                <img src="../../../imgs/footer/linkedin.png" alt="simbolo linkedin">
+            </a>
+        </div>
+        <div class="git">
+            <a href="">
+                <img src="../../../imgs/footer/github.png" alt="simbolo github">
+            </a>
+        </div>
+    </div>
+    
+    <div class="princ-footer"> <!--textos do footer-->
+        <div class="text-prin">
+            ProgramEtec uma iniciativa estudantil para ensinar programação
+            a qualquer pessoa, seja onde for não importa qual momento ou dispositivo. 
+        </div>
+        <div class="copy">
+            © ProgramEtec, todos os direitos reservados
+        </div>
+    </div>
+    <img id='logo' src="../../../imgs/logo-branca.svg" alt="logo do site"> <!--logo do site-->
+</footer>
+</body>
+    <script src="../../../js/navbar-mobile.js"></script>
+
+    <script src="../../../js/menu-ling.js"></script>
+</html>
