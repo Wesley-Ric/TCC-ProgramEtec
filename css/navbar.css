@@ -97,10 +97,11 @@ nav a:hover {
 
 #ling.active #submenu {
     /*quando ling receber active por causa do js faz aparecer o li do submenu*/
-    height: 13.5rem;
+    height: 10.5rem;
     visibility: visible;
     overflow-y: auto;
     transition: 1s;
+    
 }
 
 

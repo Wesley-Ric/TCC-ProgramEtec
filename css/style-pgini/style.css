@@ -64,7 +64,7 @@ h1{
 */
 .html{
     width: 100%;
-    background-color: #3F3B6C;
+    background-color: #1a3a0e;
     height: 15rem;
     display: block;
     text-align: center;
@@ -105,14 +105,14 @@ h1{
     position: relative;
     top: 4rem;
     text-align: center;
-    color: #31E1F7;
+    color: #FFFFFF;
 }
 .H-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #1c8f9e;
+    color: #FFFFFF;
 }
 
 a{
@@ -128,10 +128,10 @@ a{
 │                  │
 ╰――――――――――――――――――╯
 */
-
+/*
 .css{
     width: 100%;
-    background-color: #1c6400;
+    background-color: #214214;
     height: 15rem;
     display: block;
     text-align: center;
@@ -165,16 +165,16 @@ a{
 .C-cima{
     position: relative;
     top: 4rem;
-    color: #31E1F7;
+    color: #FFFFFF;
 }
 .C-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #1c8f9e;
+    color: #FFFFFF;
 }
-
+*/
 
 /*
 ╭――――――――――――――――――╮
@@ -186,7 +186,7 @@ a{
 
 .js{
     width: 100%;
-    background-color: #4e4886;
+    background-color: #1e4411;
     height: 15rem;
     display: block;
     text-align: center;
@@ -219,14 +219,14 @@ a{
 .J-cima{
     position: relative;
     top: 4rem;
-    color: #31E1F7;
+    color: #FFFFFF;
 }
 .J-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #1c8f9e;
+    color: #FFFFFF;
 }
 
 /*
@@ -238,7 +238,7 @@ a{
 */
 .java{
     width: 100%;
-    background-color: #554f94;
+    background-color: #204a12;
     height: 15rem;
     display: block;
     text-align: center;
@@ -271,14 +271,14 @@ a{
 .Ja-cima{
     position: relative;
     top: 4rem;
-    color: #31E1F7;
+    color: #FFFFFF;
 }
 .Ja-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #1c8f9e;
+    color: #FFFFFF;
 }
 /*
 ╭――――――――――――――――――╮
@@ -289,7 +289,7 @@ a{
 */
 .python{
     width: 100%;
-    background-color: #554f94;
+    background-color: #265815;
     height: 15rem;
     display: block;
     text-align: center;
@@ -320,14 +320,14 @@ a{
 .P-cima{
     position: relative;
     top: 4rem;
-    color: #31E1F7;
+    color: #FFFFFF;
 }
 .P-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 4.5rem;
-    color: #1c8f9e;
+    color: #FFFFFF;
 }
 
 /*
