@@ -16,9 +16,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-
-    background-image: linear-gradient(1deg, gray 1%, #ffffff 100%);
-    background-repeat: no-repeat;
     background-color: gray;
 }
 
@@ -214,9 +211,9 @@ main section {
     /*estilização ao passar o mouse*/
     color: #ffffff;
     /*cor do texto muda para branco*/
-    background-color: gray;
+    background-color: green;
     /*altera a cor de fundo ao passar o mouse*/
-    transition: .3s;
+    transition: .5s;
     /*a transição, sugiro não mudar*/
 }
 
@@ -244,7 +241,7 @@ main section {
     /*padding da borda que coloquei no titulo*/
     font-size: 50px;
     /*tamanho da fonte*/
-    color: black;
+    color: white;
     /*cor da fonte*/
     height: 4rem;
     /*altura da borda*/
@@ -256,7 +253,7 @@ main section {
     /*centraliza texto*/
     border-radius: 250px;
     /*deixa os cantos redontos (sugiro não alterar)*/
-    border: 2px solid gray;
+    border: 2px solid white;
     /*borda que fica na parte de baixo dos itens, recomento alterar somente a cor*/
     margin-top: .5rem;
     /*não mexer, altera configurações de posições*/
@@ -341,7 +338,8 @@ main section {
 .a {
     display: flex;
     justify-content: center;
-    background-color: rgb(41, 41, 41);
+    background-color: #1a3a0e;
+    /*background-color: rgb(41, 41, 41);*/
     /*cor de fundo*/
     height: 6rem;
     /*altura(não altere)*/
@@ -353,7 +351,8 @@ main section {
 .b {
     display: flex;
     justify-content: center;
-    background-color: rgb(73, 73, 73);
+    background-color: #1e4411;
+    /*background-color: rgb(73, 73, 73);*/
     height: 6rem;
     transition: .5s;
 }
@@ -361,7 +360,8 @@ main section {
 .c {
     display: flex;
     justify-content: center;
-    background-color: rgb(102, 102, 102);
+    background-color: #204a12;
+    /*background-color: rgb(102, 102, 102);*/
     /*as divs estão divididas em "a, b, c e d" pois as cores mudam para fazer um degrade*/
     height: 6rem;
     /*caso queira pode alterar o bgcolor de casa um para mudar as cores do degrade*/
@@ -371,7 +371,8 @@ main section {
 .d {
     display: flex;
     justify-content: center;
-    background-color: rgb(129, 129, 129);
+    background-color: #265815;
+    /*background-color: rgb(129, 129, 129);*/
     height: 6rem;
     transition: .5s;
 }
@@ -379,14 +380,16 @@ main section {
 .e {
     display: flex;
     justify-content: center;
-    background-color: rgb(153, 153, 153);
+    background-color: #2b6418;
+   /* background-color: rgb(153, 153, 153);*/
     height: 6rem;
     transition: .5s;
 }
 .f {
     display: flex;
     justify-content: center;
-    background-color: rgb(172, 172, 172);
+    background-color: #31721c;
+   /* background-color: rgb(172, 172, 172);*/
     height: 6rem;
     transition: .5s;
 }
@@ -421,9 +424,9 @@ main section {
     /*div onde fica o conteudo em si*/
     font-size: 25px;
     /*tamanho da fonte*/
-    color: black;
+    color: white;
     /*cor da fonte*/
-    background-color: lightgray;
+    background-color: rgb(19, 18, 18);
     /*cor de fundo*/
     width: 97%;
     /*tamanho geral da largura do quadrado (não alterar)*/
