@@ -153,7 +153,7 @@ section {
 
 .contact {
     width: 100%;
-    background-color: red;
+    background-color: #19310b;
     height: 150%;
     display: flex;
 }
@@ -161,7 +161,7 @@ section {
 .contact-contact {
     width: 50%;
     height: 86%;
-    background-color: #777777;
+    background-color: #19310b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +170,7 @@ section {
 .contact-img {
     width: 50%;
     height: 100%;
-    background-color: lightblue;
+    background-color: #19310b;
 }
 
 .contact-img img {
@@ -199,7 +199,7 @@ section {
 .campo input[type="email"],
 .campo textarea {
     padding: 0.2em;
-    background-color: lightgray;
+    background-color: #81838a;
     display: block;
     border-radius: 8px;
     border: 0px;
@@ -222,7 +222,7 @@ section {
 
 .campo input:focus,
 .campo textarea:focus {
-    background: #c1c8cf;
+    background: #a5a8ac;
 }
 
 .button button {
@@ -232,7 +232,7 @@ section {
     border: 0px;
     border-radius: 2rem;
     font-size: 24px;
-    background-color: #e9e9e9;
+    background-color: #a4a5a8;
 }
 
 .button {

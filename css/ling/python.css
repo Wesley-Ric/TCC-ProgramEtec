@@ -16,7 +16,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: gray;
+   
+    background-color: rgb(41, 41, 41);
 }
 
 html {
@@ -178,7 +179,7 @@ main section {
 
 #menu-lat {
     /*estilos menu lateral*/
-    background-color: aliceblue;
+    background-color: rgb(51, 51, 51);
     /* aqui vc pode alterar a cor de fundo do menu lateral*/
     height: 100%;
     /*altura fixa pode ser mudada se necessario*/
@@ -187,14 +188,14 @@ main section {
 
 #menu-esquerdo ul li a {
     /*estilos do "a" basicamente define tudo fora o background do menu lateral*/
-    color: #000000;
+    color: white;
     /*cor do texto*/
     text-decoration: none;
     /*tira a decoração do link*/
     padding: 1rem;
     /*espaçamento (não alterar se não for necessário)*/
     width: 185px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(89, 95, 87);
     /*se for mexer nisso aconselho a alterar somente a cor, que no caso é o ulitmo elemento*/
     font-size: 14px;
     /*tamanho da fonte*/
@@ -209,9 +210,9 @@ main section {
 
 #menu-esquerdo ul li a:hover {
     /*estilização ao passar o mouse*/
-    color: #ffffff;
+    color: #000000;
     /*cor do texto muda para branco*/
-    background-color: green;
+    background-color: rgb(61, 107, 28);
     /*altera a cor de fundo ao passar o mouse*/
     transition: .5s;
     /*a transição, sugiro não mudar*/
@@ -234,14 +235,15 @@ main section {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #titulo {
-    padding: 1rem;
+    padding: 0rem 5rem .50rem 5rem;
     /*padding da borda que coloquei no titulo*/
     font-size: 50px;
     /*tamanho da fonte*/
-    color: white;
+    color: rgb(165, 164, 164);
     /*cor da fonte*/
     height: 4rem;
     /*altura da borda*/
@@ -251,9 +253,9 @@ main section {
     /*centraliza texto*/
     align-items: center;
     /*centraliza texto*/
-    border-radius: 250px;
+    border-radius: 10px;
     /*deixa os cantos redontos (sugiro não alterar)*/
-    border: 2px solid white;
+    border: 2px solid rgb(165, 164, 164);
     /*borda que fica na parte de baixo dos itens, recomento alterar somente a cor*/
     margin-top: .5rem;
     /*não mexer, altera configurações de posições*/
@@ -371,7 +373,7 @@ main section {
 .d {
     display: flex;
     justify-content: center;
-    background-color: #265815;
+    background-color: #245314;
     /*background-color: rgb(129, 129, 129);*/
     height: 6rem;
     transition: .5s;
@@ -380,7 +382,7 @@ main section {
 .e {
     display: flex;
     justify-content: center;
-    background-color: #2b6418;
+    background-color: #255c13;
    /* background-color: rgb(153, 153, 153);*/
     height: 6rem;
     transition: .5s;
