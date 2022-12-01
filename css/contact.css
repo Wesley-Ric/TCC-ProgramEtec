@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(1deg, #000000 1%, #07340C 100%);
     background-repeat: no-repeat;
     background-color: #000000;
@@ -59,13 +59,13 @@ section {
 }
 
 footer {
-    flex-shrink: 0;
+
     /*emm tese faz ele ficar em baixo*/
     background-color: rgb(29, 28, 28);
     color: white;
     text-align: center;
     width: 100%;
-    height: 14.99rem;
+    height: 20.99rem;
 }
 
 .rede-social {
