@@ -49,10 +49,10 @@ h1{
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    position: relative;
-    top: 65%;
-    width: 90%;
-    left: 5%;
+
+
+
+
 }
 
 /*
@@ -64,7 +64,7 @@ h1{
 */
 .html{
     width: 100%;
-    background-color: #005000;
+    background-color: #1a3a0e;
     height: 15rem;
     display: block;
     text-align: center;
@@ -73,9 +73,18 @@ h1{
 .html img{/*o heitgh e o width em 0 faz a imagem ficar escondida até que a propriedade hover seja ativafa*/
     width: 0;
     position: absolute;
-    top: 12.5rem;
+    top: 15.5rem;
     height: 0;
     transition: 1s;
+}
+@media (max-width: 755px) {
+    .html img{
+        width: 0;
+        position: absolute;
+        top: 12.5rem;
+        height: 0;
+        transition: 1s;
+    }
 }
 .html-img{
     display: flex;
@@ -96,16 +105,21 @@ h1{
     position: relative;
     top: 4rem;
     text-align: center;
+    color: #FFFFFF;
 }
 .H-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #FFFFFF;
 }
 
-
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*tudo descrito no css segue para as outras classes*/
 /*
 ╭――――――――――――――――――╮
@@ -114,10 +128,10 @@ h1{
 │                  │
 ╰――――――――――――――――――╯
 */
-
+/*
 .css{
     width: 100%;
-    background-color: #004000;
+    background-color: #214214;
     height: 15rem;
     display: block;
     text-align: center;
@@ -151,15 +165,16 @@ h1{
 .C-cima{
     position: relative;
     top: 4rem;
+    color: #FFFFFF;
 }
 .C-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #FFFFFF;
 }
-
+*/
 
 /*
 ╭――――――――――――――――――╮
@@ -171,7 +186,7 @@ h1{
 
 .js{
     width: 100%;
-    background-color: #003300;
+    background-color: #1e4411;
     height: 15rem;
     display: block;
     text-align: center;
@@ -204,13 +219,14 @@ h1{
 .J-cima{
     position: relative;
     top: 4rem;
+    color: #FFFFFF;
 }
 .J-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #FFFFFF;
 }
 
 /*
@@ -222,7 +238,7 @@ h1{
 */
 .java{
     width: 100%;
-    background-color: #002900;
+    background-color: #204a12;
     height: 15rem;
     display: block;
     text-align: center;
@@ -255,13 +271,14 @@ h1{
 .Ja-cima{
     position: relative;
     top: 4rem;
+    color: #FFFFFF;
 }
 .Ja-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 3.5rem;
-    color: #80ac29;
+    color: #FFFFFF;
 }
 /*
 ╭――――――――――――――――――╮
@@ -272,7 +289,7 @@ h1{
 */
 .python{
     width: 100%;
-    background-color: #002100;
+    background-color: #265815;
     height: 15rem;
     display: block;
     text-align: center;
@@ -303,13 +320,14 @@ h1{
 .P-cima{
     position: relative;
     top: 4rem;
+    color: #FFFFFF;
 }
 .P-baixo{
     font-size: 20px;
     display: block;
     position: relative;
     top: 4.5rem;
-    color: #80ac29;
+    color: #FFFFFF;
 }
 
 /*
@@ -341,8 +359,6 @@ footer{
     color: white;
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 145rem;
     height: 17rem;
 }
 

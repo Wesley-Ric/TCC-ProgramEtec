@@ -1,97 +1,119 @@
-
 /*resetanto a ul*/
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
+
 /*padronizando o A*/
-a{
+nav a {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*=-=-=-=-=-=-=-nav bar=-=-=-=-=-=-=-*/
-a:hover{
+nav a:hover {
     background-color: rgb(83, 124, 21);
     transition: .5s;
 }
 
-.a-logo a:hover{
+.a-logo a:hover {
     background-color: #ffffff;
 }
-#lagi{
-    width: 105px;
+
+#lagi {
+    padding-top: 8px;
+    width: 80px;
 }
-#header{
-    box-sizing: border-box;/*para não somar o rem com os 100px*/
+
+#header {
+    box-sizing: border-box;
+    /*para não somar o rem com os 100px*/
     height: 45px;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; /*espalha os elementos para ocupatam o espaço*/
+    justify-content: space-between;
+    /*espalha os elementos para ocupatam o espaço*/
     background-color: rgb(29, 28, 28);
 }
-#menu{
+
+#menu {
     display: flex;
     list-style: none;
 }
-#menu a{
+
+#menu a {
     display: block;
     padding: 1rem;
-    padding-top: .9rem;/*pra deixar com 100pc tbm*/
+    padding-top: .9rem;
+    /*pra deixar com 100pc tbm*/
     padding-bottom: .9rem;
 }
-#btn{
+
+#btn {
     display: none;
 }
 
 
 /*=-=-=-=-=-=-=-submenu=-=-=-=-=-=-=-*/
-#submenu{
-    list-style: none; /*para ficar invisivel*/
+#submenu {
+    list-style: none;
+    /*para ficar invisivel*/
     padding: 0;
     margin: 0;
     background-color: rgb(53, 53, 53);
-    z-index: 1000; /*para ficar em cima de tudo*/
+    z-index: 1000;
+    /*para ficar em cima de tudo*/
 }
 
-#menu li #submenu a{
+#menu li #submenu a {
     display: block;
     padding: 1rem;
 
 }
 
-#menu li #submenu a:hover{
+#menu li #submenu a:hover {
     background-color: rgb(83, 124, 21);
 
 }
-#menu li #submenu li{ /*largura quando o li aparecer*/
+
+#menu li #submenu li {
+    /*largura quando o li aparecer*/
     padding-right: 1.04rem;
     padding-left: 1.04rem;
 }
 
-#submenu{
+#submenu {
     display: block;
     position: absolute;
     line-height: 10px;
     transition: 1s;
-    height: 0px; /*para não aparecer (so aparece com o javascript)*/
-    visibility: hidden;/*para não aparecer (so aparece com o javascript)*/
+    height: 0px;
+    /*para não aparecer (so aparece com o javascript)*/
+    visibility: hidden;
+    /*para não aparecer (so aparece com o javascript)*/
     overflow-y: hidden;
 }
-#ling.active #submenu{ /*quando ling receber active por causa do js faz aparecer o li do submenu*/
-    height: 13.5rem;
+
+#ling.active #submenu {
+    /*quando ling receber active por causa do js faz aparecer o li do submenu*/
+    height: 10.5rem;
     visibility: visible;
     overflow-y: auto;
     transition: 1s;
+    
 }
 
 
 /*=-=-=-=-=-=-=-mobile-navbar=-=-=-=-=-=-=-*/
 
 
-@media (max-width:730px) { /*quando a tela for menor que 730px ele fará as chaves*/
-    #menu{ /*menu escondido*/
+@media (max-width:730px) {
+
+    /*quando a tela for menor que 730px ele fará as chaves*/
+    #menu {
+        /*menu escondido*/
         display: block;
         position: absolute;
         width: 100%;
@@ -105,23 +127,27 @@ a:hover{
         overflow-y: hidden;
     }
 
-    #nav.active #menu{/*menu aparece quando nav esta ativo pelo click(js)*/
+    #nav.active #menu {
+        /*menu aparece quando nav esta ativo pelo click(js)*/
         height: calc(100vh - 45px);
         visibility: visible;
         overflow-y: auto;
         transition: 1s;
     }
-    #menu a{
+
+    #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgb(53, 80, 13);
     }
-    #menu a:hover{
+
+    #menu a:hover {
         background-color: rgb(83, 124, 21);
     }
 
     /*=-=-=-=-=-=-=-btn hamburguer=-=-=-=-=-=-=-*/
-    #btn{/*btn menu hamburguer*/
+    #btn {
+        /*btn menu hamburguer*/
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -130,12 +156,16 @@ a:hover{
         cursor: pointer;
         gap: 0.5rem;
     }
-    #hamburguer{ /*estilo hamburguer de fato*/
+
+    #hamburguer {
+        /*estilo hamburguer de fato*/
         border-top: 2px solid lightgray;
         width: 20px;
         transition: .5s;
     }
-    #hamburguer::after{ /*BARRINHA ANTES*/
+
+    #hamburguer::after {
+        /*BARRINHA ANTES*/
         content: '';
         display: block;
         width: 20px;
@@ -145,7 +175,9 @@ a:hover{
         transition: .5s;
         position: relative;
     }
-    #hamburguer::before{/*BARRINHA DPS*/
+
+    #hamburguer::before {
+        /*BARRINHA DPS*/
         content: '';
         display: block;
         width: 20px;
@@ -155,21 +187,27 @@ a:hover{
         transition: .5s;
         position: relative;
     }
-    #nav.active #hamburguer::before{/*TIRA UMA BARRA*/
+
+    #nav.active #hamburguer::before {
+        /*TIRA UMA BARRA*/
         display: none;
     }
-    #nav.active #hamburguer{
-        transform: rotate(45deg);/*ROTACIONA*/
+
+    #nav.active #hamburguer {
+        transform: rotate(45deg);
+        /*ROTACIONA*/
     }
-    #nav.active #hamburguer::after{
-        transform: rotate(-95deg);/*ROTACIONA*/
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-95deg);
+        /*ROTACIONA*/
         top: -7.5px;
         height: 1.95px;
     }
 
-    
+
     /*=-=-=-=-=-=-=-sub menu das lingugens=-=-=-=-=-=-=-*/
-    #menu #submenu{
+    #menu #submenu {
         display: block;
         width: 100%;
         position: absolute;
@@ -182,7 +220,8 @@ a:hover{
         overflow-y: hidden;
         z-index: 1000;
     }
-    #ling.active #submenu{
+
+    #ling.active #submenu {
         height: 60vh;
         visibility: visible;
         overflow-y: auto;
