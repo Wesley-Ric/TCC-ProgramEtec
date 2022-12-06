@@ -1,4 +1,4 @@
 # Trabalho de conclusão de curso
 ## programEtec
 
-Nosso projeto foi feito com o objetivo de levar ainda mais conhecimento aos alunos da Etec
+Somos uma iniciativa estudantil, um projeto feito com o objetivo de levar aos estudantes ainda mais conhecimento técnico.
